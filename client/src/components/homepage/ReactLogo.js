@@ -11,6 +11,7 @@ function ReactLogo() {
       }}
     >
       <h1>Welcome to React Template</h1>
+      <a href='/Authenticate'>Go to Login/Signup</a>
     </div>
   );
 }
