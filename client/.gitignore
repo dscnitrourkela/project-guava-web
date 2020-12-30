@@ -3,6 +3,9 @@ logs
 *.log
 .DS_Store
 
+#environment
+.env
+
 # Runtime data
 pids
 *.pid
