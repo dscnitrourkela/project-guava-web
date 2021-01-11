@@ -1,12 +1,12 @@
 import React from 'react';
 import { ReactLogo } from '../components/homepage';
 
-function Home() {
+const Home = (props) => {
   return (
     <div>
       <ReactLogo />
     </div>
   );
-}
+};
 
 export default Home;

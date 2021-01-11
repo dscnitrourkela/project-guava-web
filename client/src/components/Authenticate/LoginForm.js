@@ -9,6 +9,8 @@ const LoginForm = (props) => {
     setPassword,
     handleLogin,
     handleSignup,
+    hasAccount,
+    setHasAccount,
     emailError,
     passwordError,
   } = props;
@@ -16,7 +18,7 @@ const LoginForm = (props) => {
     <>
       <h3 className='mt-3 mb-3'>Login</h3>
       <Form>
-        <Form.Label>Enter Username</Form.Label>
+        <Form.Label>Enter Email</Form.Label>
         <Form.Control
           className='mr-2'
           type='text'

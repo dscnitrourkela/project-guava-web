@@ -9,7 +9,6 @@ const UserAuth = (props) => {
     setEmail,
     password,
     setPassword,
-
     handleLogin,
     handleSignup,
     hasAccount,

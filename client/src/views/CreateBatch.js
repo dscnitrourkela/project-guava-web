@@ -3,7 +3,7 @@ import React from 'react';
 function CreateBatch() {
   return (
     <div>
-      <h1>Hi</h1>
+      <h1>Create Batch</h1>
     </div>
   );
 }

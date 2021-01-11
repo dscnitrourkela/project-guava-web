@@ -76,7 +76,7 @@ const Authenticate = () => {
   return (
     <>
       {user ? (
-        <Dashboard handleLogout={handleLogout} user={user} />
+        <Dashboard handleLogout={handleLogout} />
       ) : (
         <UserAuth
           email={email}

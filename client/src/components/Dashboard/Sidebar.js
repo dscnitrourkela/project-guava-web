@@ -19,11 +19,11 @@ const Sidebar = (props) => {
           </Accordion.Toggle>
           <Accordion.Collapse eventKey='0'>
             <Card.Body>
-              <a href='#'>View Profile</a>
+              <Link to='#'>View Profile</Link>
               <br />
-              <a href='#'>Edit Profile</a>
+              <Link to='#'>Edit Profile</Link>
               <br />
-              <a href='#'>Change Password</a>
+              <Link to='#'>Change Password</Link>
               <br />
             </Card.Body>
           </Accordion.Collapse>
@@ -36,9 +36,9 @@ const Sidebar = (props) => {
             <Card.Body>
               <Link to='/create-batch'>Create new Batch</Link>
               <br />
-              <a href='#'>View Templates</a>
+              <Link to='#'>View Templates</Link>
               <br />
-              <a href='#'>Generated Certificate</a>
+              <Link to='#'>Generated Certificate</Link>
               <br />
             </Card.Body>
           </Accordion.Collapse>

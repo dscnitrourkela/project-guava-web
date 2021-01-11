@@ -1,4 +1,6 @@
 import React from 'react';
+import Home from './Home';
+import Authenticate from '../components/Authenticate/Authenticate';
 
 // Libraries
 import { Router, Route, Switch, Redirect } from 'react-router-dom';
@@ -6,9 +8,6 @@ import Loadable from 'react-loadable';
 
 // Components
 import ActivityIndicator from '../components/shared/ActivityIndicator';
-
-//Protected Routes
-import ProtectedRoute from '../ProtectedRoute';
 
 // Helpers
 import createBrowserHistory from '../helpers/history';
@@ -42,18 +41,16 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
     render={(props) => (isAuthenticated() ? <Component {...props} /> : <Redirect to='/login' />)}
   />
 );
-console.log(process.env);
 
 function App() {
   return (
     <Router history={createBrowserHistory}>
-      <Switch>
-        <Route path='/' exact component={AsyncHome} />
-        {/* <Redirect to='/' /> */}
-        <Route path='/Authenticate' component={AsyncAuthenticate} />
-        <ProtectedRoute path='/Dashboard' component={AsyncDashboard} />
-        <ProtectedRoute path='/create-batch' component={AsyncCreateBatch} />
-      </Switch>
+      {/* <Switch> */}
+      <Route path='/' exact>
+        <Home />
+      </Route>
+      <Route path='/Authenticate' exact component={Authenticate} />
+      {/* </Switch> */}
     </Router>
   );
 }

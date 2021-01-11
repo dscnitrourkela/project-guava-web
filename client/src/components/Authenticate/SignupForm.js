@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Alert, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 const SignupForm = (props) => {
-  const { email, setEmail, password, setPassword, handleSignup, emailError, passwordError } = props;
+  const {
+    email,
+    setEmail,
+    password,
+    setPassword,
+    handleLogin,
+    handleSignup,
+    emailError,
+    passwordError,
+  } = props;
   return (
     <>
       <h3 className='mt-3 mb-3'>Sign Up</h3>
       <Form>
         <Form.Group controlId='formBasicEmail'>
-          <Form.Label>Email</Form.Label>
+          <Form.Label>Enter Email</Form.Label>
           <Form.Control
             type='text'
             required

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ReactLogo() {
+const ReactLogo = () => {
   return (
     <div
       style={{
@@ -11,9 +11,9 @@ function ReactLogo() {
       }}
     >
       <h1>Welcome to React Template</h1>
-      <a href='/Authenticate'>Go to Login/Signup</a>
+      <a href='/Authenticate'>Go to Login </a>
     </div>
   );
-}
+};
 
 export default ReactLogo;
