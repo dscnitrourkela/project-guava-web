@@ -3,6 +3,12 @@ logs
 *.log
 .DS_Store
 
+#environment
+.env
+
+#package
+package-lock.json
+
 # Runtime data
 pids
 *.pid

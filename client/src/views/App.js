@@ -1,4 +1,6 @@
 import React from 'react';
+import Home from './Home';
+import Authenticate from '../components/Authenticate/Authenticate';
 
 // Libraries
 import { Router, Route, Switch, Redirect } from 'react-router-dom';
@@ -15,7 +17,18 @@ const AsyncHome = Loadable({
   loader: () => import('./Home'),
   loading: ActivityIndicator,
 });
-
+const AsyncAuthenticate = Loadable({
+  loader: () => import('../components/Authenticate/Authenticate'),
+  loading: ActivityIndicator,
+});
+const AsyncDashboard = Loadable({
+  loader: () => import('./Dashboard'),
+  loading: ActivityIndicator,
+});
+const AsyncCreateBatch = Loadable({
+  loader: () => import('./CreateBatch.js'),
+  loading: ActivityIndicator,
+});
 // Function to check the Authenticated status.
 const isAuthenticated = () => {
   // Check the authentication state as per your way of authentication i.e. jwt, sessions, etc
@@ -33,8 +46,10 @@ function App() {
   return (
     <Router history={createBrowserHistory}>
       <Switch>
-        <Route path='/' exact component={AsyncHome} />
-        <Redirect to='/' />
+        <Route path='/' exact>
+          <Home />
+        </Route>
+        <Route path='/Authenticate' component={Authenticate} />
       </Switch>
     </Router>
   );

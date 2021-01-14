@@ -6,7 +6,7 @@ import Root from './Root';
 
 ReactDOM.render(
   <Root>
-    <App />
+    <App style={{ backgroundColor: '#d4d4d4' }} />
   </Root>,
-  document.querySelector('#root')
+  document.querySelector('#root'),
 );

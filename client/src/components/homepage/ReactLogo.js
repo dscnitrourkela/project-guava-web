@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function ReactLogo() {
+const ReactLogo = (props) => {
   return (
     <div
       style={{
@@ -11,8 +12,9 @@ function ReactLogo() {
       }}
     >
       <h1>Welcome to React Template</h1>
+      <Link to='/Authenticate'>Go to Login</Link>
     </div>
   );
-}
+};
 
 export default ReactLogo;
