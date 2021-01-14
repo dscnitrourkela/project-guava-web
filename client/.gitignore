@@ -6,6 +6,9 @@ logs
 #environment
 .env
 
+#package
+package-lock.json
+
 # Runtime data
 pids
 *.pid

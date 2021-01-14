@@ -45,12 +45,12 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 function App() {
   return (
     <Router history={createBrowserHistory}>
-      {/* <Switch> */}
-      <Route path='/' exact>
-        <Home />
-      </Route>
-      <Route path='/Authenticate' exact component={Authenticate} />
-      {/* </Switch> */}
+      <Switch>
+        <Route path='/' exact>
+          <Home />
+        </Route>
+        <Route path='/Authenticate' component={Authenticate} />
+      </Switch>
     </Router>
   );
 }
