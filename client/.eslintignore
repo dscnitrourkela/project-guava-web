@@ -4,3 +4,4 @@ coverage
 public
 .docz
 scripts/workshop-setup.js
+.eslintrc.js
