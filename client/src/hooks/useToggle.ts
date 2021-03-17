@@ -4,6 +4,6 @@ export default (
   initialState = false,
 ): [boolean, () => void, (state: boolean) => void] => {
   const [state, setState] = useState(initialState);
-  const toggle = () => setState(currentState => !currentState);
+  const toggle = (): void => setState(currentState => !currentState);
   return [state, toggle, setState];
 };
