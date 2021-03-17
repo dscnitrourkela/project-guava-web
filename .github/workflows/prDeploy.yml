@@ -1,0 +1,38 @@
+name: GitHub Page PR Preview Deploy
+
+on:
+  pull_request:
+    types: [labeled]
+
+jobs:
+  firebase-pr-preview:
+    name: GitHub Pages PR Deploy
+    runs-on: ubuntu-latest
+    if: contains(github.event.pull_request.labels.*.name, 'create-live-preview')
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@master
+
+      - name: Setup Node v14
+        uses: actions/setup-node@master
+        with:
+          node-version: "14.x"
+
+      - name: Install Dependencies
+        run: cd client && yarn install --frozen-lockfile
+
+      - name: Build React WebApp
+        run: cd client && yarn build
+
+      - name: Deploy to GitHub Page
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./client/build
+
+      - name: removelabel
+        uses: buildsville/add-remove-label@v1
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
+          label: create-live-preview
+          type: remove
