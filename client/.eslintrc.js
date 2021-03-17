@@ -34,6 +34,10 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/dot-notation': 0,
+    '@typescript-eslint/ban-ts-comment': 0,
+    '@typescript-eslint/no-explicit-any': 0,
     'no-plusplus': 0,
+    'react/prop-types': 0,
+    'import/extensions': 0,
   },
 };
