@@ -1,7 +1,12 @@
 import React from 'react';
 
 // Components
-import {CustomTextInput, CustomRadio, CustomDateTime} from '../components';
+import {
+  CustomTextInput,
+  CustomRadio,
+  CustomDateTime,
+  CustomCounter,
+} from '../components';
 
 // Hooks
 import {useInput} from '../hooks';
@@ -11,6 +16,7 @@ function Home(): JSX.Element {
   const [radio, setRadio] = useInput();
   const [date, setDate] = React.useState<Date | null>(new Date(Date.now()));
   const [time, setTime] = React.useState<Date | null>(new Date(Date.now()));
+  const [counter, setCounter] = React.useState<number>(0);
 
   return (
     <div>
@@ -51,6 +57,16 @@ function Home(): JSX.Element {
         selectedDate={time}
         onChange={(e: Date | null): void => setTime(e)}
         type="time"
+      />
+
+      <CustomCounter
+        value={counter}
+        setValue={setCounter}
+        onChange={(e: React.BaseSyntheticEvent): void =>
+          setCounter(e.target.value)
+        }
+        increment={(): void => setCounter((current: number) => current + 1)}
+        decrement={(): void => setCounter((current: number) => current - 1)}
       />
     </div>
   );
