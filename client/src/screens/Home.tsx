@@ -6,10 +6,11 @@ import {
   CustomRadio,
   CustomDateTime,
   CustomCounter,
+  CustomButton,
 } from '../components';
 
 // Hooks
-import {useInput, useCounter} from '../hooks';
+import {useInput, useCounter, useToggle} from '../hooks';
 
 function Home(): JSX.Element {
   const [value, setValue] = useInput('');
@@ -17,6 +18,14 @@ function Home(): JSX.Element {
   const [date, setDate] = React.useState<Date | null>(new Date(Date.now()));
   const [time, setTime] = React.useState<Date | null>(new Date(Date.now()));
   const [counter, increment, decrement, setCounter] = useCounter(0);
+  // eslint-disable-next-line
+  const [loading, toggleLoading, setLoading] = useToggle(false);
+
+  React.useEffect(() => {
+    if (loading) {
+      setTimeout(() => setLoading(false), 2000);
+    }
+  }, [loading, setLoading]);
 
   return (
     <div>
@@ -64,6 +73,14 @@ function Home(): JSX.Element {
         onChange={setCounter}
         increment={increment}
         decrement={decrement}
+      />
+
+      <CustomButton
+        label="Custom Label"
+        // eslint-disable-next-line
+        onClick={() => console.log('Logged')}
+        loading={loading}
+        setLoading={setLoading}
       />
     </div>
   );
