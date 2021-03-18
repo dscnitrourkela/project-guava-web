@@ -5,7 +5,7 @@ import {makeStyles} from '@material-ui/core';
 
 export interface CounterProps {
   value: number;
-  setValue: (event: number) => void;
+  setValue?: (event: number) => void;
   onChange: (event: React.BaseSyntheticEvent) => void;
   increment: () => void;
   decrement: () => void;
@@ -14,7 +14,7 @@ export interface CounterProps {
 
 function CustomCounter({
   value,
-  setValue,
+  // setValue,
   onChange,
   increment,
   decrement,

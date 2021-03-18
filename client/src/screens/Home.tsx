@@ -9,14 +9,14 @@ import {
 } from '../components';
 
 // Hooks
-import {useInput} from '../hooks';
+import {useInput, useCounter} from '../hooks';
 
 function Home(): JSX.Element {
   const [value, setValue] = useInput('');
   const [radio, setRadio] = useInput();
   const [date, setDate] = React.useState<Date | null>(new Date(Date.now()));
   const [time, setTime] = React.useState<Date | null>(new Date(Date.now()));
-  const [counter, setCounter] = React.useState<number>(0);
+  const [counter, increment, decrement, setCounter] = useCounter(0);
 
   return (
     <div>
@@ -61,12 +61,9 @@ function Home(): JSX.Element {
 
       <CustomCounter
         value={counter}
-        setValue={setCounter}
-        onChange={(e: React.BaseSyntheticEvent): void =>
-          setCounter(e.target.value)
-        }
-        increment={(): void => setCounter((current: number) => current + 1)}
-        decrement={(): void => setCounter((current: number) => current - 1)}
+        onChange={setCounter}
+        increment={increment}
+        decrement={decrement}
       />
     </div>
   );
