@@ -128,10 +128,10 @@ const theme = createMuiTheme({
     body1: {
       fontFamily: '"Inter" ,"Roboto", "Helvetica", "Arial", sans-serif',
       fontWeight: 400,
-      fontSize: '1.25rem',
+      fontSize: '1rem',
       lineHeight: '1.75rem',
       '@media (max-width:600px)': {
-        fontSize: '1rem',
+        fontSize: '0.8rem',
         lineHeight: '1.5rem',
       },
     },

@@ -1,13 +1,14 @@
 import React from 'react';
 
 // Components
-import {CustomTextInput} from '../components';
+import {CustomTextInput, CustomRadio} from '../components';
 
 // Hooks
 import {useInput} from '../hooks';
 
 function Home(): JSX.Element {
   const [value, setValue] = useInput('');
+  const [radio, setRadio] = useInput();
 
   return (
     <div>
@@ -24,6 +25,18 @@ function Home(): JSX.Element {
           /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
         }
         validationError="Invalid Email"
+      />
+
+      <CustomRadio
+        value={radio}
+        onChange={setRadio}
+        options={[
+          {value: 'female', label: 'Female'},
+          {value: 'male', label: 'Male'},
+          {value: 'other', label: 'Other'},
+        ]}
+        name="gender"
+        ariaLabel="gender"
       />
     </div>
   );
