@@ -53,29 +53,7 @@ function CustomTextField({
     else close();
   };
 
-  // const TextInputBody = (
-  //   <TextField
-  //     value={value}
-  //     onChange={select ? onChange : onSelect}
-  //     onBlur={handleOnBlur}
-  //     error={error}
-  //     helperText={error && errorText}
-  //     required={required}
-  //     multiline={multiline}
-  //     variant={variant}
-  //     fullWidth
-  //     select={select}
-  //     InputProps={{
-  //       startAdornment: Icon && (
-  //         <InputAdornment style={{marginRight: 10}} position="start">
-  //           <Icon />
-  //         </InputAdornment>
-  //       ),
-  //     }}
-  //     {...rest}
-  //   />
-  // );
-
+  const classes = useStyles();
   const inputProps = {
     value,
     onChange: select ? onChange : onSelect,
@@ -97,7 +75,6 @@ function CustomTextField({
     ...rest,
   };
 
-  const classes = useStyles();
   return (
     <div className={classes.root}>
       {select ? (
