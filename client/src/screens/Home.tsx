@@ -14,16 +14,16 @@ function Home(): JSX.Element {
       <h1>Hello</h1>
 
       <CustomTextInput
-        select
         value={value}
         onChange={setValue}
-        onSelect={setValue}
         required
-        options={[
-          {value: 1, label: 'one'},
-          {value: 2, label: 'two'},
-          {value: 3, label: 'three'},
-        ]}
+        variant="outlined"
+        placeholder="enter a number"
+        // type="number"
+        validationRegex={
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        }
+        validationError="Invalid Email"
       />
     </div>
   );

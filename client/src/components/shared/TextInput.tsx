@@ -6,6 +6,7 @@ import {
   TextField,
   InputAdornment,
   MenuItem,
+  OutlinedTextFieldProps,
 } from '@material-ui/core';
 
 // Hooks
@@ -15,17 +16,18 @@ export interface SelectOptions {
   value: string | number;
   label: string;
 }
-export interface TextInputProps {
+export interface TextInputProps extends OutlinedTextFieldProps {
   value: string | number;
   onChange: (event: React.BaseSyntheticEvent) => void;
   errorText?: string;
   required?: boolean;
   Icon?: React.FC;
   multiline?: boolean;
-  variant?: string;
   select?: boolean;
   onSelect?: (event: React.BaseSyntheticEvent) => void;
   options?: SelectOptions[];
+  validationRegex?: RegExp;
+  validationError?: string;
   [x: string]: any;
 }
 
@@ -36,33 +38,42 @@ function CustomTextField({
   required = false,
   Icon,
   multiline = false,
-  variant = 'outlined',
-  rest,
   select = false,
   options,
   onSelect,
+  validationRegex,
+  validationError = 'Invalid Field',
+  ...rest
 }: TextInputProps): JSX.Element {
   const [error, open, close] = useSwitch(false);
+  const [errorMessage, setErrorMessage] = React.useState<string>(errorText);
+
+  const isValid = validationRegex?.test(String(value).toLowerCase());
 
   React.useEffect(() => {
-    if (value !== '') close();
-  }, [value, close]);
+    if (value !== '' && isValid) close();
+  }, [value, close, isValid, open]);
 
   const handleOnBlur = (event: React.BaseSyntheticEvent): void => {
     if (required && event.target.value === '') open();
-    else close();
+    else if (!validationRegex?.test(String(value).toLowerCase())) {
+      setErrorMessage(validationError);
+      open();
+    } else {
+      setErrorMessage(errorText);
+      close();
+    }
   };
 
   const classes = useStyles();
   const inputProps = {
     value,
-    onChange: select ? onChange : onSelect,
+    onChange,
     onBlur: handleOnBlur,
     error,
-    helperText: error && errorText,
+    helperText: error && errorMessage,
     required,
     multiline,
-    variant,
     fullWidth: true,
     select,
     InputProps: {
@@ -79,11 +90,13 @@ function CustomTextField({
     <div className={classes.root}>
       {select ? (
         <TextField {...inputProps}>
-          {options?.map(option => (
-            <MenuItem key={option.value} value={option.value}>
-              {option.label}
-            </MenuItem>
-          ))}
+          {options?.map(
+            (option: SelectOptions): JSX.Element => (
+              <MenuItem key={option.value} value={option.value}>
+                {option.label}
+              </MenuItem>
+            ),
+          )}
         </TextField>
       ) : (
         <TextField {...inputProps} />
