@@ -7,6 +7,7 @@ import {
   CustomDateTime,
   CustomCounter,
   CustomButton,
+  CustomModal,
 } from '../components';
 
 // Hooks
@@ -20,6 +21,8 @@ function Home(): JSX.Element {
   const [counter, increment, decrement, setCounter] = useCounter(0);
   // eslint-disable-next-line
   const [loading, toggleLoading, setLoading] = useToggle(false);
+  // eslint-disable-next-line
+  const [open, toggleOpen, setOpen] = useToggle(false);
 
   React.useEffect(() => {
     if (loading) {
@@ -81,6 +84,24 @@ function Home(): JSX.Element {
         onClick={() => console.log('Logged')}
         loading={loading}
         setLoading={setLoading}
+      />
+      <button
+        type="button"
+        // @ts-ignore
+        onClick={() => setOpen((current: boolean): void => !current)}
+      >
+        Open
+      </button>
+      <CustomModal
+        open={open}
+        setOpen={setOpen}
+        content={
+          <div
+            style={{minWidth: 500, minHeight: 300, backgroundColor: '#ffffff'}}
+          >
+            <h1>Hello</h1>
+          </div>
+        }
       />
     </div>
   );
