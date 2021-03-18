@@ -15,9 +15,12 @@
     "url": "https://github.com/dscnitrourkela/project-guava-web.git"
   },
   "dependencies": {
+    "@date-io/date-fns": "1.3.13",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@material-ui/core": "^4.11.3",
+    "@material-ui/pickers": "^3.3.10",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -27,6 +30,7 @@
     "@types/react-dom": "^17.0.0",
     "@types/react-redux": "^7.1.16",
     "@types/react-router-dom": "^5.1.7",
+    "date-fns": "^2.19.0",
     "history": "4.10.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

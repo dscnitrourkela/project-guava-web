@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import {CustomTextInput, CustomRadio} from '../components';
+import {CustomTextInput, CustomRadio, CustomDateTime} from '../components';
 
 // Hooks
 import {useInput} from '../hooks';
@@ -9,6 +9,8 @@ import {useInput} from '../hooks';
 function Home(): JSX.Element {
   const [value, setValue] = useInput('');
   const [radio, setRadio] = useInput();
+  const [date, setDate] = React.useState<Date | null>(new Date(Date.now()));
+  const [time, setTime] = React.useState<Date | null>(new Date(Date.now()));
 
   return (
     <div>
@@ -37,6 +39,18 @@ function Home(): JSX.Element {
         ]}
         name="gender"
         ariaLabel="gender"
+      />
+
+      <CustomDateTime
+        selectedDate={date}
+        onChange={(e: Date | null): void => setDate(e)}
+        type="date"
+      />
+
+      <CustomDateTime
+        selectedDate={time}
+        onChange={(e: Date | null): void => setTime(e)}
+        type="time"
       />
     </div>
   );
