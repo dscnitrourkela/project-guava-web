@@ -1,12 +1,12 @@
 import React from 'react';
 
 // Libraries
-import {ThemeProvider} from '@material-ui/core/styles';
-import {CssBaseline} from '@material-ui/core';
+import {CssBaseline, useMediaQuery, ThemeProvider} from '@material-ui/core';
 import {Router, Route, Switch} from 'react-router-dom';
 
 // Components
 import HomePage from '../screens/Home';
+import {MobileView} from '../components';
 
 // Config
 import theme from './theme';
@@ -15,15 +15,21 @@ import theme from './theme';
 import createBrowserHistory from '../utils/createBrowserHistory';
 
 function App(): JSX.Element {
+  const isMobileView = useMediaQuery('(max-width:600px)');
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
-      <Router history={createBrowserHistory}>
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-        </Switch>
-      </Router>
+      {isMobileView ? (
+        <MobileView />
+      ) : (
+        <Router history={createBrowserHistory}>
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+          </Switch>
+        </Router>
+      )}
     </ThemeProvider>
   );
 }

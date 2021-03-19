@@ -14,6 +14,7 @@ const theme = createMuiTheme({
   palette: {
     primary: {
       main: '#398FFE',
+      dark: '#1359B5',
     },
     secondary: {
       main: 'rgba(0, 0, 0, 0.6)',
@@ -101,7 +102,7 @@ const theme = createMuiTheme({
       lineHeight: '2rem',
       '@media (max-width:600px)': {
         fontSize: '1.25rem',
-        lineHeight: '175rem',
+        lineHeight: '1.75rem',
       },
     },
     h3: {
