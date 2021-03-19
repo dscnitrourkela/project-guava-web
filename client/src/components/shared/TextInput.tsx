@@ -52,7 +52,8 @@ function CustomTextField({
 
   React.useEffect(() => {
     if (value !== '' && isValid) close();
-  }, [value, close, isValid, open]);
+    if (value !== '' && !validationRegex) close();
+  }, [value, close, isValid, open, validationRegex]);
 
   const handleOnBlur = (event: React.BaseSyntheticEvent): void => {
     if (required && event.target.value === '') open();

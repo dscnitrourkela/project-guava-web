@@ -6,6 +6,7 @@ import {Router, Route, Switch} from 'react-router-dom';
 
 // Components
 import HomePage from '../screens/Home';
+import SignUp from '../screens/SignUp';
 import {MobileView} from '../components';
 
 // Config
@@ -27,6 +28,7 @@ function App(): JSX.Element {
         <Router history={createBrowserHistory}>
           <Switch>
             <Route exact path="/" component={HomePage} />
+            <Route exact path="/signup" component={SignUp} />
           </Switch>
         </Router>
       )}
