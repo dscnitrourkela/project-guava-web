@@ -17,6 +17,7 @@ export interface RadioProps {
   label?: string;
   selectedChildElement?: JSX.Element[] | React.FC[];
   horizontal?: boolean;
+  className?: string;
   [x: string]: any;
 }
 
@@ -29,11 +30,12 @@ function CustomRadio({
   ariaLabel,
   selectedChildElement,
   horizontal,
+  className,
 }: RadioProps): JSX.Element {
   const classes = useStyles(horizontal);
 
   return (
-    <div className={classes.root}>
+    <div className={`${classes.root} ${className}`}>
       {options.map((option: RadioOptions, index) => (
         <div key={option.value} className={classes.optionContainer}>
           {label && <Typography variant="h3">{label}</Typography>}

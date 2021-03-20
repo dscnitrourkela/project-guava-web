@@ -2,7 +2,6 @@ import React from 'react';
 
 // Libraries
 import {
-  makeStyles,
   TextField,
   InputAdornment,
   MenuItem,
@@ -52,7 +51,8 @@ function CustomTextField({
 
   React.useEffect(() => {
     if (value !== '' && isValid) close();
-  }, [value, close, isValid, open]);
+    if (value !== '' && !validationRegex) close();
+  }, [value, close, isValid, open, validationRegex]);
 
   const handleOnBlur = (event: React.BaseSyntheticEvent): void => {
     if (required && event.target.value === '') open();
@@ -65,7 +65,6 @@ function CustomTextField({
     }
   };
 
-  const classes = useStyles();
   const inputProps = {
     value,
     onChange,
@@ -76,6 +75,7 @@ function CustomTextField({
     multiline,
     fullWidth: true,
     select,
+    style: {margin: '10px'},
     InputProps: {
       startAdornment: Icon && (
         <InputAdornment style={{marginRight: 10}} position="start">
@@ -87,7 +87,7 @@ function CustomTextField({
   };
 
   return (
-    <div className={classes.root}>
+    <>
       {select ? (
         <TextField {...inputProps}>
           {options?.map(
@@ -101,14 +101,8 @@ function CustomTextField({
       ) : (
         <TextField {...inputProps} />
       )}
-    </div>
+    </>
   );
 }
 
 export default CustomTextField;
-
-const useStyles = makeStyles(() => ({
-  root: {
-    width: '100%',
-  },
-}));

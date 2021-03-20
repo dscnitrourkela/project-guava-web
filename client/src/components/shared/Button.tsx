@@ -12,6 +12,7 @@ export interface ButtonProps {
   setLoading?: (loading: boolean) => void;
   type?: 'text' | 'outlined' | 'contained' | undefined;
   link?: string;
+  className?: string;
 }
 
 function CustomButton({
@@ -21,6 +22,7 @@ function CustomButton({
   loading,
   setLoading,
   link,
+  className,
 }: ButtonProps): JSX.Element {
   const classes = useStyles();
 
@@ -33,13 +35,17 @@ function CustomButton({
     <div className={classes.root}>
       {link ? (
         <Link to={link}>
-          <Button variant="text" color="primary">
+          <Button
+            className={`${classes.button} ${className}`}
+            variant="text"
+            color="primary"
+          >
             {label}
           </Button>
         </Link>
       ) : (
         <Button
-          className={classes.button}
+          className={`${classes.button} ${className}`}
           onClick={handleClick}
           variant={type}
           color="primary"
