@@ -9,12 +9,12 @@ import {CustomTextInput} from '../shared';
 // Hooks
 import {useInput} from '../../hooks';
 
-function UploadSignature({key}: {key: string}): JSX.Element {
+function UploadSignature(): JSX.Element {
   const [signature, setSignature] = useInput();
 
   const classes = useStyles();
   return (
-    <div key={key} className={classes.creatContainer}>
+    <div className={classes.creatContainer}>
       <CustomTextInput
         value={signature}
         onChange={setSignature}
