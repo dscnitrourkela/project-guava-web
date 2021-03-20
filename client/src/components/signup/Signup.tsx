@@ -8,6 +8,7 @@ import {CustomTextInput, CustomButton} from '../shared';
 
 export interface SignUpProps {
   setStageToOnboarding: () => void;
+  setStageToLogin: () => void;
   name: string | number;
   setName: (event: React.BaseSyntheticEvent) => void;
   organization: string | number;
@@ -26,6 +27,7 @@ export interface SignUpProps {
 
 function Signup({
   setStageToOnboarding,
+  setStageToLogin,
   name,
   setName,
   organization,
@@ -148,8 +150,8 @@ function Signup({
         <span
           role="button"
           tabIndex={0}
-          onClick={() => {}}
-          onKeyDown={() => {}}
+          onClick={setStageToLogin}
+          onKeyDown={setStageToLogin}
           className={classes.login}
         >
           Login

@@ -10,6 +10,7 @@ import {
   HalvesColumn2,
   Signup,
   Onboarding,
+  Login,
 } from '../components';
 
 // Hooks
@@ -39,6 +40,7 @@ const Auth: React.FC = () => {
 
   // Onboarding States
   const [signatureType, setSignatureType] = useInput();
+  // eslint-disable-next-line
   const [imageUrl, setImageUrl] = useState<string | undefined>();
 
   // Set Stage Functions
@@ -48,6 +50,7 @@ const Auth: React.FC = () => {
 
   const signupProps = {
     setStageToOnboarding,
+    setStageToLogin,
     name,
     setName,
     organization,
@@ -71,12 +74,22 @@ const Auth: React.FC = () => {
     setImageUrl,
   };
 
+  const loginProps = {
+    setStageToSignup,
+    email,
+    setEmail,
+    password,
+    setPassword,
+  };
+
   const renderStage = () => {
     switch (stage) {
       case STAGE.SIGNUP:
         return <Signup {...signupProps} />;
       case STAGE.ONBOARDING:
         return <Onboarding {...onboardingProps} />;
+      case STAGE.LOGIN:
+        return <Login {...loginProps} />;
       default:
         return <Signup {...signupProps} />;
     }
