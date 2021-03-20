@@ -4,10 +4,12 @@ import React, {useState} from 'react';
 import {makeStyles, Container, Typography} from '@material-ui/core';
 
 // Components
-import {HalvesTemplate, HalvesColumn1, HalvesColumn2} from '../components';
-
-// Hooks
-import {useInput} from '../hooks';
+import {
+  HalvesTemplate,
+  HalvesColumn1,
+  HalvesColumn2,
+  CertificateDetails,
+} from '../components';
 
 const Auth: React.FC = () => {
   // ====================== Main Render Function ====================== //
@@ -15,9 +17,7 @@ const Auth: React.FC = () => {
   return (
     <HalvesTemplate>
       <HalvesColumn1>
-        <Container className={classes.container}>
-          <h2>Hello</h2>
-        </Container>
+        <CertificateDetails />
       </HalvesColumn1>
 
       <HalvesColumn2 className={classes.column2}>
@@ -29,7 +29,7 @@ const Auth: React.FC = () => {
 
 export default Auth;
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   container: {
     display: 'flex',
     flexDirection: 'column',
