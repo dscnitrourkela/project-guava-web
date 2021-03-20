@@ -3,14 +3,12 @@ import React from 'react';
 // Libraries
 import {makeStyles, Typography} from '@material-ui/core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {
-  faChevronLeft,
-  faCloudUploadAlt,
-} from '@fortawesome/free-solid-svg-icons';
+import {faChevronLeft} from '@fortawesome/free-solid-svg-icons';
 
 // Componenets
 import {CustomRadio, CustomButton} from '../shared';
 import UploadSignature from './UploadSignature';
+import CreateSignture from './CreateSignature';
 
 export interface SignUpProps {
   setStageToSignup: () => void;
@@ -31,12 +29,7 @@ function FirstStage({
   const classes = useStyles();
   const radioSelectedShowcase = [
     <UploadSignature key="Upload Signature" />,
-    <div key="Create Signature" className={classes.createContainer}>
-      <Typography variant="h3">Create Signature</Typography>
-      <Typography variant="h3">
-        Transparent PNGs are easier to process.
-      </Typography>
-    </div>,
+    <CreateSignture key="Create Signature" />,
   ];
 
   return (
