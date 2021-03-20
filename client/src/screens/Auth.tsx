@@ -27,12 +27,13 @@ const STAGE = {
 };
 
 const Auth: React.FC = () => {
+  // ====================== Stage State & Logic ====================== //
   const isSignupStage = window.location.pathname.split('/')[1] === 'signup';
   const [stage, setStage] = useState<string>(
     isSignupStage ? STAGE.SIGNUP : STAGE.LOGIN,
   );
 
-  // Signup and Login States
+  // ====================== Signup and Login States ====================== //
   const [name, setName] = useInput();
   const [organization, setOrganization] = useInput();
   const [designation, setDesignation] = useInput();
@@ -41,16 +42,17 @@ const Auth: React.FC = () => {
   const [password, setPassword] = useInput();
   const [confirmPassword, setConfirmPassword] = useInput();
 
-  // Onboarding States
+  // ====================== Onboarding States ====================== //
   const [signatureType, setSignatureType] = useInput();
   // eslint-disable-next-line
   const [imageUrl, setImageUrl] = useState<string | undefined>();
 
-  // Set Stage Functions
+  // ====================== Set Stage Functions ====================== //
   const setStageToSignup = () => setStage(STAGE.SIGNUP);
   const setStageToOnboarding = () => setStage(STAGE.ONBOARDING);
   const setStageToLogin = () => setStage(STAGE.LOGIN);
 
+  // ====================== Props Passed to Stages ====================== //
   const signupProps = {
     setStageToOnboarding,
     setStageToLogin,
@@ -85,6 +87,7 @@ const Auth: React.FC = () => {
     setPassword,
   };
 
+  // ====================== Render Function for Stages ====================== //
   const renderStage = () => {
     switch (stage) {
       case STAGE.SIGNUP:
@@ -98,6 +101,7 @@ const Auth: React.FC = () => {
     }
   };
 
+  // ====================== Main Render Function ====================== //
   const classes = useStyles();
   return (
     <HalvesTemplate>
