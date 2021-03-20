@@ -10,6 +10,7 @@ import {
 
 // Componenets
 import {CustomRadio, CustomButton} from '../shared';
+import UploadSignature from './UploadSignature';
 
 export interface SignUpProps {
   setStageToSignup: () => void;
@@ -29,19 +30,7 @@ function FirstStage({
 
   const classes = useStyles();
   const radioSelectedShowcase = [
-    <div key="Upload Signature" className={classes.uploadContainer}>
-      <Typography variant="body1" className={classes.primaryText}>
-        <FontAwesomeIcon
-          style={{marginRight: 10}}
-          size="lg"
-          icon={faCloudUploadAlt}
-        />
-        Upload Signature
-      </Typography>
-      <Typography variant="body2" className={classes.secondaryText}>
-        Transparent PNGs are easier to process.
-      </Typography>
-    </div>,
+    <UploadSignature key="Upload Signature" />,
     <div key="Create Signature" className={classes.createContainer}>
       <Typography variant="h3">Create Signature</Typography>
       <Typography variant="h3">
