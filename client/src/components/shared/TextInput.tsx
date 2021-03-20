@@ -2,7 +2,6 @@ import React from 'react';
 
 // Libraries
 import {
-  makeStyles,
   TextField,
   InputAdornment,
   MenuItem,
@@ -66,7 +65,6 @@ function CustomTextField({
     }
   };
 
-  const classes = useStyles();
   const inputProps = {
     value,
     onChange,
@@ -77,6 +75,7 @@ function CustomTextField({
     multiline,
     fullWidth: true,
     select,
+    style: {margin: '10px'},
     InputProps: {
       startAdornment: Icon && (
         <InputAdornment style={{marginRight: 10}} position="start">
@@ -88,9 +87,9 @@ function CustomTextField({
   };
 
   return (
-    <div className={classes.root}>
+    <>
       {select ? (
-        <TextField {...inputProps}>
+        <TextField id="outlined-basic" {...inputProps}>
           {options?.map(
             (option: SelectOptions): JSX.Element => (
               <MenuItem key={option.value} value={option.value}>
@@ -100,16 +99,10 @@ function CustomTextField({
           )}
         </TextField>
       ) : (
-        <TextField {...inputProps} />
+        <TextField id="outlined-basic" {...inputProps} />
       )}
-    </div>
+    </>
   );
 }
 
 export default CustomTextField;
-
-const useStyles = makeStyles(() => ({
-  root: {
-    width: '100%',
-  },
-}));
