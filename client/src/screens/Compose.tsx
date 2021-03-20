@@ -10,6 +10,7 @@ import {
   HalvesColumn2,
   CertificateDetails,
   Authorizers,
+  Editor,
 } from '../components';
 
 const Auth: React.FC = () => {
@@ -23,7 +24,7 @@ const Auth: React.FC = () => {
       </HalvesColumn1>
 
       <HalvesColumn2 className={classes.column2}>
-        <h1>Hello</h1>
+        <Editor />
       </HalvesColumn2>
     </HalvesTemplate>
   );
@@ -41,5 +42,10 @@ const useStyles = makeStyles(() => ({
   column2: {
     position: 'relative',
     maxWidth: '100%',
+    padding: '20px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
   },
 }));
