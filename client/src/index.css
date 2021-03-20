@@ -1,0 +1,33 @@
+/* @font-face {
+  font-family: 'Digital';
+  src: local('Digital'),
+    url(./assets/fonts/digital-7-mono.ttf) format('truetype');
+} */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  box-sizing: border-box;
+  background-color: #1a1a1a;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+li,
+a {
+  text-decoration: none;
+}

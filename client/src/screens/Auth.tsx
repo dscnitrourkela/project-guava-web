@@ -143,28 +143,12 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'flex-start',
   },
-  title: {
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
   logo: {
     width: '40%',
     height: 'auto',
     margin: '30px',
   },
-  statement: {},
-  login: {
-    color: theme.palette.primary.dark,
-    fontWeight: 'bold',
-    '&:hover': {
-      cursor: 'pointer',
-    },
-  },
-  signup: {
-    marginTop: '20px',
-  },
   column2: {
-    backgroundColor: theme.palette.background.paper,
     position: 'relative',
     maxWidth: '100%',
   },
