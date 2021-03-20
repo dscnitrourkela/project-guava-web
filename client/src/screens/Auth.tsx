@@ -9,6 +9,7 @@ import {
   HalvesColumn1,
   HalvesColumn2,
   Signup,
+  Onboarding,
 } from '../components';
 
 // Hooks
@@ -24,9 +25,10 @@ const STAGE = {
   LOGIN: 'login stage',
 };
 
-const SignUp: React.FC = () => {
+const Auth: React.FC = () => {
   const [stage, setStage] = useState<string>(STAGE.SIGNUP);
 
+  // Signup and Login States
   const [name, setName] = useInput();
   const [organization, setOrganization] = useInput();
   const [designation, setDesignation] = useInput();
@@ -34,6 +36,10 @@ const SignUp: React.FC = () => {
   const [phoneNumber, setPhoneNumber] = useInput();
   const [password, setPassword] = useInput();
   const [confirmPassword, setConfirmPassword] = useInput();
+
+  // Onboarding States
+  const [signatureType, setSignatureType] = useInput();
+  const [imageUrl, setImageUrl] = useState<string | undefined>();
 
   // Set Stage Functions
   const setStageToSignup = () => setStage(STAGE.SIGNUP);
@@ -58,10 +64,19 @@ const SignUp: React.FC = () => {
     setConfirmPassword,
   };
 
+  const onboardingProps = {
+    setStageToSignup,
+    signatureType,
+    setSignatureType,
+    setImageUrl,
+  };
+
   const renderStage = () => {
     switch (stage) {
       case STAGE.SIGNUP:
         return <Signup {...signupProps} />;
+      case STAGE.ONBOARDING:
+        return <Onboarding {...onboardingProps} />;
       default:
         return <Signup {...signupProps} />;
     }
@@ -103,7 +118,7 @@ const SignUp: React.FC = () => {
   );
 };
 
-export default SignUp;
+export default Auth;
 
 const useStyles = makeStyles(theme => ({
   container: {

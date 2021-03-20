@@ -24,7 +24,7 @@ export interface SignUpProps {
   setConfirmPassword: (event: React.BaseSyntheticEvent) => void;
 }
 
-function FirstStage({
+function Signup({
   setStageToOnboarding,
   name,
   setName,
@@ -166,7 +166,7 @@ function FirstStage({
   );
 }
 
-export default FirstStage;
+export default Signup;
 
 const useStyles = makeStyles(theme => ({
   title: {
