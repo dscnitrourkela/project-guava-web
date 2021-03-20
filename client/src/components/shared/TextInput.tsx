@@ -89,7 +89,7 @@ function CustomTextField({
   return (
     <>
       {select ? (
-        <TextField id="outlined-basic" {...inputProps}>
+        <TextField {...inputProps}>
           {options?.map(
             (option: SelectOptions): JSX.Element => (
               <MenuItem key={option.value} value={option.value}>
@@ -99,7 +99,7 @@ function CustomTextField({
           )}
         </TextField>
       ) : (
-        <TextField id="outlined-basic" {...inputProps} />
+        <TextField {...inputProps} />
       )}
     </>
   );

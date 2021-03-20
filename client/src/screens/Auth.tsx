@@ -27,7 +27,10 @@ const STAGE = {
 };
 
 const Auth: React.FC = () => {
-  const [stage, setStage] = useState<string>(STAGE.SIGNUP);
+  const isSignupStage = window.location.pathname.split('/')[1] === 'signup';
+  const [stage, setStage] = useState<string>(
+    isSignupStage ? STAGE.SIGNUP : STAGE.LOGIN,
+  );
 
   // Signup and Login States
   const [name, setName] = useInput();
