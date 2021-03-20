@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 /* eslint-disable no-alert */
-import React, {useCallback, useState} from 'react';
+import React, {useCallback, useState, useEffect, useRef} from 'react';
 
 // Library
 import {makeStyles, Typography} from '@material-ui/core';
@@ -8,8 +8,13 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCloudUploadAlt} from '@fortawesome/free-solid-svg-icons';
 import {useDropzone} from 'react-dropzone';
 
+// Components
+import Canvas from './Canvas';
+
 function Editor(): JSX.Element {
   const [uploadImage, setUploadImage] = useState('');
+  const [stageWidth, setStageWidth] = useState(500);
+  const stageRef = useRef(null);
 
   const onDrop = useCallback(acceptedFiles => {
     acceptedFiles.forEach((file: File) => {
@@ -27,33 +32,43 @@ function Editor(): JSX.Element {
     });
   }, []);
 
+  // @ts-ignore
+  const checkSize = () => setStageWidth(stageRef.current?.offsetWidth);
+
   const {getRootProps, getInputProps} = useDropzone({
     onDrop,
     maxFiles: 1,
     accept: 'image/*',
   });
 
+  useEffect(() => {
+    checkSize();
+    window.addEventListener('resize', checkSize);
+
+    return window.removeEventListener('resize', checkSize);
+  }, []);
+
   const classes = useStyles();
   return (
     <>
       {uploadImage ? (
-        <div className={classes.root}>
-          <img className={classes.image} src={uploadImage} alt="Upload" />
-        </div>
+        <Canvas stageWidth={stageWidth} imageUrl={uploadImage} />
       ) : (
-        <div className={classes.root} {...getRootProps()}>
-          <input {...getInputProps()} />
-          <Typography variant="body1" className={classes.primaryText}>
-            <FontAwesomeIcon
-              style={{marginRight: 10}}
-              size="lg"
-              icon={faCloudUploadAlt}
-            />
-            Upload Signature
-          </Typography>
-          <Typography variant="body2" className={classes.secondaryText}>
-            Drag and drop file here to upload.
-          </Typography>
+        <div ref={stageRef} className={classes.root}>
+          <div {...getRootProps()}>
+            <input {...getInputProps()} />
+            <Typography variant="body1" className={classes.primaryText}>
+              <FontAwesomeIcon
+                style={{marginRight: 10}}
+                size="lg"
+                icon={faCloudUploadAlt}
+              />
+              Upload Signature
+            </Typography>
+            <Typography variant="body2" className={classes.secondaryText}>
+              Drag and drop file here to upload.
+            </Typography>
+          </div>
         </div>
       )}
     </>
