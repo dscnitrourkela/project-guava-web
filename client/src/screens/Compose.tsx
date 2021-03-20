@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 // Libraries
-import {makeStyles, Container, Typography} from '@material-ui/core';
+import {makeStyles} from '@material-ui/core';
 
 // Components
 import {
@@ -9,6 +9,7 @@ import {
   HalvesColumn1,
   HalvesColumn2,
   CertificateDetails,
+  Authorizers,
 } from '../components';
 
 const Auth: React.FC = () => {
@@ -18,6 +19,7 @@ const Auth: React.FC = () => {
     <HalvesTemplate>
       <HalvesColumn1>
         <CertificateDetails />
+        <Authorizers />
       </HalvesColumn1>
 
       <HalvesColumn2 className={classes.column2}>

@@ -75,6 +75,7 @@ function CustomTextField({
     helperText: error && errorMessage,
     required,
     multiline,
+    rows: 4,
     fullWidth: true,
     select,
     style: className ? {} : {margin: '10px'},
