@@ -40,10 +40,12 @@ const useStyles = makeStyles(theme => ({
   column1: {
     minHeight: window.innerHeight,
     width: '30%',
+    maxWidth: '30%',
   },
   column2: {
     minHeight: window.innerHeight,
     width: '70%',
+    maxWidth: '70%',
     backgroundColor: theme.palette.background.paper,
   },
 }));

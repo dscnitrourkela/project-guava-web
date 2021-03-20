@@ -6,7 +6,7 @@ import {Router, Route, Switch} from 'react-router-dom';
 
 // Components
 import HomePage from '../screens/Home';
-import SignUp from '../screens/SignUp';
+import SignUp from '../screens/Auth';
 import {MobileView} from '../components';
 
 // Config
