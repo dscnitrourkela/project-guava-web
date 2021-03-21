@@ -13,23 +13,41 @@ import Canvas from './Canvas';
 
 function Editor(): JSX.Element {
   const [uploadImage, setUploadImage] = useState('');
+  const [imageDimensions, setImageDimensions] = useState<{
+    width: number;
+    height: number;
+  }>({width: 0, height: 0});
   const [stageWidth, setStageWidth] = useState(500);
   const stageRef = useRef(null);
 
   const onDrop = useCallback(acceptedFiles => {
-    acceptedFiles.forEach((file: File) => {
-      const reader = new FileReader();
+    // @ts-ignore
+    const file = acceptedFiles[0];
+    const i = new Image();
+    i.src = URL.createObjectURL(file);
 
-      reader.onabort = () => window.alert('file reading was aborted');
-      reader.onerror = () => window.alert('file reading has failed');
+    i.onload = () => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
       reader.onload = () => {
-        // Do whatever you want with the file contents
-        const formData = new FormData();
-        formData.append('datafiles', file);
-        setUploadImage(URL.createObjectURL(file));
+        setUploadImage(i.src);
+        setImageDimensions({width: i.width, height: i.height});
       };
-      reader.readAsArrayBuffer(file);
-    });
+    };
+    // acceptedFiles.forEach((file: File) => {
+    //   const reader = new FileReader();
+
+    //   reader.onabort = () => window.alert('file reading was aborted');
+    //   reader.onerror = () => window.alert('file reading has failed');
+    //   reader.onload = () => {
+    //     // Do whatever you want with the file contents
+    //     const formData = new FormData();
+    //     formData.append('datafiles', file);
+    //     console.log(file);
+    //     setUploadImage(URL.createObjectURL(file));
+    //   };
+    //   reader.readAsArrayBuffer(file);
+    // });
   }, []);
 
   // @ts-ignore
@@ -52,7 +70,11 @@ function Editor(): JSX.Element {
   return (
     <>
       {uploadImage ? (
-        <Canvas stageWidth={stageWidth} imageUrl={uploadImage} />
+        <Canvas
+          imageAspectRatio={imageDimensions.width / imageDimensions.height}
+          stageWidth={stageWidth}
+          imageUrl={uploadImage}
+        />
       ) : (
         <div ref={stageRef} className={classes.root}>
           <div {...getRootProps()}>
