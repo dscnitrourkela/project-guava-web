@@ -1,4 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 export const COMPOSE = {
   FORM_UPDATE: 'FORM_UPDATE',
+  ADD_NEW_AUTHORIZER: 'ADD_NEW_AUTHORIZER',
+  REMOVE_EXISTING_AUTHORIZER: 'REMOVE_EXISTING_AUTHORIZER',
 };

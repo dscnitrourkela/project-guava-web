@@ -11,15 +11,7 @@ import {COMPOSE} from '../../store/types';
 import {CustomTextInput, CustomDateTime} from '../shared';
 import DetailsMenu from './DetailsMenu';
 
-// Hooks
-// import {useInput} from '../../hooks';
-
 function CertificateDetails(): JSX.Element {
-  // const [title, setTitle] = useInput('');
-  // const [event, setEvent] = useInput('');
-  // const [date, setDate] = useState<Date | null>(new Date(Date.now()));
-  // const [time, setTime] = useState<Date | null>(new Date(Date.now()));
-
   const [state, dispatch] = useCompose();
 
   // @ts-ignore

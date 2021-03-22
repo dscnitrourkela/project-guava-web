@@ -1,8 +1,15 @@
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import {COMPOSE} from '../types';
+import {InitialStateType} from '../action-types';
 
-// @ts-ignore
-export default function composeReducer(state, action) {
+export interface ActionType {
+  type: string;
+  payload?: any;
+}
+
+export function composeReducer(
+  state: InitialStateType,
+  action: ActionType,
+): InitialStateType {
   switch (action.type) {
     case COMPOSE.FORM_UPDATE:
       return {
@@ -12,7 +19,28 @@ export default function composeReducer(state, action) {
           [action.payload.key]: action.payload.value,
         },
       };
+    case COMPOSE.ADD_NEW_AUTHORIZER:
+      return {
+        ...state,
+        authorizerDetails: [
+          ...state.authorizerDetails,
+          {
+            id: action.payload.id,
+            name: '',
+            message: '',
+            scale: 1,
+            position: {x: 0, y: 0},
+          },
+        ],
+      };
+    case COMPOSE.REMOVE_EXISTING_AUTHORIZER:
+      return {
+        ...state,
+        authorizerDetails: state.authorizerDetails.filter(
+          authorizer => authorizer.id !== action.payload.id,
+        ),
+      };
     default:
-      throw new Error(`Unsupported action type: ${action.type}`);
+      return state;
   }
 }

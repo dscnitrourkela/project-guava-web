@@ -5,6 +5,11 @@ import {makeStyles, Container, Typography} from '@material-ui/core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faTrashAlt} from '@fortawesome/free-solid-svg-icons';
 
+// Context hooks
+import {useCompose} from '../../store/contexts';
+import {AuthorizerType} from '../../store/action-types';
+import {COMPOSE} from '../../store/types';
+
 // Components
 import {CustomButton, CustomTextInput} from '../shared';
 
@@ -15,7 +20,7 @@ function Authorizer({
   item,
   removeAuthorizer,
 }: {
-  item: string;
+  item: AuthorizerType;
   removeAuthorizer: (item: string) => void;
 }): JSX.Element {
   const [authorizer, setAuthorizer] = useInput();
@@ -52,7 +57,7 @@ function Authorizer({
           className={classes.deleteAuthorizer}
           size="2x"
           icon={faTrashAlt}
-          onClick={() => removeAuthorizer(item)}
+          onClick={() => removeAuthorizer(item.id)}
         />
       </div>
 
@@ -70,15 +75,26 @@ function Authorizer({
 }
 
 function Authorizers(): JSX.Element {
-  const [authorizers, setAuthorizers] = React.useState<string[]>([]);
+  // const [authorizers, setAuthorizers] = React.useState<string[]>([]);
+
+  const [state, dispatch] = useCompose();
+
+  // const addAuthorizer = () =>
+  //   setAuthorizers(current => [...current, `authorizer${Math.random() * 10}`]);
+
+  // const removeAuthorizer = (item: string): void =>
+  //   setAuthorizers(current =>
+  //     current.filter(authorizer => authorizer !== item),
+  //   );
 
   const addAuthorizer = () =>
-    setAuthorizers(current => [...current, `authorizer${Math.random() * 10}`]);
+    dispatch({
+      type: COMPOSE.ADD_NEW_AUTHORIZER,
+      payload: {id: Math.random() * 10},
+    });
 
-  const removeAuthorizer = (item: string): void =>
-    setAuthorizers(current =>
-      current.filter(authorizer => authorizer !== item),
-    );
+  const removeAuthorizer = (id: string) =>
+    dispatch({type: COMPOSE.REMOVE_EXISTING_AUTHORIZER, payload: {id}});
 
   const classes = useStyles();
   return (
@@ -100,7 +116,15 @@ function Authorizers(): JSX.Element {
           onClick={addAuthorizer}
         />
       </div>
-      {authorizers.length > 0 &&
+      {state.authorizerDetails.length > 0 &&
+        state.authorizerDetails.map(authorizer => (
+          <Authorizer
+            key={authorizer.id}
+            item={authorizer}
+            removeAuthorizer={removeAuthorizer}
+          />
+        ))}
+      {/* {authorizers.length > 0 &&
         authorizers
           // .reverse()
           .map(
@@ -111,7 +135,7 @@ function Authorizers(): JSX.Element {
                 removeAuthorizer={removeAuthorizer}
               />
             ),
-          )}
+          )} */}
     </Container>
   );
 }
