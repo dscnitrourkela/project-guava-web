@@ -27,6 +27,7 @@ export interface TextInputProps extends OutlinedTextFieldProps {
   options?: SelectOptions[];
   validationRegex?: RegExp;
   validationError?: string;
+  className?: string;
   [x: string]: any;
 }
 
@@ -42,6 +43,7 @@ function CustomTextField({
   onSelect,
   validationRegex,
   validationError = 'Invalid Field',
+  className,
   ...rest
 }: TextInputProps): JSX.Element {
   const [error, open, close] = useSwitch(false);
@@ -73,9 +75,10 @@ function CustomTextField({
     helperText: error && errorMessage,
     required,
     multiline,
+    rows: 4,
     fullWidth: true,
     select,
-    style: {margin: '10px'},
+    style: className ? {} : {margin: '10px'},
     InputProps: {
       startAdornment: Icon && (
         <InputAdornment style={{marginRight: 10}} position="start">
@@ -89,7 +92,7 @@ function CustomTextField({
   return (
     <>
       {select ? (
-        <TextField {...inputProps}>
+        <TextField className={className} {...inputProps}>
           {options?.map(
             (option: SelectOptions): JSX.Element => (
               <MenuItem key={option.value} value={option.value}>
@@ -99,7 +102,7 @@ function CustomTextField({
           )}
         </TextField>
       ) : (
-        <TextField {...inputProps} />
+        <TextField className={className} {...inputProps} />
       )}
     </>
   );

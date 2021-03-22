@@ -5,8 +5,7 @@ import {CssBaseline, useMediaQuery, ThemeProvider} from '@material-ui/core';
 import {Router, Route, Switch} from 'react-router-dom';
 
 // Components
-import HomePage from '../screens/Home';
-import SignUp from '../screens/Auth';
+import {HomePage, AuthPage, ComposePage} from '../screens';
 import {MobileView} from '../components';
 
 // Config
@@ -28,8 +27,9 @@ function App(): JSX.Element {
         <Router history={createBrowserHistory}>
           <Switch>
             <Route exact path="/" component={HomePage} />
-            <Route exact path="/signup" component={SignUp} />
-            <Route exact path="/login" component={SignUp} />
+            <Route exact path="/signup" component={AuthPage} />
+            <Route exact path="/login" component={AuthPage} />
+            <Route exact path="/compose" component={ComposePage} />
           </Switch>
         </Router>
       )}
