@@ -1,5 +1,8 @@
 import React from 'react';
+
+// Libraries
 import {Rect, Transformer} from 'react-konva';
+import Konva from 'konva';
 
 export interface RectProps {
   isSelected: boolean;
@@ -15,17 +18,41 @@ const Rectangle: React.FC<RectProps> = ({
   onSelect,
   onChange,
 }) => {
-  const shapeRef = React.useRef(null);
-  const trRef = React.useRef(null);
+  const shapeRef = React.useRef<Konva.Node>(null);
+  const transformerRef = React.useRef<Konva.Transformer>(null);
 
   React.useEffect(() => {
-    if (isSelected) {
+    if (isSelected && transformerRef.current && shapeRef.current) {
+      transformerRef.current.nodes([shapeRef.current]);
       // @ts-ignore
-      trRef?.current.nodes([shapeRef.current]);
-      // @ts-ignore
-      trRef?.current.getLayer().batchDraw();
+      transformerRef.current.getLayer().batchDraw();
     }
   }, [isSelected]);
+
+  const onTransformEnd = (): void => {
+    if (shapeRef.current) {
+      const node = shapeRef.current;
+      const scaleX = node.scaleX();
+      const scaleY = node.scaleY();
+      node.scaleX(1);
+      node.scaleY(1);
+      onChange({
+        ...shapeProps,
+        x: node.x(),
+        y: node.y(),
+        width: Math.max(5, node.width() * scaleX),
+        height: Math.max(node.height() * scaleY),
+      });
+    }
+  };
+
+  const onDragEnd = (e: Konva.KonvaEventObject<DragEvent>): void => {
+    onChange({
+      ...shapeProps,
+      x: e.target.x(),
+      y: e.target.y(),
+    });
+  };
 
   return (
     <>
@@ -33,57 +60,19 @@ const Rectangle: React.FC<RectProps> = ({
         onClick={onSelect}
         onTap={onSelect}
         ref={shapeRef}
-        {...shapeProps}
         draggable
         cornerRadius={[7, 7, 7, 7]}
-        onDragEnd={e => {
-          onChange({
-            ...shapeProps,
-            x: e.target.x(),
-            y: e.target.y(),
-          });
-        }}
-        // @ts-ignore
-        onTransformEnd={e => {
-          // transformer is changing scale of the node
-          // and NOT its width or height
-          // but in the store we have only width and height
-          // to match the data better we will reset scale on transform end
-          const node = shapeRef.current;
-          // @ts-ignore
-          const scaleX = node.scaleX();
-          // @ts-ignore
-          const scaleY = node.scaleY();
-
-          // we will reset it back
-          // @ts-ignore
-          node.scaleX(1);
-          // @ts-ignore
-          node.scaleY(1);
-          onChange({
-            ...shapeProps,
-            // @ts-ignore
-            x: node.x(),
-            // @ts-ignore
-            y: node.y(),
-            // set minimal value
-            // @ts-ignore
-            width: Math.max(5, node.width() * scaleX),
-            // @ts-ignore
-            height: Math.max(node.height() * scaleY),
-          });
-        }}
+        onDragEnd={onDragEnd}
+        onTransformEnd={onTransformEnd}
+        onChange={onChange}
+        {...shapeProps}
       />
       {isSelected && (
         <Transformer
-          ref={trRef}
-          boundBoxFunc={(oldBox, newBox) => {
-            // limit resize
-            if (newBox.width < 5 || newBox.height < 5) {
-              return oldBox;
-            }
-            return newBox;
-          }}
+          ref={transformerRef}
+          boundBoxFunc={(oldBox, newBox) =>
+            newBox.width < 5 || newBox.height < 5 ? oldBox : newBox
+          }
         />
       )}
     </>

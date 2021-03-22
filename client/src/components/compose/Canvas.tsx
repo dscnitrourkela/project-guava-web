@@ -1,7 +1,8 @@
 import React from 'react';
 
 // Libraries
-import {Stage, Layer, Image, Group, Rect, Text, Transformer} from 'react-konva';
+import {Stage, Layer, Image} from 'react-konva';
+import Konva from 'konva';
 import useImage from 'use-image';
 import {makeStyles} from '@material-ui/core';
 
@@ -29,15 +30,28 @@ function Canvas({
   const [image] = useImage(imageUrl);
   const [isSelected, selectShape] = React.useState(false);
 
-  // @ts-ignore
-  const checkDeselect = e => {
-    // deselect when clicked on empty area
-    selectShape(false);
-    // const clickedOnEmpty = e.target === e.target.getStage();
-    // if (clickedOnEmpty) {
-    //   selectShape(false);
-    // }
+  const checkDeselectMouse = (
+    event: Konva.KonvaEventObject<MouseEvent>,
+  ): void => {
+    const clickedOnEmpty = event.target === event.target.getStage();
+    if (clickedOnEmpty) {
+      selectShape(false);
+    }
   };
+  const checkDeselectTouch = (
+    event: Konva.KonvaEventObject<TouchEvent>,
+  ): void => {
+    const clickedOnEmpty = event.target === event.target.getStage();
+    if (clickedOnEmpty) {
+      selectShape(false);
+    }
+  };
+
+  // const onChange = (newAttrs: any) => {
+  //   const rects = rectangles.slice();
+  //   rects[i] = newAttrs;
+  //   setRectangles(rects);
+  // };
 
   const classes = useStyles();
   return (
@@ -49,8 +63,8 @@ function Canvas({
           width={imageWidth}
           x={imageX}
           y={imageY}
-          onMouseDown={checkDeselect}
-          onTouchStart={checkDeselect}
+          onMouseDown={checkDeselectMouse}
+          onTouchStart={checkDeselectTouch}
         />
       </Layer>
       <Layer>
@@ -61,6 +75,20 @@ function Canvas({
             x: (stageWidth - 300) / 2,
             y: (stageHeight - 50) / 2,
             fill: 'lightblue',
+          }}
+          isSelected={isSelected}
+          onSelect={() => {
+            selectShape(true);
+          }}
+          onChange={() => {}}
+        />
+        <Rectangle
+          shapeProps={{
+            width: 300,
+            height: 50,
+            x: (stageWidth - 300) / 2,
+            y: (stageHeight - 50) / 2,
+            fill: 'lightgreen',
           }}
           isSelected={isSelected}
           onSelect={() => {
