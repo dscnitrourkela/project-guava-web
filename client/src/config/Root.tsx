@@ -3,7 +3,7 @@ import {createStore, applyMiddleware, compose} from 'redux';
 import {Provider} from 'react-redux';
 import thunk from 'redux-thunk';
 
-import reducers from '../store/reducers';
+// import reducers from '../store/reducers';
 
 interface Props {
   initialState?: any;
@@ -16,7 +16,7 @@ const Root: React.FC<Props> = ({initialState = {}, children}) => {
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
   const store = createStore(
-    reducers,
+    // reducers,
     initialState,
     composeEnhancers(applyMiddleware(thunk)),
   );
