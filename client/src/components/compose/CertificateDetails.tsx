@@ -1,20 +1,40 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 // Libraries
 import {makeStyles, Container} from '@material-ui/core';
+
+// Context hooks
+import {useCompose} from '../../store/contexts';
+import {COMPOSE} from '../../store/types';
 
 // Components
 import {CustomTextInput, CustomDateTime} from '../shared';
 import DetailsMenu from './DetailsMenu';
 
 // Hooks
-import {useInput} from '../../hooks';
+// import {useInput} from '../../hooks';
 
 function CertificateDetails(): JSX.Element {
-  const [title, setTitle] = useInput('');
-  const [event, setEvent] = useInput('');
-  const [date, setDate] = useState<Date | null>(new Date(Date.now()));
-  const [time, setTime] = useState<Date | null>(new Date(Date.now()));
+  // const [title, setTitle] = useInput('');
+  // const [event, setEvent] = useInput('');
+  // const [date, setDate] = useState<Date | null>(new Date(Date.now()));
+  // const [time, setTime] = useState<Date | null>(new Date(Date.now()));
+
+  const [state, dispatch] = useCompose();
+
+  // @ts-ignore
+  const onInputChange = (e, key) =>
+    dispatch({
+      type: COMPOSE.FORM_UPDATE,
+      payload: {key, value: e.target.value},
+    });
+
+  // @ts-ignore
+  const onDateChange = (e, key) =>
+    dispatch({
+      type: COMPOSE.FORM_UPDATE,
+      payload: {key, value: e},
+    });
 
   const classes = useStyles();
   return (
@@ -22,8 +42,8 @@ function CertificateDetails(): JSX.Element {
       <DetailsMenu />
       <Container className={classes.root}>
         <CustomTextInput
-          value={title}
-          onChange={setTitle}
+          value={state.certificateDetails.title}
+          onChange={e => onInputChange(e, 'title')}
           required
           variant="outlined"
           label="Title"
@@ -31,8 +51,8 @@ function CertificateDetails(): JSX.Element {
         />
 
         <CustomTextInput
-          value={event}
-          onChange={setEvent}
+          value={state.certificateDetails.eventName}
+          onChange={e => onInputChange(e, 'eventName')}
           required
           variant="outlined"
           label="Event Name"
@@ -40,14 +60,14 @@ function CertificateDetails(): JSX.Element {
         />
 
         <CustomDateTime
-          selectedDate={date}
-          onChange={(e: Date | null): void => setDate(e)}
+          selectedDate={state.certificateDetails.date}
+          onChange={e => onDateChange(e, 'date')}
           type="date"
         />
 
         <CustomDateTime
-          selectedDate={time}
-          onChange={(e: Date | null): void => setTime(e)}
+          selectedDate={state.certificateDetails.time}
+          onChange={e => onDateChange(e, 'time')}
           type="time"
         />
       </Container>
