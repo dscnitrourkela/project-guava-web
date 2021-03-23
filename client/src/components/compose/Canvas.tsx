@@ -7,95 +7,84 @@ import useImage from 'use-image';
 import {makeStyles} from '@material-ui/core';
 
 // Components
-import Rectangle from './canvas/Rect';
+import TextBox from './canvas/Text';
 
-export interface CanvasProps {
-  imageUrl: string;
-  stageWidth: number;
-  imageAspectRatio: number;
-}
+// State Handlers
+import {useCompose} from '../../store/contexts';
+import {AuthorizerType} from '../../store/action-types';
 
-function Canvas({
-  imageUrl,
-  stageWidth,
-  imageAspectRatio,
-}: CanvasProps): JSX.Element {
-  // Constants
-  const stageHeight = 550;
-  const imageHeight = 550;
-  const imageWidth = imageAspectRatio * 550;
-  const imageX = (stageWidth - imageWidth) / 2;
-  const imageY = 0;
+function Canvas(): JSX.Element {
+  const [state] = useCompose();
+  const {
+    imageDimensions,
+    stageDimensions,
+    src: uploadImage,
+  } = state.certificateImageDetails;
+  const {authorizerDetails} = state;
 
-  const [image] = useImage(imageUrl);
-  const [isSelected, selectShape] = React.useState(false);
+  const stageHeight = stageDimensions.height;
+  const aspectRatio = imageDimensions.width / imageDimensions.height;
+  const imageRenderWidth = aspectRatio * stageDimensions.height;
+  const imageRenderHeight = stageDimensions.height;
+  const imagePositionX = 0;
+  const imagePositionY = 0;
+
+  const [image] = useImage(uploadImage);
+  const [selected, setSelected] = React.useState<string | null>(null);
+
+  const onSelect = (id: string): void => setSelected(id);
 
   const checkDeselectMouse = (
     event: Konva.KonvaEventObject<MouseEvent>,
   ): void => {
+    setSelected(null);
     const clickedOnEmpty = event.target === event.target.getStage();
     if (clickedOnEmpty) {
-      selectShape(false);
+      setSelected(null);
     }
   };
   const checkDeselectTouch = (
     event: Konva.KonvaEventObject<TouchEvent>,
   ): void => {
+    setSelected(null);
     const clickedOnEmpty = event.target === event.target.getStage();
     if (clickedOnEmpty) {
-      selectShape(false);
+      setSelected(null);
     }
   };
 
-  // const onChange = (newAttrs: any) => {
-  //   const rects = rectangles.slice();
-  //   rects[i] = newAttrs;
-  //   setRectangles(rects);
-  // };
-
   const classes = useStyles();
   return (
-    <Stage width={stageWidth} height={stageHeight} className={classes.stage}>
+    <Stage
+      width={imageRenderWidth}
+      height={stageHeight}
+      className={classes.stage}
+    >
       <Layer>
         <Image
           image={image}
-          height={imageHeight}
-          width={imageWidth}
-          x={imageX}
-          y={imageY}
+          height={imageRenderHeight}
+          width={imageRenderWidth}
+          x={imagePositionX}
+          y={imagePositionY}
+          onClick={checkDeselectMouse}
           onMouseDown={checkDeselectMouse}
           onTouchStart={checkDeselectTouch}
         />
       </Layer>
       <Layer>
-        <Rectangle
-          shapeProps={{
-            width: 300,
-            height: 50,
-            x: (stageWidth - 300) / 2,
-            y: (stageHeight - 50) / 2,
-            fill: 'lightblue',
-          }}
-          isSelected={isSelected}
-          onSelect={() => {
-            selectShape(true);
-          }}
-          onChange={() => {}}
-        />
-        <Rectangle
-          shapeProps={{
-            width: 300,
-            height: 50,
-            x: (stageWidth - 300) / 2,
-            y: (stageHeight - 50) / 2,
-            fill: 'lightgreen',
-          }}
-          isSelected={isSelected}
-          onSelect={() => {
-            selectShape(true);
-          }}
-          onChange={() => {}}
-        />
+        {authorizerDetails.length > 0 &&
+          authorizerDetails.map((authorizer: AuthorizerType) => (
+            <TextBox
+              isSelected={authorizer.id === selected}
+              onSelect={() => onSelect(authorizer.id)}
+              key={authorizer.id}
+              name={authorizer.name}
+              position={authorizer.position}
+              scale={authorizer.scale}
+              dimensions={authorizer.dimensions}
+            />
+          ))}
       </Layer>
     </Stage>
   );
@@ -105,8 +94,11 @@ export default Canvas;
 
 const useStyles = makeStyles(() => ({
   stage: {
-    width: '100%',
-    height: '550px',
     borderRadius: 6,
+    paddingLeft: 0,
+    paddingRight: 0,
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    display: 'block',
   },
 }));

@@ -17,13 +17,13 @@ export interface SelectOptions {
 }
 export interface TextInputProps extends OutlinedTextFieldProps {
   value: string | number;
-  onChange: (event: React.BaseSyntheticEvent) => void;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   errorText?: string;
   required?: boolean;
   Icon?: React.FC;
   multiline?: boolean;
   select?: boolean;
-  onSelect?: (event: React.BaseSyntheticEvent) => void;
+  onSelect?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   options?: SelectOptions[];
   validationRegex?: RegExp;
   validationError?: string;

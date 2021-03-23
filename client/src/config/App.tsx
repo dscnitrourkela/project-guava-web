@@ -4,6 +4,9 @@ import React from 'react';
 import {CssBaseline, useMediaQuery, ThemeProvider} from '@material-ui/core';
 import {Router, Route, Switch} from 'react-router-dom';
 
+// Context Providers
+import {ComposeProvider} from '../store/contexts';
+
 // Components
 import {HomePage, AuthPage, ComposePage} from '../screens';
 import {MobileView} from '../components';
@@ -29,7 +32,12 @@ function App(): JSX.Element {
             <Route exact path="/" component={HomePage} />
             <Route exact path="/signup" component={AuthPage} />
             <Route exact path="/login" component={AuthPage} />
-            <Route exact path="/compose" component={ComposePage} />
+
+            <Route exact path="/compose">
+              <ComposeProvider>
+                <ComposePage />
+              </ComposeProvider>
+            </Route>
           </Switch>
         </Router>
       )}

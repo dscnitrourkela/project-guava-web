@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 /* eslint-disable no-alert */
-import React, {useCallback, useState, useEffect, useRef} from 'react';
+import React, {useCallback} from 'react';
 
 // Library
 import {makeStyles, Typography} from '@material-ui/core';
@@ -11,47 +11,40 @@ import {useDropzone} from 'react-dropzone';
 // Components
 import Canvas from './Canvas';
 
+// State Handlers
+import {useCompose} from '../../store/contexts';
+import {COMPOSE} from '../../store/action-types';
+
 function Editor(): JSX.Element {
-  const [uploadImage, setUploadImage] = useState('');
-  const [imageDimensions, setImageDimensions] = useState<{
-    width: number;
-    height: number;
-  }>({width: 0, height: 0});
-  const [stageWidth, setStageWidth] = useState(500);
-  const stageRef = useRef(null);
+  const [state, dispatch] = useCompose();
+  const {src: uploadImage} = state.certificateImageDetails;
 
-  const onDrop = useCallback(acceptedFiles => {
-    // @ts-ignore
-    const file = acceptedFiles[0];
-    const i = new Image();
-    i.src = URL.createObjectURL(file);
+  const onDrop = useCallback(
+    acceptedFiles => {
+      // @ts-ignore
+      const file = acceptedFiles[0];
+      const i = new Image();
+      i.src = URL.createObjectURL(file);
 
-    i.onload = () => {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => {
-        setUploadImage(i.src);
-        setImageDimensions({width: i.width, height: i.height});
+      i.onload = () => {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => {
+          dispatch({
+            type: COMPOSE.ADD_IMAGE,
+            payload: {
+              src: i.src,
+              imageDimensions: {
+                width: i.width,
+                height: i.height,
+              },
+            },
+          });
+        };
       };
-    };
-    // acceptedFiles.forEach((file: File) => {
-    //   const reader = new FileReader();
-
-    //   reader.onabort = () => window.alert('file reading was aborted');
-    //   reader.onerror = () => window.alert('file reading has failed');
-    //   reader.onload = () => {
-    //     // Do whatever you want with the file contents
-    //     const formData = new FormData();
-    //     formData.append('datafiles', file);
-    //     console.log(file);
-    //     setUploadImage(URL.createObjectURL(file));
-    //   };
-    //   reader.readAsArrayBuffer(file);
-    // });
-  }, []);
-
-  // @ts-ignore
-  const checkSize = () => setStageWidth(stageRef.current?.offsetWidth);
+    },
+    [dispatch],
+  );
 
   const {getRootProps, getInputProps} = useDropzone({
     onDrop,
@@ -59,24 +52,13 @@ function Editor(): JSX.Element {
     accept: 'image/*',
   });
 
-  useEffect(() => {
-    checkSize();
-    window.addEventListener('resize', checkSize);
-
-    return window.removeEventListener('resize', checkSize);
-  }, []);
-
   const classes = useStyles();
   return (
     <>
       {uploadImage ? (
-        <Canvas
-          imageAspectRatio={imageDimensions.width / imageDimensions.height}
-          stageWidth={stageWidth}
-          imageUrl={uploadImage}
-        />
+        <Canvas />
       ) : (
-        <div ref={stageRef} className={classes.root}>
+        <div className={classes.root}>
           <div {...getRootProps()}>
             <input {...getInputProps()} />
             <Typography variant="body1" className={classes.primaryText}>

@@ -41,5 +41,6 @@ module.exports = {
     'no-plusplus': 0,
     'react/prop-types': 0,
     'import/extensions': 0,
+    'import/no-cycle': 0,
   },
 };
