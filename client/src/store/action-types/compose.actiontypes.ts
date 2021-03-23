@@ -7,6 +7,17 @@ export const initialState = {
     time: new Date(Date.now()),
   },
   authorizerDetails: [],
+  certificateImageDetails: {
+    src: '',
+    imageDimensions: {
+      width: 0,
+      height: 0,
+    },
+    stageDimensions: {
+      width: 550,
+      height: 550,
+    },
+  },
 };
 
 // ======================== Initial State Types ======================== //
@@ -18,6 +29,11 @@ export interface AuthorizerType {
   position: {x: number; y: number};
 }
 
+export interface DimensionsType {
+  width: number;
+  height: number;
+}
+
 export interface InitialStateType {
   certificateDetails: {
     title: string;
@@ -26,6 +42,11 @@ export interface InitialStateType {
     time: Date;
   };
   authorizerDetails: AuthorizerType[] | [];
+  certificateImageDetails: {
+    src: string;
+    imageDimensions: DimensionsType;
+    stageDimensions: DimensionsType;
+  };
 }
 
 // ======================== Action Types ======================== //
@@ -34,6 +55,10 @@ export enum COMPOSE {
   ADD_NEW_AUTHORIZER = 'Add New Authorizer',
   REMOVE_EXISTING_AUTHORIZER = 'Remove Existing Authorizer',
   UPDATE_AUTHORIZER_DETAILS = 'Update Authorizer Details',
+  ADD_IMAGE = 'Add Image to Canvas',
+  REMOVE_IMAGE = 'Remove Canvas Image',
+  UPDATE_IMAGE_DIMENSIONS = 'Add Image Dimensions',
+  UPDATE_STAGE_DIMENSIONS = 'Update Stage Dimensions',
 }
 
 // ======================== Action Interfaces ======================== //
@@ -59,7 +84,27 @@ export interface UpdateAuthorizerActionType {
   };
 }
 
+export interface AddCertificateImage {
+  type: COMPOSE.ADD_IMAGE;
+  payload: {
+    src: string;
+    imageDimensions: DimensionsType;
+  };
+}
+
+export interface RemoveCertificateImage {
+  type: COMPOSE.REMOVE_IMAGE;
+}
+
+export interface UpdateStageDimensions {
+  type: COMPOSE.UPDATE_STAGE_DIMENSIONS;
+  payload: DimensionsType;
+}
+
 export type ActionType =
   | CertificateDetailsActionType
   | AddRemoveAuthorizerActionType
-  | UpdateAuthorizerActionType;
+  | UpdateAuthorizerActionType
+  | AddCertificateImage
+  | RemoveCertificateImage
+  | UpdateStageDimensions;

@@ -9,25 +9,26 @@ import {makeStyles} from '@material-ui/core';
 // Components
 import Rectangle from './canvas/Rect';
 
-export interface CanvasProps {
-  imageUrl: string;
-  stageWidth: number;
-  imageAspectRatio: number;
-}
+// State Handlers
+import {useCompose} from '../../store/contexts';
+// import {COMPOSE} from '../../store/action-types';
 
-function Canvas({
-  imageUrl,
-  stageWidth,
-  imageAspectRatio,
-}: CanvasProps): JSX.Element {
-  // Constants
-  const stageHeight = 550;
-  const imageHeight = 550;
-  const imageWidth = imageAspectRatio * 550;
-  const imageX = (stageWidth - imageWidth) / 2;
-  const imageY = 0;
+function Canvas(): JSX.Element {
+  const [state] = useCompose();
+  const {
+    imageDimensions,
+    stageDimensions,
+    src: uploadImage,
+  } = state.certificateImageDetails;
 
-  const [image] = useImage(imageUrl);
+  const stageHeight = stageDimensions.height;
+  const aspectRatio = imageDimensions.width / imageDimensions.height;
+  const imageRenderWidth = aspectRatio * stageDimensions.height;
+  const imageRenderHeight = stageDimensions.height;
+  const imagePositionX = 0;
+  const imagePositionY = 0;
+
+  const [image] = useImage(uploadImage);
   const [isSelected, selectShape] = React.useState(false);
 
   const checkDeselectMouse = (
@@ -55,14 +56,18 @@ function Canvas({
 
   const classes = useStyles();
   return (
-    <Stage width={stageWidth} height={stageHeight} className={classes.stage}>
+    <Stage
+      width={imageRenderWidth}
+      height={stageHeight}
+      className={classes.stage}
+    >
       <Layer>
         <Image
           image={image}
-          height={imageHeight}
-          width={imageWidth}
-          x={imageX}
-          y={imageY}
+          height={imageRenderHeight}
+          width={imageRenderWidth}
+          x={imagePositionX}
+          y={imagePositionY}
           onMouseDown={checkDeselectMouse}
           onTouchStart={checkDeselectTouch}
         />
@@ -72,8 +77,8 @@ function Canvas({
           shapeProps={{
             width: 300,
             height: 50,
-            x: (stageWidth - 300) / 2,
-            y: (stageHeight - 50) / 2,
+            x: (imageRenderWidth - 300) / 2,
+            y: (imageRenderHeight - 50) / 2,
             fill: 'lightblue',
           }}
           isSelected={isSelected}
@@ -86,8 +91,8 @@ function Canvas({
           shapeProps={{
             width: 300,
             height: 50,
-            x: (stageWidth - 300) / 2,
-            y: (stageHeight - 50) / 2,
+            x: (imageRenderWidth - 300) / 2,
+            y: (imageRenderHeight - 50) / 2,
             fill: 'lightgreen',
           }}
           isSelected={isSelected}
@@ -105,8 +110,11 @@ export default Canvas;
 
 const useStyles = makeStyles(() => ({
   stage: {
-    width: '100%',
-    height: '550px',
     borderRadius: 6,
+    paddingLeft: 0,
+    paddingRight: 0,
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    display: 'block',
   },
 }));

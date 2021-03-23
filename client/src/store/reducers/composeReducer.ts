@@ -49,6 +49,32 @@ export default function composeReducer(
               : authorizer,
         ),
       };
+    case COMPOSE.ADD_IMAGE:
+      return {
+        ...state,
+        certificateImageDetails: {
+          ...state.certificateImageDetails,
+          src: action.payload.src,
+          imageDimensions: action.payload.imageDimensions,
+        },
+      };
+    case COMPOSE.REMOVE_IMAGE:
+      return {
+        ...state,
+        certificateImageDetails: {
+          ...state.certificateImageDetails,
+          src: '',
+          imageDimensions: {width: 0, height: 0},
+        },
+      };
+    case COMPOSE.UPDATE_STAGE_DIMENSIONS:
+      return {
+        ...state,
+        certificateImageDetails: {
+          ...state.certificateImageDetails,
+          stageDimensions: action.payload,
+        },
+      };
     default:
       return state;
   }
