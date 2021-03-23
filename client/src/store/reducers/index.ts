@@ -1,2 +1,2 @@
 /* eslint-disable import/prefer-default-export */
-export * from './composeReducer';
+export {default as composeReducer} from './composeReducer';

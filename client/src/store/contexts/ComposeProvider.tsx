@@ -1,36 +1,8 @@
 import React, {useReducer, useMemo, createContext, useContext} from 'react';
 
-// Reducer
-import {composeReducer, ActionType} from '../reducers';
-import {InitialStateType} from '../action-types';
-
-const initialState = {
-  certificateDetails: {
-    title: '',
-    eventName: '',
-    date: new Date(Date.now()),
-    time: new Date(Date.now()),
-  },
-  authorizerDetails: [],
-};
-
-// export interface AuthorizerType {
-//   id: string;
-//   name: string;
-//   message: string;
-//   scale: number;
-//   position: {x: number; y: number};
-// }
-
-// export interface InitialStateType {
-//   certificateDetails: {
-//     title: string;
-//     eventName: string;
-//     date: Date;
-//     time: Date;
-//   };
-//   authorizerDetails: AuthorizerType[];
-// }
+// Reducer, Initial State, Types
+import {composeReducer} from '../reducers';
+import {initialState, InitialStateType, ActionType} from '../action-types';
 
 const ComposeContext = createContext(initialState);
 

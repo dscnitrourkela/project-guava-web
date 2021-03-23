@@ -1,17 +1,11 @@
-import {COMPOSE} from '../types';
-import {InitialStateType} from '../action-types';
+import {InitialStateType, COMPOSE, ActionType} from '../action-types';
 
-export interface ActionType {
-  type: string;
-  payload?: any;
-}
-
-export function composeReducer(
+export default function composeReducer(
   state: InitialStateType,
   action: ActionType,
 ): InitialStateType {
   switch (action.type) {
-    case COMPOSE.FORM_UPDATE:
+    case COMPOSE.UPDATE_CERTIFICATE_DETAILS:
       return {
         ...state,
         certificateDetails: {
