@@ -37,7 +37,7 @@ function CustomButton({
         <Link to={link}>
           <Button
             className={`${classes.button} ${className}`}
-            variant="text"
+            variant="outlined"
             color="primary"
           >
             {label}
