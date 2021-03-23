@@ -27,6 +27,20 @@ export default function composeReducer(
           src: action.payload.src,
           imageDimensions: action.payload.imageDimensions,
         },
+        recipientName: {
+          ...state.recipientName,
+          position: {
+            x: action.payload.imageDimensions.width / 2,
+            y: action.payload.imageDimensions.height / 2,
+          },
+        },
+        validationDetails: {
+          ...state.validationDetails,
+          position: {
+            x: action.payload.imageDimensions.width / 2,
+            y: action.payload.imageDimensions.height / 2,
+          },
+        },
       };
 
     case COMPOSE.REMOVE_IMAGE:
@@ -106,6 +120,34 @@ export default function composeReducer(
               ? {...authorizer, scale: action.payload.scale}
               : authorizer,
         ),
+      };
+
+    case COMPOSE.UPDATE_RECIPIENT_DETAILS:
+      return {
+        ...state,
+        recipientName: {
+          ...state.recipientName,
+          position: action.payload.position
+            ? action.payload.position
+            : state.recipientName.position,
+          scale: action.payload.scale
+            ? action.payload.scale
+            : state.recipientName.scale,
+        },
+      };
+
+    case COMPOSE.UPDATE_VALIDATION_DETAILS:
+      return {
+        ...state,
+        validationDetails: {
+          ...state.validationDetails,
+          position: action.payload.position
+            ? action.payload.position
+            : state.validationDetails.position,
+          scale: action.payload.scale
+            ? action.payload.scale
+            : state.validationDetails.scale,
+        },
       };
 
     default:

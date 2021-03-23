@@ -17,25 +17,50 @@ export const initialState = {
       height: 550,
     },
   },
-  // recipientName: {
-  //   position: {x:0}
-  // },
+  recipientName: {
+    position: {x: 0, y: 0},
+    scale: {x: 1, y: 1},
+    dimensions: {width: 200, height: 50},
+    name: 'Recipient Name',
+    id: 'recipient-name-id',
+  },
+  validationDetails: {
+    position: {x: 0, y: 0},
+    scale: {x: 1, y: 1},
+    dimensions: {width: 200, height: 100},
+    name: 'Certificate ID: \n Issue Date: ',
+    id: 'certificate-validation-id',
+  },
   authorizerDetails: [],
 };
 
 // ======================== Initial State Types ======================== //
-export interface AuthorizerType {
-  id: string;
-  name: string;
-  message: string;
-  scale: {x: number; y: number};
-  position: {x: number; y: number};
-  dimensions: {width: number; height: number};
+
+export interface CoordinatesType {
+  x: number;
+  y: number;
 }
 
 export interface DimensionsType {
   width: number;
   height: number;
+}
+
+export interface AuthorizerType {
+  id: string;
+  name: string;
+  message: string;
+  scale: CoordinatesType;
+  position: CoordinatesType;
+  dimensions: DimensionsType;
+}
+
+export interface RecipientDetailsType {
+  position: CoordinatesType;
+  scale: CoordinatesType;
+  dimensions: DimensionsType;
+  name: string;
+  id: string;
 }
 
 export interface InitialStateType {
@@ -45,12 +70,14 @@ export interface InitialStateType {
     date: Date;
     time: Date;
   };
-  authorizerDetails: AuthorizerType[] | [];
   certificateImageDetails: {
     src: string;
     imageDimensions: DimensionsType;
     stageDimensions: DimensionsType;
   };
+  authorizerDetails: AuthorizerType[] | [];
+  recipientName: RecipientDetailsType;
+  validationDetails: RecipientDetailsType;
 }
 
 // ======================== Action Types ======================== //
@@ -65,6 +92,8 @@ export enum COMPOSE {
   REMOVE_IMAGE = 'Remove Canvas Image',
   UPDATE_IMAGE_DIMENSIONS = 'Add Image Dimensions',
   UPDATE_STAGE_DIMENSIONS = 'Update Stage Dimensions',
+  UPDATE_RECIPIENT_DETAILS = 'Update Recipient Details',
+  UPDATE_VALIDATION_DETAILS = 'Update Validation Details',
 }
 
 // ======================== Action Interfaces ======================== //
@@ -123,6 +152,24 @@ export interface UpdateStageDimensions {
   payload: DimensionsType;
 }
 
+export interface UpdateRecipientDetails {
+  type: COMPOSE.UPDATE_RECIPIENT_DETAILS;
+  payload: {
+    id: string;
+    position?: CoordinatesType;
+    scale?: CoordinatesType;
+  };
+}
+
+export interface UpdateValidationDetails {
+  type: COMPOSE.UPDATE_VALIDATION_DETAILS;
+  payload: {
+    id: string;
+    position?: CoordinatesType;
+    scale?: CoordinatesType;
+  };
+}
+
 export type ActionType =
   | CertificateDetailsActionType
   | AddRemoveAuthorizerActionType
@@ -131,4 +178,6 @@ export type ActionType =
   | UpdateAuthorizerScale
   | AddCertificateImage
   | RemoveCertificateImage
-  | UpdateStageDimensions;
+  | UpdateStageDimensions
+  | UpdateRecipientDetails
+  | UpdateValidationDetails;

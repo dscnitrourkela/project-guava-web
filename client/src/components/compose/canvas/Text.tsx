@@ -28,6 +28,7 @@ export interface TextProps {
   dispatch: any;
   transformType: string;
   dragType: string;
+  colour?: string;
 }
 
 const Rectangle: React.FC<TextProps> = ({
@@ -38,10 +39,10 @@ const Rectangle: React.FC<TextProps> = ({
   scale,
   name,
   id,
-  // onDragEnd,
   dispatch,
   transformType,
   dragType,
+  colour,
 }) => {
   const shapeRef = React.useRef<Konva.Group>(null);
   const transformerRef = React.useRef<Konva.Transformer>(null);
@@ -95,7 +96,7 @@ const Rectangle: React.FC<TextProps> = ({
         <Rect
           width={dimensions.width}
           height={dimensions.height}
-          fill="lightblue"
+          fill={colour || 'lightblue'}
           cornerRadius={[7, 7, 7, 7]}
         />
         <Text
@@ -110,6 +111,12 @@ const Rectangle: React.FC<TextProps> = ({
       {isSelected && (
         <Transformer
           ref={transformerRef}
+          enabledAnchors={[
+            'top-left',
+            'top-right',
+            'bottom-left',
+            'bottom-right',
+          ]}
           boundBoxFunc={(oldBox, newBox) =>
             newBox.width < 5 || newBox.height < 5 ? oldBox : newBox
           }

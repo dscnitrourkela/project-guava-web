@@ -19,7 +19,15 @@ function Canvas(): JSX.Element {
     stageDimensions,
     src: uploadImage,
   } = state.certificateImageDetails;
-  const {authorizerDetails} = state;
+  const {authorizerDetails, recipientName, validationDetails} = state;
+
+  const [isRecipientNameSelected, setRecipientNameSelected] = React.useState(
+    false,
+  );
+  const [
+    isValidationDetailsSelected,
+    setValidationDetailsSelected,
+  ] = React.useState(false);
 
   const stageHeight = stageDimensions.height;
   const aspectRatio = imageDimensions.width / imageDimensions.height;
@@ -32,7 +40,11 @@ function Canvas(): JSX.Element {
   const [selected, setSelected] = React.useState<string | null>(null);
 
   const onSelect = (id: string): void => setSelected(id);
-  const checkDeselect = () => setSelected(null);
+  const checkDeselect = () => {
+    setSelected(null);
+    setRecipientNameSelected(false);
+    setValidationDetailsSelected(false);
+  };
 
   const classes = useStyles();
   return (
@@ -51,18 +63,39 @@ function Canvas(): JSX.Element {
           onMouseDown={checkDeselect}
           onTouchStart={checkDeselect}
         />
-      </Layer>
+        {/* </Layer> */}
 
-      {/* <Layer>
+        {/* <Layer> */}
         <TextBox
-          isSelected={false}
-          onSelect={() => {}}
-          name='Participant Name'
-          // position={}
+          name={validationDetails.name}
+          position={validationDetails.position}
+          scale={validationDetails.scale}
+          dimensions={validationDetails.dimensions}
+          id={validationDetails.id}
+          colour="red"
+          isSelected={isValidationDetailsSelected}
+          onSelect={() => setValidationDetailsSelected(true)}
+          dispatch={dispatch}
+          dragType={COMPOSE.UPDATE_VALIDATION_DETAILS}
+          transformType={COMPOSE.UPDATE_VALIDATION_DETAILS}
         />
-      </Layer> */}
 
-      <Layer>
+        <TextBox
+          name={recipientName.name}
+          position={recipientName.position}
+          scale={recipientName.scale}
+          dimensions={recipientName.dimensions}
+          id={recipientName.id}
+          colour="lightgreen"
+          isSelected={isRecipientNameSelected}
+          onSelect={() => setRecipientNameSelected(true)}
+          dispatch={dispatch}
+          dragType={COMPOSE.UPDATE_RECIPIENT_DETAILS}
+          transformType={COMPOSE.UPDATE_RECIPIENT_DETAILS}
+        />
+        {/* </Layer> */}
+
+        {/* <Layer> */}
         {authorizerDetails.length > 0 &&
           authorizerDetails.map((authorizer: AuthorizerType) => (
             <TextBox
