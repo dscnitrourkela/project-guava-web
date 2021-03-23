@@ -6,7 +6,6 @@ export const initialState = {
     date: new Date(Date.now()),
     time: new Date(Date.now()),
   },
-  authorizerDetails: [],
   certificateImageDetails: {
     src: '',
     imageDimensions: {
@@ -18,6 +17,10 @@ export const initialState = {
       height: 550,
     },
   },
+  // recipientName: {
+  //   position: {x:0}
+  // },
+  authorizerDetails: [],
 };
 
 // ======================== Initial State Types ======================== //
@@ -56,6 +59,8 @@ export enum COMPOSE {
   ADD_NEW_AUTHORIZER = 'Add New Authorizer',
   REMOVE_EXISTING_AUTHORIZER = 'Remove Existing Authorizer',
   UPDATE_AUTHORIZER_DETAILS = 'Update Authorizer Details',
+  UPDATE_AUTHORIZER_POSITION = 'Update Authorizer Position Details',
+  UPDATE_AUTHORIZER_SCALE = 'Update Authorizer Scale Details',
   ADD_IMAGE = 'Add Image to Canvas',
   REMOVE_IMAGE = 'Remove Canvas Image',
   UPDATE_IMAGE_DIMENSIONS = 'Add Image Dimensions',
@@ -85,6 +90,22 @@ export interface UpdateAuthorizerActionType {
   };
 }
 
+export interface UpdateAuthorizerPosition {
+  type: COMPOSE.UPDATE_AUTHORIZER_POSITION;
+  payload: {
+    id: string;
+    position: {x: number; y: number};
+  };
+}
+
+export interface UpdateAuthorizerScale {
+  type: COMPOSE.UPDATE_AUTHORIZER_SCALE;
+  payload: {
+    id: string;
+    scale: {x: number; y: number};
+  };
+}
+
 export interface AddCertificateImage {
   type: COMPOSE.ADD_IMAGE;
   payload: {
@@ -106,6 +127,8 @@ export type ActionType =
   | CertificateDetailsActionType
   | AddRemoveAuthorizerActionType
   | UpdateAuthorizerActionType
+  | UpdateAuthorizerPosition
+  | UpdateAuthorizerScale
   | AddCertificateImage
   | RemoveCertificateImage
   | UpdateStageDimensions;

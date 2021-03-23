@@ -19,6 +19,35 @@ export default function composeReducer(
         },
       };
 
+    case COMPOSE.ADD_IMAGE:
+      return {
+        ...state,
+        certificateImageDetails: {
+          ...state.certificateImageDetails,
+          src: action.payload.src,
+          imageDimensions: action.payload.imageDimensions,
+        },
+      };
+
+    case COMPOSE.REMOVE_IMAGE:
+      return {
+        ...state,
+        certificateImageDetails: {
+          ...state.certificateImageDetails,
+          src: '',
+          imageDimensions: {width: 0, height: 0},
+        },
+      };
+
+    case COMPOSE.UPDATE_STAGE_DIMENSIONS:
+      return {
+        ...state,
+        certificateImageDetails: {
+          ...state.certificateImageDetails,
+          stageDimensions: action.payload,
+        },
+      };
+
     case COMPOSE.ADD_NEW_AUTHORIZER:
       return {
         ...state,
@@ -57,33 +86,26 @@ export default function composeReducer(
         ),
       };
 
-    case COMPOSE.ADD_IMAGE:
+    case COMPOSE.UPDATE_AUTHORIZER_POSITION:
       return {
         ...state,
-        certificateImageDetails: {
-          ...state.certificateImageDetails,
-          src: action.payload.src,
-          imageDimensions: action.payload.imageDimensions,
-        },
+        authorizerDetails: state.authorizerDetails.map(
+          (authorizer: AuthorizerType) =>
+            authorizer.id === action.payload.id
+              ? {...authorizer, position: action.payload.position}
+              : authorizer,
+        ),
       };
 
-    case COMPOSE.REMOVE_IMAGE:
+    case COMPOSE.UPDATE_AUTHORIZER_SCALE:
       return {
         ...state,
-        certificateImageDetails: {
-          ...state.certificateImageDetails,
-          src: '',
-          imageDimensions: {width: 0, height: 0},
-        },
-      };
-
-    case COMPOSE.UPDATE_STAGE_DIMENSIONS:
-      return {
-        ...state,
-        certificateImageDetails: {
-          ...state.certificateImageDetails,
-          stageDimensions: action.payload,
-        },
+        authorizerDetails: state.authorizerDetails.map(
+          (authorizer: AuthorizerType) =>
+            authorizer.id === action.payload.id
+              ? {...authorizer, scale: action.payload.scale}
+              : authorizer,
+        ),
       };
 
     default:

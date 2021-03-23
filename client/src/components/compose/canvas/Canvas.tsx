@@ -2,7 +2,6 @@ import React from 'react';
 
 // Libraries
 import {Stage, Layer, Image} from 'react-konva';
-import Konva from 'konva';
 import useImage from 'use-image';
 import {makeStyles} from '@material-ui/core';
 
@@ -11,10 +10,10 @@ import TextBox from './Text';
 
 // State Handlers
 import {useCompose} from '../../../store/contexts';
-import {AuthorizerType} from '../../../store/action-types';
+import {AuthorizerType, COMPOSE} from '../../../store/action-types';
 
 function Canvas(): JSX.Element {
-  const [state] = useCompose();
+  const [state, dispatch] = useCompose();
   const {
     imageDimensions,
     stageDimensions,
@@ -33,25 +32,7 @@ function Canvas(): JSX.Element {
   const [selected, setSelected] = React.useState<string | null>(null);
 
   const onSelect = (id: string): void => setSelected(id);
-
-  const checkDeselectMouse = (
-    event: Konva.KonvaEventObject<MouseEvent>,
-  ): void => {
-    setSelected(null);
-    const clickedOnEmpty = event.target === event.target.getStage();
-    if (clickedOnEmpty) {
-      setSelected(null);
-    }
-  };
-  const checkDeselectTouch = (
-    event: Konva.KonvaEventObject<TouchEvent>,
-  ): void => {
-    setSelected(null);
-    const clickedOnEmpty = event.target === event.target.getStage();
-    if (clickedOnEmpty) {
-      setSelected(null);
-    }
-  };
+  const checkDeselect = () => setSelected(null);
 
   const classes = useStyles();
   return (
@@ -67,22 +48,35 @@ function Canvas(): JSX.Element {
           width={imageRenderWidth}
           x={imagePositionX}
           y={imagePositionY}
-          onClick={checkDeselectMouse}
-          onMouseDown={checkDeselectMouse}
-          onTouchStart={checkDeselectTouch}
+          onMouseDown={checkDeselect}
+          onTouchStart={checkDeselect}
         />
       </Layer>
+
+      {/* <Layer>
+        <TextBox
+          isSelected={false}
+          onSelect={() => {}}
+          name='Participant Name'
+          // position={}
+        />
+      </Layer> */}
+
       <Layer>
         {authorizerDetails.length > 0 &&
           authorizerDetails.map((authorizer: AuthorizerType) => (
             <TextBox
+              key={authorizer.id}
               isSelected={authorizer.id === selected}
               onSelect={() => onSelect(authorizer.id)}
-              key={authorizer.id}
               name={authorizer.name}
               position={authorizer.position}
               scale={authorizer.scale}
               dimensions={authorizer.dimensions}
+              id={authorizer.id}
+              dispatch={dispatch}
+              dragType={COMPOSE.UPDATE_AUTHORIZER_POSITION}
+              transformType={COMPOSE.UPDATE_AUTHORIZER_SCALE}
             />
           ))}
       </Layer>
