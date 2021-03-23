@@ -42,7 +42,7 @@ const Rectangle: React.FC<TextProps> = ({
   }, [isSelected]);
 
   const onDragEnd = (e: Konva.KonvaEventObject<DragEvent>): void => {
-    console.log(e.target.x());
+    console.log(e.target.x(), e.target.y());
     // TODO: Store x and y positions for this authorizer
   };
 
@@ -56,7 +56,7 @@ const Rectangle: React.FC<TextProps> = ({
 
   // TODO: Store initial width and height of the text box
 
-  const commonProps = {
+  const groupProps = {
     width: dimensions.width,
     height: dimensions.height,
     offsetX: dimensions.width / 2,
@@ -76,10 +76,17 @@ const Rectangle: React.FC<TextProps> = ({
         draggable
         onDragEnd={onDragEnd}
         onTransformEnd={onTransformEnd}
+        {...groupProps}
       >
-        <Rect {...commonProps} fill="lightblue" cornerRadius={[7, 7, 7, 7]} />
+        <Rect
+          width={dimensions.width}
+          height={dimensions.height}
+          fill="lightblue"
+          cornerRadius={[7, 7, 7, 7]}
+        />
         <Text
-          {...commonProps}
+          width={dimensions.width}
+          height={dimensions.height}
           align="center"
           verticalAlign="middle"
           text={name}

@@ -18,6 +18,7 @@ export default function composeReducer(
           [action.payload.key]: action.payload.value,
         },
       };
+
     case COMPOSE.ADD_NEW_AUTHORIZER:
       return {
         ...state,
@@ -36,6 +37,7 @@ export default function composeReducer(
           },
         ],
       };
+
     case COMPOSE.REMOVE_EXISTING_AUTHORIZER:
       return {
         ...state,
@@ -43,6 +45,7 @@ export default function composeReducer(
           authorizer => authorizer.id !== action.payload.id,
         ),
       };
+
     case COMPOSE.UPDATE_AUTHORIZER_DETAILS:
       return {
         ...state,
@@ -53,6 +56,7 @@ export default function composeReducer(
               : authorizer,
         ),
       };
+
     case COMPOSE.ADD_IMAGE:
       return {
         ...state,
@@ -62,6 +66,7 @@ export default function composeReducer(
           imageDimensions: action.payload.imageDimensions,
         },
       };
+
     case COMPOSE.REMOVE_IMAGE:
       return {
         ...state,
@@ -71,6 +76,7 @@ export default function composeReducer(
           imageDimensions: {width: 0, height: 0},
         },
       };
+
     case COMPOSE.UPDATE_STAGE_DIMENSIONS:
       return {
         ...state,
@@ -79,6 +85,7 @@ export default function composeReducer(
           stageDimensions: action.payload,
         },
       };
+
     default:
       return state;
   }
