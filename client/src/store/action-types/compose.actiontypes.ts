@@ -25,8 +25,9 @@ export interface AuthorizerType {
   id: string;
   name: string;
   message: string;
-  scale: number;
+  scale: {x: number; y: number};
   position: {x: number; y: number};
+  dimensions: {width: number; height: number};
 }
 
 export interface DimensionsType {

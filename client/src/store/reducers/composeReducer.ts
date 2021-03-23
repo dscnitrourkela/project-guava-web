@@ -27,8 +27,12 @@ export default function composeReducer(
             id: action.payload.id,
             name: '',
             message: '',
-            scale: 1,
-            position: {x: 0, y: 0},
+            scale: {x: 1, y: 1},
+            position: {
+              x: state.certificateImageDetails.imageDimensions.width / 2,
+              y: state.certificateImageDetails.imageDimensions.height / 2,
+            },
+            dimensions: {width: 200, height: 50},
           },
         ],
       };

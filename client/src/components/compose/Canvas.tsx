@@ -7,11 +7,11 @@ import useImage from 'use-image';
 import {makeStyles} from '@material-ui/core';
 
 // Components
-import Rectangle from './canvas/Rect';
+import TextBox from './canvas/Text';
 
 // State Handlers
 import {useCompose} from '../../store/contexts';
-// import {COMPOSE} from '../../store/action-types';
+import {AuthorizerType} from '../../store/action-types';
 
 function Canvas(): JSX.Element {
   const [state] = useCompose();
@@ -20,6 +20,7 @@ function Canvas(): JSX.Element {
     stageDimensions,
     src: uploadImage,
   } = state.certificateImageDetails;
+  const {authorizerDetails} = state;
 
   const stageHeight = stageDimensions.height;
   const aspectRatio = imageDimensions.width / imageDimensions.height;
@@ -29,30 +30,28 @@ function Canvas(): JSX.Element {
   const imagePositionY = 0;
 
   const [image] = useImage(uploadImage);
-  const [isSelected, selectShape] = React.useState(false);
+  const [selected, setSelected] = React.useState<string | null>(null);
+
+  const onSelect = (id: string): void => setSelected(id);
 
   const checkDeselectMouse = (
     event: Konva.KonvaEventObject<MouseEvent>,
   ): void => {
+    setSelected(null);
     const clickedOnEmpty = event.target === event.target.getStage();
     if (clickedOnEmpty) {
-      selectShape(false);
+      setSelected(null);
     }
   };
   const checkDeselectTouch = (
     event: Konva.KonvaEventObject<TouchEvent>,
   ): void => {
+    setSelected(null);
     const clickedOnEmpty = event.target === event.target.getStage();
     if (clickedOnEmpty) {
-      selectShape(false);
+      setSelected(null);
     }
   };
-
-  // const onChange = (newAttrs: any) => {
-  //   const rects = rectangles.slice();
-  //   rects[i] = newAttrs;
-  //   setRectangles(rects);
-  // };
 
   const classes = useStyles();
   return (
@@ -68,39 +67,24 @@ function Canvas(): JSX.Element {
           width={imageRenderWidth}
           x={imagePositionX}
           y={imagePositionY}
+          onClick={checkDeselectMouse}
           onMouseDown={checkDeselectMouse}
           onTouchStart={checkDeselectTouch}
         />
       </Layer>
       <Layer>
-        <Rectangle
-          shapeProps={{
-            width: 300,
-            height: 50,
-            x: (imageRenderWidth - 300) / 2,
-            y: (imageRenderHeight - 50) / 2,
-            fill: 'lightblue',
-          }}
-          isSelected={isSelected}
-          onSelect={() => {
-            selectShape(true);
-          }}
-          onChange={() => {}}
-        />
-        <Rectangle
-          shapeProps={{
-            width: 300,
-            height: 50,
-            x: (imageRenderWidth - 300) / 2,
-            y: (imageRenderHeight - 50) / 2,
-            fill: 'lightgreen',
-          }}
-          isSelected={isSelected}
-          onSelect={() => {
-            selectShape(true);
-          }}
-          onChange={() => {}}
-        />
+        {authorizerDetails.length > 0 &&
+          authorizerDetails.map((authorizer: AuthorizerType) => (
+            <TextBox
+              isSelected={authorizer.id === selected}
+              onSelect={() => onSelect(authorizer.id)}
+              key={authorizer.id}
+              name={authorizer.name}
+              position={authorizer.position}
+              scale={authorizer.scale}
+              dimensions={authorizer.dimensions}
+            />
+          ))}
       </Layer>
     </Stage>
   );
