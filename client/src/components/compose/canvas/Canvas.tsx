@@ -7,11 +7,11 @@ import useImage from 'use-image';
 import {makeStyles} from '@material-ui/core';
 
 // Components
-import TextBox from './canvas/Text';
+import TextBox from './Text';
 
 // State Handlers
-import {useCompose} from '../../store/contexts';
-import {AuthorizerType} from '../../store/action-types';
+import {useCompose} from '../../../store/contexts';
+import {AuthorizerType} from '../../../store/action-types';
 
 function Canvas(): JSX.Element {
   const [state] = useCompose();

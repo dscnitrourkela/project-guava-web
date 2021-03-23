@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable no-alert */
 import React, {useCallback} from 'react';
 
 // Library
@@ -9,7 +7,7 @@ import {faCloudUploadAlt} from '@fortawesome/free-solid-svg-icons';
 import {useDropzone} from 'react-dropzone';
 
 // Components
-import Canvas from './Canvas';
+import Canvas from './canvas/Canvas';
 
 // State Handlers
 import {useCompose} from '../../store/contexts';
