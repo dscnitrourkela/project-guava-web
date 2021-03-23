@@ -9,11 +9,8 @@ import {faTrashAlt} from '@fortawesome/free-solid-svg-icons';
 import {CustomTextInput} from '../shared';
 
 // Types
-// import {useCompose} from '../../store/contexts';
-import {AuthorizerType} from '../../store/action-types';
-
-// Hooks
-import {useInput} from '../../hooks';
+import {useCompose} from '../../store/contexts';
+import {AuthorizerType, COMPOSE} from '../../store/action-types';
 
 function Authorizer({
   item,
@@ -22,18 +19,28 @@ function Authorizer({
   item: AuthorizerType;
   removeAuthorizer: (item: string) => void;
 }): JSX.Element {
-  const [authorizer, setAuthorizer] = useInput();
-  const [message, setMessage] = useInput();
+  const [state, dispatch] = useCompose();
 
-  // const [state, dispatch] = useCompose()
+  const {name: authorizerName, message} = state.authorizerDetails.filter(
+    (authorizer: AuthorizerType) => authorizer.id === item.id,
+  )[0];
 
   const classes = useStyles();
   return (
     <div className={classes.authorizerContainer}>
       <div className={classes.authorizerRow1}>
         <CustomTextInput
-          value={authorizer}
-          onChange={setAuthorizer}
+          value={authorizerName}
+          onChange={e =>
+            dispatch({
+              type: COMPOSE.UPDATE_AUTHORIZER_DETAILS,
+              payload: {
+                id: item.id,
+                key: 'name',
+                value: e.target.value,
+              },
+            })
+          }
           select
           required
           variant="outlined"
@@ -64,7 +71,16 @@ function Authorizer({
 
       <CustomTextInput
         value={message}
-        onChange={setMessage}
+        onChange={e =>
+          dispatch({
+            type: COMPOSE.UPDATE_AUTHORIZER_DETAILS,
+            payload: {
+              id: item.id,
+              key: 'message',
+              value: e.target.value,
+            },
+          })
+        }
         multiline
         required
         variant="outlined"

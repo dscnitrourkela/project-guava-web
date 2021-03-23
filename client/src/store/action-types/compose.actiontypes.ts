@@ -52,11 +52,11 @@ export interface AddRemoveAuthorizerActionType {
 
 export interface UpdateAuthorizerActionType {
   type: COMPOSE.UPDATE_AUTHORIZER_DETAILS;
-  payload:
-    | {id: string; name: string}
-    | {id: string; message: string}
-    | {id: string; scale: number}
-    | {id: string; position: {x: number; y: number}};
+  payload: {
+    id: string;
+    key: 'name' | 'message' | 'scale' | 'position';
+    value: string | number | {x: number; y: number};
+  };
 }
 
 export type ActionType =
