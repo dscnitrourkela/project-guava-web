@@ -41,7 +41,7 @@ export interface CertificateDetailsActionType {
   type: COMPOSE.UPDATE_CERTIFICATE_DETAILS;
   payload: {
     key: 'title' | 'eventName' | 'date' | 'time';
-    value: string | Date;
+    value: string | Date | null;
   };
 }
 

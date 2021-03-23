@@ -5,7 +5,7 @@ import {makeStyles, Container} from '@material-ui/core';
 
 // Context hooks
 import {useCompose} from '../../store/contexts';
-import {COMPOSE} from '../../store/types';
+import {COMPOSE} from '../../store/action-types';
 
 // Components
 import {CustomTextInput, CustomDateTime} from '../shared';
@@ -14,17 +14,18 @@ import DetailsMenu from './DetailsMenu';
 function CertificateDetails(): JSX.Element {
   const [state, dispatch] = useCompose();
 
-  // @ts-ignore
-  const onInputChange = (e, key) =>
+  const onInputChange = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    key: 'title' | 'eventName',
+  ): void =>
     dispatch({
-      type: COMPOSE.FORM_UPDATE,
+      type: COMPOSE.UPDATE_CERTIFICATE_DETAILS,
       payload: {key, value: e.target.value},
     });
 
-  // @ts-ignore
-  const onDateChange = (e, key) =>
+  const onDateChange = (e: Date | null, key: 'date' | 'time'): void =>
     dispatch({
-      type: COMPOSE.FORM_UPDATE,
+      type: COMPOSE.UPDATE_CERTIFICATE_DETAILS,
       payload: {key, value: e},
     });
 
