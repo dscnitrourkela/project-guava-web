@@ -8,6 +8,7 @@ import {useDropzone} from 'react-dropzone';
 
 // Components
 import Canvas from './canvas/Canvas';
+import RecipientsImport from './RecipientsImport';
 
 // State Handlers
 import {useCompose} from '../../store/contexts';
@@ -84,6 +85,7 @@ function Editor(): JSX.Element {
           </div>
         </div>
       )}
+      <RecipientsImport />
     </>
   );
 }
