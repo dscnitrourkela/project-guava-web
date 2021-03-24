@@ -3,8 +3,8 @@ export const initialState = {
   certificateDetails: {
     title: '',
     eventName: '',
-    date: new Date(Date.now()),
-    time: new Date(Date.now()),
+    date: null,
+    time: null,
   },
   certificateImageDetails: {
     src: '',
@@ -67,8 +67,8 @@ export interface InitialStateType {
   certificateDetails: {
     title: string;
     eventName: string;
-    date: Date;
-    time: Date;
+    date: Date | null;
+    time: Date | null;
   };
   certificateImageDetails: {
     src: string;
@@ -83,17 +83,22 @@ export interface InitialStateType {
 // ======================== Action Types ======================== //
 export enum COMPOSE {
   UPDATE_CERTIFICATE_DETAILS = 'Update Certificate Details',
+  // Authorizer Action Types
   ADD_NEW_AUTHORIZER = 'Add New Authorizer',
   REMOVE_EXISTING_AUTHORIZER = 'Remove Existing Authorizer',
   UPDATE_AUTHORIZER_DETAILS = 'Update Authorizer Details',
   UPDATE_AUTHORIZER_POSITION = 'Update Authorizer Position Details',
   UPDATE_AUTHORIZER_SCALE = 'Update Authorizer Scale Details',
+  // Image Action Types
   ADD_IMAGE = 'Add Image to Canvas',
   REMOVE_IMAGE = 'Remove Canvas Image',
   UPDATE_IMAGE_DIMENSIONS = 'Add Image Dimensions',
   UPDATE_STAGE_DIMENSIONS = 'Update Stage Dimensions',
+  // Recipient, Validation Action Types
   UPDATE_RECIPIENT_DETAILS = 'Update Recipient Details',
   UPDATE_VALIDATION_DETAILS = 'Update Validation Details',
+  // Reset Action Type
+  RESET_REQUEST = 'Reset Certificate Request Details',
 }
 
 // ======================== Action Interfaces ======================== //
@@ -170,6 +175,10 @@ export interface UpdateValidationDetails {
   };
 }
 
+export interface ResetCertificateRequest {
+  type: COMPOSE.RESET_REQUEST;
+}
+
 export type ActionType =
   | CertificateDetailsActionType
   | AddRemoveAuthorizerActionType
@@ -180,4 +189,5 @@ export type ActionType =
   | RemoveCertificateImage
   | UpdateStageDimensions
   | UpdateRecipientDetails
-  | UpdateValidationDetails;
+  | UpdateValidationDetails
+  | ResetCertificateRequest;

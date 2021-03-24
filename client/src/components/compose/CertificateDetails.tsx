@@ -56,12 +56,16 @@ function CertificateDetails(): JSX.Element {
           selectedDate={state.certificateDetails.date}
           onChange={e => onDateChange(e, 'date')}
           type="date"
+          label="Date of Distribution"
+          disablePast
         />
 
         <CustomDateTime
           selectedDate={state.certificateDetails.time}
           onChange={e => onDateChange(e, 'time')}
           type="time"
+          label="Time of Distribution"
+          disablePast
         />
       </Container>
     </>

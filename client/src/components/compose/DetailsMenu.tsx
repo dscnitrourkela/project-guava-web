@@ -5,28 +5,42 @@ import {makeStyles, Container, Typography} from '@material-ui/core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faChevronLeft, faTrashAlt} from '@fortawesome/free-solid-svg-icons';
 
+// State Handlers
+import {useCompose} from '../../store/contexts';
+import {COMPOSE} from '../../store/action-types';
+
+// Utils
+import createBrowserHistory from '../../utils/createBrowserHistory';
+
 function DetailsMenu(): JSX.Element {
+  const [, dispatch] = useCompose();
   const classes = useStyles();
 
   return (
     <Container className={classes.root}>
-      <Typography variant="body1" className={classes.backText}>
+      <Typography
+        onClick={() => createBrowserHistory.push('/')}
+        variant="body1"
+        className={classes.backText}
+      >
         <FontAwesomeIcon
           className={classes.back}
           size="lg"
           icon={faChevronLeft}
-          // onClick={() => setUploadImage('')}
         />
         Back
       </Typography>
 
-      <Typography variant="body1" className={classes.discardText}>
+      <Typography
+        onClick={() => dispatch({type: COMPOSE.RESET_REQUEST})}
+        variant="body1"
+        className={classes.discardText}
+      >
         Discard
         <FontAwesomeIcon
           className={classes.discard}
           size="lg"
           icon={faTrashAlt}
-          // onClick={() => setUploadImage('')}
         />
       </Typography>
     </Container>

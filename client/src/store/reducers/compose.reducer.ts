@@ -3,6 +3,7 @@ import {
   COMPOSE,
   ActionType,
   AuthorizerType,
+  initialState,
 } from '../action-types';
 
 export default function composeReducer(
@@ -149,6 +150,9 @@ export default function composeReducer(
             : state.validationDetails.scale,
         },
       };
+
+    case COMPOSE.RESET_REQUEST:
+      return initialState;
 
     default:
       return state;

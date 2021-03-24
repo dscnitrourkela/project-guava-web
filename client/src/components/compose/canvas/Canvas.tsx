@@ -121,11 +121,11 @@ export default Canvas;
 
 const useStyles = makeStyles(() => ({
   stage: {
-    borderRadius: 6,
-    paddingLeft: 0,
-    paddingRight: 0,
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    display: 'block',
+    // borderRadius: 6,
+    // paddingLeft: 0,
+    // paddingRight: 0,
+    // marginLeft: 'auto',
+    // marginRight: 'auto',
+    // display: 'block',
   },
 }));

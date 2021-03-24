@@ -3,7 +3,7 @@ import React, {useCallback} from 'react';
 // Library
 import {makeStyles, Typography} from '@material-ui/core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCloudUploadAlt} from '@fortawesome/free-solid-svg-icons';
+import {faTrashAlt, faCloudUploadAlt} from '@fortawesome/free-solid-svg-icons';
 import {useDropzone} from 'react-dropzone';
 
 // Components
@@ -50,11 +50,22 @@ function Editor(): JSX.Element {
     accept: 'image/*',
   });
 
+  const handleRemoveImage = () => dispatch({type: COMPOSE.REMOVE_IMAGE});
+
   const classes = useStyles();
   return (
     <>
       {uploadImage ? (
-        <Canvas />
+        <div className={classes.canvasContainer}>
+          <Canvas />
+          <FontAwesomeIcon
+            className={classes.deleteImageIcon}
+            size="4x"
+            icon={faTrashAlt}
+            onClick={handleRemoveImage}
+            onMouseDown={handleRemoveImage}
+          />
+        </div>
       ) : (
         <div className={classes.root}>
           <div {...getRootProps()}>
@@ -105,5 +116,30 @@ const useStyles = makeStyles(theme => ({
   image: {
     height: 'auto',
     width: '100%',
+  },
+  canvasContainer: {
+    width: '100%',
+    height: '550px',
+    position: 'relative',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  deleteImageIcon: {
+    position: 'absolute',
+    top: '20px',
+    right: '20px',
+    backgroundColor: '#fff',
+    borderRadius: 4,
+    boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.25)',
+    padding: '10px',
+    color: 'rgba(0, 0, 0, 0.6)',
+    '&:hover': {
+      cursor: 'pointer',
+    },
+    '&:active': {
+      boxShadow: '0px 5px 7px rgba(0, 0, 0, 0.25)',
+      transform: 'translateY(2px)',
+    },
   },
 }));
