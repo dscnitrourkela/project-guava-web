@@ -2,9 +2,10 @@ import React from 'react';
 
 // Libraries
 import {makeStyles, Container, Typography, Radio} from '@material-ui/core';
+import {CSVReader} from 'react-papaparse';
 
 // Components
-import {CustomButton, CustomCounter} from '../shared';
+import {CustomCounter} from '../shared';
 
 // Hooks
 import {useCounter, useInput} from '../../hooks';
@@ -14,6 +15,22 @@ function RecipientsImport(): JSX.Element {
   const [radio, setRadio] = useInput();
 
   const classes = useStyles();
+
+  const handleOnDrop = (data: any) => {
+    console.log('---------------------------');
+    console.log(data);
+    console.log('---------------------------');
+  };
+
+  const handleOnError = (err: any) => {
+    console.log(err);
+  };
+
+  const handleOnRemoveFile = (data: any) => {
+    console.log('---------------------------');
+    console.log(data);
+    console.log('---------------------------');
+  };
 
   return (
     <Container className={classes.root}>
@@ -26,11 +43,56 @@ function RecipientsImport(): JSX.Element {
         increment={increment}
         decrement={decrement}
       />
-      <CustomButton
-        label="Add Recipients"
-        // eslint-disable-next-line
-        onClick={() => console.log('Logged')}
-      />
+
+      <CSVReader
+        onDrop={handleOnDrop}
+        onError={handleOnError}
+        addRemoveButton
+        removeButtonColor="#659cef"
+        onRemoveFile={handleOnRemoveFile}
+        style={{
+          dropArea: {
+            borderRadius: 4,
+            padding: '0px 0px',
+            borderColor: 'rgba(0,0,0,0.23)',
+          },
+          dropAreaActive: {
+            borderColor: 'rgba(0,0,0,0.23)',
+          },
+          dropFile: {
+            width: 'auto',
+            minWidth: 100,
+            height: 54,
+            background: 'transparent',
+            borderRadius: 4,
+          },
+          fileSizeInfo: {
+            color: '#398FFE',
+            borderRadius: 3,
+            lineHeight: 1,
+            marginBottom: '0.5em',
+            padding: '0 0.4em',
+          },
+          fileNameInfo: {
+            color: '#398FFE',
+            backgroundColor: 'transparent',
+            borderRadius: 3,
+            fontSize: 14,
+            lineHeight: 1,
+            padding: '0 0.4em',
+          },
+          removeButton: {
+            color: '#398FFE',
+          },
+          progressBar: {
+            backgroundColor: '#398FFE',
+          },
+        }}
+      >
+        <span style={{margin: 'auto 5px'}}>
+          Drop CSV file here or click to upload.
+        </span>
+      </CSVReader>
 
       <div className={classes.radioContainer}>
         <Typography variant="body1" className={classes.typography}>
