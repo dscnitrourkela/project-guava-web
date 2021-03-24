@@ -97,7 +97,7 @@ const useStyles = makeStyles(theme => ({
   authorizerContainer: {
     padding: 0,
     marginTop: '20px',
-    borderBottom: '1px solid rgba(0,0,0,0.23)',
+    // borderBottom: '1px solid rgba(0,0,0,0.23)',
     width: '100%',
   },
   authorizerInput1: {

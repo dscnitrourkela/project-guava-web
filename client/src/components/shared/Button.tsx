@@ -13,6 +13,7 @@ export interface ButtonProps {
   type?: 'text' | 'outlined' | 'contained' | undefined;
   link?: string;
   className?: string;
+  disabled?: boolean;
 }
 
 function CustomButton({
@@ -23,6 +24,7 @@ function CustomButton({
   setLoading,
   link,
   className,
+  disabled = false,
 }: ButtonProps): JSX.Element {
   const classes = useStyles();
 
@@ -39,6 +41,7 @@ function CustomButton({
             className={`${classes.button} ${className}`}
             variant="outlined"
             color="primary"
+            disabled={disabled}
           >
             {label}
           </Button>

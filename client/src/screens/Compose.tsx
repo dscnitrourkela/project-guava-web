@@ -11,6 +11,7 @@ import {
   CertificateDetails,
   Authorizers,
   Editor,
+  Proceed,
 } from '../components';
 
 const Auth: React.FC = () => {
@@ -21,6 +22,7 @@ const Auth: React.FC = () => {
       <HalvesColumn1>
         <CertificateDetails />
         <Authorizers />
+        <Proceed />
       </HalvesColumn1>
 
       <HalvesColumn2 className={classes.column2}>
