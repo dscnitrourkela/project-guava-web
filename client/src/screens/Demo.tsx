@@ -95,17 +95,13 @@ function Home(): JSX.Element {
       >
         Open
       </button>
-      <CustomModal
-        open={open}
-        setOpen={setOpen}
-        content={
-          <div
-            style={{minWidth: 500, minHeight: 300, backgroundColor: '#ffffff'}}
-          >
-            <h1>Hello</h1>
-          </div>
-        }
-      />
+      <CustomModal open={open} setOpen={setOpen}>
+        <div
+          style={{minWidth: 500, minHeight: 300, backgroundColor: '#ffffff'}}
+        >
+          <h1>Hello</h1>
+        </div>
+      </CustomModal>
     </Container>
   );
 }

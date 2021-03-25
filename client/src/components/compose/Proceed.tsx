@@ -80,8 +80,9 @@ const useStyles = makeStyles(() => ({
     padding: '10px',
     position: 'fixed',
     bottom: '0px',
-    backgroundColor: '#fff',
+    backgroundColor: '#ffffff',
     borderTop: '1px solid rgba(0,0,0,0.23)',
+    zIndex: 100,
   },
   infoContainer: {
     display: 'flex',

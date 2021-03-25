@@ -53,6 +53,7 @@ function CustomButton({
           variant={type}
           color="primary"
           disableElevation
+          disabled={disabled}
         >
           {loading ? (
             <CircularProgress size={20} className={classes.circularProgress} />

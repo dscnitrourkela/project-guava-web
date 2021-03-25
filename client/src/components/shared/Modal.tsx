@@ -13,7 +13,7 @@ export interface ModalProps {
   setOpen: (open: boolean) => void;
   ariaLabelledby?: string;
   ariaDescribedby?: string;
-  content: JSX.Element;
+  children: React.ReactElement;
 }
 
 function CustomModal({
@@ -21,7 +21,7 @@ function CustomModal({
   setOpen,
   ariaLabelledby,
   ariaDescribedby,
-  content,
+  children,
 }: ModalProps): JSX.Element {
   const classes = useStyles();
 
@@ -42,7 +42,7 @@ function CustomModal({
         timeout: 500,
       }}
     >
-      <Fade in={open}>{content}</Fade>
+      <Fade in={open}>{children}</Fade>
     </Modal>
   );
 }

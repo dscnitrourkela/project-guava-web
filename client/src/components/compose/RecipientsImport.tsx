@@ -9,7 +9,7 @@ import {useCompose} from '../../store/contexts';
 import {COMPOSE} from '../../store/action-types';
 
 // Components
-import {CustomCounter} from '../shared';
+import {CustomCounter, CustomModal} from '../shared';
 
 // Hooks
 import {useCounter, useInput} from '../../hooks';
@@ -21,6 +21,8 @@ function RecipientsImport(): JSX.Element {
   const [counter, increment, decrement, setCounter] = useCounter(0);
   // TODO: Shift this state to context and change radio styles
   const [radio, setRadio] = useInput();
+  const [modalOpen, setModalOpen] = React.useState(false);
+  const [resetCsv, setResetCsv] = React.useState(false);
 
   const handleOnDrop = (data: any) => {
     const rows: any = [];
@@ -30,6 +32,13 @@ function RecipientsImport(): JSX.Element {
       {title: 'Email', field: 'email'},
       {title: 'Field', field: 'field'},
     ];
+
+    if (data[0].data.length === 2) {
+      columns.pop();
+    } else if (data[0].data.length > 3) {
+      setModalOpen(true);
+      return;
+    }
 
     data.forEach((row: any, index: number) => {
       if (index !== 0) {
@@ -45,10 +54,7 @@ function RecipientsImport(): JSX.Element {
     dispatch({type: COMPOSE.ADD_RECIPIENTS, payload: {columns, rows}});
   };
 
-  const handleOnError = (err: any) => {
-    // eslint-disable-next-line no-console
-    console.log(err);
-  };
+  const handleOnError = () => setModalOpen(true);
 
   const handleOnRemoveFile = () => {
     dispatch({type: COMPOSE.REMOVE_RECIPIENTS});
@@ -68,10 +74,12 @@ function RecipientsImport(): JSX.Element {
       />
 
       <CSVReader
-        onDrop={handleOnDrop}
-        onError={handleOnError}
+        accept=".csv"
         addRemoveButton
         removeButtonColor="#659cef"
+        isReset={resetCsv}
+        onDrop={handleOnDrop}
+        onError={handleOnError}
         onRemoveFile={handleOnRemoveFile}
         style={{
           dropArea: {
@@ -144,6 +152,28 @@ function RecipientsImport(): JSX.Element {
           classes={{root: classes.radio}}
         />
       </div>
+      <CustomModal open={modalOpen} setOpen={setModalOpen}>
+        <div className={classes.modal}>
+          <Typography className={classes.modalTitle} variant="h3">
+            CSV Upload Error
+          </Typography>
+          <Typography className={classes.modalPara} variant="body1">
+            The uploaded file has more fields than required. Please follow the
+            convention of having at the most 3 fields in the order: name, email,
+            field (optional)
+          </Typography>
+          <Typography
+            onClick={() => {
+              setModalOpen(false);
+              setResetCsv(true);
+            }}
+            variant="body1"
+            className={classes.link}
+          >
+            Close
+          </Typography>
+        </div>
+      </CustomModal>
     </Container>
   );
 }
@@ -171,5 +201,42 @@ const useStyles = makeStyles(() => ({
     padding: '0px',
     margin: '5px',
     marginRight: '10px',
+  },
+  modal: {
+    width: '400px',
+    height: '150px',
+    backgroundColor: '#ffffff',
+    boxShadow:
+      '0px 3px 6px rgba(0, 0, 0, 0.1), 0px 24px 48px rgba(0, 0, 0, 0.1)',
+    borderRadius: '8px',
+    border: '1px solid rgba(0, 0, 0, 0.12)',
+    padding: '10px 20px',
+    position: 'relative',
+  },
+  modalTitle: {
+    fontWeight: 600,
+    fontSize: '20px',
+    lineHeight: '24px',
+    width: '100%',
+    textAlign: 'left',
+    marginTop: '5px',
+  },
+  modalPara: {
+    fontWeight: 'normal',
+    width: '100%',
+    textAlign: 'left',
+    marginTop: '10px',
+    fontSize: '14px',
+    lineHeight: '1.1rem',
+  },
+  link: {
+    position: 'absolute',
+    bottom: 10,
+    right: 20,
+    color: '#398FFE',
+    fontSize: '14px',
+    '&:hover': {
+      cursor: 'pointer',
+    },
   },
 }));
