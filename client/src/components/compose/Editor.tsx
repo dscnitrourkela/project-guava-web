@@ -78,7 +78,7 @@ function Editor(): JSX.Element {
                 size="lg"
                 icon={faCloudUploadAlt}
               />
-              Upload Signature
+              Upload Certificate Template Image
             </Typography>
             <Typography variant="body2" className={classes.secondaryText}>
               Drag and drop file here to upload.
@@ -117,6 +117,10 @@ const useStyles = makeStyles(theme => ({
   secondaryText: {
     position: 'absolute',
     bottom: 10,
+    left: 0,
+    color: 'rgba(0,0,0,0.23)',
+    width: '100%',
+    textAlign: 'center',
   },
   image: {
     height: 'auto',
@@ -136,7 +140,7 @@ const useStyles = makeStyles(theme => ({
     right: '20px',
     backgroundColor: '#fff',
     borderRadius: 4,
-    boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.25)',
+    boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
     padding: '10px',
     color: 'rgba(0, 0, 0, 0.6)',
     '&:hover': {

@@ -3,6 +3,8 @@ import React from 'react';
 // Libraries
 import {makeStyles, Container, Typography} from '@material-ui/core';
 import {v4 as uuidv4} from 'uuid';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faPlus} from '@fortawesome/free-solid-svg-icons';
 
 // Context hooks
 import {useCompose} from '../../store/contexts';
@@ -39,7 +41,7 @@ function Authorizers(): JSX.Element {
         </div>
 
         <CustomButton
-          label="+"
+          label={<FontAwesomeIcon size="sm" icon={faPlus} />}
           className={classes.addAuthorizer}
           onClick={addAuthorizer}
         />
@@ -78,13 +80,14 @@ const useStyles = makeStyles(() => ({
   },
   introTitle: {
     lineHeight: '1.2rem',
-    fontWeight: 'bold',
+    fontWeight: 500,
     fontSize: '16px',
   },
   introBody: {
     fontSize: '14px',
     lineHeight: '1rem',
     marginTop: '5px',
+    color: 'rgba(0,0,0,0.6)',
   },
   addAuthorizer: {
     width: '45px',

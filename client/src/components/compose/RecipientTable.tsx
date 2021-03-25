@@ -72,56 +72,25 @@ function RecipientTable(): JSX.Element {
             width: '100%',
             boxShadow: 'none',
             border: '1px solid rgba(0,0,0,0.23)',
-            marginTop: '20px',
+            padding: '15px 10px',
             borderRadius: 6,
           }}
           options={{
+            searchFieldVariant: 'outlined',
+            pageSize: 10,
             headerStyle: {
-              fontSize: '1.2rem',
+              fontSize: '18px',
+            },
+            rowStyle: {
+              fontSize: '16px',
+              color: 'rgba(0,0,0,0.6)',
             },
           }}
-          // editable={{
-          //   onRowAdd: newData =>
-          //     new Promise(resolve => {
-          //       setTimeout(() => {
-          //         resolve();
-          //         setState(prevState => {
-          //           const data = [...prevState.data];
-          //           data.push(newData);
-          //           return { ...prevState, data };
-          //         });
-          //       }, 600);
-          //     }),
-          //   onRowUpdate: (newData, oldData) =>
-          //     new Promise(resolve => {
-          //       setTimeout(() => {
-          //         resolve();
-          //         if (oldData) {
-          //           setState(prevState => {
-          //             const data = [...prevState.data];
-          //             data[data.indexOf(oldData)] = newData;
-          //             return { ...prevState, data };
-          //           });
-          //         }
-          //       }, 600);
-          //     }),
-          //   onRowDelete: oldData =>
-          //     new Promise(resolve => {
-          //       setTimeout(() => {
-          //         resolve();
-          //         setState(prevState => {
-          //           const data = [...prevState.data];
-          //           data.splice(data.indexOf(oldData), 1);
-          //           return { ...prevState, data };
-          //         });
-          //       }, 600);
-          //     }),
-          // }}
         />
       ) : (
         <div className={classes.root}>
           <Typography variant="body1" className={classes.typography}>
-            Upload CSV file to see the table
+            Upload CSV file to see a list of recipients
           </Typography>
         </div>
       )}
@@ -137,6 +106,7 @@ const useStyles = makeStyles(() => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop: '20px',
   },
   typography: {
     color: 'rgba(0,0,0,0.23)',

@@ -5,7 +5,7 @@ import {makeStyles, Button, CircularProgress} from '@material-ui/core';
 import {Link} from 'react-router-dom';
 
 export interface ButtonProps {
-  label: string;
+  label: string | JSX.Element;
   // @ts-ignore
   onClick: (...args) => void;
   loading?: boolean;

@@ -15,7 +15,7 @@ import {CustomCounter} from '../shared';
 import {useCounter, useInput} from '../../hooks';
 
 function RecipientsImport(): JSX.Element {
-  const [state, dispatch] = useCompose();
+  const [, dispatch] = useCompose();
   // TODO: Check if counter is needed or not
   // TODO: If required shift to the context state
   const [counter, increment, decrement, setCounter] = useCounter(0);
@@ -25,6 +25,7 @@ function RecipientsImport(): JSX.Element {
   const handleOnDrop = (data: any) => {
     const rows: any = [];
     const columns = [
+      {title: 'Sr. No.', field: 'srNo'},
       {title: 'Name', field: 'name'},
       {title: 'Email', field: 'email'},
       {title: 'Field', field: 'field'},
@@ -33,6 +34,7 @@ function RecipientsImport(): JSX.Element {
     data.forEach((row: any, index: number) => {
       if (index !== 0) {
         const rowX = {};
+        row.data.unshift(`${index}`);
         row.data.forEach((rowItem: any, indexRow: number) => {
           // @ts-ignore
           rowX[columns[indexRow].field] = rowItem;
@@ -44,6 +46,7 @@ function RecipientsImport(): JSX.Element {
   };
 
   const handleOnError = (err: any) => {
+    // eslint-disable-next-line no-console
     console.log(err);
   };
 
@@ -157,6 +160,7 @@ const useStyles = makeStyles(() => ({
   },
   typography: {
     marginRight: '10px',
+    color: 'rgba(0,0,0,0.6)',
   },
   radioContainer: {
     display: 'flex',
