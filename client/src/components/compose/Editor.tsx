@@ -9,6 +9,7 @@ import {useDropzone} from 'react-dropzone';
 // Components
 import Canvas from './canvas/Canvas';
 import RecipientsImport from './RecipientsImport';
+import RecipientTable from './RecipientTable';
 
 // State Handlers
 import {useCompose} from '../../store/contexts';
@@ -86,6 +87,7 @@ function Editor(): JSX.Element {
         </div>
       )}
       <RecipientsImport />
+      <RecipientTable />
     </>
   );
 }
@@ -96,6 +98,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     width: '100%',
     height: '550px',
+    minHeight: '550px',
     backgroundColor: theme.palette.background.default,
     borderRadius: 6,
     display: 'flex',

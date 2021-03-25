@@ -22,8 +22,6 @@ function RecipientsImport(): JSX.Element {
   // TODO: Shift this state to context and change radio styles
   const [radio, setRadio] = useInput();
 
-  console.log(state.recipientDetails);
-
   const handleOnDrop = (data: any) => {
     const rows: any = [];
     const columns = [
