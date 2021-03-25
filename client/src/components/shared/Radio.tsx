@@ -6,6 +6,7 @@ import {Radio, makeStyles, Typography} from '@material-ui/core';
 export interface RadioOptions {
   value: string | number;
   label: string | number;
+  color?: string;
 }
 
 export interface RadioProps {
@@ -29,16 +30,20 @@ function CustomRadio({
   name,
   ariaLabel,
   selectedChildElement,
-  horizontal,
+  horizontal = false,
   className,
 }: RadioProps): JSX.Element {
   const classes = useStyles(horizontal);
 
   return (
     <div className={`${classes.root} ${className}`}>
+      {label && (
+        <Typography style={{minWidth: '100px'}} variant="body1">
+          {label}
+        </Typography>
+      )}
       {options.map((option: RadioOptions, index) => (
         <div key={option.value} className={classes.optionContainer}>
-          {label && <Typography variant="h3">{label}</Typography>}
           <div className={classes.radioContainer}>
             <Radio
               checked={value === option.value}
@@ -51,7 +56,9 @@ function CustomRadio({
                 root: classes.radio,
               }}
             />
-            <Typography variant="body1">{option.label}</Typography>
+            {!horizontal && (
+              <Typography variant="body1">{option.label}</Typography>
+            )}
           </div>
           {selectedChildElement &&
             value === option.value &&
@@ -68,9 +75,9 @@ const useStyles = makeStyles(() => ({
   root: {
     width: '100%',
     display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'flex-start',
-    flexDirection: 'column',
+    justifyContent: horizontal => (horizontal ? 'center' : 'flex-start'),
+    alignItems: horizontal => (horizontal ? 'flex-start' : 'center'),
+    flexDirection: horizontal => (horizontal ? 'row' : 'column'),
   },
   optionContainer: {
     width: '100%',
@@ -79,8 +86,8 @@ const useStyles = makeStyles(() => ({
   },
   radioContainer: {
     display: 'flex',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
+    justifyContent: horizontal => (horizontal ? 'center' : 'flex-start'),
+    alignItems: horizontal => (horizontal ? 'flex-start' : 'center'),
     padding: '0px',
     margin: '0px',
     width: '90%',
@@ -89,5 +96,8 @@ const useStyles = makeStyles(() => ({
     padding: '0px',
     margin: '5px',
     marginRight: '10px',
+    color: 'white',
+    border: '1px solid rgba(0,0,0,0.23)',
+    backgroundColor: '#ffffff',
   },
 }));

@@ -5,7 +5,7 @@ import {makeStyles, Button, CircularProgress} from '@material-ui/core';
 import {Link} from 'react-router-dom';
 
 export interface ButtonProps {
-  label: string;
+  label: string | JSX.Element;
   // @ts-ignore
   onClick: (...args) => void;
   loading?: boolean;
@@ -13,6 +13,7 @@ export interface ButtonProps {
   type?: 'text' | 'outlined' | 'contained' | undefined;
   link?: string;
   className?: string;
+  disabled?: boolean;
 }
 
 function CustomButton({
@@ -23,6 +24,7 @@ function CustomButton({
   setLoading,
   link,
   className,
+  disabled = false,
 }: ButtonProps): JSX.Element {
   const classes = useStyles();
 
@@ -37,8 +39,9 @@ function CustomButton({
         <Link to={link}>
           <Button
             className={`${classes.button} ${className}`}
-            variant="text"
+            variant="outlined"
             color="primary"
+            disabled={disabled}
           >
             {label}
           </Button>
@@ -50,6 +53,7 @@ function CustomButton({
           variant={type}
           color="primary"
           disableElevation
+          disabled={disabled}
         >
           {loading ? (
             <CircularProgress size={20} className={classes.circularProgress} />

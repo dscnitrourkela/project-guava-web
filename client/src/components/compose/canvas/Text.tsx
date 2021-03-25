@@ -4,6 +4,9 @@ import React from 'react';
 import {Rect, Transformer, Text, Group} from 'react-konva';
 import Konva from 'konva';
 
+// State Handlers
+// import {COMPOSE} from '../../../store/action-types';
+
 export interface TextProps {
   isSelected: boolean;
   onSelect: () => void;
@@ -20,6 +23,12 @@ export interface TextProps {
     y: number;
   };
   name: string;
+  id: string;
+  // onDragEnd: any;
+  dispatch: any;
+  transformType: string;
+  dragType: string;
+  colour?: string;
 }
 
 const Rectangle: React.FC<TextProps> = ({
@@ -29,6 +38,11 @@ const Rectangle: React.FC<TextProps> = ({
   position,
   scale,
   name,
+  id,
+  dispatch,
+  transformType,
+  dragType,
+  colour,
 }) => {
   const shapeRef = React.useRef<Konva.Group>(null);
   const transformerRef = React.useRef<Konva.Transformer>(null);
@@ -41,20 +55,21 @@ const Rectangle: React.FC<TextProps> = ({
     }
   }, [isSelected]);
 
-  const onDragEnd = (e: Konva.KonvaEventObject<DragEvent>): void => {
-    console.log(e.target.x(), e.target.y());
-    // TODO: Store x and y positions for this authorizer
-  };
-
   const onTransformEnd = (): void => {
     if (shapeRef.current) {
       const node = shapeRef.current;
-      console.log(node.scale());
+      dispatch({
+        type: transformType,
+        payload: {id, scale: node.scale()},
+      });
     }
-    // TODO: Store x and y scales for this authorizer
   };
 
-  // TODO: Store initial width and height of the text box
+  const onDragEnd = (e: Konva.KonvaEventObject<DragEvent>): void =>
+    dispatch({
+      type: dragType,
+      payload: {id, position: {x: e.target.x(), y: e.target.y()}},
+    });
 
   const groupProps = {
     width: dimensions.width,
@@ -81,7 +96,7 @@ const Rectangle: React.FC<TextProps> = ({
         <Rect
           width={dimensions.width}
           height={dimensions.height}
-          fill="lightblue"
+          fill={colour || 'lightblue'}
           cornerRadius={[7, 7, 7, 7]}
         />
         <Text
@@ -96,6 +111,12 @@ const Rectangle: React.FC<TextProps> = ({
       {isSelected && (
         <Transformer
           ref={transformerRef}
+          enabledAnchors={[
+            'top-left',
+            'top-right',
+            'bottom-left',
+            'bottom-right',
+          ]}
           boundBoxFunc={(oldBox, newBox) =>
             newBox.width < 5 || newBox.height < 5 ? oldBox : newBox
           }

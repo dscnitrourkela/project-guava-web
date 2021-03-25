@@ -15,12 +15,16 @@ export interface CustomDateTime {
   selectedDate: Date | null;
   onChange: (date: Date | null) => void;
   type: 'date' | 'time';
+  label?: string;
+  disablePast?: boolean;
 }
 
 export default function MaterialUIPickers({
   selectedDate,
   onChange,
   type,
+  label,
+  disablePast = false,
 }: CustomDateTime): JSX.Element {
   return (
     <MuiPickersUtilsProvider utils={DateFnsUtils}>
@@ -32,9 +36,10 @@ export default function MaterialUIPickers({
             format="MM/dd/yyyy"
             margin="normal"
             id="date-picker"
-            label="Date picker"
+            label={label}
             value={selectedDate}
             onChange={onChange}
+            disablePast={disablePast}
             KeyboardButtonProps={{
               'aria-label': 'change date',
             }}
@@ -47,7 +52,7 @@ export default function MaterialUIPickers({
             inputVariant="outlined"
             margin="normal"
             id="time-picker"
-            label="Time picker"
+            label={label}
             value={selectedDate}
             onChange={onChange}
             KeyboardButtonProps={{

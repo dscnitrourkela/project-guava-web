@@ -8,7 +8,7 @@ import {Router, Route, Switch} from 'react-router-dom';
 import {ComposeProvider} from '../store/contexts';
 
 // Components
-import {HomePage, AuthPage, ComposePage} from '../screens';
+import {HomePage, AuthPage, ComposePage, DemoPage} from '../screens';
 import {MobileView} from '../components';
 
 // Config
@@ -30,6 +30,8 @@ function App(): JSX.Element {
         <Router history={createBrowserHistory}>
           <Switch>
             <Route exact path="/" component={HomePage} />
+            <Route exact path="/demo" component={DemoPage} />
+
             <Route exact path="/signup" component={AuthPage} />
             <Route exact path="/login" component={AuthPage} />
 

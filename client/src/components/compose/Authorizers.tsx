@@ -3,6 +3,8 @@ import React from 'react';
 // Libraries
 import {makeStyles, Container, Typography} from '@material-ui/core';
 import {v4 as uuidv4} from 'uuid';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faPlus} from '@fortawesome/free-solid-svg-icons';
 
 // Context hooks
 import {useCompose} from '../../store/contexts';
@@ -15,11 +17,14 @@ import Authorizer from './Authorizer';
 function Authorizers(): JSX.Element {
   const [state, dispatch] = useCompose();
 
-  const addAuthorizer = () =>
-    dispatch({
-      type: COMPOSE.ADD_NEW_AUTHORIZER,
-      payload: {id: uuidv4()},
-    });
+  const addAuthorizer = () => {
+    if (state.authorizerDetails.length < 3) {
+      dispatch({
+        type: COMPOSE.ADD_NEW_AUTHORIZER,
+        payload: {id: uuidv4()},
+      });
+    }
+  };
 
   const removeAuthorizer = (id: string) =>
     dispatch({type: COMPOSE.REMOVE_EXISTING_AUTHORIZER, payload: {id}});
@@ -39,9 +44,10 @@ function Authorizers(): JSX.Element {
         </div>
 
         <CustomButton
-          label="+"
+          label={<FontAwesomeIcon size="sm" icon={faPlus} />}
           className={classes.addAuthorizer}
           onClick={addAuthorizer}
+          disabled={state.authorizerDetails.length === 3}
         />
       </div>
 
@@ -64,11 +70,12 @@ export default Authorizers;
 const useStyles = makeStyles(() => ({
   root: {
     width: '100%',
-    height: '100%',
+    height: 'auto',
     display: 'flex',
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
     flexDirection: 'column',
+    paddingBottom: '100px',
   },
   introContainer: {
     display: 'flex',
@@ -78,17 +85,18 @@ const useStyles = makeStyles(() => ({
   },
   introTitle: {
     lineHeight: '1.2rem',
-    fontWeight: 'bold',
+    fontWeight: 500,
     fontSize: '16px',
   },
   introBody: {
     fontSize: '14px',
     lineHeight: '1rem',
     marginTop: '5px',
+    color: 'rgba(0,0,0,0.6)',
   },
   addAuthorizer: {
     width: '45px',
     height: '45px',
-    minWidth: '45px',
+    minWidth: '45px !important',
   },
 }));

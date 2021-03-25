@@ -1,15 +1,15 @@
-/* eslint-disable no-console */
-/* eslint-disable no-alert */
 import React, {useCallback} from 'react';
 
 // Library
 import {makeStyles, Typography} from '@material-ui/core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCloudUploadAlt} from '@fortawesome/free-solid-svg-icons';
+import {faTrashAlt, faCloudUploadAlt} from '@fortawesome/free-solid-svg-icons';
 import {useDropzone} from 'react-dropzone';
 
 // Components
-import Canvas from './Canvas';
+import Canvas from './canvas/Canvas';
+import RecipientsImport from './RecipientsImport';
+import RecipientTable from './RecipientTable';
 
 // State Handlers
 import {useCompose} from '../../store/contexts';
@@ -52,11 +52,22 @@ function Editor(): JSX.Element {
     accept: 'image/*',
   });
 
+  const handleRemoveImage = () => dispatch({type: COMPOSE.REMOVE_IMAGE});
+
   const classes = useStyles();
   return (
     <>
       {uploadImage ? (
-        <Canvas />
+        <div className={classes.canvasContainer}>
+          <Canvas />
+          <FontAwesomeIcon
+            className={classes.deleteImageIcon}
+            size="4x"
+            icon={faTrashAlt}
+            onClick={handleRemoveImage}
+            onMouseDown={handleRemoveImage}
+          />
+        </div>
       ) : (
         <div className={classes.root}>
           <div {...getRootProps()}>
@@ -67,7 +78,7 @@ function Editor(): JSX.Element {
                 size="lg"
                 icon={faCloudUploadAlt}
               />
-              Upload Signature
+              Upload Certificate Template Image
             </Typography>
             <Typography variant="body2" className={classes.secondaryText}>
               Drag and drop file here to upload.
@@ -75,6 +86,8 @@ function Editor(): JSX.Element {
           </div>
         </div>
       )}
+      <RecipientsImport />
+      <RecipientTable />
     </>
   );
 }
@@ -85,6 +98,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     width: '100%',
     height: '550px',
+    minHeight: '550px',
     backgroundColor: theme.palette.background.default,
     borderRadius: 6,
     display: 'flex',
@@ -103,9 +117,38 @@ const useStyles = makeStyles(theme => ({
   secondaryText: {
     position: 'absolute',
     bottom: 10,
+    left: 0,
+    color: 'rgba(0,0,0,0.23)',
+    width: '100%',
+    textAlign: 'center',
   },
   image: {
     height: 'auto',
     width: '100%',
+  },
+  canvasContainer: {
+    width: '100%',
+    height: '550px',
+    position: 'relative',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  deleteImageIcon: {
+    position: 'absolute',
+    top: '20px',
+    right: '20px',
+    backgroundColor: '#fff',
+    borderRadius: 4,
+    boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
+    padding: '10px',
+    color: 'rgba(0, 0, 0, 0.6)',
+    '&:hover': {
+      cursor: 'pointer',
+    },
+    '&:active': {
+      boxShadow: '0px 5px 7px rgba(0, 0, 0, 0.25)',
+      transform: 'translateY(2px)',
+    },
   },
 }));
