@@ -18,7 +18,6 @@ function Authorizers(): JSX.Element {
   const [state, dispatch] = useCompose();
 
   const addAuthorizer = () => {
-    console.log(state.authorizerDetails.length);
     if (state.authorizerDetails.length < 3) {
       dispatch({
         type: COMPOSE.ADD_NEW_AUTHORIZER,
