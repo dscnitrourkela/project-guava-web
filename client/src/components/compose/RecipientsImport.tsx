@@ -4,6 +4,10 @@ import React from 'react';
 import {makeStyles, Container, Typography, Radio} from '@material-ui/core';
 import {CSVReader} from 'react-papaparse';
 
+// State Handlers
+import {useCompose} from '../../store/contexts';
+import {COMPOSE} from '../../store/action-types';
+
 // Components
 import {CustomCounter} from '../shared';
 
@@ -11,27 +15,45 @@ import {CustomCounter} from '../shared';
 import {useCounter, useInput} from '../../hooks';
 
 function RecipientsImport(): JSX.Element {
+  const [state, dispatch] = useCompose();
+  // TODO: Check if counter is needed or not
+  // TODO: If required shift to the context state
   const [counter, increment, decrement, setCounter] = useCounter(0);
+  // TODO: Shift this state to context and change radio styles
   const [radio, setRadio] = useInput();
 
-  const classes = useStyles();
+  console.log(state.recipientDetails);
 
   const handleOnDrop = (data: any) => {
-    console.log('---------------------------');
-    console.log(data);
-    console.log('---------------------------');
+    const rows: any = [];
+    const columns = [
+      {title: 'Name', field: 'name'},
+      {title: 'Email', field: 'email'},
+      {title: 'Field', field: 'field'},
+    ];
+
+    data.forEach((row: any, index: number) => {
+      if (index !== 0) {
+        const rowX = {};
+        row.data.forEach((rowItem: any, indexRow: number) => {
+          // @ts-ignore
+          rowX[columns[indexRow].field] = rowItem;
+        });
+        rows.push(rowX);
+      }
+    });
+    dispatch({type: COMPOSE.ADD_RECIPIENTS, payload: {columns, rows}});
   };
 
   const handleOnError = (err: any) => {
     console.log(err);
   };
 
-  const handleOnRemoveFile = (data: any) => {
-    console.log('---------------------------');
-    console.log(data);
-    console.log('---------------------------');
+  const handleOnRemoveFile = () => {
+    dispatch({type: COMPOSE.REMOVE_RECIPIENTS});
   };
 
+  const classes = useStyles();
   return (
     <Container className={classes.root}>
       <Typography variant="body1" className={classes.typography}>

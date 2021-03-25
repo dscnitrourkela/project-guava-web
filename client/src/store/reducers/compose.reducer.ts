@@ -31,15 +31,23 @@ export default function composeReducer(
         recipientName: {
           ...state.recipientName,
           position: {
-            x: action.payload.imageDimensions.width / 2,
-            y: action.payload.imageDimensions.height / 2,
+            x:
+              ((action.payload.imageDimensions.width /
+                action.payload.imageDimensions.height) *
+                550) /
+              2,
+            y: 550 / 2,
           },
         },
         validationDetails: {
           ...state.validationDetails,
           position: {
-            x: action.payload.imageDimensions.width / 2,
-            y: action.payload.imageDimensions.height / 2,
+            x:
+              ((action.payload.imageDimensions.width /
+                action.payload.imageDimensions.height) *
+                550) /
+              2,
+            y: 550 / 2,
           },
         },
       };
@@ -149,6 +157,18 @@ export default function composeReducer(
             ? action.payload.scale
             : state.validationDetails.scale,
         },
+      };
+
+    case COMPOSE.ADD_RECIPIENTS:
+      return {
+        ...state,
+        recipientDetails: action.payload,
+      };
+
+    case COMPOSE.REMOVE_RECIPIENTS:
+      return {
+        ...state,
+        recipientDetails: initialState.recipientDetails,
       };
 
     case COMPOSE.RESET_REQUEST:

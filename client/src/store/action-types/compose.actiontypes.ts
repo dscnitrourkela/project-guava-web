@@ -32,6 +32,7 @@ export const initialState = {
     id: 'certificate-validation-id',
   },
   authorizerDetails: [],
+  recipientDetails: {columns: [], rows: []},
 };
 
 // ======================== Initial State Types ======================== //
@@ -55,12 +56,28 @@ export interface AuthorizerType {
   dimensions: DimensionsType;
 }
 
-export interface RecipientDetailsType {
+export interface RecipientNameDetailsType {
   position: CoordinatesType;
   scale: CoordinatesType;
   dimensions: DimensionsType;
   name: string;
   id: string;
+}
+
+export interface RecipientsColumnType {
+  title: string;
+  field: string;
+}
+
+export interface RecipientRowType {
+  name: string;
+  email: string;
+  field?: string;
+}
+
+export interface RecipientDetailsType {
+  columns: RecipientsColumnType[] | [];
+  rows: RecipientRowType[] | [];
 }
 
 export interface InitialStateType {
@@ -76,8 +93,9 @@ export interface InitialStateType {
     stageDimensions: DimensionsType;
   };
   authorizerDetails: AuthorizerType[] | [];
-  recipientName: RecipientDetailsType;
-  validationDetails: RecipientDetailsType;
+  recipientName: RecipientNameDetailsType;
+  validationDetails: RecipientNameDetailsType;
+  recipientDetails: RecipientDetailsType;
 }
 
 // ======================== Action Types ======================== //
@@ -99,6 +117,9 @@ export enum COMPOSE {
   UPDATE_VALIDATION_DETAILS = 'Update Validation Details',
   // Reset Action Type
   RESET_REQUEST = 'Reset Certificate Request Details',
+  // Recipient Details (From CSV) Action Types
+  ADD_RECIPIENTS = 'Add Recipients From CSV',
+  REMOVE_RECIPIENTS = 'Remove Recipients from CSV',
 }
 
 // ======================== Action Interfaces ======================== //
@@ -179,6 +200,15 @@ export interface ResetCertificateRequest {
   type: COMPOSE.RESET_REQUEST;
 }
 
+export interface AddRecipients {
+  type: COMPOSE.ADD_RECIPIENTS;
+  payload: RecipientDetailsType;
+}
+
+export interface RemoveRecipients {
+  type: COMPOSE.REMOVE_RECIPIENTS;
+}
+
 export type ActionType =
   | CertificateDetailsActionType
   | AddRemoveAuthorizerActionType
@@ -190,4 +220,6 @@ export type ActionType =
   | UpdateStageDimensions
   | UpdateRecipientDetails
   | UpdateValidationDetails
-  | ResetCertificateRequest;
+  | ResetCertificateRequest
+  | AddRecipients
+  | RemoveRecipients;
