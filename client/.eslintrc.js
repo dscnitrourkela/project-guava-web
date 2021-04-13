@@ -24,7 +24,7 @@ module.exports = {
     sourceType: 'module',
     ecmaFeatures: {jsx: true},
     tsconfigRootDir: __dirname,
-    project: './tsconfig.json',
+    project: './tsconfig.eslint.json',
   },
   settings: {
     react: {
