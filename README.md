@@ -12,12 +12,16 @@
 
 # project-guava
 
+---
+
 - The project repository for the web application of an open system to generate and manage certificates.
 - Login to initiate a request to authorize a certificate.
 - After successful authorization, digitally sign the certificate.
 - Once done, distribute to the participants through our portal.
 
 # Tech Stack
+
+---
 
 <p>
   <img src="https://img.shields.io/badge/client-React.js-blue" alt="React.js" />
@@ -29,18 +33,21 @@
   <img src="https://img.shields.io/badge/routing-React--Router--Dom-lightgrey" alt="React-Router-Dom" />  
 </p>
 
-### DSC NIT Rourkela
-
-Project developed and maintained by [DSC NIT Rourkela](https://dscnitrourkela.org/)
-![DSC NIT Rourkela Cover Image](./repoCover.png)
-
-## Contributing 🎃
+# Contributing 🎃
 
 ---
 
 Our Slack Community: [Slack Invite](http://bit.ly/NITRDevs) <br>
 
 `Contributions are welcome 🎉🎉`
+
+## Prerequisites
+
+- [Node.js v14 LTS](https://nodejs.org/en/download/)
+- [Yarn CLI](https://classic.yarnpkg.com/en/docs/install)
+- [Git CLI](https://git-scm.com/downloads)
+
+## Local Repository Setup
 
 Please refer to the project's style and contribution guidelines for submitting patches and additions. In general, we follow the "fork-and-pull" Git workflow.
 
@@ -53,6 +60,40 @@ Please refer to the project's style and contribution guidelines for submitting p
 NOTE 1: Please abide by the [Contributing Guidelines](https://github.com/dscnitrourkela/project-guava-web/blob/master/CONTRIBUTING.md).
 
 NOTE 2: Please abide by the [Code of Conduct](https://github.com/dscnitrourkela/project-guava-web/blob/master/CODE_OF_CONDUCT.md).
+
+## Running the project.
+
+The project uses Yarn and not NPM. It is strictly advised to stick with Yarn so as to avoid dependency conflicts down the line.
+
+```
+## Checkout into the project client directory
+cd client
+
+## Install Dependencies
+yarn install
+
+## Run the Project
+yarn start
+
+```
+
+Following are the commands to remove/add new dependencies using yarn
+
+```
+## Add a new Package
+yarn add package_name
+
+## Remove an existing Package
+yarn remove package_name
+
+## Save Package as a Dev Dependency
+yarn add -D package_name
+```
+
+# DSC NIT Rourkela
+
+Project developed and maintained by [DSC NIT Rourkela](https://dscnitrourkela.org/)
+![DSC NIT Rourkela Cover Image](./repoCover.png)
 
 ## Starware
 
