@@ -1,13 +1,84 @@
-# React Template 
-  <p>
-    <img src="https://img.shields.io/badge/client-React.js-blue" alt="react.js" />
-    <img src="https://img.shields.io/badge/bundler-Webpack-blue" alt="webpack" />
-    <img src="https://img.shields.io/badge/transcompiler-Babel-yellow" alt="Babel" />
-    <img src="https://img.shields.io/badge/state-Redux-purple" alt="Redux" />  
-    <img src="https://img.shields.io/badge/test-Jest-red" alt="Jest" />   
-    <img src="https://img.shields.io/badge/test-Enzyme-green" alt="Enzyme" />  
-    <img src="https://img.shields.io/badge/routing-React--Router--Dom-lightgrey" alt="React-Router-Dom" />  
-    <img src="https://img.shields.io/badge/dynamic--loading-React--Loadable-red" alt="React Loadable" />  
-    <img src="https://img.shields.io/badge/hmr-Hot--Module--Reload--Loadable-red" alt="HMR" />
-    <img src="https://img.shields.io/badge/virtualization-Docker-blue" alt="Docker" />
-  </p>
+<span>
+  
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+[![Starware](https://img.shields.io/badge/Starware-⭐-black?labelColor=f9b00d)](https://github.com/zepfietje/starware)
+
+[![Cloudflare Pages](https://img.shields.io/badge/deploy-cloudflare--pages-yellow)](https://signit.dscnitrourkela.org)
+
+</span>
+
+# project-guava
+
+- The project repository for the web application of an open system to generate and manage certificates.
+- Login to initiate a request to authorize a certificate.
+- After successful authorization, digitally sign the certificate.
+- Once done, distribute to the participants through our portal.
+
+# Tech Stack
+
+<p>
+  <img src="https://img.shields.io/badge/client-React.js-blue" alt="React.js" />
+  <img src="https://img.shields.io/badge/bundler-Webpack-blue" alt="Webpack" />
+  <img src="https://img.shields.io/badge/transcompiler-Babel-yellow" alt="Babel" />
+  <img src="https://img.shields.io/badge/state-context--provider-orange" alt="State Management" />  
+  <img src="https://img.shields.io/badge/test-Jest-red" alt="Jest" />   
+  <img src="https://img.shields.io/badge/test-react--testing--library-red" alt="React Testing Library" />  
+  <img src="https://img.shields.io/badge/routing-React--Router--Dom-lightgrey" alt="React-Router-Dom" />  
+</p>
+
+### DSC NIT Rourkela
+
+Project developed and maintained by [DSC NIT Rourkela](https://dscnitrourkela.org/)
+![DSC NIT Rourkela Cover Image](./repoCover.png)
+
+## Contributing 🎃
+
+---
+
+Our Slack Community: [Slack Invite](http://bit.ly/NITRDevs) <br>
+
+`Contributions are welcome 🎉🎉`
+
+Please refer to the project's style and contribution guidelines for submitting patches and additions. In general, we follow the "fork-and-pull" Git workflow.
+
+1.  **Fork** the repo on GitHub
+2.  **Clone** the project to your local system
+3.  **Commit** changes to your own separate branch
+4.  **Push** your work back up to your fork
+5.  Submit a **Pull request** so that we can review your changes
+
+NOTE 1: Please abide by the [Contributing Guidelines](https://github.com/dscnitrourkela/project-guava-web/blob/master/CONTRIBUTING.md).
+
+NOTE 2: Please abide by the [Code of Conduct](https://github.com/dscnitrourkela/project-guava-web/blob/master/CODE_OF_CONDUCT.md).
+
+## Starware
+
+dscnitrourkela/project-guava is Starware.  
+This means you're free to use the project, as long as you star its GitHub repository.  
+Your appreciation makes us grow and glow up. ⭐
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/DesignrKnight"><img src="https://avatars0.githubusercontent.com/u/27865704?v=4" width="100px;" alt=""/><br /><sub><b>Abel Mathew</b></sub></a><br /><a href="https://github.com/dscnitrourkela/project-guava/commits?author=DesignrKnight" title="Code">💻</a> <a href="#ideas-DesignrKnight" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-DesignrKnight" title="Maintenance">🚧</a> <a href="#ideas-DesignrKnight" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://allcontributors.org"><img src="https://avatars1.githubusercontent.com/u/46410174?v=4" width="100px;" alt=""/><br /><sub><b>All Contributors</b></sub></a><br /><a href="#tool-all-contributors" title="Tools">🔧</a></td>
+    <td align="center"><a href="https://github.com/actions"><img src="https://avatars1.githubusercontent.com/u/65916846?v=4" width="100px;" alt=""/><br /><sub><b>actions-user</b></sub></a><br /><a href="#tool-actions-user" title="Tools">🔧</a></td>
+    <td align="center"><a href="https://github.com/riteshsp2000"><img src="https://avatars3.githubusercontent.com/u/56112399?v=4" width="100px;" alt=""/><br /><sub><b>Ritesh Patil</b></sub></a><br /><a href="https://github.com/dscnitrourkela/project-guava/commits?author=riteshsp2000" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
