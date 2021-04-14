@@ -4,13 +4,20 @@ import React from 'react';
 import {makeStyles} from '@material-ui/core';
 
 // Components
-import {HalvesTemplate, HalvesColumn1, HalvesColumn2} from '../components';
+import {
+  HalvesTemplate,
+  HalvesColumn1,
+  HalvesColumn2,
+  DetailsMenu,
+} from '../components';
 
 const Auth: React.FC = () => {
   const classes = useStyles();
   return (
     <HalvesTemplate>
-      <HalvesColumn1>heelo</HalvesColumn1>
+      <HalvesColumn1>
+        <DetailsMenu />
+      </HalvesColumn1>
 
       <HalvesColumn2 className={classes.column2}>hello</HalvesColumn2>
     </HalvesTemplate>
