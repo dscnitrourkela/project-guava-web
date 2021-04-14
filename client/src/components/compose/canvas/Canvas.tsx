@@ -6,13 +6,18 @@ import useImage from 'use-image';
 import {makeStyles} from '@material-ui/core';
 
 // Components
-import TextBox from './Text';
+import TransformableText from './TransformableText';
+import FixedText from './FixedText';
 
 // State Handlers
 import {useCompose} from '../../../store/contexts';
 import {AuthorizerType, COMPOSE} from '../../../store/action-types';
 
-function Canvas(): JSX.Element {
+interface Props {
+  isPreview?: boolean;
+}
+
+const Canvas: React.FC<Props> = ({isPreview = false}) => {
   const [state, dispatch] = useCompose();
   const {
     imageDimensions,
@@ -47,6 +52,8 @@ function Canvas(): JSX.Element {
   };
 
   const classes = useStyles();
+
+  // const TextComponent = isPreview ? < FixedText/> : <TransformableText />
   return (
     <Stage
       width={imageRenderWidth}
@@ -63,59 +70,91 @@ function Canvas(): JSX.Element {
           onMouseDown={checkDeselect}
           onTouchStart={checkDeselect}
         />
-        {/* </Layer> */}
 
-        {/* <Layer> */}
-        <TextBox
-          name={validationDetails.name}
-          position={validationDetails.position}
-          scale={validationDetails.scale}
-          dimensions={validationDetails.dimensions}
-          id={validationDetails.id}
-          colour="red"
-          isSelected={isValidationDetailsSelected}
-          onSelect={() => setValidationDetailsSelected(true)}
-          dispatch={dispatch}
-          dragType={COMPOSE.UPDATE_VALIDATION_DETAILS}
-          transformType={COMPOSE.UPDATE_VALIDATION_DETAILS}
-        />
-
-        <TextBox
-          name={recipientName.name}
-          position={recipientName.position}
-          scale={recipientName.scale}
-          dimensions={recipientName.dimensions}
-          id={recipientName.id}
-          colour="lightgreen"
-          isSelected={isRecipientNameSelected}
-          onSelect={() => setRecipientNameSelected(true)}
-          dispatch={dispatch}
-          dragType={COMPOSE.UPDATE_RECIPIENT_DETAILS}
-          transformType={COMPOSE.UPDATE_RECIPIENT_DETAILS}
-        />
-        {/* </Layer> */}
-
-        {/* <Layer> */}
-        {authorizerDetails.length > 0 &&
-          authorizerDetails.map((authorizer: AuthorizerType) => (
-            <TextBox
-              key={authorizer.id}
-              isSelected={authorizer.id === selected}
-              onSelect={() => onSelect(authorizer.id)}
-              name={authorizer.name}
-              position={authorizer.position}
-              scale={authorizer.scale}
-              dimensions={authorizer.dimensions}
-              id={authorizer.id}
-              dispatch={dispatch}
-              dragType={COMPOSE.UPDATE_AUTHORIZER_POSITION}
-              transformType={COMPOSE.UPDATE_AUTHORIZER_SCALE}
+        {isPreview ? (
+          <>
+            <FixedText
+              name={validationDetails.name}
+              position={validationDetails.position}
+              scale={validationDetails.scale}
+              dimensions={validationDetails.dimensions}
+              id={validationDetails.id}
+              colour="red"
             />
-          ))}
+
+            <FixedText
+              name={recipientName.name}
+              position={recipientName.position}
+              scale={recipientName.scale}
+              dimensions={recipientName.dimensions}
+              id={recipientName.id}
+              colour="lightgreen"
+            />
+
+            {authorizerDetails.length > 0 &&
+              authorizerDetails.map((authorizer: AuthorizerType) => (
+                <FixedText
+                  key={authorizer.id}
+                  name={authorizer.name}
+                  position={authorizer.position}
+                  scale={authorizer.scale}
+                  dimensions={authorizer.dimensions}
+                  id={authorizer.id}
+                />
+              ))}
+          </>
+        ) : (
+          <>
+            <TransformableText
+              name={validationDetails.name}
+              position={validationDetails.position}
+              scale={validationDetails.scale}
+              dimensions={validationDetails.dimensions}
+              id={validationDetails.id}
+              colour="red"
+              isSelected={isValidationDetailsSelected}
+              onSelect={() => setValidationDetailsSelected(true)}
+              dispatch={dispatch}
+              dragType={COMPOSE.UPDATE_VALIDATION_DETAILS}
+              transformType={COMPOSE.UPDATE_VALIDATION_DETAILS}
+            />
+
+            <TransformableText
+              name={recipientName.name}
+              position={recipientName.position}
+              scale={recipientName.scale}
+              dimensions={recipientName.dimensions}
+              id={recipientName.id}
+              colour="lightgreen"
+              isSelected={isRecipientNameSelected}
+              onSelect={() => setRecipientNameSelected(true)}
+              dispatch={dispatch}
+              dragType={COMPOSE.UPDATE_RECIPIENT_DETAILS}
+              transformType={COMPOSE.UPDATE_RECIPIENT_DETAILS}
+            />
+
+            {authorizerDetails.length > 0 &&
+              authorizerDetails.map((authorizer: AuthorizerType) => (
+                <TransformableText
+                  key={authorizer.id}
+                  isSelected={authorizer.id === selected}
+                  onSelect={() => onSelect(authorizer.id)}
+                  name={authorizer.name}
+                  position={authorizer.position}
+                  scale={authorizer.scale}
+                  dimensions={authorizer.dimensions}
+                  id={authorizer.id}
+                  dispatch={dispatch}
+                  dragType={COMPOSE.UPDATE_AUTHORIZER_POSITION}
+                  transformType={COMPOSE.UPDATE_AUTHORIZER_SCALE}
+                />
+              ))}
+          </>
+        )}
       </Layer>
     </Stage>
   );
-}
+};
 
 export default Canvas;
 

@@ -61,6 +61,8 @@ const useStyles = makeStyles(theme => ({
     width: '70%',
     maxWidth: '70%',
     backgroundColor: theme.palette.background.paper,
+    paddingTop: '0px !important',
+    paddingBottom: 0,
   },
   overflow: {
     overflowY: 'scroll',
