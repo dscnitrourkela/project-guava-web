@@ -52,8 +52,6 @@ const Canvas: React.FC<Props> = ({isPreview = false}) => {
   };
 
   const classes = useStyles();
-
-  // const TextComponent = isPreview ? < FixedText/> : <TransformableText />
   return (
     <Stage
       width={imageRenderWidth}
@@ -79,7 +77,6 @@ const Canvas: React.FC<Props> = ({isPreview = false}) => {
               scale={validationDetails.scale}
               dimensions={validationDetails.dimensions}
               id={validationDetails.id}
-              colour="red"
             />
 
             <FixedText
@@ -88,7 +85,6 @@ const Canvas: React.FC<Props> = ({isPreview = false}) => {
               scale={recipientName.scale}
               dimensions={recipientName.dimensions}
               id={recipientName.id}
-              colour="lightgreen"
             />
 
             {authorizerDetails.length > 0 &&

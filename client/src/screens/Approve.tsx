@@ -4,30 +4,15 @@ import React from 'react';
 import {makeStyles} from '@material-ui/core';
 
 // Components
-import {
-  HalvesTemplate,
-  HalvesColumn1,
-  HalvesColumn2,
-  CertificateDetails,
-  Authorizers,
-  Editor,
-  Proceed,
-} from '../components';
+import {HalvesTemplate, HalvesColumn1, HalvesColumn2} from '../components';
 
 const Auth: React.FC = () => {
-  // ====================== Main Render Function ====================== //
   const classes = useStyles();
   return (
     <HalvesTemplate>
-      <HalvesColumn1>
-        <CertificateDetails />
-        <Authorizers />
-        <Proceed />
-      </HalvesColumn1>
+      <HalvesColumn1>heelo</HalvesColumn1>
 
-      <HalvesColumn2 className={classes.column2}>
-        <Editor />
-      </HalvesColumn2>
+      <HalvesColumn2 className={classes.column2}>hello</HalvesColumn2>
     </HalvesTemplate>
   );
 };
@@ -45,7 +30,6 @@ const useStyles = makeStyles(() => ({
     position: 'relative',
     maxWidth: '100%',
     padding: '20px',
-    paddingTop: '20px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-start',

@@ -27,7 +27,6 @@ const FixedText: React.FC<TextProps> = ({
   position,
   scale,
   name,
-  colour,
 }) => {
   const shapeRef = React.useRef<Konva.Group>(null);
 
@@ -47,7 +46,6 @@ const FixedText: React.FC<TextProps> = ({
       <Rect
         width={dimensions.width}
         height={dimensions.height}
-        fill={colour || 'lightblue'}
         cornerRadius={[7, 7, 7, 7]}
       />
       <Text

@@ -8,7 +8,13 @@ import {Router, Route, Switch} from 'react-router-dom';
 import {ComposeProvider} from '../store/contexts';
 
 // Components
-import {HomePage, AuthPage, ComposePage, DemoPage} from '../screens';
+import {
+  HomePage,
+  AuthPage,
+  ComposePage,
+  DemoPage,
+  ApprovePage,
+} from '../screens';
 import {MobileView} from '../components';
 
 // Config
@@ -39,6 +45,9 @@ function App(): JSX.Element {
               <ComposeProvider>
                 <ComposePage />
               </ComposeProvider>
+            </Route>
+            <Route exact path="/approve">
+              <ApprovePage />
             </Route>
           </Switch>
         </Router>
