@@ -10,6 +10,7 @@ import {
   HalvesColumn2,
   DetailsMenu,
   RequestDetails,
+  ApprovalProceed,
 } from '../components';
 
 const Auth: React.FC = () => {
@@ -19,6 +20,7 @@ const Auth: React.FC = () => {
       <HalvesColumn1>
         <DetailsMenu />
         <RequestDetails />
+        <ApprovalProceed />
       </HalvesColumn1>
 
       <HalvesColumn2 className={classes.column2}>hello</HalvesColumn2>
