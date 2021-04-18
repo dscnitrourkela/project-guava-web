@@ -1,5 +1,5 @@
-// eslint-disable-next-line
 export * from './shared';
+export * from './widgets';
 export * from './templates';
 export * from './signup';
 export * from './compose';
