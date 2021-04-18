@@ -28,6 +28,14 @@ const Home: React.FC = () => {
 
       <CustomButton
         type="outlined"
+        label="Dashboard"
+        link="/dashboard"
+        onClick={() => {}}
+        className={classes.button}
+      />
+
+      <CustomButton
+        type="outlined"
         label="Compose"
         link="/compose"
         onClick={() => {}}

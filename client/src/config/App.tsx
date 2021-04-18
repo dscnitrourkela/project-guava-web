@@ -21,9 +21,10 @@ import createBrowserHistory from '../utils/createBrowserHistory';
 
 // Lazily Load all components
 const HomePage = lazy(() => import('../screens/Home'));
+const DashboardPage = lazy(() => import('../screens/Dashboard'));
 const ComposePage = lazy(() => import('../screens/Compose'));
-const DemoPage = lazy(() => import('../screens/Demo'));
 const ApprovePage = lazy(() => import('../screens/Approve'));
+const DemoPage = lazy(() => import('../screens/Demo'));
 const AuthPage = lazy(() => import('../screens/Auth'));
 
 function App(): JSX.Element {
@@ -57,8 +58,13 @@ function App(): JSX.Element {
                   <ComposePage />
                 </ComposeProvider>
               </Route>
+
               <Route exact path="/approve">
                 <ApprovePage />
+              </Route>
+
+              <Route exact path="/dashboard">
+                <DashboardPage />
               </Route>
             </Switch>
           </Suspense>
