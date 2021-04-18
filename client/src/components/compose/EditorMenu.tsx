@@ -10,13 +10,14 @@ import {CustomModal} from '../shared';
 import Canvas from './canvas/Canvas';
 
 // State Handlers
-// import {useCompose} from '../../store/contexts';
+import {useCompose} from '../../store/contexts';
 // import {COMPOSE} from '../../store/action-types';
 
 // Hooks
 import {useToggle} from '../../hooks';
 
 function EditorMenu(): JSX.Element {
+  const [state, dispatch] = useCompose();
   const [modalOpen, toggleModalOpen, setModalOpen] = useToggle(false);
 
   // const [, dispatch] = useCompose();
@@ -40,7 +41,7 @@ function EditorMenu(): JSX.Element {
       </div>
 
       <CustomModal open={modalOpen} setOpen={setModalOpen}>
-        <Canvas isPreview />
+        <Canvas state={state} dispatch={dispatch} isPreview />
       </CustomModal>
     </>
   );

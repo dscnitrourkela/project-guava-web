@@ -62,7 +62,7 @@ function Editor(): JSX.Element {
         <>
           <EditorMenu />
           <div className={classes.canvasContainer}>
-            <Canvas />
+            <Canvas state={state} dispatch={dispatch} />
             <FontAwesomeIcon
               className={classes.deleteImageIcon}
               size="4x"

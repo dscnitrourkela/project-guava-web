@@ -10,15 +10,22 @@ import TransformableText from './TransformableText';
 import FixedText from './FixedText';
 
 // State Handlers
-import {useCompose} from '../../../store/contexts';
-import {AuthorizerType, COMPOSE} from '../../../store/action-types';
+// import {useCompose} from '../../../store/contexts';
+import {
+  ActionType,
+  AuthorizerType,
+  COMPOSE,
+  InitialStateType,
+} from '../../../store/action-types';
 
 interface Props {
   isPreview?: boolean;
+  state: InitialStateType;
+  dispatch?: React.Dispatch<ActionType>;
 }
 
-const Canvas: React.FC<Props> = ({isPreview = false}) => {
-  const [state, dispatch] = useCompose();
+const Canvas: React.FC<Props> = ({isPreview = false, dispatch, state}) => {
+  // const [state, dispatch] = useCompose();
   const {
     imageDimensions,
     stageDimensions,
@@ -50,6 +57,7 @@ const Canvas: React.FC<Props> = ({isPreview = false}) => {
     setRecipientNameSelected(false);
     setValidationDetailsSelected(false);
   };
+  console.log(state);
 
   const classes = useStyles();
   return (
