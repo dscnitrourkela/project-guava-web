@@ -153,6 +153,7 @@ const theme = createMuiTheme({
     snackbar: 1400,
     tooltip: 1500,
   },
+
   // spacing: [0, 4, 8, 16, 32, 64],
 });
 

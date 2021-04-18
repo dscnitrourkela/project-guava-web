@@ -6,7 +6,6 @@ import {
   IconButton,
   makeStyles,
   Toolbar,
-  Typography,
   Menu,
   MenuItem,
   Container,
@@ -38,15 +37,19 @@ const MenuBar: React.FC = () => {
   const renderMenu = (
     <Menu
       anchorEl={anchorEl}
-      anchorOrigin={{vertical: 'top', horizontal: 'right'}}
+      getContentAnchorEl={null}
+      anchorOrigin={{vertical: 'bottom', horizontal: 'right'}}
+      transformOrigin={{vertical: 'top', horizontal: 'right'}}
       id={menuId}
       keepMounted
-      transformOrigin={{vertical: 'top', horizontal: 'right'}}
       open={isMenuOpen}
       onClose={handleMenuClose}
+      classes={{
+        paper: classes.menu,
+      }}
     >
       <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Logout</MenuItem>
     </Menu>
   );
 
@@ -70,12 +73,7 @@ const MenuBar: React.FC = () => {
                 input: classes.inputInput,
               }}
               inputProps={{'aria-label': 'search'}}
-              className={classes.search}
             />
-
-            {/* <Typography variant="body1" className={classes.search}>
-              Search
-            </Typography> */}
           </div>
 
           <div className={classes.menuContainer}>
@@ -112,6 +110,7 @@ const useStyles = makeStyles(theme => ({
   appbar: {
     backgroundColor: theme.palette.common.white,
     borderBottom: '1px solid #E5E5E5',
+    boxShadow: 'none',
   },
   root: {
     display: 'flex',
@@ -138,13 +137,19 @@ const useStyles = makeStyles(theme => ({
     marginRight: '15px',
     color: 'rgba(0, 0, 0, 0.54)',
   },
-  search: {
-    flex: 1,
-  },
   menuContainer: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
+  },
+  menu: {
+    boxShadow: 'none !important',
+    backgroundColor: theme.palette.common.white,
+    border: '1px solid #E5E5E5',
+    borderTop: '0px',
+    borderTopLeftRadius: 0,
+    borderTopRightRadius: 0,
+    marginTop: '2px',
   },
   button: {
     marginRight: '20px',
