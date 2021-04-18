@@ -1,14 +1,19 @@
 import React, {Suspense, lazy} from 'react';
 
 // Libraries
-import {CssBaseline, useMediaQuery, ThemeProvider} from '@material-ui/core';
+import {
+  CssBaseline,
+  useMediaQuery,
+  ThemeProvider,
+  makeStyles,
+} from '@material-ui/core';
 import {Router, Route, Switch} from 'react-router-dom';
 
 // Context Providers
 import {ComposeProvider} from '../store/contexts';
 
 // Components
-import {MobileView} from '../components';
+import {MobileView, Loader} from '../components';
 
 // Config and Utils
 import theme from './theme';
@@ -23,6 +28,7 @@ const AuthPage = lazy(() => import('../screens/Auth'));
 
 function App(): JSX.Element {
   const isMobileView = useMediaQuery('(max-width:600px)');
+  const classes = useStyles();
 
   return (
     <ThemeProvider theme={theme}>
@@ -32,7 +38,13 @@ function App(): JSX.Element {
         <MobileView />
       ) : (
         <Router history={createBrowserHistory}>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense
+            fallback={
+              <div className={classes.divContainer}>
+                <Loader />
+              </div>
+            }
+          >
             <Switch>
               <Route exact path="/" component={HomePage} />
               <Route exact path="/demo" component={DemoPage} />
@@ -57,3 +69,14 @@ function App(): JSX.Element {
 }
 
 export default App;
+
+const useStyles = makeStyles(() => ({
+  divContainer: {
+    width: '100vw',
+    minHeight: '100vh',
+
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+}));
