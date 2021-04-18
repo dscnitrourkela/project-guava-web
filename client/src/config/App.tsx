@@ -10,10 +10,8 @@ import {ComposeProvider} from '../store/contexts';
 // Components
 import {MobileView} from '../components';
 
-// Config
+// Config and Utils
 import theme from './theme';
-
-// Utils
 import createBrowserHistory from '../utils/createBrowserHistory';
 
 // Lazily Load all components

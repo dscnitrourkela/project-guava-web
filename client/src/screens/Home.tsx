@@ -33,6 +33,14 @@ const Home: React.FC = () => {
         onClick={() => {}}
         className={classes.button}
       />
+
+      <CustomButton
+        type="outlined"
+        label="Approve"
+        link="/approve"
+        onClick={() => {}}
+        className={classes.button}
+      />
     </Container>
   );
 };
@@ -41,7 +49,7 @@ export default Home;
 
 const useStyles = makeStyles(() => ({
   root: {
-    width: '100%',
+    width: '65%',
     height: 'auto',
     minHeight: window.innerHeight,
     display: 'flex',
