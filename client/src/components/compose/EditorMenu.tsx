@@ -7,11 +7,10 @@ import {faCaretRight} from '@fortawesome/free-solid-svg-icons';
 
 // Components
 import {CustomModal} from '../shared';
-import Canvas from './canvas/Canvas';
+import {Canvas} from '../widgets';
 
 // State Handlers
 import {useCompose} from '../../store/contexts';
-// import {COMPOSE} from '../../store/action-types';
 
 // Hooks
 import {useToggle} from '../../hooks';
@@ -20,9 +19,7 @@ function EditorMenu(): JSX.Element {
   const [state, dispatch] = useCompose();
   const [modalOpen, toggleModalOpen, setModalOpen] = useToggle(false);
 
-  // const [, dispatch] = useCompose();
   const classes = useStyles();
-
   return (
     <>
       <div className={classes.root}>

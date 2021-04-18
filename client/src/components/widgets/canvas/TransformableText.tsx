@@ -4,7 +4,7 @@ import React from 'react';
 import {Rect, Transformer, Text, Group} from 'react-konva';
 import Konva from 'konva';
 
-export interface TextProps {
+export interface TransformableTextProps {
   isSelected: boolean;
   onSelect: () => void;
   dimensions: {
@@ -28,7 +28,7 @@ export interface TextProps {
   colour?: string;
 }
 
-const TransformableText: React.FC<TextProps> = ({
+const TransformableText: React.FC<TransformableTextProps> = ({
   isSelected,
   onSelect,
   dimensions,

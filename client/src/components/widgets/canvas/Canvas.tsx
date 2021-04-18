@@ -3,14 +3,12 @@ import React from 'react';
 // Libraries
 import {Stage, Layer, Image} from 'react-konva';
 import useImage from 'use-image';
-import {makeStyles} from '@material-ui/core';
 
 // Components
 import TransformableText from './TransformableText';
 import FixedText from './FixedText';
 
 // State Handlers
-// import {useCompose} from '../../../store/contexts';
 import {
   ActionType,
   AuthorizerType,
@@ -18,13 +16,17 @@ import {
   InitialStateType,
 } from '../../../store/action-types';
 
-interface Props {
+interface CanvasProps {
   isPreview?: boolean;
   state: InitialStateType;
   dispatch?: React.Dispatch<ActionType>;
 }
 
-const Canvas: React.FC<Props> = ({isPreview = false, dispatch, state}) => {
+const Canvas: React.FC<CanvasProps> = ({
+  isPreview = false,
+  dispatch,
+  state,
+}) => {
   // const [state, dispatch] = useCompose();
   const {
     imageDimensions,
@@ -57,15 +59,9 @@ const Canvas: React.FC<Props> = ({isPreview = false, dispatch, state}) => {
     setRecipientNameSelected(false);
     setValidationDetailsSelected(false);
   };
-  console.log(state);
 
-  const classes = useStyles();
   return (
-    <Stage
-      width={imageRenderWidth}
-      height={stageHeight}
-      className={classes.stage}
-    >
+    <Stage width={imageRenderWidth} height={stageHeight}>
       <Layer>
         <Image
           image={image}
@@ -161,14 +157,3 @@ const Canvas: React.FC<Props> = ({isPreview = false, dispatch, state}) => {
 };
 
 export default Canvas;
-
-const useStyles = makeStyles(() => ({
-  stage: {
-    // borderRadius: 6,
-    // paddingLeft: 0,
-    // paddingRight: 0,
-    // marginLeft: 'auto',
-    // marginRight: 'auto',
-    // display: 'block',
-  },
-}));

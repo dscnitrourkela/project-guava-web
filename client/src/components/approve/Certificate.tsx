@@ -2,13 +2,13 @@ import React from 'react';
 import {InitialStateType} from '../../store/action-types';
 
 // components
-import {Canvas} from '../compose';
+import {Canvas} from '../widgets';
 
-interface Props {
+interface CertificateProps {
   state: InitialStateType;
 }
 
-const Certificate: React.FC<Props> = ({state}) => (
+const Certificate: React.FC<CertificateProps> = ({state}) => (
   <Canvas isPreview state={state} />
 );
 

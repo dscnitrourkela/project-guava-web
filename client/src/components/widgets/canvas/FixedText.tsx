@@ -4,7 +4,7 @@ import React from 'react';
 import {Rect, Text, Group} from 'react-konva';
 import Konva from 'konva';
 
-export interface TextProps {
+export interface FixedTextProps {
   dimensions: {
     width: number;
     height: number;
@@ -22,7 +22,7 @@ export interface TextProps {
   colour?: string;
 }
 
-const FixedText: React.FC<TextProps> = ({
+const FixedText: React.FC<FixedTextProps> = ({
   dimensions,
   position,
   scale,

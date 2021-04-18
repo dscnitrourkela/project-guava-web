@@ -8,9 +8,9 @@ import {useDropzone} from 'react-dropzone';
 
 // Components
 import EditorMenu from './EditorMenu';
-import Canvas from './canvas/Canvas';
 import RecipientsImport from './RecipientsImport';
 import RecipientTable from './RecipientTable';
+import {Canvas} from '../widgets';
 
 // State Handlers
 import {useCompose} from '../../store/contexts';
