@@ -7,9 +7,10 @@ import {faTrashAlt, faCloudUploadAlt} from '@fortawesome/free-solid-svg-icons';
 import {useDropzone} from 'react-dropzone';
 
 // Components
-import Canvas from './canvas/Canvas';
+import EditorMenu from './EditorMenu';
 import RecipientsImport from './RecipientsImport';
 import RecipientTable from './RecipientTable';
+import {Canvas} from '../widgets';
 
 // State Handlers
 import {useCompose} from '../../store/contexts';
@@ -58,16 +59,19 @@ function Editor(): JSX.Element {
   return (
     <>
       {uploadImage ? (
-        <div className={classes.canvasContainer}>
-          <Canvas />
-          <FontAwesomeIcon
-            className={classes.deleteImageIcon}
-            size="4x"
-            icon={faTrashAlt}
-            onClick={handleRemoveImage}
-            onMouseDown={handleRemoveImage}
-          />
-        </div>
+        <>
+          <EditorMenu />
+          <div className={classes.canvasContainer}>
+            <Canvas state={state} dispatch={dispatch} />
+            <FontAwesomeIcon
+              className={classes.deleteImageIcon}
+              size="4x"
+              icon={faTrashAlt}
+              onClick={handleRemoveImage}
+              onMouseDown={handleRemoveImage}
+            />
+          </div>
+        </>
       ) : (
         <div className={classes.root}>
           <div {...getRootProps()}>
@@ -98,6 +102,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     width: '100%',
     height: '550px',
+    marginTop: 20,
     minHeight: '550px',
     backgroundColor: theme.palette.background.default,
     borderRadius: 6,

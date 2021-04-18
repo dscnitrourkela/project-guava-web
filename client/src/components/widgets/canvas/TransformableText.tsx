@@ -4,10 +4,7 @@ import React from 'react';
 import {Rect, Transformer, Text, Group} from 'react-konva';
 import Konva from 'konva';
 
-// State Handlers
-// import {COMPOSE} from '../../../store/action-types';
-
-export interface TextProps {
+export interface TransformableTextProps {
   isSelected: boolean;
   onSelect: () => void;
   dimensions: {
@@ -31,7 +28,7 @@ export interface TextProps {
   colour?: string;
 }
 
-const Rectangle: React.FC<TextProps> = ({
+const TransformableText: React.FC<TransformableTextProps> = ({
   isSelected,
   onSelect,
   dimensions,
@@ -126,4 +123,4 @@ const Rectangle: React.FC<TextProps> = ({
   );
 };
 
-export default Rectangle;
+export default TransformableText;

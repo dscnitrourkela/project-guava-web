@@ -45,6 +45,7 @@ const useStyles = makeStyles(() => ({
     position: 'relative',
     maxWidth: '100%',
     padding: '20px',
+    paddingTop: '20px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-start',
