@@ -6,7 +6,12 @@ import {faDownload} from '@fortawesome/free-solid-svg-icons';
 import Konva from 'konva';
 
 // Components
-import {Canvas, CustomButton, ViewCertificateDetails} from '../components';
+import {
+  Canvas,
+  CustomButton,
+  ViewCertificateDetails,
+  ViewCertificateHeader,
+} from '../components';
 
 // Assets + Utils
 import {downloadURI} from '../utils';
@@ -26,6 +31,7 @@ const ViewCertificate: React.FC = () => {
 
   return (
     <div className={classes.root}>
+      <ViewCertificateHeader />
       <div className={`${classes.flexAlign} ${classes.column1}`}>
         <Toolbar />
         <Canvas
@@ -46,9 +52,9 @@ const ViewCertificate: React.FC = () => {
           onClick={handleDownload}
         />
 
-        <div className={classes.socialsContainer}>
+        {/* <div className={classes.socialsContainer}>
           Instagram Facebook Twitter
-        </div>
+        </div> */}
       </div>
     </div>
   );
@@ -81,7 +87,7 @@ const useStyles = makeStyles(() => ({
     width: '65%',
     height: '100%',
     minHeight: '100vh',
-    paddingTop: '30px',
+    paddingTop: '70px',
   },
   column2: {
     width: '35%',
@@ -89,7 +95,7 @@ const useStyles = makeStyles(() => ({
     minHeight: '100vh',
     alignItems: 'flex-start',
     padding: '10px',
-    paddingTop: '30px',
+    paddingTop: '70px',
   },
   socialsContainer: {},
 }));
