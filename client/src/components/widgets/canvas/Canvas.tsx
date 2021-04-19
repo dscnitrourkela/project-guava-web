@@ -21,6 +21,7 @@ interface CanvasProps {
   state: InitialStateType;
   dispatch?: React.Dispatch<ActionType>;
   className?: string;
+  canvasRef?: any;
 }
 
 const Canvas: React.FC<CanvasProps> = ({
@@ -28,8 +29,8 @@ const Canvas: React.FC<CanvasProps> = ({
   dispatch,
   state,
   className,
+  canvasRef,
 }) => {
-  // const [state, dispatch] = useCompose();
   const {
     imageDimensions,
     stageDimensions,
@@ -52,7 +53,7 @@ const Canvas: React.FC<CanvasProps> = ({
   const imagePositionX = 0;
   const imagePositionY = 0;
 
-  const [image] = useImage(uploadImage);
+  const [image] = useImage(uploadImage, 'Anonymous');
   const [selected, setSelected] = React.useState<string | null>(null);
 
   const onSelect = (id: string): void => setSelected(id);
@@ -63,7 +64,12 @@ const Canvas: React.FC<CanvasProps> = ({
   };
 
   return (
-    <Stage width={imageRenderWidth} height={stageHeight} className={className}>
+    <Stage
+      ref={canvasRef}
+      width={imageRenderWidth}
+      height={stageHeight}
+      className={className}
+    >
       <Layer>
         <Image
           image={image}

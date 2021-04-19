@@ -3,29 +3,48 @@ import React from 'react';
 // Libraries
 import {makeStyles, Toolbar} from '@material-ui/core';
 import {faDownload} from '@fortawesome/free-solid-svg-icons';
+import Konva from 'konva';
 
 // Components
 import {Canvas, CustomButton, ViewCertificateDetails} from '../components';
 
-// Assets
+// Assets + Utils
+import {downloadURI} from '../utils';
 import {DUMMY_CERTIFICATE} from '../assets/placeholder';
 
 const ViewCertificate: React.FC = () => {
-  const [certificate] = React.useState(DUMMY_CERTIFICATE);
+  const canvasRef = React.useRef<Konva.Stage>(null);
   const classes = useStyles();
+  const [certificate] = React.useState(DUMMY_CERTIFICATE);
+
+  const handleDownload = () => {
+    if (canvasRef.current) {
+      const uri = canvasRef.current.toDataURL();
+      downloadURI(uri, 'certificate.png');
+    }
+  };
 
   return (
     <div className={classes.root}>
       <div className={`${classes.flexAlign} ${classes.column1}`}>
         <Toolbar />
-        <Canvas className={classes.canvas} state={certificate} isPreview />
+        <Canvas
+          canvasRef={canvasRef}
+          className={classes.canvas}
+          state={certificate}
+          isPreview
+        />
       </div>
 
       <div className={`${classes.flexAlign} ${classes.column2}`}>
         <Toolbar />
         <ViewCertificateDetails />
 
-        <CustomButton icon={faDownload} label="Download" onClick={() => {}} />
+        <CustomButton
+          icon={faDownload}
+          label="Download"
+          onClick={handleDownload}
+        />
 
         <div className={classes.socialsContainer}>
           Instagram Facebook Twitter
