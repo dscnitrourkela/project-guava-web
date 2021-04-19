@@ -49,6 +49,14 @@ const Home: React.FC = () => {
         onClick={() => {}}
         className={classes.button}
       />
+
+      <CustomButton
+        type="outlined"
+        label="View Certificate"
+        link="/viewCertificate"
+        onClick={() => {}}
+        className={classes.button}
+      />
     </Container>
   );
 };
