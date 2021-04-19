@@ -19,7 +19,9 @@ function DetailsMenu(): JSX.Element {
   return (
     <Container className={classes.root}>
       <Typography
-        onClick={() => createBrowserHistory.push('/')}
+        onClick={createBrowserHistory.goBack}
+        onKeyDown={createBrowserHistory.goBack}
+        role="button"
         variant="body1"
         className={classes.backText}
       >

@@ -9,15 +9,10 @@ import {
   faArrowLeft,
 } from '@fortawesome/free-solid-svg-icons';
 
-// State Handlers
-// import {useCompose} from '../../store/contexts';
-// import {COMPOSE} from '../../store/action-types';
-
 // Utils
 import createBrowserHistory from '../../utils/createBrowserHistory';
 
 function DetailsMenu(): JSX.Element {
-  // const [, dispatch] = useCompose();
   const classes = useStyles();
 
   return (
@@ -27,7 +22,9 @@ function DetailsMenu(): JSX.Element {
           className={classes.back}
           size="lg"
           icon={faArrowLeft}
-          onClick={() => createBrowserHistory.push('/')}
+          onClick={createBrowserHistory.goBack}
+          onKeyDown={createBrowserHistory.goBack}
+          role="button"
         />
 
         <div className={classes.profileContainer}>
