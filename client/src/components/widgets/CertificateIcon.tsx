@@ -3,6 +3,7 @@ import React from 'react';
 
 // Libraries
 import {Paper, makeStyles, Typography} from '@material-ui/core';
+import {Link} from 'react-router-dom';
 
 // Assets
 import {InitialStateType} from '../../store/action-types';
@@ -17,39 +18,41 @@ const CertificateIcon: React.FC<CertificateIconProps> = ({data, status}) => {
   const classes = useStyles(status)();
 
   return (
-    <Paper className={classes.root}>
-      <img
-        className={classes.image}
-        src={data.certificateImageDetails.src}
-        alt={data.certificateDetails.eventName}
-      />
+    <Link to="/approve">
+      <Paper className={classes.root}>
+        <img
+          className={classes.image}
+          src={data.certificateImageDetails.src}
+          alt={data.certificateDetails.eventName}
+        />
 
-      <div className={classes.detailsContainer}>
-        <Typography className={classes.name} variant="body1">
-          Participation Certificate{data.certificateDetails.eventName}
-        </Typography>
-        <Typography className={classes.distribution} variant="body1">
-          {`Distribution on ${data.certificateDetails.date}, ${data.certificateDetails.time}`}
-        </Typography>
-
-        <div className={classes.approveContainer}>
-          <div className={classes.profileContainer}>
-            {[1, 2, 3].map(number => (
-              <img
-                key={number}
-                className={classes.profile}
-                src="https://res.cloudinary.com/dalqfvowk/image/upload/badges_user/z2kd6ghrzkturciyltns.jpg"
-                alt={data.certificateDetails.eventName}
-              />
-            ))}
-          </div>
-
-          <Typography className={classes.status} variant="body1">
-            {status.charAt(0).toUpperCase() + status.slice(1)}
+        <div className={classes.detailsContainer}>
+          <Typography className={classes.name} variant="body1">
+            Participation Certificate{data.certificateDetails.eventName}
           </Typography>
+          <Typography className={classes.distribution} variant="body1">
+            {`Distribution on ${data.certificateDetails.date}, ${data.certificateDetails.time}`}
+          </Typography>
+
+          <div className={classes.approveContainer}>
+            <div className={classes.profileContainer}>
+              {[1, 2, 3].map(number => (
+                <img
+                  key={number}
+                  className={classes.profile}
+                  src="https://res.cloudinary.com/dalqfvowk/image/upload/badges_user/z2kd6ghrzkturciyltns.jpg"
+                  alt={data.certificateDetails.eventName}
+                />
+              ))}
+            </div>
+
+            <Typography className={classes.status} variant="body1">
+              {status.charAt(0).toUpperCase() + status.slice(1)}
+            </Typography>
+          </div>
         </div>
-      </div>
-    </Paper>
+      </Paper>
+    </Link>
   );
 };
 
@@ -69,12 +72,17 @@ const useStyles = (status: string) =>
       width: '300px',
       height: '300px',
       borderRadius: '4px',
+
       margin: '20px',
       padding: '0px',
       paddingTop: '10px',
       boxShadow: '0px 5px 15px rgba(0,0,0,0.4)',
+
       backgroundColor: '#ffffff',
       overflow: 'hidden',
+      '&:hover': {
+        cursor: 'pointer',
+      },
 
       display: 'flex',
       flexDirection: 'column',

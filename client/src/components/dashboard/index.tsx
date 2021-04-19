@@ -1,2 +1,2 @@
-// eslint-disable-next-line
 export {default as DashboardMenu} from './MenuBar';
+export {default as CertificateList} from './CertificateList';

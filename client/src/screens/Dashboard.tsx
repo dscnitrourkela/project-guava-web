@@ -4,7 +4,7 @@ import React from 'react';
 import {Container, makeStyles, Toolbar} from '@material-ui/core';
 
 // Components
-import {CertificateIcon, DashboardMenu} from '../components';
+import {CertificateIcon, DashboardMenu, CertificateList} from '../components';
 
 // Assets
 import {DUMMY_CERTIFICATE} from '../assets/placeholder';
@@ -16,7 +16,9 @@ const Dashboard: React.FC = () => {
     <div className={classes.pageContainer}>
       <DashboardMenu />
       <Toolbar />
+
       <Container>
+        <CertificateList />
         {['pending', 'approved', 'distributed'].map(status => (
           <CertificateIcon
             key={status}

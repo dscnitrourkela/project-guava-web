@@ -13,6 +13,7 @@ import {
 } from '@material-ui/core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faSearch} from '@fortawesome/free-solid-svg-icons';
+import {Link} from 'react-router-dom';
 
 // Components
 import {CustomButton} from '../shared';
@@ -57,7 +58,9 @@ const MenuBar: React.FC = () => {
     <AppBar position="fixed" className={classes.appbar}>
       <Toolbar>
         <Container className={classes.root}>
-          <img className={classes.logo} src={LOGOS.ONE} alt="Signit logo" />
+          <Link to="/">
+            <img className={classes.logo} src={LOGOS.ONE} alt="Signit logo" />
+          </Link>
 
           <div className={classes.searchContainer}>
             <FontAwesomeIcon
