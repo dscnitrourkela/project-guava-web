@@ -24,6 +24,7 @@ const HomePage = lazy(() => import('../screens/Home'));
 const DashboardPage = lazy(() => import('../screens/Dashboard'));
 const ComposePage = lazy(() => import('../screens/Compose'));
 const ApprovePage = lazy(() => import('../screens/Approve'));
+const ViewCertificatePage = lazy(() => import('../screens/ViewCertificate'));
 const DemoPage = lazy(() => import('../screens/Demo'));
 const AuthPage = lazy(() => import('../screens/Auth'));
 
@@ -65,6 +66,10 @@ function App(): JSX.Element {
 
               <Route exact path="/dashboard">
                 <DashboardPage />
+              </Route>
+
+              <Route exact path="/viewCertificate">
+                <ViewCertificatePage />
               </Route>
             </Switch>
           </Suspense>

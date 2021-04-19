@@ -3,6 +3,7 @@ import React from 'react';
 // Libraries
 import {makeStyles, Button, CircularProgress} from '@material-ui/core';
 import {Link} from 'react-router-dom';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 export interface ButtonProps {
   label: string | JSX.Element;
@@ -14,6 +15,7 @@ export interface ButtonProps {
   link?: string;
   className?: string;
   disabled?: boolean;
+  icon?: any;
 }
 
 function CustomButton({
@@ -25,6 +27,7 @@ function CustomButton({
   link,
   className,
   disabled = false,
+  icon,
 }: ButtonProps): JSX.Element {
   const classes = useStyles();
 
@@ -58,7 +61,16 @@ function CustomButton({
           {loading ? (
             <CircularProgress size={20} className={classes.circularProgress} />
           ) : (
-            <span>{label}</span>
+            <>
+              {icon && (
+                <FontAwesomeIcon
+                  size="lg"
+                  icon={icon}
+                  style={{marginRight: '10px'}}
+                />
+              )}
+              <span>{label}</span>
+            </>
           )}
         </Button>
       )}
