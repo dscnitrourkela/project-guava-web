@@ -20,12 +20,14 @@ interface CanvasProps {
   isPreview?: boolean;
   state: InitialStateType;
   dispatch?: React.Dispatch<ActionType>;
+  className?: string;
 }
 
 const Canvas: React.FC<CanvasProps> = ({
   isPreview = false,
   dispatch,
   state,
+  className,
 }) => {
   // const [state, dispatch] = useCompose();
   const {
@@ -61,7 +63,7 @@ const Canvas: React.FC<CanvasProps> = ({
   };
 
   return (
-    <Stage width={imageRenderWidth} height={stageHeight}>
+    <Stage width={imageRenderWidth} height={stageHeight} className={className}>
       <Layer>
         <Image
           image={image}
