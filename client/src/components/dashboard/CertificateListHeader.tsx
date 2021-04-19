@@ -5,6 +5,9 @@ import {makeStyles, Typography, Menu, MenuItem} from '@material-ui/core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faFilter, faCaretDown} from '@fortawesome/free-solid-svg-icons';
 
+// Types
+// import {MenuOptions} from './CertificateList';
+
 interface CertificateListHeaderProps {
   menuSelected: string;
   setMenuSelected: (param: string) => void;
