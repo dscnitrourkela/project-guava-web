@@ -88,7 +88,7 @@ const CertificateListHeader: React.FC<CertificateListHeaderProps> = ({
 
 export default CertificateListHeader;
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   header: {
     width: '100%',
 
@@ -114,7 +114,7 @@ const useStyles = makeStyles(theme => ({
   },
   menu: {
     boxShadow: 'none !important',
-    backgroundColor: theme.palette.common.white,
+    backgroundColor: '#FBFCFD',
     border: '1px solid rgba(0, 0, 0, 0.1);',
     borderTop: '0px',
     borderTopLeftRadius: 0,

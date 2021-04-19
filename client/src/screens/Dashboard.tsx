@@ -4,10 +4,7 @@ import React from 'react';
 import {Container, makeStyles, Toolbar} from '@material-ui/core';
 
 // Components
-import {CertificateIcon, DashboardMenu, CertificateList} from '../components';
-
-// Assets
-import {DUMMY_CERTIFICATE} from '../assets/placeholder';
+import {DashboardMenu, CertificateList, RequestsList} from '../components';
 
 const Dashboard: React.FC = () => {
   const classes = useStyles();
@@ -18,14 +15,8 @@ const Dashboard: React.FC = () => {
       <Toolbar />
 
       <Container>
+        <RequestsList />
         <CertificateList />
-        {['pending', 'approved', 'distributed'].map(status => (
-          <CertificateIcon
-            key={status}
-            data={DUMMY_CERTIFICATE}
-            status={status}
-          />
-        ))}
       </Container>
     </div>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Libraries
-import {makeStyles, Container} from '@material-ui/core';
+import {makeStyles} from '@material-ui/core';
 
 // Components
 import CertificateListHeader from './CertificateListHeader';
@@ -48,7 +48,7 @@ const CertificateList: React.FC = () => {
 
   const classes = useStyles();
   return (
-    <Container className={classes.container}>
+    <div className={classes.container}>
       <CertificateListHeader
         menuSelected={menuSelected}
         setMenuSelected={setMenuSelected}
@@ -56,7 +56,7 @@ const CertificateList: React.FC = () => {
       />
 
       <div className={classes.list}>{renderCertificates()}</div>
-    </Container>
+    </div>
   );
 };
 
