@@ -6,16 +6,12 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faFilter, faCaretDown} from '@fortawesome/free-solid-svg-icons';
 
 // Types
-// import {MenuOptions} from './CertificateList';
+import {MenuOptions} from './CertificateList';
 
 interface CertificateListHeaderProps {
   menuSelected: string;
   setMenuSelected: (param: string) => void;
-  MENU_OPTIONS: {
-    ALL: string;
-    REQUESTS: string;
-    INITIATED: string;
-  };
+  MENU_OPTIONS: MenuOptions;
 }
 
 const CertificateListHeader: React.FC<CertificateListHeaderProps> = ({
@@ -51,13 +47,11 @@ const CertificateListHeader: React.FC<CertificateListHeaderProps> = ({
         <MenuItem
           key={key}
           onClick={() => {
-            // @ts-ignore
-            setMenuSelected(MENU_OPTIONS[key]);
+            setMenuSelected(MENU_OPTIONS[key as keyof MenuOptions]);
             handleMenuClose();
           }}
         >
-          {/* @ts-ignore */}
-          {MENU_OPTIONS[key]}
+          {MENU_OPTIONS[key as keyof MenuOptions]}
         </MenuItem>
       ))}
     </Menu>

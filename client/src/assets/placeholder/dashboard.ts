@@ -1,4 +1,10 @@
-export default Object.freeze({
+export interface ICertificatesList {
+  ALL: string[];
+  REQUESTS: string[];
+  INITIATED: string[];
+}
+
+const certificates: ICertificatesList = Object.freeze({
   ALL: [
     'pending',
     'approved',
@@ -19,3 +25,5 @@ export default Object.freeze({
     'approved',
   ],
 });
+
+export default certificates;

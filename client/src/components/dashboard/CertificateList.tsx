@@ -8,7 +8,11 @@ import CertificateListHeader from './CertificateListHeader';
 import {CertificateIcon} from '../widgets';
 
 // Assets
-import {CERTIFICATE_LIST, DUMMY_CERTIFICATE} from '../../assets/placeholder';
+import {
+  CERTIFICATE_LIST,
+  DUMMY_CERTIFICATE,
+  ICertificatesList,
+} from '../../assets/placeholder';
 
 export interface MenuOptions {
   ALL: string;
@@ -30,16 +34,15 @@ const CertificateList: React.FC = () => {
       key => MENU_OPTIONS[key as keyof MenuOptions] === menuSelected,
     )[0];
 
-    return (
-      // @ts-ignore
-      CERTIFICATE_LIST[menuSelectedKey].map((status, index) => (
+    return CERTIFICATE_LIST[menuSelectedKey as keyof ICertificatesList].map(
+      (status, index) => (
         <CertificateIcon
           // eslint-disable-next-line react/no-array-index-key
           key={`${status}-${index}`}
           data={DUMMY_CERTIFICATE}
           status={status}
         />
-      ))
+      ),
     );
   };
 
