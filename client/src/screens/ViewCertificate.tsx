@@ -47,10 +47,11 @@ const ViewCertificate: React.FC = () => {
         <ViewCertificateDetails />
 
         <CustomButton
-          icon={faDownload}
-          label="Download"
+          iconOptions={{icon: faDownload, size: 'lg'}}
           onClick={handleDownload}
-        />
+        >
+          Download
+        </CustomButton>
 
         {/* <div className={classes.socialsContainer}>
           Instagram Facebook Twitter

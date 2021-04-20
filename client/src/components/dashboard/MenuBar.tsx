@@ -81,10 +81,11 @@ const MenuBar: React.FC = () => {
 
           <div className={classes.menuContainer}>
             <CustomButton
-              label="Add New"
               onClick={() => createBrowserHistory.push('/compose')}
               className={classes.button}
-            />
+            >
+              Add New
+            </CustomButton>
 
             <IconButton
               onClick={handleProfileMenuOpen}

@@ -160,10 +160,11 @@ function Signup({
 
       <CustomButton
         className={classes.signup}
-        label="Proceed"
         // eslint-disable-next-line
         onClick={setStageToOnboarding}
-      />
+      >
+        Proceed
+      </CustomButton>
     </>
   );
 }

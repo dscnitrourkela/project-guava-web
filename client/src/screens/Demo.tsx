@@ -82,12 +82,13 @@ function Home(): JSX.Element {
       />
 
       <CustomButton
-        label="Custom Label"
-        // eslint-disable-next-line
-        onClick={() => console.log('Logged')}
         loading={loading}
         setLoading={setLoading}
-      />
+        onClick={() => {}}
+      >
+        Custom Button 2
+      </CustomButton>
+
       <button
         type="button"
         // @ts-ignore

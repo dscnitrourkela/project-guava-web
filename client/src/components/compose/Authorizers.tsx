@@ -44,11 +44,12 @@ function Authorizers(): JSX.Element {
         </div>
 
         <CustomButton
-          label={<FontAwesomeIcon size="sm" icon={faPlus} />}
-          className={classes.addAuthorizer}
-          onClick={addAuthorizer}
           disabled={state.authorizerDetails.length === 3}
-        />
+          onClick={addAuthorizer}
+          className={classes.addAuthorizer}
+        >
+          <FontAwesomeIcon size="sm" icon={faPlus} />
+        </CustomButton>
       </div>
 
       {state.authorizerDetails.length > 0 &&

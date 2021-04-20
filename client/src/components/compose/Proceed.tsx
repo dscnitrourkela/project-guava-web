@@ -47,11 +47,12 @@ function Proceed(): JSX.Element {
     <div className={classes.root}>
       {proceed ? (
         <CustomButton
-          label="Proceed"
-          onClick={() => setLoading(true)}
           loading={loading}
           setLoading={setLoading}
-        />
+          onClick={() => setLoading(true)}
+        >
+          Proceed
+        </CustomButton>
       ) : (
         <div className={classes.infoContainer}>
           <FontAwesomeIcon
