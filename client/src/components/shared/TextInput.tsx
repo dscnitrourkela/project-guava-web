@@ -3,9 +3,9 @@ import React from 'react';
 // Libraries
 import {
   TextField,
-  InputAdornment,
   MenuItem,
   OutlinedTextFieldProps,
+  makeStyles,
 } from '@material-ui/core';
 
 // Hooks
@@ -15,46 +15,34 @@ export interface SelectOptions {
   value: string | number;
   label: string;
 }
-export interface TextInputProps extends OutlinedTextFieldProps {
-  value: string | number;
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+
+export interface CustomInputProps extends OutlinedTextFieldProps {
   errorText?: string;
-  required?: boolean;
-  Icon?: React.FC;
-  multiline?: boolean;
-  select?: boolean;
-  onSelect?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  options?: SelectOptions[];
   validationRegex?: RegExp;
   validationError?: string;
   className?: string;
-  [x: string]: any;
+  options?: SelectOptions[];
 }
 
-function CustomTextField({
+const CustomTextField: React.FC<CustomInputProps> = ({
   value,
   onChange,
-  errorText = 'Required Field',
   required = false,
-  Icon,
   multiline = false,
   select = false,
-  options,
-  onSelect,
-  validationRegex,
+  errorText = 'Required Field',
   validationError = 'Invalid Field',
+  validationRegex,
   className,
+  options,
+  children,
   ...rest
-}: TextInputProps): JSX.Element {
+}) => {
   const [error, open, close] = useSwitch(false);
   const [errorMessage, setErrorMessage] = React.useState<string>(errorText);
 
   const isValid = validationRegex?.test(String(value).toLowerCase());
-
-  React.useEffect(() => {
-    if (value !== '' && isValid) close();
-    if (value !== '' && !validationRegex) close();
-  }, [value, close, isValid, open, validationRegex]);
+  const classes = useStyles();
 
   const handleOnBlur = (event: React.BaseSyntheticEvent): void => {
     if (required && event.target.value === '') open();
@@ -67,45 +55,47 @@ function CustomTextField({
     }
   };
 
+  React.useEffect(() => {
+    if (value !== '' && isValid) close();
+    if (value !== '' && !validationRegex) close();
+  }, [value, close, isValid, open, validationRegex]);
+
   const inputProps = {
     value,
     onChange,
     onBlur: handleOnBlur,
     error,
-    helperText: error && errorMessage,
     required,
-    multiline,
+    helperText: error && errorMessage,
     rows: 4,
+    multiline,
     fullWidth: true,
     select,
-    style: className ? {} : {margin: '10px'},
-    InputProps: {
-      startAdornment: Icon && (
-        <InputAdornment style={{marginRight: 10}} position="start">
-          <Icon />
-        </InputAdornment>
-      ),
-    },
+    className: `${classes.textField} ${className}`,
     ...rest,
   };
 
-  return (
-    <>
-      {select ? (
-        <TextField className={className} {...inputProps}>
-          {options?.map(
+  return select ? (
+    <TextField {...inputProps}>
+      {options
+        ? options.map(
             (option: SelectOptions): JSX.Element => (
               <MenuItem key={option.value} value={option.value}>
                 {option.label}
               </MenuItem>
             ),
-          )}
-        </TextField>
-      ) : (
-        <TextField className={className} {...inputProps} />
-      )}
-    </>
+          )
+        : children}
+    </TextField>
+  ) : (
+    <TextField {...inputProps} />
   );
-}
+};
 
 export default CustomTextField;
+
+const useStyles = makeStyles(() => ({
+  textField: {
+    margin: '10px',
+  },
+}));

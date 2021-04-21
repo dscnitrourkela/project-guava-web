@@ -13,12 +13,8 @@ import {
 } from '@fortawesome/react-fontawesome';
 import {Link} from 'react-router-dom';
 
-export interface CustomButtonProps
-  // eslint-disable-next-line @typescript-eslint/ban-types
-  extends ButtonProps {
+export interface CustomButtonProps extends ButtonProps {
   onClick: (...args: any) => void;
-  variant?: 'text' | 'outlined' | 'contained';
-  // color?:
   loading?: boolean;
   setLoading?: (param: boolean) => void;
   link?: string;
@@ -31,10 +27,10 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   loading,
   setLoading,
   onClick,
-  variant = 'contained',
   link,
   className,
   iconOptions,
+  variant = 'contained',
   color = 'primary',
   ...rest
 }) => {

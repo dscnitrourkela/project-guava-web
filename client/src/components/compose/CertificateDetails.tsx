@@ -15,7 +15,7 @@ function CertificateDetails(): JSX.Element {
   const [state, dispatch] = useCompose();
 
   const onInputChange = (
-    e: React.ChangeEvent<HTMLInputElement>,
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
     key: 'title' | 'eventName',
   ): void =>
     dispatch({
