@@ -10,53 +10,49 @@ const Home: React.FC = () => {
   const classes = useStyles();
   return (
     <Container className={classes.root}>
-      <CustomButton
-        type="outlined"
-        label="Login"
-        link="/login"
-        onClick={() => {}}
-        className={classes.button}
-      />
+      <CustomButton onClick={() => {}} link="/login" className={classes.button}>
+        Login
+      </CustomButton>
 
       <CustomButton
-        type="outlined"
-        label="Signup"
+        onClick={() => {}}
         link="/signup"
-        onClick={() => {}}
         className={classes.button}
-      />
+      >
+        Signup
+      </CustomButton>
 
       <CustomButton
-        type="outlined"
-        label="Dashboard"
+        onClick={() => {}}
         link="/dashboard"
-        onClick={() => {}}
         className={classes.button}
-      />
+      >
+        Dashboard
+      </CustomButton>
 
       <CustomButton
-        type="outlined"
-        label="Compose"
+        onClick={() => {}}
         link="/compose"
-        onClick={() => {}}
         className={classes.button}
-      />
+      >
+        Compose
+      </CustomButton>
 
       <CustomButton
-        type="outlined"
-        label="Approve"
+        onClick={() => {}}
         link="/approve"
-        onClick={() => {}}
         className={classes.button}
-      />
+      >
+        Approve
+      </CustomButton>
 
       <CustomButton
-        type="outlined"
-        label="View Certificate"
-        link="/viewCertificate"
         onClick={() => {}}
+        link="/viewCertificate"
         className={classes.button}
-      />
+      >
+        View Certificate
+      </CustomButton>
     </Container>
   );
 };

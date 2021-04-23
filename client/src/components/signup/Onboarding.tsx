@@ -58,11 +58,9 @@ function FirstStage({
         selectedChildElement={radioSelectedShowcase}
       />
 
-      <CustomButton
-        className={classes.signup}
-        label="Sign up"
-        onClick={handleClick}
-      />
+      <CustomButton className={classes.signup} onClick={handleClick}>
+        Sign up
+      </CustomButton>
     </>
   );
 }

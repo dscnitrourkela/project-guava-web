@@ -15,7 +15,7 @@ function CertificateDetails(): JSX.Element {
   const [state, dispatch] = useCompose();
 
   const onInputChange = (
-    e: React.ChangeEvent<HTMLInputElement>,
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
     key: 'title' | 'eventName',
   ): void =>
     dispatch({
@@ -53,7 +53,7 @@ function CertificateDetails(): JSX.Element {
         />
 
         <CustomDateTime
-          selectedDate={state.certificateDetails.date}
+          value={state.certificateDetails.date}
           onChange={e => onDateChange(e, 'date')}
           type="date"
           label="Date of Distribution"
@@ -61,7 +61,7 @@ function CertificateDetails(): JSX.Element {
         />
 
         <CustomDateTime
-          selectedDate={state.certificateDetails.time}
+          value={state.certificateDetails.time}
           onChange={e => onDateChange(e, 'time')}
           type="time"
           label="Time of Distribution"

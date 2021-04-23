@@ -43,7 +43,6 @@ function Home(): JSX.Element {
         required
         variant="outlined"
         placeholder="enter a number"
-        // type="number"
         validationRegex={
           /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
         }
@@ -63,13 +62,13 @@ function Home(): JSX.Element {
       />
 
       <CustomDateTime
-        selectedDate={date}
+        value={date}
         onChange={(e: Date | null): void => setDate(e)}
         type="date"
       />
 
       <CustomDateTime
-        selectedDate={time}
+        value={time}
         onChange={(e: Date | null): void => setTime(e)}
         type="time"
       />
@@ -82,12 +81,13 @@ function Home(): JSX.Element {
       />
 
       <CustomButton
-        label="Custom Label"
-        // eslint-disable-next-line
-        onClick={() => console.log('Logged')}
         loading={loading}
         setLoading={setLoading}
-      />
+        onClick={() => {}}
+      >
+        Custom Button 2
+      </CustomButton>
+
       <button
         type="button"
         // @ts-ignore

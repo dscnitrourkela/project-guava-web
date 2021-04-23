@@ -5,21 +5,19 @@ import {makeStyles} from '@material-ui/core';
 
 export interface CounterProps {
   value: number;
-  setValue?: (event: number) => void;
   onChange: (event: React.BaseSyntheticEvent) => void;
   increment: () => void;
   decrement: () => void;
   fullWidth?: boolean;
 }
 
-function CustomCounter({
+const CustomCounter: React.FC<CounterProps> = ({
   value,
-  // setValue,
   onChange,
   increment,
   decrement,
   fullWidth = false,
-}: CounterProps): JSX.Element {
+}) => {
   const classes = useStyles(fullWidth);
 
   return (
@@ -38,7 +36,7 @@ function CustomCounter({
       </button>
     </div>
   );
-}
+};
 
 export default CustomCounter;
 

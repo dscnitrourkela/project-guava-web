@@ -1,34 +1,39 @@
 import React from 'react';
 
 // Libraries
-import {makeStyles, Button, CircularProgress} from '@material-ui/core';
+import {
+  makeStyles,
+  Button,
+  ButtonProps,
+  CircularProgress,
+} from '@material-ui/core';
+import {
+  FontAwesomeIcon,
+  FontAwesomeIconProps,
+} from '@fortawesome/react-fontawesome';
 import {Link} from 'react-router-dom';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
-export interface ButtonProps {
-  label: string | JSX.Element;
-  // @ts-ignore
-  onClick: (...args) => void;
+export interface CustomButtonProps extends ButtonProps {
+  onClick: (...args: any) => void;
   loading?: boolean;
-  setLoading?: (loading: boolean) => void;
-  type?: 'text' | 'outlined' | 'contained' | undefined;
+  setLoading?: (param: boolean) => void;
   link?: string;
   className?: string;
-  disabled?: boolean;
-  icon?: any;
+  iconOptions?: FontAwesomeIconProps;
 }
 
-function CustomButton({
-  type = 'contained',
-  label,
-  onClick,
+const CustomButton: React.FC<CustomButtonProps> = ({
+  children,
   loading,
   setLoading,
+  onClick,
   link,
   className,
-  disabled = false,
-  icon,
-}: ButtonProps): JSX.Element {
+  iconOptions,
+  variant = 'contained',
+  color = 'primary',
+  ...rest
+}) => {
   const classes = useStyles();
 
   const handleClick = () => {
@@ -36,58 +41,44 @@ function CustomButton({
     onClick();
   };
 
-  return (
-    <div className={classes.root}>
-      {link ? (
-        <Link to={link}>
-          <Button
-            className={`${classes.button} ${className}`}
-            variant="outlined"
-            color="primary"
-            disabled={disabled}
-          >
-            {label}
-          </Button>
-        </Link>
+  const ModifiedButton = (
+    <Button
+      onClick={handleClick}
+      color={color}
+      variant={link ? 'outlined' : variant}
+      className={`${classes.button} ${className}`}
+      {...rest}
+    >
+      {loading ? (
+        <CircularProgress size={20} className={classes.circularProgress} />
       ) : (
-        <Button
-          className={`${classes.button} ${className}`}
-          onClick={handleClick}
-          variant={type}
-          color="primary"
-          disableElevation
-          disabled={disabled}
-        >
-          {loading ? (
-            <CircularProgress size={20} className={classes.circularProgress} />
-          ) : (
-            <>
-              {icon && (
-                <FontAwesomeIcon
-                  size="lg"
-                  icon={icon}
-                  style={{marginRight: '10px'}}
-                />
-              )}
-              <span>{label}</span>
-            </>
+        <>
+          {iconOptions?.icon && (
+            <FontAwesomeIcon className={classes.icon} {...iconOptions} />
           )}
-        </Button>
+          {children}
+        </>
       )}
-    </div>
+    </Button>
   );
-}
+
+  return link ? <Link to={link}>{ModifiedButton}</Link> : ModifiedButton;
+};
 
 export default CustomButton;
 
 const useStyles = makeStyles(theme => ({
-  root: {},
   button: {
+    width: 'auto',
     minWidth: '100px',
     height: '40px',
     fontSize: '14px',
     borderRadius: '4px',
     textTransform: 'none',
+    boxShadow: 'none',
+  },
+  icon: {
+    marginRight: '10px',
   },
   circularProgress: {
     color: theme.palette.common.white,

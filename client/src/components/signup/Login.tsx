@@ -66,10 +66,11 @@ function Login({
 
       <CustomButton
         className={classes.login}
-        label="Proceed"
         // eslint-disable-next-line
         onClick={() => console.log('logged in')}
-      />
+      >
+        Proceed
+      </CustomButton>
     </>
   );
 }

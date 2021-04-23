@@ -4,11 +4,12 @@ import {
   makeStyles,
   createStyles,
   Modal,
+  ModalProps,
   Backdrop,
   Fade,
 } from '@material-ui/core';
 
-export interface ModalProps {
+export interface CustomModalProps extends ModalProps {
   open: boolean;
   setOpen: (open: boolean) => void;
   ariaLabelledby?: string;
@@ -16,18 +17,16 @@ export interface ModalProps {
   children: React.ReactElement;
 }
 
-function CustomModal({
+const CustomModal: React.FC<CustomModalProps> = ({
   open,
   setOpen,
   ariaLabelledby,
   ariaDescribedby,
   children,
-}: ModalProps): JSX.Element {
+  ...rest
+}) => {
   const classes = useStyles();
-
-  const handleClose = () => {
-    setOpen(false);
-  };
+  const handleClose = () => setOpen(false);
 
   return (
     <Modal
@@ -41,11 +40,12 @@ function CustomModal({
       BackdropProps={{
         timeout: 500,
       }}
+      {...rest}
     >
       <Fade in={open}>{children}</Fade>
     </Modal>
   );
-}
+};
 
 export default CustomModal;
 

@@ -38,7 +38,7 @@ function Proceed(): JSX.Element {
       case STAGE.APPROVE:
         return (
           <Container className={classes.approveContainer}>
-            <CustomButton label="Approve" onClick={setStageToVerify} />
+            <CustomButton onClick={setStageToVerify}>Approve</CustomButton>
           </Container>
         );
       case STAGE.VERIFY:
@@ -72,7 +72,7 @@ function Proceed(): JSX.Element {
       default:
         return (
           <Container>
-            <CustomButton label="Approve" onClick={setStageToApprove} />
+            <CustomButton onClick={setStageToVerify}>Approve</CustomButton>
           </Container>
         );
     }
