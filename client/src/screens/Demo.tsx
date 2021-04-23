@@ -62,13 +62,13 @@ function Home(): JSX.Element {
       />
 
       <CustomDateTime
-        selectedDate={date}
+        value={date}
         onChange={(e: Date | null): void => setDate(e)}
         type="date"
       />
 
       <CustomDateTime
-        selectedDate={time}
+        value={time}
         onChange={(e: Date | null): void => setTime(e)}
         type="time"
       />
