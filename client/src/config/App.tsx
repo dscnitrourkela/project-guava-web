@@ -26,7 +26,7 @@ const ComposePage = lazy(() => import('../screens/Compose'));
 const ApprovePage = lazy(() => import('../screens/Approve'));
 const ViewCertificatePage = lazy(() => import('../screens/ViewCertificate'));
 const DemoPage = lazy(() => import('../screens/Demo'));
-const AuthPage = lazy(() => import('../screens/Auth'));
+const AuthPage = lazy(() => import('../components/auth/Page'));
 
 function App(): JSX.Element {
   const isMobileView = useMediaQuery('(max-width:600px)');
