@@ -21,7 +21,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/dscnitrourkela/project-guava-web">
-    <img src="images/Signit.png" alt="Logo" width="80" height="80">
+    <img src="images/Signit.png" alt="Logo" width="131" height="54">
   </a>
 
   <h3 align="center">Signit</h3>
@@ -213,8 +213,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## DSC NIT Rourkela
 
-Project developed and maintained by [DSC NIT Rourkela](https://dscnitrourkela.org/)
-![DSC NIT Rourkela Cover Image](./repoCover.png)
+[![DSC NIT Rourkela][dsc-nitrourkela]](https://dscnitrourkela.org)
 
 ## Starware
 
@@ -257,5 +256,6 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 [issues-shield]: https://img.shields.io/github/issues/dscnitrourkela/project-guava-web?style=for-the-badge
 [issues-url]: https://github.com/dscnitrourkela/project-guava-web/issues
 [license-shield]: https://img.shields.io/github/license/dscnitrourkela/project-guava?style=for-the-badge
+[license-url]: https://github.com/dscnitrourkela/project-guava-web/blob/main/LICENSE.txt
 [product-screenshot]: images/Compose.png
-[dsc-nitrourkela]: image/repoCover.png
+[dsc-nitrourkela]: images/repoCover.png
