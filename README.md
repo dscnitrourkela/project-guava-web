@@ -1,14 +1,34 @@
 <span>
-  
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Starware](https://img.shields.io/badge/Starware-⭐-black?labelColor=f9b00d)](https://github.com/zepfietje/starware)
 
-[![Cloudflare Pages](https://img.shields.io/badge/deploy-cloudflare--pages-yellow)](https://signit.dscnitrourkela.org)
-
 </span>
+
+<br />
+<p align="center">
+  <a href="https://github.com/dscnitrourkela/project-guava-web">
+    <img src="Signit.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">Signit</h3>
+
+  <p align="center">
+    Digital Certificate Generation and Distribution
+    <br />
+    <br />
+    <a href="https://signit.dscnitrourkela.org">View Demo</a>
+    ·
+    <a href="https://github.com/dscnitrourkela/project-guava-web/issues">Report Webapp Bugs</a>
+    .
+    <a href="https://github.com/dscnitrourkela/project-guava/issues">Report Server Bugs</a>
+  </p>
+</p>
 
 # project-guava
 
@@ -27,10 +47,10 @@
   <img src="https://img.shields.io/badge/client-React.js-blue" alt="React.js" />
   <img src="https://img.shields.io/badge/bundler-Webpack-blue" alt="Webpack" />
   <img src="https://img.shields.io/badge/transcompiler-Babel-yellow" alt="Babel" />
-  <img src="https://img.shields.io/badge/state-context--provider-orange" alt="State Management" />  
-  <img src="https://img.shields.io/badge/test-Jest-red" alt="Jest" />   
-  <img src="https://img.shields.io/badge/test-react--testing--library-red" alt="React Testing Library" />  
-  <img src="https://img.shields.io/badge/routing-React--Router--Dom-lightgrey" alt="React-Router-Dom" />  
+  <img src="https://img.shields.io/badge/state-context--provider-orange" alt="State Management" />
+  <img src="https://img.shields.io/badge/test-Jest-red" alt="Jest" />
+  <img src="https://img.shields.io/badge/test-react--testing--library-red" alt="React Testing Library" />
+  <img src="https://img.shields.io/badge/routing-React--Router--Dom-lightgrey" alt="React-Router-Dom" />
 </p>
 
 # Contributing 🎃
@@ -97,8 +117,8 @@ Project developed and maintained by [DSC NIT Rourkela](https://dscnitrourkela.or
 
 ## Starware
 
-dscnitrourkela/project-guava is Starware.  
-This means you're free to use the project, as long as you star its GitHub repository.  
+dscnitrourkela/project-guava is Starware.
+This means you're free to use the project, as long as you star its GitHub repository.
 Your appreciation makes us grow and glow up. ⭐
 
 ## Contributors ✨
