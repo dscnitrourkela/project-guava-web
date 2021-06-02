@@ -10,6 +10,14 @@
 
 </span>
 
+<!-- PROJECT SHIELDS -->
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+
 <br />
 <p align="center">
   <a href="https://github.com/dscnitrourkela/project-guava-web">
@@ -60,7 +68,7 @@
 
 ## About The Project
 
-<img src="images/Cashboard.png" alt="Signit Certificate Configure Screen" >
+[![Signit Certificate Compose][product-screenshot]](https://signit.dscnitrourkela.org)
 
 A completely digital and customizable solution for managing all your certificates.
 
@@ -192,6 +200,17 @@ yarn remove package_name
 yarn add -D package_name
 ```
 
+## Roadmap
+
+The following project is in its v1 stage. We are open to new features and suggestions. As of now, following are the features that we plan to integrate.
+
+- Set up time of distribution for automatice certificates distributions.
+- Complaint management system for disputes.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
 ## DSC NIT Rourkela
 
 Project developed and maintained by [DSC NIT Rourkela](https://dscnitrourkela.org/)
@@ -225,3 +244,18 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/dscnitrourkela/project-guava-web?style=for-the-badge
+[contributors-url]: https://github.com/dscnitrourkela/project-guava-web/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/dscnitrourkela/project-guava-web?style=for-the-badge
+[forks-url]: https://github.com/dscnitrourkela/project-guava-web/network/members
+[stars-shield]: https://img.shields.io/github/stars/dscnitrourkela/project-guava-web?style=for-the-badge
+[stars-url]: https://github.com/dscnitrourkela/project-guava-web/stargazers
+[issues-shield]: https://img.shields.io/github/issues/dscnitrourkela/project-guava-web?style=for-the-badge
+[issues-url]: https://github.com/dscnitrourkela/project-guava-web/issues
+[license-shield]: https://img.shields.io/github/license/dscnitrourkela/project-guava?style=for-the-badge
+[product-screenshot]: images/Compose.png
+[dsc-nitrourkela]: image/repoCover.png
