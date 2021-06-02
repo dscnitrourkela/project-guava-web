@@ -13,7 +13,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/dscnitrourkela/project-guava-web">
-    <img src="Signit.png" alt="Logo" width="80" height="80">
+    <img src="images/Signit.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Signit</h3>
@@ -55,28 +55,37 @@
   </ol>
 </details>
 
-# project-guava
+## About The Project
 
----
+<img src="images/Cashboard.png" alt="Signit Certificate Configure Screen" >
+
+A completely digital and customizable solution for managing all your certificates.
 
 - The project repository for the web application of an open system to generate and manage certificates.
 - Login to initiate a request to authorize a certificate.
 - After successful authorization, digitally sign the certificate.
 - Once done, distribute to the participants through our portal.
 
-# Tech Stack
+Features:
 
----
+- No restrictions on certificate design. Upload your own designs.
+- Easily drag and drop the location of sign on the certificate.
+- Add a maximum of 3 signees per certificate.
+- Manage easily all your approved and pending certificates via our dashboard.
 
-<p>
-  <img src="https://img.shields.io/badge/client-React.js-blue" alt="React.js" />
-  <img src="https://img.shields.io/badge/bundler-Webpack-blue" alt="Webpack" />
-  <img src="https://img.shields.io/badge/transcompiler-Babel-yellow" alt="Babel" />
-  <img src="https://img.shields.io/badge/state-context--provider-orange" alt="State Management" />
-  <img src="https://img.shields.io/badge/test-Jest-red" alt="Jest" />
-  <img src="https://img.shields.io/badge/test-react--testing--library-red" alt="React Testing Library" />
-  <img src="https://img.shields.io/badge/routing-React--Router--Dom-lightgrey" alt="React-Router-Dom" />
-</p>
+A list of commonly used resources that I find helpful are listed in the
+acknowledgements.
+
+### Built With
+
+Following technologies and libraries are used for the development of this
+project.
+
+- [Create React App](https://create-react-app.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Material UI](https://www.typescriptlang.org/)
+- [React Konva](https://konvajs.org/docs/react/index.html)
+- [React Testing Library](https://testing-library.com/)
 
 # Contributing 🎃
 
