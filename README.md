@@ -41,17 +41,20 @@
         <li><a href="#built-with">Built With</a></li>
         <!-- <li><a href="#configuration">Configuration</a></li> -->
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#installation">Contribution guidlines</a></li>
+        <li><a href="#contribution-guidlines">Contribution guidlines</a></li>
+        <li><a href="#local-repository-setup">Local Repository Setup</a></li>
+        <li><a href="#running-the-project">Running the project</a></li>
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
+    <li><a href="#dsc-nit-rourkela">DSC NIT Rourkela</a></li>
+    <li><a href="#starware">Starware</a></li>
+    <li><a href="#contributors">Contributors</a></li>
   </ol>
 </details>
 
@@ -87,7 +90,58 @@ project.
 - [React Konva](https://konvajs.org/docs/react/index.html)
 - [React Testing Library](https://testing-library.com/)
 
-# Contributing 🎃
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+To setup the project locally follow the steps below
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/en/download/)
+
+  ```sh
+  # Homebrew
+  brew install nodejs
+
+  # Sudo apt
+  sudo apt install nodejs
+
+  # Packman
+  pacman -S nodejs
+
+  # Module Install
+  dnf module install nodejs:<stream> # stream is the version
+
+  # Windows (chocolaty)
+  cinst nodejs.install
+
+  ```
+
+- [Yarn](https://classic.yarnpkg.com/en/docs/install/)
+
+```sh
+  npm install --global yarn
+```
+
+- [Git](https://git-scm.com/downloads)
+
+```sh
+  # Homebrew
+  brew install git
+
+  # Sudo apt
+  apt-get install git
+
+  # Packman
+  pacman -S git
+
+  # Module Install (Fedora)
+  dnf install git
+
+```
+
+### Contribution guidlines 🎃
 
 ---
 
@@ -95,13 +149,7 @@ Our Slack Community: [Slack Invite](http://bit.ly/NITRDevs) <br>
 
 `Contributions are welcome 🎉🎉`
 
-## Prerequisites
-
-- [Node.js v14 LTS](https://nodejs.org/en/download/)
-- [Yarn CLI](https://classic.yarnpkg.com/en/docs/install)
-- [Git CLI](https://git-scm.com/downloads)
-
-## Local Repository Setup
+### Local Repository Setup
 
 Please refer to the project's style and contribution guidelines for submitting patches and additions. In general, we follow the "fork-and-pull" Git workflow.
 
@@ -115,7 +163,7 @@ NOTE 1: Please abide by the [Contributing Guidelines](https://github.com/dscnitr
 
 NOTE 2: Please abide by the [Code of Conduct](https://github.com/dscnitrourkela/project-guava-web/blob/master/CODE_OF_CONDUCT.md).
 
-## Running the project.
+### Running the project.
 
 The project uses Yarn and not NPM. It is strictly advised to stick with Yarn so as to avoid dependency conflicts down the line.
 
@@ -144,7 +192,7 @@ yarn remove package_name
 yarn add -D package_name
 ```
 
-# DSC NIT Rourkela
+## DSC NIT Rourkela
 
 Project developed and maintained by [DSC NIT Rourkela](https://dscnitrourkela.org/)
 ![DSC NIT Rourkela Cover Image](./repoCover.png)
