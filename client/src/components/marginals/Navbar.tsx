@@ -1,23 +1,16 @@
 import React from 'react';
 
 // Libraries
-import {makeStyles, useMediaQuery} from '@material-ui/core';
+import {useMediaQuery} from '@material-ui/core';
 
 // Components
 import DesktopNavbar from './DesktopNavbar';
+import MobileNavbar from './MobileNavbar';
 
 const Navbar: React.FC = () => {
-  const classes = useStyles();
   const matches = useMediaQuery('(max-width: 600px)');
 
-  return <DesktopNavbar />;
+  return matches ? <MobileNavbar /> : <DesktopNavbar />;
 };
 
 export default Navbar;
-
-const useStyles = makeStyles(() => ({
-  root: {
-    width: '100%',
-    height: '100px',
-  },
-}));
