@@ -7,7 +7,7 @@ import {
   ThemeProvider,
   makeStyles,
 } from '@material-ui/core';
-import {Router, Route, Switch} from 'react-router-dom';
+import {Router, Route, Switch, Redirect} from 'react-router-dom';
 
 // Context Providers
 import {ComposeProvider} from '../store/contexts';
@@ -36,17 +36,20 @@ function App(): JSX.Element {
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
-      {isMobileView ? (
-        <MobileView />
-      ) : (
-        <Router history={createBrowserHistory}>
-          <Suspense
-            fallback={
-              <div className={classes.divContainer}>
-                <Loader />
-              </div>
-            }
-          >
+      <Router history={createBrowserHistory}>
+        <Suspense
+          fallback={
+            <div className={classes.divContainer}>
+              <Loader />
+            </div>
+          }
+        >
+          {isMobileView ? (
+            <Switch>
+              <Route exact path="/" component={HomePage} />
+              <Route path="*" component={MobileView} />
+            </Switch>
+          ) : (
             <Switch>
               <Route exact path="/" component={HomePage} />
               <Route exact path="/demo" component={DemoPage} />
@@ -72,9 +75,9 @@ function App(): JSX.Element {
                 <ViewCertificatePage />
               </Route>
             </Switch>
-          </Suspense>
-        </Router>
-      )}
+          )}
+        </Suspense>
+      </Router>
     </ThemeProvider>
   );
 }
