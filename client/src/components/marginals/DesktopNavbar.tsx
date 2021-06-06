@@ -12,36 +12,44 @@ const DesktopNavbar: React.FC = () => {
   const history = useHistory();
 
   return (
-    <Container className={classes.container}>
-      <img src={LOGOS.ONE} alt="Signit Logo" className={classes.img} />
+    <div className={classes.stickyContainer}>
+      <Container className={classes.container}>
+        <img src={LOGOS.ONE} alt="Signit Logo" className={classes.img} />
 
-      <nav className={classes.navContainer}>
-        <Typography variant="h4" className={classes.menuItem}>
-          About Us
-        </Typography>
-        <Typography variant="h4" className={classes.menuItem}>
-          Receive Certificate
-        </Typography>
-        <Typography
-          variant="h4"
-          className={`${classes.menuItem} ${classes.coloured}`}
-          onClick={() => history.push('/signin')}
-        >
-          Sign In
-        </Typography>
-      </nav>
-    </Container>
+        <nav className={classes.navContainer}>
+          <Typography variant="h4" className={classes.menuItem}>
+            About Us
+          </Typography>
+          <Typography variant="h4" className={classes.menuItem}>
+            Receive Certificate
+          </Typography>
+          <Typography
+            variant="h4"
+            className={`${classes.menuItem} ${classes.coloured}`}
+            onClick={() => history.push('/signin')}
+          >
+            Sign In
+          </Typography>
+        </nav>
+      </Container>
+    </div>
   );
 };
 
 export default DesktopNavbar;
 
 const useStyles = makeStyles(() => ({
+  stickyContainer: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100%',
+  },
   container: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    padding: '0px 30px',
+    // padding: '0px 30px',
     position: 'relative',
   },
   img: {

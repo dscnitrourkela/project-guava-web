@@ -9,11 +9,15 @@ import PartTwo from '../../assets/imgs/infographics/PartTwo';
 import PartThree from '../../assets/imgs/infographics/PartThree';
 import PartFour from '../../assets/imgs/infographics/PartFour';
 
-const Infographics: React.FC = () => {
+interface InfographicsProps {
+  className?: string;
+}
+
+const Infographics: React.FC<InfographicsProps> = ({className}) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.infographicsContainer}>
+    <div className={`${classes.infographicsContainer} ${className}`}>
       <div className={classes.partOne}>
         <PartOne />
       </div>
@@ -37,7 +41,7 @@ export default Infographics;
 
 const useStyles = makeStyles(() => ({
   infographicsContainer: {
-    width: '60vw',
+    width: '100%',
     display: 'grid',
     gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr 0.5fr',
     gridTemplateRows: '2fr 1fr 1fr 1fr 0.5fr',
