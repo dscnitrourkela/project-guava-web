@@ -7,7 +7,7 @@ import {
   ThemeProvider,
   makeStyles,
 } from '@material-ui/core';
-import {Router, Route, Switch, Redirect} from 'react-router-dom';
+import {Router, Route, Switch} from 'react-router-dom';
 
 // Context Providers
 import {ComposeProvider} from '../store/contexts';

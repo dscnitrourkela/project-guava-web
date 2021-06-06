@@ -23,18 +23,18 @@ const MobileNavbar: React.FC = () => {
   return (
     <>
       <Container className={classes.root}>
+        <img src={LOGOS.ONE} alt="Signit Logo" className={classes.img} />
+
         <FontAwesomeIcon
           onClick={toggleMenu}
           size="lg"
           icon={faBars}
           className={classes.icon}
         />
-
-        <img src={LOGOS.ONE} alt="Signit Logo" className={classes.img} />
       </Container>
 
       <SwipeableDrawer
-        anchor="left"
+        anchor="right"
         open={isMenuOpen}
         onClose={() => setMenuOpen(false)}
         onOpen={() => setMenuOpen(true)}
@@ -68,14 +68,17 @@ export default MobileNavbar;
 const useStyles = makeStyles(() => ({
   root: {
     width: '100%',
-    height: '100px',
+    height: 'auto',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'flex-start',
+    justifyContent: 'space-between',
+    padding: '20px 20px',
   },
   icon: {
-    marginRight: '20px',
     zIndex: 10000,
+    '&:hover': {
+      cursor: 'pointer',
+    },
   },
   img: {
     width: '100px',
@@ -103,7 +106,7 @@ const useStyles = makeStyles(() => ({
   menuItem: {
     width: '100%',
     padding: '40px auto',
-    textAlign: 'left',
+    textAlign: 'right',
     marginBottom: '20px',
   },
   link: {
