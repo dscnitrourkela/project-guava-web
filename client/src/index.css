@@ -25,3 +25,12 @@ li,
 a {
   text-decoration: none;
 }
+
+#svg-infographics-background-1,
+#svg-infographics-background-2,
+#svg-infographics-background-3,
+#svg-infographics-background-4 {
+  -webkit-filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.1));
+  width: '100%';
+}
