@@ -5,12 +5,16 @@ import {Container, makeStyles} from '@material-ui/core';
 
 // Components
 import Navbar from '../components/marginals/Navbar';
+import Infographics from '../components/homepage/Infographics';
 
 const Home: React.FC = () => {
   const classes = useStyles();
   return (
     <>
       <Navbar />
+      <Container className={classes.container}>
+        <Infographics />
+      </Container>
     </>
   );
 };
@@ -18,15 +22,12 @@ const Home: React.FC = () => {
 export default Home;
 
 const useStyles = makeStyles(() => ({
-  root: {
-    width: '65%',
-    height: 'auto',
-    minHeight: window.innerHeight,
+  container: {
+    width: '100%',
+    // height: '90vh',
     display: 'flex',
-    justifyContent: 'center',
     alignItems: 'center',
-  },
-  button: {
-    margin: 20,
+    justifyContent: 'center',
+    marginTop: '100px',
   },
 }));
