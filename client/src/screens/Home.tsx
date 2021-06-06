@@ -14,10 +14,11 @@ const Home: React.FC = () => {
   return (
     <>
       <Navbar />
-      <Container className={classes.container}>
-        <Hero />
-        <Infographics />
-      </Container>
+      <div className={classes.container}>
+        <Hero className={classes.hero} />
+        <Infographics className={classes.infographics} />
+        <div className={classes.blueBox} />
+      </div>
     </>
   );
 };
@@ -28,12 +29,25 @@ const useStyles = makeStyles(() => ({
   container: {
     width: '100%',
     maxWidth: '100vw',
-    minHeight: '90vh',
-    height: 'auto',
+    height: '100vh',
 
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-around',
-    marginTop: '100px',
+    display: 'grid',
+    gridTemplateColumns: '0.5fr repeat(5, 1fr) 0.5fr',
+    gridTemplateRows: '1fr 1fr max-content 1fr 1fr',
+  },
+  hero: {
+    gridColumn: '2/4',
+    gridRow: '3/4',
+  },
+  infographics: {
+    gridColumn: '4/7',
+    gridRow: '2/5',
+  },
+  blueBox: {
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'rgba(57, 143, 254, 0.65)',
+    gridColumn: '6/8',
+    gridRow: '1/6',
   },
 }));

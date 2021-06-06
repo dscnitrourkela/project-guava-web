@@ -3,11 +3,15 @@ import React from 'react';
 // Libraries
 import {ButtonBase, makeStyles, Typography} from '@material-ui/core';
 
-const Hero: React.FC = () => {
+interface HeroProps {
+  className?: string;
+}
+
+const Hero: React.FC<HeroProps> = ({className}) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.heroContainer}>
+    <div className={`${classes.heroContainer} ${className}`}>
       <Typography variant="h2" className={classes.title}>
         Sign certificates virtually and safely.
       </Typography>
@@ -19,8 +23,16 @@ const Hero: React.FC = () => {
       </Typography>
 
       <div className={classes.buttonContainer}>
-        <ButtonBase className={classes.button}>Get Started</ButtonBase>
-        <ButtonBase className={classes.button}>Receive Certificate</ButtonBase>
+        <ButtonBase className={classes.button}>
+          <Typography variant="body2" className={classes.typography}>
+            Get Started
+          </Typography>
+        </ButtonBase>
+        <ButtonBase className={classes.button}>
+          <Typography variant="body2" className={classes.typography}>
+            Receive Certificate
+          </Typography>
+        </ButtonBase>
       </div>
     </div>
   );
@@ -30,7 +42,7 @@ export default Hero;
 
 const useStyles = makeStyles(theme => ({
   heroContainer: {
-    width: '40vw',
+    width: '100%',
     height: 'auto',
 
     display: 'flex',
@@ -76,5 +88,8 @@ const useStyles = makeStyles(theme => ({
       backgroundColor: '#398FFE',
       color: '#ffffff',
     },
+  },
+  typography: {
+    fontSize: '16px',
   },
 }));
