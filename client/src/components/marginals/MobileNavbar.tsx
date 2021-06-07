@@ -16,8 +16,10 @@ import LOGOS from '../../assets/imgs/logos';
 // Hooks
 import useToggle from '../../hooks/useToggle';
 
-const MobileNavbar: React.FC = () => {
-  const classes = useStyles();
+const MobileNavbar: React.FC<{showBackground?: boolean}> = ({
+  showBackground,
+}) => {
+  const classes = useStyles({showBackground});
   const [isMenuOpen, toggleMenu, setMenuOpen] = useToggle(false);
 
   return (
@@ -75,7 +77,15 @@ const useStyles = makeStyles(() => ({
     padding: '20px 20px',
 
     position: 'fixed',
-    zIndex: 10001,
+    // zIndex: 10001,
+
+    zIndex: 99999,
+    // @ts-ignore
+    backgroundColor: ({showBackground}) =>
+      showBackground ? '#ffffff' : 'transparent',
+    // @ts-ignore
+    boxShadow: ({showBackground}) =>
+      showBackground ? '0px 3px 15px #d6d5d5' : '',
   },
   icon: {
     zIndex: 10000,

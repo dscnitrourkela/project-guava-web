@@ -7,9 +7,13 @@ import {useHistory} from 'react-router-dom';
 // Assets
 import LOGOS from '../../assets/imgs/logos';
 
-const DesktopNavbar: React.FC = () => {
-  const classes = useStyles();
+const DesktopNavbar: React.FC<{showBackground?: boolean}> = ({
+  showBackground,
+}) => {
+  const classes = useStyles({showBackground});
   const history = useHistory();
+
+  console.log(showBackground);
 
   return (
     <div className={classes.stickyContainer}>
@@ -44,8 +48,16 @@ const useStyles = makeStyles(() => ({
     top: 0,
     left: 0,
     width: '100%',
+    zIndex: 99999,
+    // @ts-ignore
+    backgroundColor: ({showBackground}) =>
+      showBackground ? '#ffffff' : 'transparent',
+    // @ts-ignore
+    boxShadow: ({showBackground}) =>
+      showBackground ? '0px 3px 15px #d6d5d5' : '',
   },
   container: {
+    zIndex: 99999,
     display: 'grid',
     gridTemplateColumns: '0.5fr repeat(5, 1fr) 0.5fr',
     position: 'relative',
