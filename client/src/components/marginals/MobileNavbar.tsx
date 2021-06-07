@@ -73,6 +73,9 @@ const useStyles = makeStyles(() => ({
     alignItems: 'center',
     justifyContent: 'space-between',
     padding: '20px 20px',
+
+    position: 'fixed',
+    zIndex: 10001,
   },
   icon: {
     zIndex: 10000,

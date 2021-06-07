@@ -2,6 +2,7 @@ import React from 'react';
 
 // Libraries
 import {ButtonBase, makeStyles, Typography} from '@material-ui/core';
+import {useHistory} from 'react-router-dom';
 
 interface HeroProps {
   className?: string;
@@ -9,6 +10,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({className}) => {
   const classes = useStyles();
+  const history = useHistory();
 
   return (
     <div className={`${classes.heroContainer} ${className}`}>
@@ -23,12 +25,18 @@ const Hero: React.FC<HeroProps> = ({className}) => {
       </Typography>
 
       <div className={classes.buttonContainer}>
-        <ButtonBase className={classes.button}>
+        <ButtonBase
+          className={classes.button}
+          onClick={() => history.push('/dashboard')}
+        >
           <Typography variant="body2" className={classes.typography}>
             Get Started
           </Typography>
         </ButtonBase>
-        <ButtonBase className={classes.button}>
+        <ButtonBase
+          className={classes.button}
+          onClick={() => history.push('/viewCertificate')}
+        >
           <Typography variant="body2" className={classes.typography}>
             Receive Certificate
           </Typography>
@@ -46,7 +54,7 @@ const useStyles = makeStyles(theme => ({
     height: 'auto',
 
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     justifyContent: 'left',
     flexDirection: 'column',
   },
@@ -55,13 +63,31 @@ const useStyles = makeStyles(theme => ({
     fontSize: '4.25rem',
     lineHeight: '4.81rem',
     color: '#000000',
+
+    [theme.breakpoints.between('sm', 'md')]: {
+      fontSize: '2.25rem',
+      lineHeight: '2.81rem',
+    },
+    [theme.breakpoints.between('xs', 'sm')]: {
+      width: '80%',
+      fontSize: '1.45rem',
+      lineHeight: '1.81rem',
+    },
   },
   description: {
     fontSize: '1.25rem',
     lineHeight: '1.5rem',
     color: '#B5B5B5',
 
+    width: '85%',
     marginTop: '20px',
+
+    [theme.breakpoints.between('sm', 'md')]: {},
+    [theme.breakpoints.between('xs', 'sm')]: {
+      width: '80%',
+      fontSize: '0.9rem',
+      lineHeight: '1.15rem',
+    },
   },
   buttonContainer: {
     width: '100%',
@@ -83,6 +109,7 @@ const useStyles = makeStyles(theme => ({
     marginRight: '20px',
     minWidth: '100px',
     width: 'auto',
+    transition: 'background-color 300ms ease',
 
     '&:hover': {
       backgroundColor: '#398FFE',
