@@ -13,8 +13,6 @@ const DesktopNavbar: React.FC<{showBackground?: boolean}> = ({
   const classes = useStyles({showBackground});
   const history = useHistory();
 
-  console.log(showBackground);
-
   return (
     <div className={classes.stickyContainer}>
       <div className={classes.container}>
