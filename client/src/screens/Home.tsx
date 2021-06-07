@@ -9,6 +9,7 @@ import Infographics from '../components/homepage/Infographics';
 import Hero from '../components/homepage/Hero';
 import Features from '../components/homepage/Features';
 import About from '../components/homepage/About';
+import Footer from '../components/marginals/Footer';
 
 const Home: React.FC = () => {
   const classes = useStyles();
@@ -23,6 +24,7 @@ const Home: React.FC = () => {
       </div>
       <Features />
       <About />
+      <Footer />
     </>
   );
 };
