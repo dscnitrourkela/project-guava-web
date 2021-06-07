@@ -8,6 +8,7 @@ import Navbar from '../components/marginals/Navbar';
 import Infographics from '../components/homepage/Infographics';
 import Hero from '../components/homepage/Hero';
 import Features from '../components/homepage/Features';
+import About from '../components/homepage/About';
 
 const Home: React.FC = () => {
   const classes = useStyles();
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
         <div className={classes.blueBox} />
       </div>
       <Features />
+      <About />
     </>
   );
 };
