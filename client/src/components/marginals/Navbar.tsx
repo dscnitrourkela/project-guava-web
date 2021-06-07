@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
   const [showBackground, setShowBackground] = useState(false);
 
   const toggleVisibility = () => {
-    if (window.pageYOffset > 85) {
+    if (window.pageYOffset > 65) {
       setShowBackground(true);
     } else {
       setShowBackground(false);

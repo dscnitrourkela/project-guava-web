@@ -2,36 +2,56 @@ import React from 'react';
 
 // Libraries
 import {makeStyles, Typography} from '@material-ui/core';
-import {useHistory} from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import {Link as NavLink} from 'react-scroll';
 
 // Assets
 import LOGOS from '../../assets/imgs/logos';
+import {HOMEPAGE_CONTENT} from '../../assets/placeholder';
 
 const DesktopNavbar: React.FC<{showBackground?: boolean}> = ({
   showBackground,
 }) => {
   const classes = useStyles({showBackground});
-  const history = useHistory();
 
   return (
     <div className={classes.stickyContainer}>
       <div className={classes.container}>
-        <img src={LOGOS.ONE} alt="Signit Logo" className={classes.img} />
+        <NavLink
+          to={HOMEPAGE_CONTENT.NAV.LANDING}
+          smooth
+          className={classes.imgContainer}
+        >
+          <img src={LOGOS.ONE} alt="Signit Logo" className={classes.img} />
+        </NavLink>
 
         <nav className={classes.navContainer}>
-          <Typography variant="h4" className={classes.menuItem}>
-            About Us
-          </Typography>
-          <Typography variant="h4" className={classes.menuItem}>
-            Receive Certificate
-          </Typography>
-          <Typography
-            variant="h4"
-            className={`${classes.menuItem} ${classes.coloured}`}
-            onClick={() => history.push('/signin')}
-          >
-            Sign In
-          </Typography>
+          <NavLink to={HOMEPAGE_CONTENT.NAV.ABOUT} smooth>
+            <Typography variant="h4" className={classes.menuItem}>
+              About Us
+            </Typography>
+          </NavLink>
+
+          <NavLink to={HOMEPAGE_CONTENT.NAV.FEATURES} smooth>
+            <Typography variant="h4" className={classes.menuItem}>
+              Features
+            </Typography>
+          </NavLink>
+
+          <Link to="/viewCertificate" style={{textDecoration: 'none'}}>
+            <Typography variant="h4" className={classes.menuItem}>
+              Receive Certificate
+            </Typography>
+          </Link>
+
+          <Link to="/signup" style={{textDecoration: 'none'}}>
+            <Typography
+              variant="h4"
+              className={`${classes.menuItem} ${classes.coloured}`}
+            >
+              Sign In
+            </Typography>
+          </Link>
         </nav>
       </div>
     </div>
@@ -53,6 +73,8 @@ const useStyles = makeStyles(() => ({
     // @ts-ignore
     boxShadow: ({showBackground}) =>
       showBackground ? '0px 3px 15px #d6d5d5' : '',
+
+    transition: 'background-color 200ms ease',
   },
   container: {
     zIndex: 99999,
@@ -60,12 +82,16 @@ const useStyles = makeStyles(() => ({
     gridTemplateColumns: '0.5fr repeat(5, 1fr) 0.5fr',
     position: 'relative',
   },
-  img: {
-    height: 'auto',
-    marginRight: '20px',
+  imgContainer: {
     gridColumn: '2/3',
     justifySelf: 'start',
     alignSelf: 'center',
+    padding: '25px 0px',
+  },
+  img: {
+    width: '100%',
+    height: 'auto',
+    marginRight: '20px',
   },
   navContainer: {
     display: 'flex',
@@ -79,6 +105,9 @@ const useStyles = makeStyles(() => ({
     lineHeight: '17px',
     color: '#333333',
     padding: '30px 20px',
+    '&:hover': {
+      cursor: 'pointer',
+    },
   },
   coloured: {
     color: '#398ffe',

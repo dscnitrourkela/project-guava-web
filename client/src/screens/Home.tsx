@@ -2,6 +2,7 @@ import React from 'react';
 
 // Libraries
 import {makeStyles} from '@material-ui/core';
+import {Element} from 'react-scroll';
 
 // Components
 import Navbar from '../components/marginals/Navbar';
@@ -11,19 +12,34 @@ import Features from '../components/homepage/Features';
 import About from '../components/homepage/About';
 import Footer from '../components/marginals/Footer';
 
+// Assets
+import {HOMEPAGE_CONTENT} from '../assets/placeholder';
+
 const Home: React.FC = () => {
   const classes = useStyles();
 
   return (
     <>
       <Navbar />
-      <div className={classes.container}>
+      <Element
+        name={HOMEPAGE_CONTENT.NAV.LANDING}
+        className={classes.container}
+      >
         <Hero className={classes.hero} />
         <Infographics className={classes.infographics} />
         <div className={classes.blueBox} />
-      </div>
-      <Features />
-      <About />
+      </Element>
+
+      <Element
+        name={HOMEPAGE_CONTENT.NAV.FEATURES}
+        style={{padding: '30px 0px'}}
+      >
+        <Features />
+      </Element>
+
+      <Element name={HOMEPAGE_CONTENT.NAV.ABOUT}>
+        <About />
+      </Element>
       <Footer />
     </>
   );

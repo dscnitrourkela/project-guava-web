@@ -3,32 +3,11 @@ import React from 'react';
 // Libraries
 import {Container, makeStyles, Typography, ButtonBase} from '@material-ui/core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {
-  faGithub,
-  faInstagram,
-  faTwitter,
-} from '@fortawesome/free-brands-svg-icons';
+import {Link as NavLink} from 'react-scroll';
 
 // Assets
 import LOGOS from '../../assets/imgs/logos';
-
-const SOCIALS = [
-  {
-    NAME: 'Github',
-    ICON: faGithub,
-    LINK: 'https://github.com/dscnitrourkela/project-guava-web',
-  },
-  {
-    NAME: 'Instagram',
-    ICON: faInstagram,
-    LINK: 'https://www.instagram.com/dscnitrourkela/',
-  },
-  {
-    NAME: 'Twitter',
-    ICON: faTwitter,
-    LINK: 'https://twitter.com/dscnitrourkela',
-  },
-];
+import {HOMEPAGE_CONTENT} from '../../assets/placeholder';
 
 const Footer: React.FC = () => {
   const classes = useStyles();
@@ -48,19 +27,25 @@ const Footer: React.FC = () => {
 
           <ul className={classes.ulContainer}>
             <li>
-              <Typography className={classes.liItem} variant="body1">
-                Home
-              </Typography>
+              <NavLink to={HOMEPAGE_CONTENT.NAV.LANDING} smooth>
+                <Typography className={classes.liItem} variant="body1">
+                  Home
+                </Typography>
+              </NavLink>
             </li>
             <li>
-              <Typography className={classes.liItem} variant="body1">
-                Product Features
-              </Typography>
+              <NavLink to={HOMEPAGE_CONTENT.NAV.FEATURES} smooth>
+                <Typography className={classes.liItem} variant="body1">
+                  Product Features
+                </Typography>
+              </NavLink>
             </li>
             <li>
-              <Typography className={classes.liItem} variant="body1">
-                About Us
-              </Typography>
+              <NavLink to={HOMEPAGE_CONTENT.NAV.ABOUT} smooth>
+                <Typography className={classes.liItem} variant="body1">
+                  About Us
+                </Typography>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -72,13 +57,24 @@ const Footer: React.FC = () => {
 
           <ul className={classes.ulContainer}>
             <li>
-              <Typography className={classes.liItem} variant="body1">
-                dsc.nitr@gmail.com
-              </Typography>
+              <a
+                href="mailto:dsc.nitr@gmail.com"
+                style={{textDecoration: 'none'}}
+              >
+                <Typography className={classes.liItem} variant="body1">
+                  dsc.nitr@gmail.com
+                </Typography>
+              </a>
             </li>
             <li className={classes.iconsContainer}>
-              {SOCIALS.map(({NAME, LINK, ICON}) => (
-                <a href={LINK} key={NAME} className={classes.icon}>
+              {HOMEPAGE_CONTENT.SOCIALS.map(({NAME, LINK, ICON}) => (
+                <a
+                  href={LINK}
+                  key={NAME}
+                  className={classes.icon}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <FontAwesomeIcon size="2x" icon={ICON} />
                 </a>
               ))}
@@ -172,6 +168,9 @@ const useStyles = makeStyles(theme => ({
     fontSize: '18px',
     lineHeight: '23px',
     marginBottom: '10px',
+    '&:hover': {
+      cursor: 'pointer',
+    },
   },
   iconsContainer: {
     display: 'flex',

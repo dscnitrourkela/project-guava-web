@@ -9,9 +9,12 @@ import {
 } from '@material-ui/core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
+import {Link as Navlink} from 'react-scroll';
+import {Link} from 'react-router-dom';
 
 // Assets
 import LOGOS from '../../assets/imgs/logos';
+import {HOMEPAGE_CONTENT} from '../../assets/placeholder';
 
 // Hooks
 import useToggle from '../../hooks/useToggle';
@@ -25,7 +28,9 @@ const MobileNavbar: React.FC<{showBackground?: boolean}> = ({
   return (
     <>
       <Container className={classes.root}>
-        <img src={LOGOS.ONE} alt="Signit Logo" className={classes.img} />
+        <Navlink to={HOMEPAGE_CONTENT.NAV.LANDING} smooth>
+          <img src={LOGOS.ONE} alt="Signit Logo" className={classes.img} />
+        </Navlink>
 
         <FontAwesomeIcon
           onClick={toggleMenu}
@@ -44,21 +49,35 @@ const MobileNavbar: React.FC<{showBackground?: boolean}> = ({
         style={{zIndex: 10001}}
       >
         <nav className={classes.navContainer}>
-          <Typography variant="h4" className={classes.menuItem}>
-            About Us
-          </Typography>
-          <Typography
-            variant="h4"
-            className={`${classes.menuItem} ${classes.link}`}
-          >
-            Receive Certificate
-          </Typography>
-          <Typography
-            variant="h4"
-            className={`${classes.menuItem} ${classes.link}`}
-          >
-            Sign In
-          </Typography>
+          <Navlink to={HOMEPAGE_CONTENT.NAV.ABOUT} smooth>
+            <Typography variant="h4" className={classes.menuItem}>
+              About Us
+            </Typography>
+          </Navlink>
+
+          <Navlink to={HOMEPAGE_CONTENT.NAV.ABOUT} smooth>
+            <Typography variant="h4" className={classes.menuItem}>
+              Features
+            </Typography>
+          </Navlink>
+
+          <Link to="/viewCertificate" style={{textDecoration: 'none'}}>
+            <Typography
+              variant="h4"
+              className={`${classes.menuItem} ${classes.link}`}
+            >
+              Receive Certificate
+            </Typography>
+          </Link>
+
+          <Link to="/signup" style={{textDecoration: 'none'}}>
+            <Typography
+              variant="h4"
+              className={`${classes.menuItem} ${classes.link}`}
+            >
+              Sign In
+            </Typography>
+          </Link>
         </nav>
       </SwipeableDrawer>
     </>
