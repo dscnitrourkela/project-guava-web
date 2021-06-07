@@ -6,26 +6,8 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faList} from '@fortawesome/free-solid-svg-icons';
 import {useHistory} from 'react-router-dom';
 
-const FEATURES = [
-  {
-    TITLE: 'Feature 1',
-    DESCRIPTION:
-      'Aliquam nulla magna mattis morbi tellus est, turpis donec est.  magna praesent.Aliquam nulla magna mattis morbi tellus est, turpis donec est. Lacus ipsum egestas tincidunt vivamus felis in magna praesent.',
-    ID: 'feature1',
-  },
-  {
-    TITLE: 'Feature 2',
-    DESCRIPTION:
-      'Aliquam nulla magna mattis morbi tellus est, turpis donec est.  magna praesent.Aliquam nulla magna mattis morbi tellus est, turpis donec est. Lacus ipsum egestas tincidunt vivamus felis in magna praesent.',
-    ID: 'feature2',
-  },
-  {
-    TITLE: 'Feature 3',
-    DESCRIPTION:
-      'Aliquam nulla magna mattis morbi tellus est, turpis donec est.  magna praesent.Aliquam nulla magna mattis morbi tellus est, turpis donec est. Lacus ipsum egestas tincidunt vivamus felis in magna praesent.',
-    ID: 'feature3',
-  },
-];
+// Assets
+import {HOMEPAGE_CONTENT} from '../../assets/placeholder';
 
 const Features: React.FC = () => {
   const classes = useStyles();
@@ -40,7 +22,7 @@ const Features: React.FC = () => {
       </Container>
 
       <Container className={classes.container}>
-        {FEATURES.map(({TITLE, DESCRIPTION, ID}) => (
+        {HOMEPAGE_CONTENT.FEATURES.map(({TITLE, DESCRIPTION, ID}) => (
           <div key={ID} className={classes.featureContainer}>
             <Typography variant="h2" className={classes.title}>
               <FontAwesomeIcon
