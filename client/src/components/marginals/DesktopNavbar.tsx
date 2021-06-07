@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Libraries
-import {makeStyles, Container, Typography} from '@material-ui/core';
+import {makeStyles, Typography} from '@material-ui/core';
 import {useHistory} from 'react-router-dom';
 
 // Assets
@@ -13,7 +13,7 @@ const DesktopNavbar: React.FC = () => {
 
   return (
     <div className={classes.stickyContainer}>
-      <Container className={classes.container}>
+      <div className={classes.container}>
         <img src={LOGOS.ONE} alt="Signit Logo" className={classes.img} />
 
         <nav className={classes.navContainer}>
@@ -31,7 +31,7 @@ const DesktopNavbar: React.FC = () => {
             Sign In
           </Typography>
         </nav>
-      </Container>
+      </div>
     </div>
   );
 };
@@ -46,25 +46,26 @@ const useStyles = makeStyles(() => ({
     width: '100%',
   },
   container: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    // padding: '0px 30px',
+    display: 'grid',
+    gridTemplateColumns: '0.5fr repeat(5, 1fr) 0.5fr',
     position: 'relative',
   },
   img: {
-    width: '10%',
     height: 'auto',
     marginRight: '20px',
+    gridColumn: '2/3',
+    justifySelf: 'start',
+    alignSelf: 'center',
   },
   navContainer: {
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'space-around',
+    justifyContent: 'flex-start',
+    gridColumn: '3/6',
   },
   menuItem: {
     fontWeight: 400,
-    fontSize: '16px',
+    fontSize: '18px',
     lineHeight: '17px',
     color: '#333333',
     padding: '30px 20px',

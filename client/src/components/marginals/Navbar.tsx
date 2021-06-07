@@ -8,7 +8,7 @@ import DesktopNavbar from './DesktopNavbar';
 import MobileNavbar from './MobileNavbar';
 
 const Navbar: React.FC = () => {
-  const matches = useMediaQuery('(max-width: 600px)');
+  const matches = useMediaQuery('(max-width: 850px)');
 
   return matches ? <MobileNavbar /> : <DesktopNavbar />;
 };
