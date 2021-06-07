@@ -7,6 +7,7 @@ import {makeStyles} from '@material-ui/core';
 import Navbar from '../components/marginals/Navbar';
 import Infographics from '../components/homepage/Infographics';
 import Hero from '../components/homepage/Hero';
+import Features from '../components/homepage/Features';
 
 const Home: React.FC = () => {
   const classes = useStyles();
@@ -19,6 +20,7 @@ const Home: React.FC = () => {
         <Infographics className={classes.infographics} />
         <div className={classes.blueBox} />
       </div>
+      <Features />
     </>
   );
 };
