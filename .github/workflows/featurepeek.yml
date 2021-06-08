@@ -1,0 +1,17 @@
+name: Build and ping FeaturePeek
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use node 14.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14.x
+    - name: Install dependencies
+      run: cd client && yarn install
+    - name: Build
+      run: cd client && yarn build
+    - name: Ping FeaturePeek
+      run: bash <(curl -s https://peek.run/ci)
