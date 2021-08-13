@@ -4,11 +4,13 @@ WORKDIR /app
 
 COPY ./client/package*.json /app/
 
-RUN npm ci
+RUN npm install --global yarn
+
+RUN yarn install --frozen-lockfile
 
 COPY ./client /app
 
-RUN npm run build
+RUN yarn run build
 
-RUN npm install serve -g
-CMD ["serve", "-s", "dist/"]
+RUN yarn install serve -g
+CMD ["serve", "-s", "build/"]
