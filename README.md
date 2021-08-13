@@ -128,26 +128,26 @@ To setup the project locally follow the steps below
 
 - [Yarn](https://classic.yarnpkg.com/en/docs/install/)
 
-```sh
-  npm install --global yarn
-```
+  ```sh
+    npm install --global yarn
+  ```
 
 - [Git](https://git-scm.com/downloads)
 
-```sh
-  # Homebrew
-  brew install git
+  ```sh
+    # Homebrew
+    brew install git
 
-  # Sudo apt
-  apt-get install git
+    # Sudo apt
+    apt-get install git
 
-  # Packman
-  pacman -S git
+    # Packman
+    pacman -S git
 
-  # Module Install (Fedora)
-  dnf install git
+    # Module Install (Fedora)
+    dnf install git
 
-```
+  ```
 
 ### Contribution guidlines 🎃
 
@@ -170,6 +170,8 @@ Please refer to the project's style and contribution guidelines for submitting p
 NOTE 1: Please abide by the [Contributing Guidelines](https://github.com/dscnitrourkela/project-guava-web/blob/master/CONTRIBUTING.md).
 
 NOTE 2: Please abide by the [Code of Conduct](https://github.com/dscnitrourkela/project-guava-web/blob/master/CODE_OF_CONDUCT.md).
+
+NOTE 3: We follow the following [coventional commit types](https://github.com/pvdlg/conventional-commit-types)
 
 ### Running the project.
 
