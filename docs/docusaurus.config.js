@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'Signit',
   tagline: 'Sign Certificates virtually and safely!',
-  url: 'signit-docs.dscnitrourkela.org',
+  url: 'https://signit-docs.dscnitrourkela.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
