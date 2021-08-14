@@ -44,8 +44,7 @@ const Auth: React.FC = () => {
 
   // ====================== Onboarding States ====================== //
   const [signatureType, setSignatureType] = useInput();
-  // eslint-disable-next-line
-  const [imageUrl, setImageUrl] = useState<string | undefined>();
+  const [, setImageUrl] = useState<string | undefined>();
 
   // ====================== Set Stage Functions ====================== //
   const setStageToSignup = () => setStage(STAGE.SIGNUP);
