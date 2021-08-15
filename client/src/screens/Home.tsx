@@ -51,15 +51,15 @@ const useStyles = makeStyles(theme => ({
   container: {
     width: '100%',
     maxWidth: '100vw',
-    minHeight: '100vh',
     height: '100vh',
+    minHeight: '100vh',
 
     display: 'grid',
     gridTemplateColumns: '0.5fr repeat(5, 1fr) 0.5fr',
     gridTemplateRows: '1fr 1fr max-content 1fr 1fr',
 
     [theme.breakpoints.between('xs', 'sm')]: {
-      gridTemplateRows: '1.5fr 1fr',
+      gridTemplateRows: '1.2fr 1fr',
       height: 'auto',
     },
   },
@@ -67,21 +67,29 @@ const useStyles = makeStyles(theme => ({
     gridColumn: '2/4',
     gridRow: '3/4',
     zIndex: 10000,
+    height: 'calc(100vh-100px)',
+    marginTop: '100px',
 
     [theme.breakpoints.between('xs', 'sm')]: {
       gridColumn: '2/7',
       gridRow: '2/3',
-      alignSelf: 'center',
+      alignSelf: 'start',
     },
   },
   infographics: {
     gridColumn: '4/7',
     gridRow: '2/5',
+    height: 'calc(100vh-100px)',
+    marginTop: '100px',
 
     [theme.breakpoints.between('xs', 'sm')]: {
       gridColumn: '2/7',
       gridRow: '1/2',
       alignSelf: 'end',
+    },
+
+    [theme.breakpoints.up('lg')]: {
+      width: '85%',
     },
   },
   blueBox: {
