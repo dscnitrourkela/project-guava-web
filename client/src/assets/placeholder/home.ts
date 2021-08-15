@@ -7,21 +7,21 @@ import {
 export default Object.freeze({
   FEATURES: [
     {
-      TITLE: 'Feature 1',
+      TITLE: 'Authenticity',
       DESCRIPTION:
-        'Aliquam nulla magna mattis morbi tellus est, turpis donec est.  magna praesent.Aliquam nulla magna mattis morbi tellus est, turpis donec est. Lacus ipsum egestas tincidunt vivamus felis in magna praesent.',
+        'Initiate a request to authorize a list of certificates by an institute administrator for your event virtually. Maintain the authencity of your certificates through custom ids.',
       ID: 'feature1',
     },
     {
-      TITLE: 'Feature 2',
+      TITLE: 'Custom Designs',
       DESCRIPTION:
-        'Aliquam nulla magna mattis morbi tellus est, turpis donec est.  magna praesent.Aliquam nulla magna mattis morbi tellus est, turpis donec est. Lacus ipsum egestas tincidunt vivamus felis in magna praesent.',
+        'Add your own custom certificate templates, have the freedom to place signature freely on the canvas, adjust certificate id locations, select signature colors, easily add participants and many more.',
       ID: 'feature2',
     },
     {
-      TITLE: 'Feature 3',
+      TITLE: 'Easy Management',
       DESCRIPTION:
-        'Aliquam nulla magna mattis morbi tellus est, turpis donec est.  magna praesent.Aliquam nulla magna mattis morbi tellus est, turpis donec est. Lacus ipsum egestas tincidunt vivamus felis in magna praesent.',
+        'Manage all your initialized and approved certificates through our dashboards. Filter through your old requests easily and view details regarding your requests, status and others.',
       ID: 'feature3',
     },
   ],

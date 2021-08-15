@@ -81,15 +81,17 @@ const useStyles = makeStyles(() => ({
     display: 'grid',
     gridTemplateColumns: '0.5fr repeat(5, 1fr) 0.5fr',
     position: 'relative',
+    paddingTop: '10px',
+    height: '100px',
   },
   imgContainer: {
     gridColumn: '2/3',
     justifySelf: 'start',
     alignSelf: 'center',
-    padding: '25px 0px',
+    display: 'flex',
   },
   img: {
-    width: '100%',
+    width: '50%',
     height: 'auto',
     marginRight: '20px',
   },
@@ -104,7 +106,7 @@ const useStyles = makeStyles(() => ({
     fontSize: '18px',
     lineHeight: '17px',
     color: '#333333',
-    padding: '30px 20px',
+    padding: '0px 20px',
     '&:hover': {
       cursor: 'pointer',
     },
