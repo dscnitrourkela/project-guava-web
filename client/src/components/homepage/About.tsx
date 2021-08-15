@@ -20,12 +20,12 @@ const Features: React.FC = () => {
         <img className={classes.img} src={img1} alt="DSC NIT Rourkela" />
         <img className={classes.img} src={img2} alt="NIT Rourkela" />
         <Typography variant="body1" className={classes.aboutUs}>
-          Ultricies nibh praesent vitae convallis auctor. A quisque in arcu
-          elementum suspendisse egestas ut mauris. In et vitae, arcu, egestas
-          consectetur neque, eget. Vitae massa in at velit et ac, purus enim.
-          Sollicitudin non donec lectus felis sodales et tortor quis cursus.
-          Proin nam adipiscing est leo dictum elementum duis ultrices sit. Sit
-          ullamcorper{' '}
+          Developer Student Club (DSC) is a Google Developers program for
+          university students to learn mobile and web development skills. The
+          club will be open to any student, ranging from novice developers who
+          are just starting, to advanced developers who want to further their
+          skills. The club is intended as a space for students to try out new
+          ideas and collaborate to solve mobile and web development problems.
         </Typography>
       </div>
     </Container>
