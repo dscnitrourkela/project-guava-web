@@ -60,8 +60,8 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     fontFamily: "'Source Serif Pro', serif",
-    fontSize: '4.25rem',
-    lineHeight: '4.81rem',
+    fontSize: '4rem',
+    lineHeight: '4.5rem',
     color: '#000000',
 
     [theme.breakpoints.between('sm', 'md')]: {

@@ -117,6 +117,7 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.between('xs', 'sm')]: {
       gridTemplateColumns: '1fr 1fr',
       gap: '30px',
+      padding: '10px',
     },
   },
   logoContainer: {
@@ -135,7 +136,7 @@ const useStyles = makeStyles(theme => ({
     width: '70%',
     height: 'auto',
     [theme.breakpoints.between('xs', 'sm')]: {
-      width: '60%',
+      width: '80%',
       marginBottom: '30px',
     },
   },

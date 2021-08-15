@@ -8,11 +8,11 @@ import DesktopNavbar from './DesktopNavbar';
 import MobileNavbar from './MobileNavbar';
 
 const Navbar: React.FC = () => {
-  const matches = useMediaQuery('(max-width: 850px)');
+  const matches = useMediaQuery('(max-width: 960px)');
   const [showBackground, setShowBackground] = useState(false);
 
   const toggleVisibility = () => {
-    if (window.pageYOffset > 65) {
+    if (window.pageYOffset > 40) {
       setShowBackground(true);
     } else {
       setShowBackground(false);
