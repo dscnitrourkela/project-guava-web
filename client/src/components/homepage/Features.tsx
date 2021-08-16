@@ -3,7 +3,6 @@ import React from 'react';
 // Libraries
 import {makeStyles, Typography, Container, ButtonBase} from '@material-ui/core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faList} from '@fortawesome/free-solid-svg-icons';
 import {useHistory} from 'react-router-dom';
 
 // Assets
@@ -22,14 +21,10 @@ const Features: React.FC = () => {
       </Container>
 
       <Container className={classes.container}>
-        {HOMEPAGE_CONTENT.FEATURES.map(({TITLE, DESCRIPTION, ID}) => (
+        {HOMEPAGE_CONTENT.FEATURES.map(({TITLE, DESCRIPTION, ID, ICON}) => (
           <div key={ID} className={classes.featureContainer}>
             <Typography variant="h2" className={classes.title}>
-              <FontAwesomeIcon
-                size="lg"
-                icon={faList}
-                className={classes.icon}
-              />
+              <FontAwesomeIcon size="lg" icon={ICON} className={classes.icon} />
 
               {TITLE}
             </Typography>
