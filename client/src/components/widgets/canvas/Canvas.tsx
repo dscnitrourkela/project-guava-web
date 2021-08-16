@@ -38,13 +38,10 @@ const Canvas: React.FC<CanvasProps> = ({
   } = state.certificateImageDetails;
   const {authorizerDetails, recipientName, validationDetails} = state;
 
-  const [isRecipientNameSelected, setRecipientNameSelected] = React.useState(
-    false,
-  );
-  const [
-    isValidationDetailsSelected,
-    setValidationDetailsSelected,
-  ] = React.useState(false);
+  const [isRecipientNameSelected, setRecipientNameSelected] =
+    React.useState(false);
+  const [isValidationDetailsSelected, setValidationDetailsSelected] =
+    React.useState(false);
 
   const stageHeight = stageDimensions.height;
   const aspectRatio = imageDimensions.width / imageDimensions.height;
@@ -53,7 +50,7 @@ const Canvas: React.FC<CanvasProps> = ({
   const imagePositionX = 0;
   const imagePositionY = 0;
 
-  const [image] = useImage(uploadImage, 'Anonymous');
+  const [image] = useImage(uploadImage, 'anonymous');
   const [selected, setSelected] = React.useState<string | null>(null);
 
   const onSelect = (id: string): void => setSelected(id);
