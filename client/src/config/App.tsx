@@ -13,7 +13,7 @@ import {Router, Route, Switch} from 'react-router-dom';
 import {ComposeProvider} from '../store/contexts';
 
 // Components
-import {MobileView, Loader} from '../components';
+import {MobileView, Loader, SEO} from '../components';
 
 // Config and Utils
 import theme from './theme';
@@ -33,52 +33,55 @@ function App(): JSX.Element {
   const classes = useStyles();
 
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
+    <>
+      <SEO />
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
 
-      <Router history={createBrowserHistory}>
-        <Suspense
-          fallback={
-            <div className={classes.divContainer}>
-              <Loader />
-            </div>
-          }
-        >
-          {isMobileView ? (
-            <Switch>
-              <Route exact path="/" component={HomePage} />
-              <Route path="*" component={MobileView} />
-            </Switch>
-          ) : (
-            <Switch>
-              <Route exact path="/" component={HomePage} />
-              <Route exact path="/demo" component={DemoPage} />
+        <Router history={createBrowserHistory}>
+          <Suspense
+            fallback={
+              <div className={classes.divContainer}>
+                <Loader />
+              </div>
+            }
+          >
+            {isMobileView ? (
+              <Switch>
+                <Route exact path="/" component={HomePage} />
+                <Route path="*" component={MobileView} />
+              </Switch>
+            ) : (
+              <Switch>
+                <Route exact path="/" component={HomePage} />
+                <Route exact path="/demo" component={DemoPage} />
 
-              <Route exact path="/signup" component={AuthPage} />
-              <Route exact path="/login" component={AuthPage} />
+                <Route exact path="/signup" component={AuthPage} />
+                <Route exact path="/login" component={AuthPage} />
 
-              <Route exact path="/compose">
-                <ComposeProvider>
-                  <ComposePage />
-                </ComposeProvider>
-              </Route>
+                <Route exact path="/compose">
+                  <ComposeProvider>
+                    <ComposePage />
+                  </ComposeProvider>
+                </Route>
 
-              <Route exact path="/approve">
-                <ApprovePage />
-              </Route>
+                <Route exact path="/approve">
+                  <ApprovePage />
+                </Route>
 
-              <Route exact path="/dashboard">
-                <DashboardPage />
-              </Route>
+                <Route exact path="/dashboard">
+                  <DashboardPage />
+                </Route>
 
-              <Route exact path="/viewCertificate">
-                <ViewCertificatePage />
-              </Route>
-            </Switch>
-          )}
-        </Suspense>
-      </Router>
-    </ThemeProvider>
+                <Route exact path="/viewCertificate">
+                  <ViewCertificatePage />
+                </Route>
+              </Switch>
+            )}
+          </Suspense>
+        </Router>
+      </ThemeProvider>
+    </>
   );
 }
 
