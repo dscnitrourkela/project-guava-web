@@ -9,15 +9,13 @@ import {
 } from '@material-ui/core';
 import {Router, Route, Switch} from 'react-router-dom';
 
-// Context Providers
-import {ComposeProvider} from '../store/contexts';
-
 // Components
 import {MobileView, Loader, SEO} from '../components';
 
 // Config and Utils
 import theme from './theme';
 import createBrowserHistory from '../utils/createBrowserHistory';
+import ROUTES from '../utils/getRoutes';
 
 // Lazily Load all components
 const HomePage = lazy(() => import('../screens/Home'));
@@ -25,8 +23,22 @@ const DashboardPage = lazy(() => import('../screens/Dashboard'));
 const ComposePage = lazy(() => import('../screens/Compose'));
 const ApprovePage = lazy(() => import('../screens/Approve'));
 const ViewCertificatePage = lazy(() => import('../screens/ViewCertificate'));
-const DemoPage = lazy(() => import('../screens/Demo'));
+const Playground = lazy(() => import('../screens/Demo'));
 const AuthPage = lazy(() => import('../screens/Auth'));
+
+/*
+ !! Do not change order of components
+*/
+const RouteComponents = [
+  <HomePage key={1} />,
+  <AuthPage key={2} />,
+  <AuthPage key={3} />,
+  <ComposePage key={4} />,
+  <ApprovePage key={5} />,
+  <DashboardPage key={6} />,
+  <ViewCertificatePage key={7} />,
+  <Playground key={8} />,
+];
 
 function App(): JSX.Element {
   const isMobileView = useMediaQuery('(max-width:600px)');
@@ -53,29 +65,19 @@ function App(): JSX.Element {
               </Switch>
             ) : (
               <Switch>
-                <Route exact path="/" component={HomePage} />
-                <Route exact path="/demo" component={DemoPage} />
-
-                <Route exact path="/signup" component={AuthPage} />
-                <Route exact path="/login" component={AuthPage} />
-
-                <Route exact path="/compose">
-                  <ComposeProvider>
-                    <ComposePage />
-                  </ComposeProvider>
-                </Route>
-
-                <Route exact path="/approve">
-                  <ApprovePage />
-                </Route>
-
-                <Route exact path="/dashboard">
-                  <DashboardPage />
-                </Route>
-
-                <Route exact path="/viewCertificate">
-                  <ViewCertificatePage />
-                </Route>
+                {ROUTES.ARRAY.slice(1, ROUTES.ARRAY.length).map(
+                  ({id, exact, ContextProvider, route}, index) => (
+                    <Route key={id} exact={exact} path={route}>
+                      {ContextProvider ? (
+                        <ContextProvider>
+                          {RouteComponents[index]}
+                        </ContextProvider>
+                      ) : (
+                        RouteComponents[index]
+                      )}
+                    </Route>
+                  ),
+                )}
               </Switch>
             )}
           </Suspense>
