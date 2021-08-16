@@ -13,6 +13,7 @@ import {Router, Route, Switch} from 'react-router-dom';
 import {MobileView, Loader, SEO} from '../components';
 
 // Config and Utils
+import Apollo from './Apollo';
 import theme from './theme';
 import createBrowserHistory from '../utils/createBrowserHistory';
 import ROUTES from '../utils/getRoutes';
@@ -47,42 +48,44 @@ function App(): JSX.Element {
   return (
     <>
       <SEO />
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
+      <Apollo>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
 
-        <Router history={createBrowserHistory}>
-          <Suspense
-            fallback={
-              <div className={classes.divContainer}>
-                <Loader />
-              </div>
-            }
-          >
-            {isMobileView ? (
-              <Switch>
-                <Route exact path="/" component={HomePage} />
-                <Route path="*" component={MobileView} />
-              </Switch>
-            ) : (
-              <Switch>
-                {ROUTES.ARRAY.slice(1, ROUTES.ARRAY.length).map(
-                  ({id, exact, ContextProvider, route}, index) => (
-                    <Route key={id} exact={exact} path={route}>
-                      {ContextProvider ? (
-                        <ContextProvider>
-                          {RouteComponents[index]}
-                        </ContextProvider>
-                      ) : (
-                        RouteComponents[index]
-                      )}
-                    </Route>
-                  ),
-                )}
-              </Switch>
-            )}
-          </Suspense>
-        </Router>
-      </ThemeProvider>
+          <Router history={createBrowserHistory}>
+            <Suspense
+              fallback={
+                <div className={classes.divContainer}>
+                  <Loader />
+                </div>
+              }
+            >
+              {isMobileView ? (
+                <Switch>
+                  <Route exact path="/" component={HomePage} />
+                  <Route path="*" component={MobileView} />
+                </Switch>
+              ) : (
+                <Switch>
+                  {ROUTES.ARRAY.slice(1, ROUTES.ARRAY.length).map(
+                    ({id, exact, ContextProvider, route}, index) => (
+                      <Route key={id} exact={exact} path={route}>
+                        {ContextProvider ? (
+                          <ContextProvider>
+                            {RouteComponents[index]}
+                          </ContextProvider>
+                        ) : (
+                          RouteComponents[index]
+                        )}
+                      </Route>
+                    ),
+                  )}
+                </Switch>
+              )}
+            </Suspense>
+          </Router>
+        </ThemeProvider>
+      </Apollo>
     </>
   );
 }
