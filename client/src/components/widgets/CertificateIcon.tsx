@@ -40,7 +40,7 @@ const CertificateIcon: React.FC<CertificateIconProps> = ({data, status}) => {
                 <img
                   key={number}
                   className={classes.profile}
-                  src="https://res.cloudinary.com/dalqfvowk/image/upload/badges_user/z2kd6ghrzkturciyltns.jpg"
+                  src="https://res.cloudinary.com/dscnitrourkela/image/upload/badges_user/z2kd6ghrzkturciyltns.jpg"
                   alt={data.certificateDetails.eventName}
                 />
               ))}
