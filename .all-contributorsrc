@@ -38,6 +38,15 @@
       "contributions": [
         "tool"
       ]
+    },
+    {
+      "login": "actions-user",
+      "name": "actions-user",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65916846?v=4",
+      "profile": "https://github.com/actions",
+      "contributions": [
+        "tool"
+      ]
     }
   ],
   "contributorsPerLine": 7,
