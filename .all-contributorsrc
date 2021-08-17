@@ -1,0 +1,28 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "riteshsp2000",
+      "name": "Ritesh Patil",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56112399?v=4",
+      "profile": "http://riteshpatil.dev",
+      "contributions": [
+        "maintenance",
+        "projectManagement",
+        "doc",
+        "ideas",
+        "test"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "project-guava-web",
+  "projectOwner": "dscnitrourkela",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
