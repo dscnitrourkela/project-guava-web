@@ -1,6 +1,6 @@
 <span>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -236,6 +236,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="http://riteshpatil.dev"><img src="https://avatars.githubusercontent.com/u/56112399?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ritesh Patil</b></sub></a><br /><a href="#maintenance-riteshsp2000" title="Maintenance">🚧</a> <a href="#projectManagement-riteshsp2000" title="Project Management">📆</a> <a href="https://github.com/dscnitrourkela/project-guava-web/commits?author=riteshsp2000" title="Documentation">📖</a> <a href="#ideas-riteshsp2000" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/dscnitrourkela/project-guava-web/commits?author=riteshsp2000" title="Tests">⚠️</a></td>
     <td align="center"><a href="https://github.com/DesignrKnight"><img src="https://avatars.githubusercontent.com/u/27865704?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Abel Mathew</b></sub></a><br /><a href="#ideas-DesignrKnight" title="Ideas, Planning, & Feedback">🤔</a> <a href="#mentoring-DesignrKnight" title="Mentoring">🧑‍🏫</a> <a href="#question-DesignrKnight" title="Answering Questions">💬</a> <a href="#security-DesignrKnight" title="Security">🛡️</a></td>
+    <td align="center"><a href="https://allcontributors.org"><img src="https://avatars.githubusercontent.com/u/46410174?v=4?s=100" width="100px;" alt=""/><br /><sub><b>All Contributors</b></sub></a><br /><a href="#tool-all-contributors" title="Tools">🔧</a></td>
   </tr>
 </table>
 
