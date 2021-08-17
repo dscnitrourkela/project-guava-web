@@ -1,17 +1,11 @@
-<span>
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
-
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Starware](https://img.shields.io/badge/Starware-⭐-black?labelColor=f9b00d)](https://github.com/zepfietje/starware)
 
-</span>
+
 
 <!-- PROJECT SHIELDS -->
 
@@ -229,6 +223,7 @@ Your appreciation makes us grow and glow up. ⭐
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -242,23 +237,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 </table>
 
 <!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/DesignrKnight"><img src="https://avatars0.githubusercontent.com/u/27865704?v=4" width="100px;" alt=""/><br /><sub><b>Abel Mathew</b></sub></a><br /><a href="https://github.com/dscnitrourkela/project-guava/commits?author=DesignrKnight" title="Code">💻</a> <a href="#ideas-DesignrKnight" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-DesignrKnight" title="Maintenance">🚧</a> <a href="#ideas-DesignrKnight" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://allcontributors.org"><img src="https://avatars1.githubusercontent.com/u/46410174?v=4" width="100px;" alt=""/><br /><sub><b>All Contributors</b></sub></a><br /><a href="#tool-all-contributors" title="Tools">🔧</a></td>
-    <td align="center"><a href="https://github.com/actions"><img src="https://avatars1.githubusercontent.com/u/65916846?v=4" width="100px;" alt=""/><br /><sub><b>actions-user</b></sub></a><br /><a href="#tool-actions-user" title="Tools">🔧</a></td>
-    <td align="center"><a href="https://github.com/riteshsp2000"><img src="https://avatars3.githubusercontent.com/u/56112399?v=4" width="100px;" alt=""/><br /><sub><b>Ritesh Patil</b></sub></a><br /><a href="https://github.com/dscnitrourkela/project-guava/commits?author=riteshsp2000" title="Code">💻</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
