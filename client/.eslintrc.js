@@ -42,5 +42,6 @@ module.exports = {
     'react/prop-types': 0,
     'import/extensions': 0,
     'import/no-cycle': 0,
+    'react/require-default-props': 0,
   },
 };
