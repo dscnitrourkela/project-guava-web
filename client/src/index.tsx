@@ -10,6 +10,7 @@ ReactDOM.render(
     domain="signit.eu.auth0.com"
     clientId="C4gXGmb9XUSz1Ll0XxenNkrLcJvti3qc"
     redirectUri={window.location.origin}
+    audience="https://signit-api.dscnitrourkela.org/"
   >
     <App />
   </Auth0Provider>,
