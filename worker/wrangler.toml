@@ -1,0 +1,5 @@
+name = "signit"
+type = "javascript"
+
+account_id = "dbb1390d925ab9036ed640bb29c73324"
+workers_dev = true
