@@ -7,12 +7,20 @@ import {Link} from 'react-router-dom';
 
 // Assets
 import {InitialStateType} from '../../store/action-types';
+import shuffleArray from '../../utils/shuffleArray';
 
 interface CertificateIconProps {
   data: InitialStateType;
   // status: 'pending' | 'approved' | 'distributed';
   status: string;
 }
+
+const people = [
+  'https://res.cloudinary.com/riteshsp2000/image/upload/project-guava/assets/Ritesh_ff6rc7.jpg',
+  'https://res.cloudinary.com/riteshsp2000/image/upload/project-guava/assets/Smarak_Das_nmegzc.jpg',
+  'https://res.cloudinary.com/riteshsp2000/image/upload/project-guava/assets/Abhibhaw_bqfjf8.jpg',
+];
+shuffleArray(people);
 
 const CertificateIcon: React.FC<CertificateIconProps> = ({data, status}) => {
   const classes = useStyles(status)();
@@ -36,11 +44,11 @@ const CertificateIcon: React.FC<CertificateIconProps> = ({data, status}) => {
 
           <div className={classes.approveContainer}>
             <div className={classes.profileContainer}>
-              {[1, 2, 3].map(number => (
+              {people.map(url => (
                 <img
-                  key={number}
+                  key={url}
                   className={classes.profile}
-                  src="https://res.cloudinary.com/dscnitrourkela/image/upload/badges_user/z2kd6ghrzkturciyltns.jpg"
+                  src={url}
                   alt={data.certificateDetails.eventName}
                 />
               ))}

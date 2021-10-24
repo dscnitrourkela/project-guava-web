@@ -96,7 +96,7 @@ const MenuBar: React.FC = () => {
             >
               <img
                 className={classes.profileImage}
-                src="https://res.cloudinary.com/dscnitrourkela/image/upload/badges_user/z2kd6ghrzkturciyltns.jpg"
+                src="https://res.cloudinary.com/riteshsp2000/image/upload/project-guava/assets/Ritesh_ff6rc7.jpg"
                 alt="Profile"
               />
             </IconButton>
