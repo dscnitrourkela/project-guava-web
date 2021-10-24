@@ -1,4 +1,4 @@
 export default Object.freeze({
-  ONE: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-guava/static/hisuitlgw4wkhtc8muqw.png',
-  DSC: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-guava/static/jy4cv5r2j8ramu0hnhzi.png',
+  ONE: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-guava/assets/Signit_vchm1c.png',
+  DSC: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-guava/assets/Group_3_td97pc.png',
 });
