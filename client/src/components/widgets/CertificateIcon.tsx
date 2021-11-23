@@ -16,9 +16,9 @@ interface CertificateIconProps {
 }
 
 const people = [
-  'https://res.cloudinary.com/riteshsp2000/image/upload/project-guava/assets/Ritesh_ff6rc7.jpg',
-  'https://res.cloudinary.com/riteshsp2000/image/upload/project-guava/assets/Smarak_Das_nmegzc.jpg',
-  'https://res.cloudinary.com/riteshsp2000/image/upload/project-guava/assets/Abhibhaw_bqfjf8.jpg',
+  'https://res.cloudinary.com/riteshp2000/image/upload/v1637704406/project-guava/1602285070694_kw2iwz.jpg',
+  'https://res.cloudinary.com/riteshp2000/image/upload/v1637704408/project-guava/Smarak_Das_y1fyho.jpg',
+  'https://res.cloudinary.com/riteshp2000/image/upload/v1637704411/project-guava/Abhibhaw_u39lzw.jpg',
 ];
 shuffleArray(people);
 
