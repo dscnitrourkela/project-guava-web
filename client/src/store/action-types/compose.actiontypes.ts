@@ -21,7 +21,7 @@ export const initialState = {
     position: {x: 0, y: 0},
     scale: {x: 1, y: 1},
     dimensions: {width: 200, height: 50},
-    name: 'Recipient Name',
+    name: 'Abhibhaw Asthana',
     id: 'recipient-name-id',
   },
   validationDetails: {

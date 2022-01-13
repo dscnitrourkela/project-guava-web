@@ -86,6 +86,7 @@ const Canvas: React.FC<CanvasProps> = ({
               scale={validationDetails.scale}
               dimensions={validationDetails.dimensions}
               id={validationDetails.id}
+              fontSize={16}
             />
 
             <FixedText
@@ -94,6 +95,7 @@ const Canvas: React.FC<CanvasProps> = ({
               scale={recipientName.scale}
               dimensions={recipientName.dimensions}
               id={recipientName.id}
+              fontSize={35}
             />
 
             {authorizerDetails.length > 0 &&
