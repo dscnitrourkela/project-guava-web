@@ -26,19 +26,21 @@ const ApprovePage = lazy(() => import('../screens/Approve'));
 const ViewCertificatePage = lazy(() => import('../screens/ViewCertificate'));
 const Playground = lazy(() => import('../screens/Demo'));
 const AuthPage = lazy(() => import('../screens/Auth'));
+const HackNITRPage = lazy(() => import('../screens/HackNITR'));
 
 /*
  !! Do not change order of components
 */
 const RouteComponents = [
   <HomePage key={1} />,
-  <AuthPage key={2} />,
   <AuthPage key={3} />,
-  <ComposePage key={4} />,
-  <ApprovePage key={5} />,
-  <DashboardPage key={6} />,
-  <ViewCertificatePage key={7} />,
-  <Playground key={8} />,
+  <AuthPage key={4} />,
+  <ComposePage key={5} />,
+  <ApprovePage key={6} />,
+  <DashboardPage key={7} />,
+  <ViewCertificatePage key={8} />,
+  <Playground key={9} />,
+  <HackNITRPage key={10} />
 ];
 
 function App(): JSX.Element {

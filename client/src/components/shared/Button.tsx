@@ -62,7 +62,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
     </Button>
   );
 
-  return link ? <Link to={link}>{ModifiedButton}</Link> : ModifiedButton;
+  return link ? <Link to={link} style={{textDecoration: 'none'}}>{ModifiedButton}</Link> : ModifiedButton;
 };
 
 export default CustomButton;

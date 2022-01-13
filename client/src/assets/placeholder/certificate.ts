@@ -91,6 +91,13 @@ const recipientDetails = {
   ],
 };
 
+// const [details] = React.useState({
+//   id: '6969696969',
+//   name: 'HackNITR 3.0 Hackathon',
+//   date: '15th January 2021',
+//   signee: ['Ritesh Patil', 'Astha Nayak']
+// })
+
 export default Object.freeze({
   ...initialState,
   certificateImageDetails: {
