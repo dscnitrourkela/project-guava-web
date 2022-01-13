@@ -82,6 +82,14 @@ const ARRAY = [
     ContextProvider: null,
     exact: true,
   },
+  {
+    name: 'HackNITR',
+    longName: 'HACKNITR',
+    route: '/hacknitr/enterEmail',
+    id: '10',
+    ContextProvider: null,
+    exact: true,
+  },
 ];
 
 const OBJECT: {[x: string]: RouteType} = {};
