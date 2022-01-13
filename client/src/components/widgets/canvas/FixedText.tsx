@@ -20,6 +20,7 @@ export interface FixedTextProps {
   name: string;
   id: string;
   colour?: string;
+  fontSize?: number;
 }
 
 const FixedText: React.FC<FixedTextProps> = ({
@@ -27,6 +28,8 @@ const FixedText: React.FC<FixedTextProps> = ({
   position,
   scale,
   name,
+  colour = 'white',
+  fontSize = 20,
 }) => {
   const shapeRef = React.useRef<Konva.Group>(null);
 
@@ -54,7 +57,9 @@ const FixedText: React.FC<FixedTextProps> = ({
         align="center"
         verticalAlign="middle"
         text={name}
-        fontSize={20}
+        fontSize={fontSize}
+        fill={colour}
+        fontFamily="'Sofia Pro Medium'"
       />
     </Group>
   );

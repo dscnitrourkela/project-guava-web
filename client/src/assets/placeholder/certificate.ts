@@ -95,28 +95,34 @@ export default Object.freeze({
   ...initialState,
   certificateImageDetails: {
     imageDimensions: {
-      width: 788,
-      height: 530,
+      height: 612,
+      width: 792,
     },
     stageDimensions: {
       width: 550,
       height: 550,
     },
-    src: 'https://res.cloudinary.com/riteshp2000/image/upload/v1637704404/project-guava/Group_128_wunphw.png',
+    src: 'https://res.cloudinary.com/riteshp2000/image/upload/v1642091542/Particpation_Certificate_1_tbj63v.png',
   },
   recipientName: {
-    ...initialState.recipientName,
+    scale: {x: 1, y: 1},
+    dimensions: {width: 400, height: 50},
+    name: 'Abhibhaw Asthana',
+    id: 'recipient-name-id',
     position: {
-      x: 409,
-      y: 275,
+      x: 350,
+      y: 255,
     },
   },
   validationDetails: {
-    ...initialState.validationDetails,
+    scale: {x: 1, y: 1},
+    dimensions: {width: 200, height: 50},
+    name: 'DreamTeam',
+    id: 'recipient-team-name-id',
     position: {
-      x: 177,
-      y: 441,
-    },
+      x: 460,
+      y: 327,
+    }
   },
   recipientDetails,
 });

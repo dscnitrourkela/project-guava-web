@@ -1,3 +1,23 @@
+/* @import url('./assets/fonts/sofia-pro-regular.otf');
+@import url('./assets/fonts/sofia-pro-semi-bold.otf'); */
+
+@font-face {
+  font-family: 'Sofia Pro Regular';
+  src: local('Sofia Pro Regular'), local('Sofia Pro Regular'),
+    url('./assets/fonts/sofia-pro-regular.otf') format('.otf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sofia Pro Medium';
+  src: local('Sofia Pro Media'), local('Sofia Pro Medium'),
+    url('./assets/fonts/sofia-pro-semi-bold.otf') format('.otf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 *,
 *:before,
 *:after {
