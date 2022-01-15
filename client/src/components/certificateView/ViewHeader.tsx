@@ -8,12 +8,12 @@ import {
   Container,
   Typography,
 } from '@material-ui/core';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // Assets
-import {LOGOS} from '../../assets/imgs';
+import { LOGOS } from '../../assets/imgs';
 
-const MenuBar: React.FC = () => {
+const MenuBar: React.FC<{ email?: string }> = ({ email = '' }) => {
   const classes = useStyles();
 
   return (
@@ -29,7 +29,7 @@ const MenuBar: React.FC = () => {
           </Typography>
 
           <Typography variant="body1" className={classes.email}>
-            dummy@dum.com
+            {email}
           </Typography>
         </Container>
       </Toolbar>

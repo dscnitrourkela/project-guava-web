@@ -29,7 +29,7 @@ const ViewCertificate: React.FC = () => {
   const handleSubmit = () => {
 		setLoading(true);
 		if (jsonRef.current) {
-			let index;
+			let index = -1;
 			const match = jsonRef.current.filter(({Email}, id) => {
 				if (Email === input) {
 					index = id;
@@ -46,7 +46,7 @@ const ViewCertificate: React.FC = () => {
 					email,
 					teamName,
 					tag,
-					certificateId: `HACKNITR3-P${index}`
+					certificateId: `HACKNITR3-P${index+1}`
 				})
 			} else {
 				setError(true);
