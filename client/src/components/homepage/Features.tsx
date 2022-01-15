@@ -1,12 +1,12 @@
 import React from 'react';
 
 // Libraries
-import {makeStyles, Typography, Container, ButtonBase} from '@material-ui/core';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {useHistory} from 'react-router-dom';
+import { makeStyles, Typography, Container, ButtonBase } from '@material-ui/core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useHistory } from 'react-router-dom';
 
 // Assets
-import {HOMEPAGE_CONTENT} from '../../assets/placeholder';
+import { HOMEPAGE_CONTENT } from '../../assets/placeholder';
 
 const Features: React.FC = () => {
   const classes = useStyles();
@@ -21,7 +21,7 @@ const Features: React.FC = () => {
       </Container>
 
       <Container className={classes.container}>
-        {HOMEPAGE_CONTENT.FEATURES.map(({TITLE, DESCRIPTION, ID, ICON}) => (
+        {HOMEPAGE_CONTENT.FEATURES.map(({ TITLE, DESCRIPTION, ID, ICON }) => (
           <div key={ID} className={classes.featureContainer}>
             <Typography variant="h2" className={classes.title}>
               <FontAwesomeIcon size="lg" icon={ICON} className={classes.icon} />
@@ -35,7 +35,7 @@ const Features: React.FC = () => {
         ))}
       </Container>
 
-      <Container className={classes.messageContainer}>
+      {/* <Container className={classes.messageContainer}>
         <Typography className={classes.message} variant="body1">
           Try it out yourself and experience ease of handling certificates
         </Typography>
@@ -47,7 +47,7 @@ const Features: React.FC = () => {
             Get Started
           </Typography>
         </ButtonBase>
-      </Container>
+      </Container> */}
     </div>
   );
 };

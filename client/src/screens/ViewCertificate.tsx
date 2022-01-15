@@ -27,6 +27,7 @@ const ViewCertificate: React.FC = () => {
     certificateId: string;
     teamName: string;
     tag: string;
+    prize?: string;
   }>();
 
   const [certificate] = React.useState({
@@ -45,7 +46,9 @@ const ViewCertificate: React.FC = () => {
         width: 550,
         height: 550,
       },
-      src: 'https://res.cloudinary.com/riteshp2000/image/upload/v1642091542/Particpation_Certificate_1_tbj63v.png',
+      src: history.location.state.tag === "Appreciation"
+        ? 'https://res.cloudinary.com/riteshp2000/image/upload/v1642250889/Appreciation_Certificate_ztv1oo.png'
+        : 'https://res.cloudinary.com/riteshp2000/image/upload/v1642091542/Particpation_Certificate_1_tbj63v.png'
     },
     recipientName: {
       scale: { x: 1, y: 1 },
@@ -63,8 +66,8 @@ const ViewCertificate: React.FC = () => {
       name: history?.location?.state?.teamName,
       id: 'recipient-team-name-id',
       position: {
-        x: 460,
-        y: 327,
+        x: history.location.state.tag === "Appreciation" ? 430 : 490,
+        y: history.location.state.tag === "Appreciation" ? 350 : 327,
       }
     },
     authorizerDetails: [],
@@ -104,7 +107,7 @@ const ViewCertificate: React.FC = () => {
   const handleDownload = () => {
     if (canvasRef.current) {
       const uri = canvasRef.current.toDataURL();
-      downloadURI(uri, 'certificate.png');
+      downloadURI(uri, 'hacknitr3_certificate.png');
     }
   };
 
@@ -117,6 +120,16 @@ const ViewCertificate: React.FC = () => {
           canvasRef={canvasRef}
           className={classes.canvas}
           state={certificate}
+          extraValue={history?.location?.state?.prize ? {
+            scale: { x: 1, y: 1 },
+            dimensions: { width: 400, height: 50 },
+            name: history?.location?.state?.prize,
+            id: 'recipient-name-id',
+            position: {
+              x: 325,
+              y: 315,
+            },
+          } : undefined}
           isPreview
         />
       </div>

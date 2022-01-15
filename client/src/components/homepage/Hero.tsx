@@ -1,14 +1,14 @@
 import React from 'react';
 
 // Libraries
-import {ButtonBase, makeStyles, Typography} from '@material-ui/core';
-import {useHistory} from 'react-router-dom';
+import { ButtonBase, makeStyles, Typography } from '@material-ui/core';
+import { useHistory } from 'react-router-dom';
 
 interface HeroProps {
   className?: string;
 }
 
-const Hero: React.FC<HeroProps> = ({className}) => {
+const Hero: React.FC<HeroProps> = ({ className }) => {
   const classes = useStyles();
   const history = useHistory();
 
@@ -24,7 +24,11 @@ const Hero: React.FC<HeroProps> = ({className}) => {
         fro automatic distribution. Manage queries and complaints.
       </Typography>
 
-      <div className={classes.buttonContainer}>
+      <Typography variant="body2" className={classes.typography}>
+        Active in Beta...
+      </Typography>
+
+      {/* <div className={classes.buttonContainer}>
         <ButtonBase
           className={classes.button}
           onClick={() => history.push('/dashboard')}
@@ -41,7 +45,7 @@ const Hero: React.FC<HeroProps> = ({className}) => {
             Receive Certificate
           </Typography>
         </ButtonBase>
-      </div>
+      </div> */}
     </div>
   );
 };
@@ -118,5 +122,7 @@ const useStyles = makeStyles(theme => ({
   },
   typography: {
     fontSize: '16px',
+    color: '#398FFE',
+    marginTop: '2rem'
   },
 }));
