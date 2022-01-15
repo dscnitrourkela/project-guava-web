@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Libraries
-import {Stage, Layer, Image} from 'react-konva';
+import { Stage, Layer, Image } from 'react-konva';
 import useImage from 'use-image';
 
 // Components
@@ -22,6 +22,7 @@ interface CanvasProps {
   dispatch?: React.Dispatch<ActionType>;
   className?: string;
   canvasRef?: any;
+  extraValue?: any | undefined;
 }
 
 const Canvas: React.FC<CanvasProps> = ({
@@ -30,13 +31,14 @@ const Canvas: React.FC<CanvasProps> = ({
   state,
   className,
   canvasRef,
+  extraValue
 }) => {
   const {
     imageDimensions,
     stageDimensions,
     src: uploadImage,
   } = state.certificateImageDetails;
-  const {authorizerDetails, recipientName, validationDetails} = state;
+  const { authorizerDetails, recipientName, validationDetails } = state;
 
   const [isRecipientNameSelected, setRecipientNameSelected] =
     React.useState(false);
@@ -97,6 +99,17 @@ const Canvas: React.FC<CanvasProps> = ({
               id={recipientName.id}
               fontSize={35}
             />
+
+            {extraValue && (
+              <FixedText
+                name={extraValue.name}
+                position={extraValue.position}
+                scale={extraValue.scale}
+                dimensions={extraValue.dimensions}
+                id={extraValue.id}
+                fontSize={20}
+              />
+            )}
 
             {authorizerDetails.length > 0 &&
               authorizerDetails.map((authorizer: AuthorizerType) => (

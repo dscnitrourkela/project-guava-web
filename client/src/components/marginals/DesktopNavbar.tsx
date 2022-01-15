@@ -1,18 +1,18 @@
 import React from 'react';
 
 // Libraries
-import {makeStyles, Typography} from '@material-ui/core';
-import {Link} from 'react-router-dom';
-import {Link as NavLink} from 'react-scroll';
+import { makeStyles, Typography } from '@material-ui/core';
+import { Link } from 'react-router-dom';
+import { Link as NavLink } from 'react-scroll';
 
 // Assets
 import LOGOS from '../../assets/imgs/logos';
-import {HOMEPAGE_CONTENT} from '../../assets/placeholder';
+import { HOMEPAGE_CONTENT } from '../../assets/placeholder';
 
-const DesktopNavbar: React.FC<{showBackground?: boolean}> = ({
+const DesktopNavbar: React.FC<{ showBackground?: boolean }> = ({
   showBackground,
 }) => {
-  const classes = useStyles({showBackground});
+  const classes = useStyles({ showBackground });
 
   return (
     <div className={classes.stickyContainer}>
@@ -38,20 +38,20 @@ const DesktopNavbar: React.FC<{showBackground?: boolean}> = ({
             </Typography>
           </NavLink>
 
-          <Link to="/viewCertificate" style={{textDecoration: 'none'}}>
+          {/* <Link to="/viewCertificate" style={{textDecoration: 'none'}}>
             <Typography variant="h4" className={classes.menuItem}>
               Receive Certificate
             </Typography>
-          </Link>
+          </Link> */}
 
-          <Link to="/signup" style={{textDecoration: 'none'}}>
+          {/* <Link to="/signup" style={{textDecoration: 'none'}}>
             <Typography
               variant="h4"
               className={`${classes.menuItem} ${classes.coloured}`}
             >
               Sign In
             </Typography>
-          </Link>
+          </Link> */}
         </nav>
       </div>
     </div>
@@ -68,10 +68,10 @@ const useStyles = makeStyles(() => ({
     width: '100%',
     zIndex: 99999,
     // @ts-ignore
-    backgroundColor: ({showBackground}) =>
+    backgroundColor: ({ showBackground }) =>
       showBackground ? '#ffffff' : 'transparent',
     // @ts-ignore
-    boxShadow: ({showBackground}) =>
+    boxShadow: ({ showBackground }) =>
       showBackground ? '0px 3px 15px #d6d5d5' : '',
 
     transition: 'background-color 200ms ease',

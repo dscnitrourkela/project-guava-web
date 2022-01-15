@@ -1,13 +1,13 @@
 import React from 'react';
 
 // Libraries
-import {makeStyles} from '@material-ui/core';
-import {faDownload} from '@fortawesome/free-solid-svg-icons';
-import {useHistory} from 'react-router-dom';
+import { makeStyles } from '@material-ui/core';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { useHistory } from 'react-router-dom';
 
 // Components
 import {
-  ViewCertificateHeader,
+	ViewCertificateHeader,
 	CustomTextInput,
 	CustomButton
 } from '../components';
@@ -17,7 +17,7 @@ import json from '../assets/csvjson.json';
 
 
 const ViewCertificate: React.FC = () => {
-  const classes = useStyles();
+	const classes = useStyles();
 	const history = useHistory();
 	const [input, setInput] = React.useState('');
 	const [loading, setLoading] = React.useState(false);
@@ -26,11 +26,11 @@ const ViewCertificate: React.FC = () => {
 
 	const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
-  const handleSubmit = () => {
+	const handleSubmit = () => {
 		setLoading(true);
 		if (jsonRef.current) {
 			let index = -1;
-			const match = jsonRef.current.filter(({Email}, id) => {
+			const match = jsonRef.current.filter(({ Email }, id) => {
 				if (Email === input) {
 					index = id;
 					return true;
@@ -40,21 +40,30 @@ const ViewCertificate: React.FC = () => {
 			});
 
 			if (match.length > 0) {
-				const {Name: name, Email: email, "Team Name": teamName, Tag: tag} = match[0];
-				history.push('/viewCertificate', {
+				const { Name: name, Email: email, "Team Name": teamName, Tag: tag } = match[0];
+				const obj = {
 					name,
 					email,
 					teamName,
 					tag,
-					certificateId: `HACKNITR3-P${index+1}`
-				})
+					certificateId: `HACKNITR3-P${index + 1}`
+				}
+
+				if (match[0]?.Prize) {
+					// @ts-ignore
+					obj["prize"] = match[0]?.Prize;
+				}
+
+				console.log(obj);
+
+				history.push('/viewCertificate', obj)
 			} else {
 				setError(true);
 			}
 
 			setLoading(false);
 		}
-  };
+	};
 
 	React.useEffect(() => {
 		if (error) {
@@ -63,8 +72,8 @@ const ViewCertificate: React.FC = () => {
 		// eslint-disable-next-line
 	}, [input,])
 
-  return (
-    <div className={classes.root}>
+	return (
+		<div className={classes.root}>
 			<div className={classes.container}>
 				<ViewCertificateHeader />
 
@@ -94,24 +103,24 @@ const ViewCertificate: React.FC = () => {
 					Get Certificate
 				</CustomButton>
 			</div>
-    </div>
-  );
+		</div>
+	);
 };
 
 export default ViewCertificate;
 
 const useStyles = makeStyles(() => ({
-  root: {
-    width: '100%',
-    maxWidth: '100vw',
-    minHeight: '100vh',
-    backgroundColor: 'rgba(251, 252, 253, 1)',
-    overflow: 'hidden',
+	root: {
+		width: '100%',
+		maxWidth: '100vw',
+		minHeight: '100vh',
+		backgroundColor: 'rgba(251, 252, 253, 1)',
+		overflow: 'hidden',
 
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+		display: 'flex',
+		alignItems: 'center',
+		justifyContent: 'center',
+	},
 	container: {
 		width: '25%',
 		minWidth: '100px',
