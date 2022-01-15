@@ -24,28 +24,28 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
         fro automatic distribution. Manage queries and complaints.
       </Typography>
 
-      <Typography variant="body2" className={classes.typography}>
+      <Typography variant="body2" className={classes.typography} style={{ marginTop: '2rem', color: '#398FFE' }}>
         Active in Beta...
       </Typography>
 
-      {/* <div className={classes.buttonContainer}>
+      <div className={classes.buttonContainer}>
         <ButtonBase
           className={classes.button}
-          onClick={() => history.push('/dashboard')}
+          onClick={() => history.push('/hacknitr/enterEmail')}
         >
           <Typography variant="body2" className={classes.typography}>
-            Get Started
+            Get HackNITR Certificates
           </Typography>
         </ButtonBase>
-        <ButtonBase
+        {/* <ButtonBase
           className={classes.button}
           onClick={() => history.push('/viewCertificate')}
         >
           <Typography variant="body2" className={classes.typography}>
             Receive Certificate
           </Typography>
-        </ButtonBase>
-      </div> */}
+        </ButtonBase> */}
+      </div>
     </div>
   );
 };
@@ -122,7 +122,5 @@ const useStyles = makeStyles(theme => ({
   },
   typography: {
     fontSize: '16px',
-    color: '#398FFE',
-    marginTop: '2rem'
   },
 }));
