@@ -1,9 +1,10 @@
 import React from 'react';
 
 // Libraries
-import {makeStyles, Toolbar} from '@material-ui/core';
-import {faDownload} from '@fortawesome/free-solid-svg-icons';
+import { makeStyles, Toolbar } from '@material-ui/core';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import Konva from 'konva';
+import { useHistory } from "react-router-dom";
 
 // Components
 import {
@@ -14,13 +15,91 @@ import {
 } from '../components';
 
 // Assets + Utils
-import {downloadURI} from '../utils';
-import {DUMMY_CERTIFICATE} from '../assets/placeholder';
+import { downloadURI } from '../utils';
+import { DUMMY_CERTIFICATE } from '../assets/placeholder';
 
 const ViewCertificate: React.FC = () => {
   const canvasRef = React.useRef<Konva.Stage>(null);
   const classes = useStyles();
-  const [certificate] = React.useState(DUMMY_CERTIFICATE);
+  const history = useHistory<{
+    name: string;
+    email: string;
+    certificateId: string;
+    teamName: string;
+    tag: string;
+  }>();
+
+  const [certificate] = React.useState({
+    certificateDetails: {
+      title: '',
+      eventName: '',
+      date: null,
+      time: null,
+    },
+    certificateImageDetails: {
+      imageDimensions: {
+        height: 612,
+        width: 792,
+      },
+      stageDimensions: {
+        width: 550,
+        height: 550,
+      },
+      src: 'https://res.cloudinary.com/riteshp2000/image/upload/v1642091542/Particpation_Certificate_1_tbj63v.png',
+    },
+    recipientName: {
+      scale: { x: 1, y: 1 },
+      dimensions: { width: 400, height: 50 },
+      name: history?.location?.state?.name,
+      id: 'recipient-name-id',
+      position: {
+        x: 350,
+        y: 255,
+      },
+    },
+    validationDetails: {
+      scale: { x: 1, y: 1 },
+      dimensions: { width: 200, height: 50 },
+      name: history?.location?.state?.teamName,
+      id: 'recipient-team-name-id',
+      position: {
+        x: 460,
+        y: 327,
+      }
+    },
+    authorizerDetails: [],
+    recipientDetails: { columns: [], rows: [] },
+  });
+
+  const [details] = React.useState(() => {
+    if (history.location.state) {
+      // @ts-ignore
+      const { certificateId } = history.location.state;
+      return [
+        {
+          key: 'CertificateId',
+          value: certificateId,
+        },
+        {
+          key: 'Event Name',
+          value: 'HackNITR 3.0',
+        },
+        {
+          key: 'Distribution Date',
+          value: '15th January 2022',
+        },
+        {
+          key: 'Signee(s)',
+          value: 'Astha Nayak',
+        },
+        {
+          key: ' ',
+          value: 'Ritesh Patil',
+        },
+      ]
+    }
+    return null;
+  })
 
   const handleDownload = () => {
     if (canvasRef.current) {
@@ -31,7 +110,7 @@ const ViewCertificate: React.FC = () => {
 
   return (
     <div className={classes.root}>
-      <ViewCertificateHeader />
+      <ViewCertificateHeader email={history?.location?.state?.email} />
       <div className={`${classes.flexAlign} ${classes.column1}`}>
         <Toolbar />
         <Canvas
@@ -44,10 +123,10 @@ const ViewCertificate: React.FC = () => {
 
       <div className={`${classes.flexAlign} ${classes.column2}`}>
         <Toolbar />
-        <ViewCertificateDetails />
+        <ViewCertificateDetails details={details} />
 
         <CustomButton
-          iconOptions={{icon: faDownload, size: 'lg'}}
+          iconOptions={{ icon: faDownload, size: 'lg' }}
           onClick={handleDownload}
         >
           Download

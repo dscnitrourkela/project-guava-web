@@ -3,41 +3,22 @@ import React from 'react';
 // Libraries
 import {makeStyles, Typography} from '@material-ui/core';
 
-const DUMMY = [
-  {
-    key: 'Certificate ID',
-    value: '119id0690',
-  },
-  {
-    key: 'Event Name',
-    value: 'Innovision',
-  },
-  {
-    key: 'Distribution Date',
-    value: '05/02/2021',
-  },
-  {
-    key: 'Signee(s)',
-    value: 'Prof. Karan Kapoor',
-  },
-  {
-    key: ' ',
-    value: 'Prof. Random Sharma',
-  },
-];
+interface DetailsProps {
+  details?: {key: string, value: string}[] | null
+}
 
-const ViewCertificate: React.FC = () => {
+const ViewCertificate: React.FC<DetailsProps> = ({details}) => {
   const classes = useStyles();
 
   return (
     <div className={classes.certificateDetails}>
-      {DUMMY.map(detail => (
+      {details?.map(detail => (
         <Typography
           key={detail.value}
           variant="body1"
           className={classes.detailValue}
         >
-          <span className={classes.detailKey}>{detail.key}</span>:{detail.value}
+          <span className={classes.detailKey}>{detail.key}</span>: {detail.value}
         </Typography>
       ))}
     </div>
