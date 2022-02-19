@@ -102,7 +102,7 @@ export default Object.freeze({
       width: 550,
       height: 550,
     },
-    src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-guava/assets/Group_6_lnrhcz.png',
+    src: 'https://res.cloudinary.com/riteshp2000/image/upload/v1637704404/project-guava/Group_128_wunphw.png',
   },
   recipientName: {
     ...initialState.recipientName,
