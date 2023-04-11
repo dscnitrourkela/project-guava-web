@@ -1,12 +1,12 @@
 import React from 'react';
 
 // Libraries
-import { Stage, Layer, Image } from 'react-konva';
+import {
+  Image,
+  Layer,
+  Stage,
+} from 'react-konva';
 import useImage from 'use-image';
-
-// Components
-import TransformableText from './TransformableText';
-import FixedText from './FixedText';
 
 // State Handlers
 import {
@@ -15,6 +15,9 @@ import {
   COMPOSE,
   InitialStateType,
 } from '../../../store/action-types';
+import FixedText from './FixedText';
+// Components
+import TransformableText from './TransformableText';
 
 interface CanvasProps {
   isPreview?: boolean;
@@ -83,22 +86,24 @@ const Canvas: React.FC<CanvasProps> = ({
         {isPreview ? (
           <>
             <FixedText
-              name={validationDetails.name}
+              name={`${recipientName.name} from ${validationDetails.name}`}
               position={validationDetails.position}
               scale={validationDetails.scale}
               dimensions={validationDetails.dimensions}
               id={validationDetails.id}
-              fontSize={16}
-            />
+              fontSize={20}
+              colour="black"
+              />
 
-            <FixedText
+            {/* <FixedText
               name={recipientName.name}
               position={recipientName.position}
               scale={recipientName.scale}
               dimensions={recipientName.dimensions}
               id={recipientName.id}
-              fontSize={35}
-            />
+              fontSize={20}
+              colour="black"
+              /> */}
 
             {extraValue && (
               <FixedText
