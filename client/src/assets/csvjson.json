@@ -1,2039 +1,5740 @@
 [
   {
-    "Name": "Lavanya Gokhale",
-    "Email": "lavanyagokhale2001@gmail.com",
-    "Team Name": "DaSh -tech",
+    "Name": "Ayush Rathore",
+    "Email": "20cs3018@rgipt.ac.in",
+    "Team Name": "AR_Beast",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Priyasu Guin",
+    "Email": "priyasuguin.stu@gmail.com",
+    "Team Name": "Coding Reboot",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Shubhayu Majumdar",
+    "Email": "shubhayumajumdar64@gmail.com",
+    "Team Name": "Coding Reboot",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Amartya Chakraborty",
+    "Email": "amartya.3654@gmail.com",
+    "Team Name": "CrazyDev",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Debarghya Maitra",
+    "Email": "debarghya4444@gmail.com",
+    "Team Name": "CrazyDev",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Snehanjan Roy",
+    "Email": "snehanjanroy2k1@gmail.com",
+    "Team Name": "CrazyDev",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Tanmoy Sarkar",
+    "Email": "ts741127@gmail.com",
+    "Team Name": "CrazyDev",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Aishee Bhattacharya",
+    "Email": "mail2aishee@gmail.com",
+    "Team Name": "cynogen",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Subhanjan Dutta",
+    "Email": "subhamdutta96740@gmail.com",
+    "Team Name": "cynogen",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "RITEK ROUNAK",
+    "Email": "ritekrounak1@gmail.com",
+    "Team Name": "Dev Squad",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Pratham Singhal",
+    "Email": "prathamsinghal2003@gmail.com",
+    "Team Name": "Dev Squad",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Sneha Sinha",
+    "Email": "sneha2004sinha@gmail.com",
+    "Team Name": "FIBONAKI",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Sofia Akhtar",
+    "Email": "sofiaakhtar468@gmail.com",
+    "Team Name": "FIBONAKI",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "SUGAM SHAW",
+    "Email": "sugamshaw2002@gmail.com",
+    "Team Name": "FIBONAKI",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Safia aktar",
+    "Email": "akthersafiya7978@gmail.com",
+    "Team Name": "Inferno",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Shreyash Kumar",
+    "Email": "shreyashkumar971@gmail.com",
+    "Team Name": "Inferno",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Radhika Rani Panda",
+    "Email": "raniradhika295@gmail.com",
+    "Team Name": "Inferno",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "DIPANSHU KUMAR",
+    "Email": "medipansh@gmail.com",
+    "Team Name": "Pair Programmers",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "TUSHAR SAINI",
+    "Email": "s2sharpit@gmail.com",
+    "Team Name": "Pair Programmers",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Anshika Anand",
+    "Email": "anshikaanand02@gmail.com",
+    "Team Name": "Pair Programmers",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Gopish Mahajan",
+    "Email": "gopishmahajan12@gmail.com",
+    "Team Name": "Phantoms",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Ravish Satwani",
+    "Email": "ravishsatwani123@gmail.com",
+    "Team Name": "Phantoms",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Priyanshi Agrawal",
+    "Email": "priyanshiagrawal1282@gmail.com",
+    "Team Name": "Phantoms",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Pratigya Agrawal",
+    "Email": "agrawalpratigya11@gmail.com",
+    "Team Name": "Phantoms",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Anil Antony",
+    "Email": "anilantony3134@gmail.com",
+    "Team Name": "SettlBros",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Kushal Choudhary",
+    "Email": "kushal.ch107@gmail.com",
+    "Team Name": "Team blinks",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Akash Verma",
+    "Email": "bsoni9122505056@gmail.com",
+    "Team Name": "Team blinks",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Harsh vardhan",
+    "Email": "harsh.vardhan@iiitg.ac.in",
+    "Team Name": "Tragic Bytes",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Harshit Singh",
+    "Email": "harshit.singh@iiitg.ac.in",
+    "Team Name": "Tragic Bytes",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Nisheet Karan",
+    "Email": "nisheet.karan@iiitg.ac.in",
+    "Team Name": "Tragic Bytes",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Aman Budhrani",
+    "Email": "aman.budhrani@iiitg.ac.in",
+    "Team Name": "Tragic Bytes",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Sudhanshu Sinha",
+    "Email": "sudhanshusrii183@gmail.com",
+    "Team Name": "TRPC",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Zoheb Khan",
+    "Email": "understandingzak@gmail.com",
+    "Team Name": "TRPC",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Anurag Sharma",
+    "Email": "anuragsharma011011@gmail.com",
+    "Team Name": "TRPC",
+    "Tag": "Appreciation"
+  },
+
+  {
+    "Name": "Sample Sample Sample Sample Sample",
+    "Email": "sample@gmail.com",
+    "Team Name": "sample",
+    "Tag": "Appreciation",
+    "Prize": "sample"
+  },
+  {
+    "Name": "SHUBHAM VERMA",
+    "Email": "shubhambbk50@gmail.com",
+    "Team Name": "Thug",
     "Tag": "Participation"
   },
   {
-    "Name": "Priyansh Sharma",
-    "Email": "priyanshsharma274@gmail.com",
-    "Team Name": "DaSh -tech",
+    "Name": "Abhishek Verma",
+    "Email": "abhiverma2883@gmail.com",
+    "Team Name": "Thug",
     "Tag": "Participation"
   },
   {
-    "Name": "Dakshesh Jain",
-    "Email": "dakshesh.jain14@gmail.com",
-    "Team Name": "DaSh -tech",
+    "Name": "Abhishek Kumar Rai",
+    "Email": "abhirai2250@gmail.com",
+    "Team Name": "Thug",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Prashant Singh",
+    "Email": "p4shantt@gmail.com",
+    "Team Name": "Thug",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "P Sai Kiran",
+    "Email": "saivostro2001@gmail.com",
+    "Team Name": "Victims",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Priyanshu Roy",
+    "Email": "roypriyanshu09@gmail.com",
+    "Team Name": "Victims",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mohammed Adnan Khan",
+    "Email": "adnan503104@gmail.com",
+    "Team Name": "Victims",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aarushi Patial",
+    "Email": "aarushipatial1@gmail.com",
+    "Team Name": "Fusion",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Gautam Malhotra",
+    "Email": "gautammalhotra188@gmail.com",
+    "Team Name": "Fusion",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Jyoti ola",
+    "Email": "jyoti097btit21@igdtuw.ac.in",
+    "Team Name": "B2C - Born 2 Code",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Khushi Bharti",
+    "Email": "khushibharti23092004@gmail.com",
+    "Team Name": "B2C - Born 2 Code",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "SRISHTI GUPTA",
+    "Email": "srishti105btit21@igdtuw.ac.in",
+    "Team Name": "B2C - Born 2 Code",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Lohith Dayantri",
+    "Email": "dayantrilohith@gmail.com",
+    "Team Name": "B2C - Born 2 Code",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shubham Kumar",
+    "Email": "shubham.redoc@gmail.com",
+    "Team Name": "Fly_High",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Supriya Naik",
+    "Email": "supriyanaik1346@gmail.com",
+    "Team Name": "Supriya Naik",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "sandip parida",
+    "Email": "paridasandip149@gmail.com",
+    "Team Name": "Satya Sarthak",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Satya Sarthak Nayak",
+    "Email": "satyasarthak1109@gmail.com",
+    "Team Name": "Satya Sarthak",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Indradev Saw",
+    "Email": "indradevsaw581@gmail.com",
+    "Team Name": "BlackrosE",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anish kumar",
+    "Email": "kanish92729@gmail.com",
+    "Team Name": "BlackrosE",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Abhiroop Singh",
+    "Email": "abhiroopkumar1234@gmail.com",
+    "Team Name": "BlackrosE",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mushraf Parwej",
+    "Email": "musharafz2k3@gmail.com",
+    "Team Name": "BlackrosE",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aryan Kiran",
+    "Email": "aryankiran136@gmail.com",
+    "Team Name": "Analos",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Naman Munjal",
+    "Email": "nm694752@gmail.com",
+    "Team Name": "Analos",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pratheek Ravikumar",
+    "Email": "pratheekravikumar55@gmail.com",
+    "Team Name": "Analos",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Skanda R",
+    "Email": "skandarajeev@gmail.com",
+    "Team Name": "Analos",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "AJAY MALAKIYA",
+    "Email": "ajaymalakiya55@gmail.com",
+    "Team Name": "Ananda",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ashish Zapadiya",
+    "Email": "ashishzapadiya834@gmail.com",
+    "Team Name": "Ananda",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Chiemeka Anunkor",
+    "Email": "anunkorcc@gmail.com",
+    "Team Name": "AustinDev",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vinayaka Iyer",
+    "Email": "vinayakaiyer999@gmail.com",
+    "Team Name": "Tempest",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rishav Nandi",
+    "Email": "rishavnandi2@gmail.com",
+    "Team Name": "Metas",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ayush Kumar",
+    "Email": "ayush.am687@gmail.com",
+    "Team Name": "Metas",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sourav Acharya",
+    "Email": "akashsourav780@gmail.com",
+    "Team Name": "Metas",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aniket Pradhan",
+    "Email": "aniketpradhan6047@gmail.com",
+    "Team Name": "HYDRA SQUAD",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ashish Patro",
+    "Email": "akpatro2001@gmail.com",
+    "Team Name": "HYDRA SQUAD",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rajiv Mishra",
+    "Email": "rajivmishra802@gmail.com",
+    "Team Name": "HYDRA SQUAD",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aayush Anmol",
+    "Email": "anmolaayush2704@gmail.com",
+    "Team Name": "HYDRA SQUAD",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "NISARG THAKKAR",
+    "Email": "itsthakkarnisarg@gmail.com",
+    "Team Name": "ARTIUM",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sumith Prabhu",
+    "Email": "sumithprabhu07@gmail.com",
+    "Team Name": "Bro code",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pranshu Jain",
+    "Email": "pranshujain0331@gmail.com",
+    "Team Name": "Buggies",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mohammad Sami Shaikh",
+    "Email": "mohammadsami@duck.com",
+    "Team Name": "Buggies",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sreetama Ghosh Hazra",
+    "Email": "sreetamaghoshhazra2001@gmail.com",
+    "Team Name": "Buggies",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sourav Das",
+    "Email": "darabinda57@gmail.com",
+    "Team Name": "Byte Code",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Arjit Srivastava",
+    "Email": "arjit21052002@gmail.com",
+    "Team Name": "Great Mates",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Om Mehrotra",
+    "Email": "ommehrotra069@gmail.com",
+    "Team Name": "Great Mates",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Arjun Varshney",
+    "Email": "varshneyarjun49@gmail.com",
+    "Team Name": "Great Mates",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "AKSHAT JAISWAL",
+    "Email": "akshatjaiswal9456@gmail.com",
+    "Team Name": "Great Mates",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mrutyunjaya Sahu",
+    "Email": "mrutyunjayasahu979@gmail.com",
+    "Team Name": "SpamBytes",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Subrat Tripathy",
+    "Email": "subrattripathy997@gmail.com",
+    "Team Name": "SpamBytes",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Preetam Sundar Das",
+    "Email": "daspreetam4@gmail.com",
+    "Team Name": "SpamBytes",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "SANJEEB DASH",
+    "Email": "sanjeeb0509dash2004@gmail.com",
+    "Team Name": "SpamBytes",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Safia aktar",
+    "Email": "akthersafiya7978@gmail.com",
+    "Team Name": "Inferno",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shreyash Kumar",
+    "Email": "shreyashkumar971@gmail.com",
+    "Team Name": "Inferno",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Radhika Rani Panda",
+    "Email": "raniradhika295@gmail.com",
+    "Team Name": "Inferno",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Arittra Bag",
+    "Email": "arittrabag@gmail.com",
+    "Team Name": "AuzOmega",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ethan Jagoda",
+    "Email": "ethanjags@Berkeley.edu",
+    "Team Name": "Scribble AI",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Jayaditya Sethi",
+    "Email": "jayaditya@berkeley.edu",
+    "Team Name": "Scribble AI",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sahil Mehta",
+    "Email": "mehtasahil881@berkeley.edu",
+    "Team Name": "Scribble AI",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Priyanshu Kumar Sharma",
+    "Email": "priyanshurabhi6@gmail.com",
+    "Team Name": "Hugs For Bugs",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "TUSHAR SAINI",
+    "Email": "tushar.saini614@gmail.com",
+    "Team Name": "Hugs For Bugs",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pratyush Raman",
+    "Email": "pratyushraman101@gmail.com",
+    "Team Name": "Hugs For Bugs",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Soumya Behura",
+    "Email": "soumyabehura448@gmail.com",
+    "Team Name": "Code Chasers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Saloni Kumari Bernwal",
+    "Email": "skbernwal1234@gmail.com",
+    "Team Name": "Code Chasers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "ROHIT SAH",
+    "Email": "rohithas12031994@gmail.com",
+    "Team Name": "Code Chasers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "junaid malik",
+    "Email": "onlyjunaid2002@gmail.com",
+    "Team Name": "Codencool",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Deepanshu Attri",
+    "Email": "iamattri0001@gmail.com",
+    "Team Name": "Codencool",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ashish Jha",
+    "Email": "ashjha2002@gmail.com",
+    "Team Name": "Codencool",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kunal Verma",
+    "Email": "kunalvermarnd@gmail.com",
+    "Team Name": "Codencool",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Priyanshi Maheshwari",
+    "Email": "priyanshimaheshwari16@gmail.com",
+    "Team Name": "Data hack",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Prasham Jain",
+    "Email": "jainprasham17@gmail.com",
+    "Team Name": "Data hack",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anuj Kanojia",
+    "Email": "anujblk@outlook.com",
+    "Team Name": "HRx",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anil Antony",
+    "Email": "anilantony3134@gmail.com",
+    "Team Name": "SettlBros",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Dwaipayan Dehury",
+    "Email": "dwaipayan.dehury@gmail.com",
+    "Team Name": "Binary-Brains",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anurag Narayan Jena",
+    "Email": "jenaanuragnarayan@gmail.com",
+    "Team Name": "Binary-Brains",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ankit Kiran",
+    "Email": "sahuankit453@gmail.com",
+    "Team Name": "Binary-Brains",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Naveen Kumar Khuntey",
+    "Email": "naveenkhuntek@gmail.com",
+    "Team Name": "Binary-Brains",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mahesh N D",
+    "Email": "Mahibhahadur@gmail.com",
+    "Team Name": "Suparna",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Dhanvina N",
+    "Email": "peckdoor@gmail.com",
+    "Team Name": "Suparna",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "N.Dharshan .",
+    "Email": "ndharshanraju@gmail.com",
+    "Team Name": "Suparna",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Prachi Balla",
+    "Email": "prachibballa@gmail.com",
+    "Team Name": "Trojan Linked",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tushar Bhangale",
+    "Email": "tusharbhangale333@gmail.com",
+    "Team Name": "Trojan Linked",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aval Sonigara",
+    "Email": "avals1504@gmail.com",
+    "Team Name": "Trojan Linked",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rohit Lohar",
+    "Email": "loharrohit45@gmail.com",
+    "Team Name": "Trojan Linked",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "SUCHITA MALICK",
+    "Email": "malicksuchita@gmail.com",
+    "Team Name": "BlockCyphers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Varun Doshi",
+    "Email": "doshivarun202@gmail.com",
+    "Team Name": "BlockCyphers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ayush Patidar",
+    "Email": "ayushpatidar755@gmail.com",
+    "Team Name": "Virtual Programmers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vinay Patidar",
+    "Email": "vinaypatidar211111@gmail.com",
+    "Team Name": "Virtual Programmers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pratik Nawale",
+    "Email": "pratiknawale03@gmail.com",
+    "Team Name": "Reboot Rebels",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "viraj chopade",
+    "Email": "virajchopade527@gmail.com",
+    "Team Name": "Reboot Rebels",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kapil Soni",
+    "Email": "kapilsoni54768161@gmail.com",
+    "Team Name": "Reboot Rebels",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rudreshwar Baranwal",
+    "Email": "baranwalrudreshwar@gmail.com",
+    "Team Name": "voldemort",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Himanshu Patni",
+    "Email": "himanshupatni8@gmail.com",
+    "Team Name": "ProCoder",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sudhir Tiwari",
+    "Email": "sudhirtiwari5190@gmail.com",
+    "Team Name": "ProCoder",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Nimesh Pareek",
+    "Email": "nimeshpareek25@gmail.com",
+    "Team Name": "ProCoder",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tafheem Ahemad",
+    "Email": "ahemadtafheem@gmail.com",
+    "Team Name": "Click",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Gourav Badhai",
+    "Email": "badhaigourav@gmail.com",
+    "Team Name": "Click",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "PRASAD PATRA",
+    "Email": "122mm0929@nitrkl.ac.in",
+    "Team Name": "Click",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rajkumar Maudi",
+    "Email": "rajkumarraj.6370776018@gmail.com",
+    "Team Name": "Click",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ohka Arai",
+    "Email": "ohka.l.julia@gmail.com",
+    "Team Name": "oaaaa",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ankit Kumar Nayak",
+    "Email": "ankitnayak172@gmail.com",
+    "Team Name": "Cadence",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aditya Patro",
+    "Email": "aditya123kk@gmail.com",
+    "Team Name": "Cadence",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Burin-Jargal Papaev",
+    "Email": "papaev.b.n@gmail.com",
+    "Team Name": "BJTeam",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Adarsha Mahapatra",
+    "Email": "adarshmahapatra2522@gmail.com",
+    "Team Name": "HackX.js",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Soham Agarwal",
+    "Email": "asoham405@gmail.com",
+    "Team Name": "HackX.js",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "ARIN MAHAPATRO",
+    "Email": "arin2003mahapatro@gmail.com",
+    "Team Name": "HackX.js",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Deepshikha Samal",
+    "Email": "deepshikhasamal90594@gmail.com",
+    "Team Name": "HackX.js",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vinayak Sharma",
+    "Email": "svinayak994@gmail.com",
+    "Team Name": "Web Hackers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mansi Dass",
+    "Email": "mansidass.official@gmail.com",
+    "Team Name": "Web Hackers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mario Salinas",
+    "Email": "marosw.sal@gmail.com",
+    "Team Name": "Web Hackers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "sanjiv kannaa jeganathan",
+    "Email": "jsanjiv2003@gmail.com",
+    "Team Name": "Web Hackers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "VINAY KISHORE A",
+    "Email": "geekvinay002@gmail.com",
+    "Team Name": "Team_VS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "siddhardha darsi",
+    "Email": "cs20b1063@iiitdm.ac.in",
+    "Team Name": "Team_VS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vidhan Jain",
+    "Email": "vidhanjain143@gmail.com",
+    "Team Name": "Vexed.exe",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Yasir Obaidullah",
+    "Email": "yasirobaidullah123@gmail.com",
+    "Team Name": "Vexed.exe",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Maaz Karim",
+    "Email": "maazkarim02@gmail.com",
+    "Team Name": "Vexed.exe",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shivam Sharma",
+    "Email": "shivamshar0310@gmail.com",
+    "Team Name": "BinaryBrains",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pratyush Sahu",
+    "Email": "pratyushsahu0308@gmail.com",
+    "Team Name": "BinaryBrains",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ayushi Chouhan",
+    "Email": "ayushichouhan2003@gmail.com",
+    "Team Name": "BinaryBrains",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Raksha Agrawal",
+    "Email": "703raksha@gmail.com",
+    "Team Name": "BinaryBrains",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shagun Mengi",
+    "Email": "shagunmengi003@gmail.com",
+    "Team Name": "NODE_SM",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "shivam mishra",
+    "Email": "shivambmishra10@gmail.com",
+    "Team Name": "NODE_SM",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ishwarya Sundhararajan",
+    "Email": "ishwaryasundhararajan@gmail.com",
+    "Team Name": "NODE_SM",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Varad Deshmukh",
+    "Email": "varaddeshmukh10june@gmail.com",
+    "Team Name": "ZKBuilders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Dhananjay Pai",
+    "Email": "dhananjay2002pai@gmail.com",
+    "Team Name": "ZKBuilders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Hrishikesh Patil",
+    "Email": "2020.hrishikesh.patil@ves.ac.in",
+    "Team Name": "ZKBuilders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Saksham Maharjan",
+    "Email": "xaksham00@gmail.com",
+    "Team Name": "Tres Comas",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Suyog Bista",
+    "Email": "bista.suyog5@gmail.com",
+    "Team Name": "Tres Comas",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Reshab Thapa",
+    "Email": "thapareshav50@gmail.com",
+    "Team Name": "Tres Comas",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shayanika Das",
+    "Email": "shayanikadas54@gmail.com",
+    "Team Name": "Abstract Coders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aniket Nayek",
+    "Email": "nayekaniket2017@gmail.com",
+    "Team Name": "Abstract Coders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vaishanavi Sinha",
+    "Email": "vaishanavi131btit21@igdtuw.ac.in",
+    "Team Name": "Sky Hawks",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "REEMA KUMARI",
+    "Email": "reema708256@gmail.com",
+    "Team Name": "Sky Hawks",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Khushboo Anand",
+    "Email": "anandkhushboo1311@gmail.com",
+    "Team Name": "Sky Hawks",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Yamini Singal",
+    "Email": "yaminisingal14@gmail.com",
+    "Team Name": "Sky Hawks",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Raj Shah",
+    "Email": "rajshah9103@gmail.com",
+    "Team Name": "Hackstreet Boys",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Bipradeep Bera",
+    "Email": "bipradeep1234@gmail.com",
+    "Team Name": "Hackstreet Boys",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "ANUBHAB SINHA",
+    "Email": "anubhabsinha16@gmail.com",
+    "Team Name": "Hackstreet Boys",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aritra Bandyopadhyay",
+    "Email": "aritrahtml@gmail.com",
+    "Team Name": "Hackstreet Boys",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rutvij Deo",
+    "Email": "rutvij.deo5@gmail.com",
+    "Team Name": "Team_NoBoDy",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aakash Joshi",
+    "Email": "aakashj853@gmail.com",
+    "Team Name": "Team_NoBoDy",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sahil Dahekar",
+    "Email": "dahekar30sahil@gmail.com",
+    "Team Name": "Team_NoBoDy",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Prathamesh Kirad",
+    "Email": "kiradvprathamesh2002@gmail.com",
+    "Team Name": "Team_NoBoDy",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Asmi jain",
+    "Email": "asmiclm.18@gmail.com",
+    "Team Name": "Code.AI (MU-GDSC)",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vedansh Sharma",
+    "Email": "vedanshsharma1904@gmail.com",
+    "Team Name": "Code.AI (MU-GDSC)",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Muskan Jain",
+    "Email": "muskanjain2113@gmail.com",
+    "Team Name": "Code.AI (MU-GDSC)",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Atharv Vani",
+    "Email": "atharvavani110@gmail.com",
+    "Team Name": "Code.AI (MU-GDSC)",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aryan singh",
+    "Email": "singharyan0259@gmail.com",
+    "Team Name": "MSD",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ruturaj Dwivedy",
+    "Email": "ruturajdwivedy144@gmail.com",
+    "Team Name": "MSD",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Laulin Mishra",
+    "Email": "laulin1962@gmail.com",
+    "Team Name": "MSD",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Arya Dadhe",
+    "Email": "aryadadhe22@gmail.com",
+    "Team Name": "MSD",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ritesh Malviya",
+    "Email": "riteshsmalviya03@gmail.com",
+    "Team Name": "RiteshMalviya",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Chauhan Kulrajsinh",
+    "Email": "chauhankulrajsinh9904@gmail.com",
+    "Team Name": "The KD",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ritesh Mohapatra",
+    "Email": "mohapatraritesh3822@gmail.com",
+    "Team Name": "code raider",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Seersha Samikshya",
+    "Email": "seersha.samikshya0908@gmail.com",
+    "Team Name": "code raider",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Uditya Raj",
+    "Email": "uditya.123.raj@gmail.com",
+    "Team Name": "Team ByteCoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Saurav Mishra",
+    "Email": "sauravmishra623@gmail.com",
+    "Team Name": "Team ByteCoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Dipanshu Mahato",
+    "Email": "dipanshumahato@gmail.com",
+    "Team Name": "Team ByteCoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Dishant Yadav",
+    "Email": "dishantyadav599@gmail.com",
+    "Team Name": "Team ByteCoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Chetanand Meher",
+    "Email": "chetanandmeher1282004@gmail.com",
+    "Team Name": "falcons",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tushar Sahu",
+    "Email": "sahutushar29@gmail.com",
+    "Team Name": "falcons",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anshuman Behera",
+    "Email": "anshumanbehera9999@gmail.com",
+    "Team Name": "falcons",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "SINEESH K A",
+    "Email": "sineeshka07@gmail.com",
+    "Team Name": "DEBUGGERS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "subin p",
+    "Email": "subinpullambalavan1010@gmail.com",
+    "Team Name": "DEBUGGERS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Roshan .",
+    "Email": "roshannazeera@gmail.com",
+    "Team Name": "DEBUGGERS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Priyasu Guin",
+    "Email": "priyasuguin.stu@gmail.com",
+    "Team Name": "Coding Reboot",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shubhayu Majumdar",
+    "Email": "shubhayumajumdar64@gmail.com",
+    "Team Name": "Coding Reboot",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tushar Saini",
+    "Email": "s2sharpit@gmail.com",
+    "Team Name": "Pair Programmers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "DIPANSHU KUMAR",
+    "Email": "medipansh@gmail.com",
+    "Team Name": "Pair Programmers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anshika Anand",
+    "Email": "anshikaanand02@gmail.com",
+    "Team Name": "Pair Programmers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rishita Gangwal",
+    "Email": "rishitagangwal5@gmail.com",
+    "Team Name": "Hack-Hackers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mehul Kumar",
+    "Email": "seemachauhansingh@gmail.com",
+    "Team Name": "WhiteHatSr.",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Prakhar Pandey",
+    "Email": "prakhar10may@gmail.com",
+    "Team Name": "WhiteHatSr.",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "A Harindra Reddy",
+    "Email": "askharindrareddy@gmail.com",
+    "Team Name": "WhiteHatSr.",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Yash Kagi",
+    "Email": "yashkagi7@gmail.com",
+    "Team Name": "WhiteHatSr.",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "ayush kumar",
+    "Email": "ayushverma9119@gmail.com",
+    "Team Name": "random123",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "SACHITHA C",
+    "Email": "20z337@psgtech.ac.in",
+    "Team Name": "Scorpion",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kenil Shah",
+    "Email": "kenilshah1505@gmail.com",
+    "Team Name": "CrossChainers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Dev Chopra",
+    "Email": "devchopra418@gmail.com",
+    "Team Name": "Hindustani Developers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Debasish Birmiwal",
+    "Email": "debasishbirmiwal1@gmail.com",
+    "Team Name": "Hack-Runners",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Soyam Prabha Mallick",
+    "Email": "mallick.soyam@gmail.com",
+    "Team Name": "Hack-Runners",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mirza Matin Baig",
+    "Email": "matinbaig43@gmail.com",
+    "Team Name": "Hack-Runners",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Debabrata Sahoo",
+    "Email": "guducsg971@gmail.com",
+    "Team Name": "Hack-Runners",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aryan Raj",
+    "Email": "aryanraj211003@gmail.com",
+    "Team Name": "TeamGXflare",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Nikhil Mahto",
+    "Email": "nikhil.mahto2915@gmail.com",
+    "Team Name": "TeamGXflare",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "S Chandrashekhar",
+    "Email": "2201020125@cgu-odisha.ac.in",
+    "Team Name": "TeamGXflare",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rahul Sharma",
+    "Email": "rahulsharma4329@gmail.com",
+    "Team Name": "Jetha-K-Jabaaz",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aditya Gupta",
+    "Email": "ashishgupta9936ad@gmail.com",
+    "Team Name": "Jetha-K-Jabaaz",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pratyush Singh",
+    "Email": "aries.pratyush@gmail.com",
+    "Team Name": "Jetha-K-Jabaaz",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Snigdha Thakur",
+    "Email": "snigdhathakur16@gmail.com",
+    "Team Name": "Jetha-K-Jabaaz",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Chandan Mohapatra",
+    "Email": "chandanmohapatra0623@gmail.com",
+    "Team Name": "CODE-X",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Prateek Gupta",
+    "Email": "prateekgupta23090@gmail.com",
+    "Team Name": "CODE-X",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sarthak Srivastava",
+    "Email": "sarthaksri2703@gmail.com",
+    "Team Name": "Star_Techies",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Taru Pathak",
+    "Email": "pathaktaru2002@gmail.com",
+    "Team Name": "Star_Techies",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Madhur Goel",
+    "Email": "madhur21xxx062@akgec.ac.in",
+    "Team Name": "Star_Techies",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shreyansh Agarwal",
+    "Email": "shreyanshagarwal.16.2022@gmail.com",
+    "Team Name": "Star_Techies",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "SAUMIT PRADHAN",
+    "Email": "pradhansaumit@gmail.com",
+    "Team Name": "SPAM BYTES",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "ARYA BHATTACHARYYA",
+    "Email": "bhattacharyyaarya165@gmail.com",
+    "Team Name": "SPAM BYTES",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mayur Pachpor",
+    "Email": "mayurpachpor45@gmail.com",
+    "Team Name": "SPAM BYTES",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "DEBANJAN MUKHERJEE",
+    "Email": "debanjanrick04@gmail.com",
+    "Team Name": "SPAM BYTES",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Raval Jinit",
+    "Email": "ravaljinit@gmail.com",
+    "Team Name": "LoopBreakers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Apoorva Mehta",
+    "Email": "apoorva.cse1@gmail.com",
+    "Team Name": "LoopBreakers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Enes Abdulla",
+    "Email": "eabdulla@wesleyan.edu",
+    "Team Name": "Cardinals",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Hirakjyoti Roy",
+    "Email": "hirakjr24@gmail.com",
+    "Team Name": "ChadGPT",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Niyar R Barman",
+    "Email": "niyar21_ug@ece.nits.ac.in",
+    "Team Name": "ChadGPT",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Krish Sharma",
+    "Email": "iamkrish9090@gmail.com",
+    "Team Name": "ChadGPT",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Md Faizal Karim",
+    "Email": "faizalkarim280@yahoo.com",
+    "Team Name": "ChadGPT",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Victor Bose",
+    "Email": "vbose01@gmail.com",
+    "Team Name": "sedlyf101",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Manisrivas R G",
+    "Email": "manisrivasrg@gmail.com",
+    "Team Name": "Last_min",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sasank Madati",
+    "Email": "sasankmadati@gmail.com",
+    "Team Name": "Last_min",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sravanth Chowdary Potluri",
+    "Email": "bansy7777@gmail.com",
+    "Team Name": "Last_min",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "jashwanth peddisetty",
+    "Email": "jashwanth0712@gmail.com",
+    "Team Name": "Last_min",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Utpal Kumar",
+    "Email": "utpalk904@gmail.com",
+    "Team Name": "Hackers.io",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Harsh .",
+    "Email": "hk2152573@gmail.com",
+    "Team Name": "Hackers.io",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sachin Shukla",
+    "Email": "ghokuukohg@gmail.com",
+    "Team Name": "Hackers.io",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "sonali kumari",
+    "Email": "sonalisharma2520@gmail.com",
+    "Team Name": "vampire byte",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Dhruv Aggarwal",
+    "Email": "dhruvag023@gmail.com",
+    "Team Name": "vampire byte",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "HRISHABH KUMAR JAISWAL",
+    "Email": "hrishabhjais18@gmail.com",
+    "Team Name": "vampire byte",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Riya Munjal",
+    "Email": "riyamunjal245@gmail.com",
+    "Team Name": "vampire byte",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Satyam sivam pal",
+    "Email": "palsatyam1968@gmail.com",
+    "Team Name": "Team AXIOS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tushar Panigrahi",
+    "Email": "tusharpanigrahi66@gmail.com",
+    "Team Name": "Team AXIOS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anurag Prasad",
+    "Email": "anuragp1718@gmail.com",
+    "Team Name": "Team AXIOS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Harsh vardhan",
+    "Email": "harsh.vardhan@iiitg.ac.in",
+    "Team Name": "Tragic Bytes",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Harshit Singh",
+    "Email": "harshit.singh@iiitg.ac.in",
+    "Team Name": "Tragic Bytes",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Nisheet Karan",
+    "Email": "nisheet.karan@iiitg.ac.in",
+    "Team Name": "Tragic Bytes",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aman Budhrani",
+    "Email": "aman.budhrani@iiitg.ac.in",
+    "Team Name": "Tragic Bytes",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shivam Agarwal",
+    "Email": "shivgun03@gmail.com",
+    "Team Name": "Alpha",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Srishti Porwal",
+    "Email": "srishtiporwal120202@gmail.com",
+    "Team Name": "Alpha",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Priyanshi Agarwal",
+    "Email": "priyanshiagarwal1708@gmail.com",
+    "Team Name": "Alpha",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "shubham jain",
+    "Email": "shubhamjain244122@gmail.com",
+    "Team Name": "Tech Linked",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Dishika Jain",
+    "Email": "jain.dishika0506@gmail.com",
+    "Team Name": "Tech Linked",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Yash Bajaj",
+    "Email": "ybajaj2402@gmail.com",
+    "Team Name": "Tech Linked",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Amala Sebastian",
+    "Email": "amalasvarghese@gmail.com",
+    "Team Name": "Tech Linked",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shubhang Shukla",
+    "Email": "shubhangshukla157@gmail.com",
+    "Team Name": "CodeRunners",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aditya Mishra",
+    "Email": "atate4822@gmail.com",
+    "Team Name": "CodeRunners",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kamalakanta Dalai",
+    "Email": "dalaikamalakanta52@gmail.com",
+    "Team Name": "CodeRunners",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sri Tejaswi Ganesh Challapalli",
+    "Email": "ch.tejamr@gmail.com",
+    "Team Name": "CodeRunners",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sachin Dapkara",
+    "Email": "sachindapkara6@gmail.com",
+    "Team Name": "superiorsd10",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aadarsh Agarwal",
+    "Email": "aadarshagarwal73@gmail.com",
+    "Team Name": "CodePeCharcha",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aniket Bhattacharya",
+    "Email": "aniketbhattacharya12@gmail.com",
+    "Team Name": "CodePeCharcha",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Piyush Mohapatra",
+    "Email": "piyush.ofcl@gmail.com",
+    "Team Name": "CodePeCharcha",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aryan Makhija",
+    "Email": "aryanmakhija0407@gmail.com",
+    "Team Name": "CodePeCharcha",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sakshi Suwarna",
+    "Email": "suwarnasakshi593@gmail.com",
+    "Team Name": "Hackathonbytes",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tanisha .",
+    "Email": "tanishastuti1127@gmail.com",
+    "Team Name": "Hackathonbytes",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sanchali Srivastava",
+    "Email": "sanchalisej134@gmail.com",
+    "Team Name": "Hackathonbytes",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shruti Agrawal",
+    "Email": "shruti2817.agrawal@gmail.com",
+    "Team Name": "Hackathonbytes",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tanya Raikwar",
+    "Email": "tanya21raikwar@gmail.com",
+    "Team Name": "Tanya",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Gopish Mahajan",
+    "Email": "gopishmahajan12@gmail.com",
+    "Team Name": "Phantoms",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ravish Satwani",
+    "Email": "ravishsatwani123@gmail.com",
+    "Team Name": "Phantoms",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Priyanshi Agrawal",
+    "Email": "priyanshiagrawal1282@gmail.com",
+    "Team Name": "Phantoms",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pratigya Agrawal",
+    "Email": "agrawalpratigya11@gmail.com",
+    "Team Name": "Phantoms",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Dheeraj Chopra",
+    "Email": "dheerajchopra042@gmail.com",
+    "Team Name": "Marvels",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tanwish Yesankar",
+    "Email": "cse210001072@iiti.ac.in",
+    "Team Name": "reactors",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Jayant Belwanshi",
+    "Email": "jayantbelwanshi1401@gmail.com",
+    "Team Name": "reactors",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Harsh Talati",
+    "Email": "cse210001022@iiti.ac.in",
+    "Team Name": "reactors",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mihir Patel",
+    "Email": "cse210001050@iiti.ac.in",
+    "Team Name": "reactors",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Thomas A",
+    "Email": "thomasteom13@gmail.com",
+    "Team Name": "tom",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rashi Vaidya",
+    "Email": "rashivaidya2003@gmail.com",
+    "Team Name": "The Chosen Data",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ansh Kanungo",
+    "Email": "anshkanungo17@gmail.com",
+    "Team Name": "The Chosen Data",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Akshat Tamrakar",
+    "Email": "akshattamrakar103@gmail.com",
+    "Team Name": "The Chosen Data",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sourabh Jawale",
+    "Email": "jawales12b@gmail.com",
+    "Team Name": "The Chosen Data",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kushal Choudhary",
+    "Email": "kushal.ch107@gmail.com",
+    "Team Name": "Team blinks",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Akash Verma",
+    "Email": "bsoni9122505056@gmail.com",
+    "Team Name": "Team blinks",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Garvit Bagadi",
+    "Email": "garvitbagadi0851@gmail.com",
+    "Team Name": "NoCode",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vandit Kumar",
+    "Email": "vanditkumarofficial@gmail.com",
+    "Team Name": "NoCode",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vivek Shirke",
+    "Email": "vivekshirke447@gmail.com",
+    "Team Name": "NoCode",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anuj Choure",
+    "Email": "cam12@iitbbs.ac.in",
+    "Team Name": "code4bbs",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Harshit Sapkal",
+    "Email": "has12@iitbbs.ac.in",
+    "Team Name": "code4bbs",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kartikeya Pochampalli",
+    "Email": "pk39@iitbbs.ac.in",
+    "Team Name": "code4bbs",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sai Rohan Vuppala",
+    "Email": "shv12@iitbbs.ac.in",
+    "Team Name": "code4bbs",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Yatra Vaghasia",
+    "Email": "yatravaghasiahriday@gmail.com",
+    "Team Name": "Debug Thugs",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Swayam Desai",
+    "Email": "swayamdesai62@gmail.com",
+    "Team Name": "Debug Thugs",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ved Chadderwala",
+    "Email": "ved29022004@gmail.com",
+    "Team Name": "Debug Thugs",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Yatharth Gupta",
+    "Email": "warlordk28@gmail.com",
+    "Team Name": "DevPAY",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Venkata Sekhar Pilla",
+    "Email": "pillavenkatasekhar@gmail.com",
+    "Team Name": "DevPAY",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Abhinav Kumar",
+    "Email": "kumar.kr.abhinav@gmail.com",
+    "Team Name": "DevPAY",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Harshit Katiyar",
+    "Email": "harshit.katiyar.279@gmail.com",
+    "Team Name": "Cryptico",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Diksha Kumari",
+    "Email": "diksha323@rediffmail.com",
+    "Team Name": "(Face)ade",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Harish Siddhaarth Senguttuvan",
+    "Email": "harishsenguttuvan29@gmail.com",
+    "Team Name": "(Face)ade",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shubham Kumar",
+    "Email": "shubham.is20now@gmail.com",
+    "Team Name": "(Face)ade",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Chirayu Aggarwal",
+    "Email": "ribbonedge.instagram@gmail.com",
+    "Team Name": "Voyagers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aman Gupta",
+    "Email": "gaman2001@gmail.com",
+    "Team Name": "Voyagers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shivam Saini",
+    "Email": "ssnda1206@gmail.com",
+    "Team Name": "Voyagers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shubhanshu Rao",
+    "Email": "pduke504@gmail.com",
+    "Team Name": "Voyagers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sanjana V",
+    "Email": "sanjanavijay72@gmail.com",
+    "Team Name": "Hackenshmirtz",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Neha B K",
+    "Email": "nehabk88@gmail.com",
+    "Team Name": "Hackenshmirtz",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Lahari G",
+    "Email": "lahari.raj.2003@gmail.com",
+    "Team Name": "Hackenshmirtz",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Phalguni Shenoy",
+    "Email": "phalgunishenoy2002@gmail.com",
+    "Team Name": "Hackenshmirtz",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Priyanka Kumari Prasad",
+    "Email": "priyankapiku1711@gmail.com",
+    "Team Name": "REXON",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vishwajeet Kumar",
+    "Email": "vishwajeetkumar7808230087@gmail.com",
+    "Team Name": "REXON",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "AMAN KUMAR",
+    "Email": "aman.kumar2101999@gmail.com",
+    "Team Name": "REXON",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Khushi Kumari",
+    "Email": "khushikri276@gmail.com",
+    "Team Name": "REXON",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Akash Jaiswal",
+    "Email": "akashjaiswal797112@gmail.com",
+    "Team Name": "HackFreebies",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Bibhu Prasad Saha",
+    "Email": "bibhuprasadsaha4@gmail.com",
+    "Team Name": "HackFreebies",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sruti Nayak",
+    "Email": "th3srutii@gmail.com",
+    "Team Name": "Brocode",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kalinga Khatua",
+    "Email": "kalingakhatua@gmail.com",
+    "Team Name": "Brocode",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Srusti Prusty",
+    "Email": "srustiprusty@gmail.com",
+    "Team Name": "Brocode",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sarans Mishra",
+    "Email": "sarans.mishra@gmail.com",
+    "Team Name": "Brocode",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aryan Jain",
+    "Email": "aryanjainyk@gmail.com",
+    "Team Name": "QUARK-X",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Lakhan Gupta",
+    "Email": "lakhan06gupta@gmail.com",
+    "Team Name": "QUARK-X",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Chinmay Jain",
+    "Email": "chinmayluhadiya62@gmail.com",
+    "Team Name": "QUARK-X",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pablo Biedma Nunez",
+    "Email": "pablobie00@gmail.com",
+    "Team Name": "roots",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Malay Kumar Jain",
+    "Email": "malaykumarjain@gmail.com",
+    "Team Name": "Quadra",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sambhav jain",
+    "Email": "sambhavj488@gmail.com",
+    "Team Name": "Quadra",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Himanshu Yadav",
+    "Email": "hy91092333@gmail.com",
+    "Team Name": "Quadra",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Jay Prakash Valecha",
+    "Email": "jaiprakashvalecha73@gmail.com",
+    "Team Name": "Quadra",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Himanshu Pandey",
+    "Email": "himanshu.dn.pandey@gmail.com",
+    "Team Name": "SVNIT",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pushpendra \\\\",
+    "Email": "pushpendra.hpx2001@gmail.com",
+    "Team Name": "SVNIT",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "sarvesh khandelwal",
+    "Email": "sarveshk21122001@gmail.com",
+    "Team Name": "SVNIT",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Taksh Panchal",
+    "Email": "takshtax@gmail.com",
+    "Team Name": "SVNIT",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Yash Vardhan Goel",
+    "Email": "yashvardhangoel21@gmail.com",
+    "Team Name": "Team Tomper",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vishnu Parvatikar",
+    "Email": "vishnuparvatikar@gmail.com",
+    "Team Name": "Team Tomper",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Himanshu Malviya",
+    "Email": "cs20b1097@iiitdm.ac.in",
+    "Team Name": "Team Tomper",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Amit Chigare",
+    "Email": "amit.gokakfalls17@gmail.com",
+    "Team Name": "Team Tomper",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ayush Kumar",
+    "Email": "ayushkumar89428@gmail.com",
+    "Team Name": "MonkeyCoder",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sujal Samai",
+    "Email": "fadedlove284@gmail.com",
+    "Team Name": "MonkeyCoder",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vanshika Juneja",
+    "Email": "vanshikajuneja1028@gmail.com",
+    "Team Name": "MonkeyCoder",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Silky Modi",
+    "Email": "silkymodi25@gmail.com",
+    "Team Name": "MonkeyCoder",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vikrant Singh",
+    "Email": "vikrantsingh1889@gmail.com",
+    "Team Name": "ikran",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sagar Malhotra",
+    "Email": "sagar.0dev@gmail.com",
+    "Team Name": "Sagar Malhotra",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Jayesh jhadodiya",
+    "Email": "jhadodiyajayesh14@gmail.com",
+    "Team Name": "Let's code",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rahul Jain",
+    "Email": "jainrony2002@gmail.com",
+    "Team Name": "Let's code",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Jasmine Sharma",
+    "Email": "jasminesharma.cse24@jecrc.ac.in",
+    "Team Name": "Let's code",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Janvi Motwani",
+    "Email": "janvimotwani.cse24@jecrc.ac.in",
+    "Team Name": "Let's code",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Swayam Rana",
+    "Email": "swayamrana808@gmail.com",
+    "Team Name": "\\02",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shadan Hussain",
+    "Email": "shadan.hussain.2004@gmail.com",
+    "Team Name": "\\02",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Latika Mishra",
+    "Email": "latikamishraa@gmail.com",
+    "Team Name": "ProHack",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Arvin Nooli",
+    "Email": "arvinnooli711@gmail.com",
+    "Team Name": "Zoro",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anushka Ghei",
+    "Email": "anushkaghei@gmail.com",
+    "Team Name": "Zoro",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ojas Ojas",
+    "Email": "ojas.off2003@gmail.com",
+    "Team Name": "Absolute Xero",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Nikita Kanodia",
+    "Email": "nikita.kanodia.ug21@nsut.ac.in",
+    "Team Name": "Absolute Xero",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Avneet Singh",
+    "Email": "avneets2103@gmail.com",
+    "Team Name": "Absolute Xero",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "BALVINDER SINGH",
+    "Email": "balvindersingh485280@gmail.com",
+    "Team Name": "Absolute Xero",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ajitkumar Vaghela",
+    "Email": "vaghelaajit464@gmail.com",
+    "Team Name": "quadHackers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Priyansh Khunt",
+    "Email": "khuntpriyansh1@gmail.com",
+    "Team Name": "quadHackers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mahmadamin Lodhiya",
+    "Email": "aminlodhiya88@gmail.com",
+    "Team Name": "quadHackers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Saurav Sutaria",
+    "Email": "sauravpatel002@gmail.com",
+    "Team Name": "quadHackers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aradhya Mishra",
+    "Email": "202051034@iiitvadodara.ac.in",
+    "Team Name": "Brute Force",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Brijesh Agal",
+    "Email": "brijeshagal@gmail.com",
+    "Team Name": "Brute Force",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Madhav Bohra",
+    "Email": "madhavbohra106@gmail.com",
+    "Team Name": "Golden-Nuggets",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aditya Bohra",
+    "Email": "adityabohra.321@gmail.com",
+    "Team Name": "Golden-Nuggets",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Chirag Mathur",
+    "Email": "mchirag2002@gmail.com",
+    "Team Name": "Golden-Nuggets",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shubham Mehla",
+    "Email": "shubham.mehla13@gmail.com",
+    "Team Name": "TeamCode",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ashish ‎",
+    "Email": "ashishthehulk@gmail.com",
+    "Team Name": "TeamCode",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Deepakshi Mahajan",
+    "Email": "mahajandeepakshi03@gmail.com",
+    "Team Name": "TeamCode",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shashank Mangal",
+    "Email": "shashankmangal10@gmail.com",
+    "Team Name": "TeamCode",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Abhay Prasad",
+    "Email": "workwithabhay247@gmail.com",
+    "Team Name": "Spam Bytes",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Nitesh Kumar",
+    "Email": "niteshnunfara0@gmail.com",
+    "Team Name": "Spam Bytes",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Yash Tandon",
+    "Email": "yashtandon335@gmail.com",
+    "Team Name": "Spam Bytes",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sambit Kumar Pathy",
+    "Email": "kumarsambit2114@gmail.com",
+    "Team Name": "Spam Bytes",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vikas Sijoriya",
+    "Email": "vikassijoriya2121@gmail.com",
+    "Team Name": "Hyphen",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Atharva Barve",
+    "Email": "saap1504@gmail.com",
+    "Team Name": "Hyphen",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sujal Chandrakar",
+    "Email": "sujalforselfuse@gmail.com",
+    "Team Name": "Hyphen",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Abhinav Jha",
+    "Email": "abhinavjhanitr@gmail.com",
+    "Team Name": "HOTBOX",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vipul Dewasthale",
+    "Email": "vipuldewasthale@gmail.com",
+    "Team Name": "HOTBOX",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Jay Singh",
+    "Email": "jaysingh1452@gmail.com",
+    "Team Name": "HOTBOX",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Jose Jimmy",
+    "Email": "josejimmy8055@gmail.com",
+    "Team Name": "Glitched Inn.",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Devanath DR",
+    "Email": "devanathskt@gmail.com",
+    "Team Name": "Glitched Inn.",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Dhanush gkrishnan",
+    "Email": "dhanushg11223344@gmail.com",
+    "Team Name": "Glitched Inn.",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Abhimanyu R B",
+    "Email": "abhimanyurbsa@gmail.com",
+    "Team Name": "Glitched Inn.",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Yash Bhidawe",
+    "Email": "ybh5179@gmail.com",
+    "Team Name": "Compiler",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pawan Patil",
+    "Email": "pawanpatil83087@gmail.com",
+    "Team Name": "Compiler",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Janhavi Verma",
+    "Email": "janhavi25verma@gmail.com",
+    "Team Name": "Code Fellas",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Saurabh Mishra",
+    "Email": "mishra.saurabh7492@gmail.com",
+    "Team Name": "Code Fellas",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Alok Yadav",
+    "Email": "alok2110036@akgec.ac.in",
+    "Team Name": "Code Fellas",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aanya Kumari",
+    "Email": "aanyasah9@gmail.com",
+    "Team Name": "bugMagn3ts",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Nafis Adnan Mondal",
+    "Email": "nafis30503@gmail.com",
+    "Team Name": "bugMagn3ts",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rishab Dugar",
+    "Email": "www.anitadugar9163@gmail.com",
+    "Team Name": "bugMagn3ts",
     "Tag": "Participation"
   },
   {
     "Name": "Shreyas Gaddam",
     "Email": "iamshreydan@gmail.com",
-    "Team Name": "DaSh -tech",
+    "Team Name": "Cool Potatoes",
     "Tag": "Participation"
   },
   {
-    "Name": "Rajvi Jain",
-    "Email": "rajvijainp@gmail.com",
-    "Team Name": "Adhisthana",
+    "Name": "Prince Raj",
+    "Email": "prince.raj29042004@gmail.com",
+    "Team Name": "Cool Potatoes",
     "Tag": "Participation"
   },
   {
-    "Name": "Stutee Dave",
-    "Email": "spd1409spd@gmail.com",
-    "Team Name": "Adhisthana",
+    "Name": "Kwinal Dave",
+    "Email": "kwinaldave@gmail.com",
+    "Team Name": "Brogrammer",
     "Tag": "Participation"
   },
   {
-    "Name": "Mansi Patel",
-    "Email": "mansisp2622@gmail.com",
-    "Team Name": "Adhisthana",
+    "Name": "Akash Chaubey",
+    "Email": "s1032190108@gmail.com",
+    "Team Name": "Brogrammer",
     "Tag": "Participation"
   },
   {
-    "Name": "Jay Goswami",
-    "Email": "jaygoswami1121@gmail.com",
-    "Team Name": "Adhisthana",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Shivam Mishra",
-    "Email": "shivambmishra10@gmail.com",
-    "Team Name": "INNOWOOD",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Shakya Peiris",
-    "Email": "shakyaimanjith32@gmail.com",
-    "Team Name": "Flying fish",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Md. Arish",
-    "Email": "arish123.ahamad@gmail.com",
-    "Team Name": "Flying fish",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Mehtab Shaik",
-    "Email": "msshaik10@gmail.com",
-    "Team Name": "Flying fish",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Khushi Agarwal",
-    "Email": "lestrangebellatrix11@gmail.com",
-    "Team Name": "Flying fish",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sandeep Verma",
-    "Email": "sandeepvermaslg77@gmail.com",
-    "Team Name": "oxyR",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Bishal Nath",
-    "Email": "bishalkumarnath8@gmail.com",
-    "Team Name": "oxyR",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Samik Choudhury",
-    "Email": "samikchoudhury15@gmail.com",
-    "Team Name": "oxyR",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Anushka Samant",
-    "Email": "anushkas2709@gmail.com",
-    "Team Name": "WAP : Write-A-Program",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Saksham Devkota",
-    "Email": "sakxamdev@gmail.com",
-    "Team Name": "WAP : Write-A-Program",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Asutosh Ranjan",
-    "Email": "asutoshranjan13@gmail.com",
-    "Team Name": "WAP : Write-A-Program",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Cyrus Roy",
-    "Email": "cyrus.roy001@gmail.com",
-    "Team Name": "WAP : Write-A-Program",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Pramod Mallik",
-    "Email": "pramod432km@gmail.com",
-    "Team Name": "avtar",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Omisa Panda",
-    "Email": "omisadmj@gmail.com",
-    "Team Name": "avtar",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sonali Sahu",
-    "Email": "sefu6918@gmail.com",
-    "Team Name": "avtar",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Megha Sinha",
-    "Email": "meghasinha761@gmail.com",
-    "Team Name": "avtar",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Pushpit Jain",
-    "Email": "pushpitjain3@gmail.com",
-    "Team Name": "HDSians",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Munal Jain",
-    "Email": "munaljain8@gmail.com",
-    "Team Name": "HDSians",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Pranjal Singh",
-    "Email": "pranjal366@gmail.com",
-    "Team Name": "HeisenBug",
-    "Tag": "Appreciation",
-    "Prize": "Overall Second "
-  },
-  {
-    "Name": "Mehal Raje",
-    "Email": "mehalr612@gmail.com",
-    "Team Name": "HeisenBug",
-    "Tag": "Appreciation",
-    "Prize": "Overall Second "
-  },
-  {
-    "Name": "Kaustav Narjeenary",
-    "Email": "kaustavnarjeenary@gmail.com",
-    "Team Name": "Codemixs",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Soham Bhattacharyya",
-    "Email": "sb2415@ee.jgec.ac.in",
-    "Team Name": "Codemixs",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Arka Biswas",
-    "Email": "biswasarka190@gmail.com",
-    "Team Name": "Codemixs",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Soham Sen",
-    "Email": "soham2014sen@gmail.com",
-    "Team Name": "Codemixs",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Divya Kelaskar",
-    "Email": "divyakelaskar@gmail.com",
-    "Team Name": "pheonix",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Ankit Maurya",
-    "Email": "ankitm7272@gmail.com",
-    "Team Name": "Byte Optimizers",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Urvashi Jat",
-    "Email": "jaturvashi123@gmail.com",
-    "Team Name": "Byte Optimizers",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Aryan Shukla",
-    "Email": "saryan1218@gmail.com",
-    "Team Name": "Byte Optimizers",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Harsh Jha",
-    "Email": "hjha0695@gmail.com",
-    "Team Name": "Byte Optimizers",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sajal Gupta",
-    "Email": "guptasajal411@gmail.com",
-    "Team Name": "hackOverflow",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Mustafa Officewala",
-    "Email": "officewalamustafa@gmail.com",
-    "Team Name": "Pseudo-Nerds",
-    "Tag": "Appreciation",
-    "Prize": "Best Use of CockroachDB"
-  },
-  {
-    "Name": "Gaurav Kumar",
-    "Email": "gk74533@gmail.com",
-    "Team Name": "Pseudo-Nerds",
-    "Tag": "Appreciation",
-    "Prize": "Best Use of CockroachDB"
-  },
-  {
-    "Name": "Parshwa Shah",
-    "Email": "parshwashahsbmp52@gmail.com",
-    "Team Name": "Cryptocrat",
-    "Tag": "Appreciation",
-    "Prize": "Sustainability Track"
-  },
-  {
-    "Name": "Gautam Daga",
-    "Email": "Gautamdaga2000@gmail.com",
-    "Team Name": "lockdowm_comders",
-    "Tag": "Appreciation",
-    "Prize": "Best Use of Auth0"
-  },
-  {
-    "Name": "Yash Shah",
-    "Email": "yashshahnitt@gmail.com",
-    "Team Name": "lockdowm_comders",
-    "Tag": "Appreciation",
-    "Prize": "Best Use of Auth0"
-  },
-  {
-    "Name": "Rvs Satyanand",
-    "Email": "ssatyanand7@gmail.com",
-    "Team Name": "lockdowm_comders",
-    "Tag": "Appreciation",
-    "Prize": "Best Use of Auth0"
-  },
-  {
-    "Name": "Subhradeep Saha",
-    "Email": "subhradeep_saha@outlook.com",
-    "Team Name": "lockdowm_comders",
-    "Tag": "Appreciation",
-    "Prize": "Best Use of Auth0"
-  },
-  {
-    "Name": "Ayush Chauhan",
-    "Email": "aayushchauhanrajput47@gmail.com",
-    "Team Name": "CodeX",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Tejas Borkar",
-    "Email": "tvborkar1234@gmail.com",
-    "Team Name": "4 YodaBytes",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Shreyas Jadhav",
-    "Email": "jshreyas12@gmail.com",
-    "Team Name": "4 YodaBytes",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Hitansh Doshi",
-    "Email": "hkd159@gmail.com",
-    "Team Name": "4 YodaBytes",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Harshit Daga",
-    "Email": "harshitdaga7@gmail.com",
-    "Team Name": "4 YodaBytes",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Neeraj Pratap Hazarika",
-    "Email": "neerajprataphazarika@gmail.com",
-    "Team Name": "NeXusTriuMph",
-    "Tag": "Appreciation",
-    "Prize": "Raahee"
-  },
-  {
-    "Name": "Simeet Nayan",
-    "Email": "simeetnayan.8100@gmail.com",
-    "Team Name": "NeXusTriuMph",
-    "Tag": "Appreciation",
-    "Prize": "Raahee"
-  },
-  {
-    "Name": "Aditya Das",
-    "Email": "2020itb058.aditya@students.iiests.ac.in",
-    "Team Name": "NeXusTriuMph",
-    "Tag": "Appreciation",
-    "Prize": "Raahee"
-  },
-  {
-    "Name": "Devanshu Chatterjee",
-    "Email": "devanshu4190@gmail.com",
-    "Team Name": "NeXusTriuMph",
-    "Tag": "Appreciation",
-    "Prize": "Raahee"
-  },
-  {
-    "Name": "Kushagra Sharma",
-    "Email": "kushagra18csu114@ncuindia.edu",
-    "Team Name": "Techwayy",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Shristi Bansal",
-    "Email": "shristibansal6@gmail.com",
-    "Team Name": "Techwayy",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Abhishek L",
-    "Email": "abhishek122k@gmail.com",
-    "Team Name": "Crowdly",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Rudresh Veerkhare",
-    "Email": "veerkharerudresh@gmail.com",
-    "Team Name": "CryptoNerd",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Shreya Sinha",
-    "Email": "shreya.sinha2020@vitbhopal.ac.in",
-    "Team Name": "Team Captivators",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Saksham Sahu",
-    "Email": "sakshamsahu57@gmail.com",
-    "Team Name": "Team Captivators",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Vartika Pal",
-    "Email": "vartikapal01@gmail.com",
-    "Team Name": "Team Captivators",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Madhvendra Pratap Singh",
-    "Email": "madhvendra.pratap2020@vitbhopal.ac.in",
-    "Team Name": "Team Captivators",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Prince Kumar",
-    "Email": "imprince1130@gmail.com",
-    "Team Name": "Team Sahil",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sanyog Jain",
-    "Email": "sanyogjain5678@gmail.com",
-    "Team Name": "Team Sahil",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sahil Nagpure",
-    "Email": "sahil.nagpure27@gmail.com",
-    "Team Name": "Team Sahil",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sibasis Malla",
-    "Email": "sibasisml@gmail.com",
-    "Team Name": "Conan",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Groot Max",
-    "Email": "sanjaishanmugam22@gmail.com",
-    "Team Name": "Ninja",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Suvigya Saxena",
-    "Email": "suvigya.saxena2019@vitstudent.ac.in",
-    "Team Name": "SAS-Quatch",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Akshat Vidyarthi",
-    "Email": "akshat.vidyarthi2019@vitstudent.ac.in",
-    "Team Name": "SAS-Quatch",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Shinjon Das",
-    "Email": "shinjon.das2019@vitstudent.ac.in",
-    "Team Name": "SAS-Quatch",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sayak Rana",
-    "Email": "rana.sayak.2001@gmail.com",
-    "Team Name": "Noobies",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Devtanu Misra",
-    "Email": "devtanumisra@gmail.com",
-    "Team Name": "Noobies",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Heli Vachhani",
-    "Email": "helivachhani9@gmail.com",
-    "Team Name": "HELIGAME",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Pulkit Saini",
-    "Email": "pulkitsainisre@gmail.com",
-    "Team Name": "Hack@abes",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Khushi Garg",
-    "Email": "khushigarg0202@gmail.com",
-    "Team Name": "Hack@abes",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Nitin Raj",
-    "Email": "nitinraj2001@gmail.com",
-    "Team Name": "Hack@abes",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Tanishq Jaiswal",
-    "Email": "tanishq.jaiswal2019@vitbhopal.ac.in",
-    "Team Name": "Better World",
-    "Tag": "Appreciation",
-    "Prize": "Overall Third"
-  },
-  {
-    "Name": "Ishan Goswami",
-    "Email": "ishangoswami315@gmail.com",
-    "Team Name": "Better World",
-    "Tag": "Appreciation",
-    "Prize": "Overall Third"
-  },
-  {
-    "Name": "Subhanu Sankar Roy",
-    "Email": "subhanu12@gmail.com",
-    "Team Name": "Hackey Blinders",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Udith Shyamsukha",
-    "Email": "udithshyamsukha@gmail.com",
-    "Team Name": "Hackey Blinders",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Rithesh Kunchakuri",
-    "Email": "kunchakuririthesh123@gmail.com",
-    "Team Name": "Hackey Blinders",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Eshan Gupta",
-    "Email": "eshan1925@gmail.com",
-    "Team Name": "Hackey Blinders",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Manu Singh",
-    "Email": "manusingh5oct@gmail.com",
-    "Team Name": "NRI_HACKERS",
-    "Tag": "Appreciation",
-    "Prize": "Best Freshers Team"
-  },
-  {
-    "Name": "Reetesh Kumar",
-    "Email": "reeteshkumar23aug@gmail.com",
-    "Team Name": "NRI_HACKERS",
-    "Tag": "Appreciation",
-    "Prize": "Best Freshers Team"
-  },
-  {
-    "Name": "Pawan Rawat",
-    "Email": "pawanrwt08@gmail.com",
-    "Team Name": "NRI_HACKERS",
-    "Tag": "Appreciation",
-    "Prize": "Best Freshers Team"
-  },
-  {
-    "Name": "Gourav Khiyani",
-    "Email": "khiyanigourav2001@gmail.com",
-    "Team Name": "NRI_HACKERS",
-    "Tag": "Appreciation",
-    "Prize": "Best Freshers Team"
-  },
-  {
-    "Name": "Naveen Kumar V",
-    "Email": "naveenkumarvcse@citchennai.net",
-    "Team Name": "Unknown",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sai Anirudh",
-    "Email": "amazinganirudhhere@gmail.com",
-    "Team Name": "Unknown",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Om Divyatej",
-    "Email": "ohmbrock42@gmail.com",
-    "Team Name": "invincibles",
-    "Tag": "Appreciation",
-    "Prize": "SAWO LABS Challenge"
-  },
-  {
-    "Name": "Nikhil Pal",
-    "Email": "nikhilpal9111@gmail.com",
-    "Team Name": "invincibles",
-    "Tag": "Appreciation",
-    "Prize": "SAWO LABS Challenge"
-  },
-  {
-    "Name": "Aashish Gajadhane",
-    "Email": "aashishgajadhane@gmail.com",
-    "Team Name": "Arsen1c",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Gokul Ks",
-    "Email": "iamksgokul@gmail.com",
-    "Team Name": "Excalibur",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Suyash Rane",
-    "Email": "suyashrane9923@gmail.com",
-    "Team Name": "Octacoderz",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Harsh Gawas",
-    "Email": "hgawas44@gmail.com",
-    "Team Name": "Octacoderz",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Nileshkumar Aggarwal",
-    "Email": "aggarwalnileshqwik@gmail.com",
-    "Team Name": "Octacoderz",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Aditya Vernekar",
-    "Email": "adityaditya711@gmail.com",
-    "Team Name": "Octacoderz",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Aniket Khajanchi",
-    "Email": "ani.khajanchi257@gmail.com",
-    "Team Name": "TeamDefine",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Aarush Srivastava",
-    "Email": "aarushsrivastava1212@gmail.com",
-    "Team Name": "TeamDefine",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Nitish Sharma",
-    "Email": "nitish.sharma1186@gmail.com",
-    "Team Name": "TeamDefine",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Pranav Goel",
-    "Email": "pranavgoel2012@gmail.com",
-    "Team Name": "TeamDefine",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sai Tanusha",
-    "Email": "saitanusha19@gmail.com",
-    "Team Name": "Taiga",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Ashutosh Tiwari",
-    "Email": "dsremo7@gmail.com",
-    "Team Name": "Taiga",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Ritesh Kumar",
-    "Email": "kumarritesh14062000@gmail.com",
-    "Team Name": "Knight7",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Satyajit Pal",
-    "Email": "palsatyajit986@gmail.com",
-    "Team Name": "Bootstrap Paradox",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Gursimrat Kalra",
-    "Email": "gsingh16742@gmail.com",
-    "Team Name": "Bootstrap Paradox",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Yash Gupta",
-    "Email": "guptayash200010@gmail.com",
-    "Team Name": "Bootstrap Paradox",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Nishant Giri",
-    "Email": "nishantgiri.20@gmail.com",
-    "Team Name": "Solo",
-    "Tag": "Appreciation",
-    "Prize": "Inclusivity Track"
-  },
-  {
-    "Name": "Mitali Garg",
-    "Email": "mitaligarg213@gmail.com",
-    "Team Name": "Solo",
-    "Tag": "Appreciation",
-    "Prize": "Inclusivity Track"
-  },
-  {
-    "Name": "Simran Verma",
-    "Email": "vermasimran78606@gmail.com",
-    "Team Name": "Solo",
-    "Tag": "Appreciation",
-    "Prize": "Inclusivity Track"
-  },
-  {
-    "Name": "Faizan Alam",
-    "Email": "faizanalam2030@gmail.com",
-    "Team Name": "Solo",
-    "Tag": "Appreciation",
-    "Prize": "Inclusivity Track"
-  },
-  {
-    "Name": "Pragati Kumar",
-    "Email": "pragatikumar2000@gmail.com",
-    "Team Name": "USP",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Utkarsh Gupta",
-    "Email": "utkarshgupta2504@gmail.com",
-    "Team Name": "USP",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Samarth Arora",
-    "Email": "samartharora176@gmail.com",
-    "Team Name": "USP",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Manas Khandelwal",
-    "Email": "manaskhandelwal111@gmail.com",
-    "Team Name": "Nitro's Player",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Drishti Rai",
-    "Email": "drishtiskn00@gmail.com",
-    "Team Name": "Nitro's Player",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Shristi Agarwal",
-    "Email": "shristiagarwal2001@gmail.com",
-    "Team Name": "Nitro's Player",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Samarth Goyal",
-    "Email": "e20cse084@bennett.edu.in",
-    "Team Name": "Nitro's Player",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sriniketh J",
-    "Email": "srinikethcr7@gmail.com",
-    "Team Name": "Room-2",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Nikita Agarwal",
-    "Email": "agarwalnikita.0703@gmail.com",
-    "Team Name": "Murphy",
-    "Tag": "Appreciation",
-    "Prize": "Best Women Team"
-  },
-  {
-    "Name": "Rushali Kumari",
-    "Email": "rushalisingh789@gmail.com",
-    "Team Name": "Murphy",
-    "Tag": "Appreciation",
-    "Prize": "Best Women Team"
-  },
-  {
-    "Name": "Mohit Bhat",
-    "Email": "mbcse50@gmail.com",
-    "Team Name": "Bchief",
-    "Tag": "Appreciation",
-    "Prize": "Best Use of Linode Cloud"
-  },
-  {
-    "Name": "Dhara Solanki",
-    "Email": "dhara732002@gmail.com",
-    "Team Name": "Phod Denge",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sahil Mandani",
-    "Email": "mandanisahil304@gmail.com",
-    "Team Name": "Phod Denge",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Prit Manvar",
-    "Email": "pritmanvar1109@gmail.com",
-    "Team Name": "Phod Denge",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Drishty Ganatra",
-    "Email": "drishty.ganatra66@gmail.com",
-    "Team Name": "Phod Denge",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Muktarul Hoque",
-    "Email": "mani.ddox@gmail.com",
-    "Team Name": "Z75",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Tanvir Alam",
-    "Email": "thka478591@gmail.com",
-    "Team Name": "Z75",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Bhaskar Pal",
-    "Email": "bhaskar.sumon.98@gmail.com",
-    "Team Name": "Z75",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Ipsita Satapathy",
-    "Email": "b420026@iiit-bh.ac.in",
-    "Team Name": "Vamps",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Kunal Agrawal",
-    "Email": "agrawalkunal2001@gmail.com",
-    "Team Name": "Vamps",
-    "Tag": "Appreciation",
-    "Prize": "Most Creative Use of Twilio"
-  },
-  {
-    "Name": "Simran Pattnaik",
-    "Email": "b420049@iiit-bh.ac.in",
-    "Team Name": "Vamps",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sarthak Rastogi",
-    "Email": "thesarthakrastogi@gmail.com",
-    "Team Name": "Sarthak",
-    "Tag": "Appreciation",
-    "Prize": "Community Track"
-  },
-  {
-    "Name": "Mahi Chowdhury",
-    "Email": "mahichowdhury587@gmail.com",
-    "Team Name": "New Comer",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Satyam Pandey",
-    "Email": "satyampandey684@gmail.com",
-    "Team Name": "Antinormie",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Abhijit Biswal",
-    "Email": "biswalabhijit04@gmail.com",
-    "Team Name": "Antinormie",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Pawan Kumar Mishra",
-    "Email": "pawan994567@gmail.com",
-    "Team Name": "Antinormie",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Kaushik Mishra",
-    "Email": "kaushik.ultimate96@gmail.com",
-    "Team Name": "frumentum",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Shreyansh Rai",
-    "Email": "shreyanshrajeevarai@gmail.com",
-    "Team Name": "frumentum",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sarthak Harne",
-    "Email": "harnesarthak@gmail.com",
-    "Team Name": "frumentum",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Vatsal Dhama",
-    "Email": "thevatsaldhama@gmail.com",
-    "Team Name": "frumentum",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sai Smaran",
-    "Email": "saismaran25@gmail.com",
-    "Team Name": "IOT Mask",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Ankur Mishra",
-    "Email": "mishraap88@gmail.com",
-    "Team Name": "codesmashers",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Dhiraj Chauhan",
-    "Email": "chauhandhiraj40@gmail.com",
-    "Team Name": "codesmashers",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Khushi Yadav",
-    "Email": "khushiy0842@gmail.com",
-    "Team Name": "codesmashers",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Jwala Chorasiya",
-    "Email": "jwalachaurasiya38@gmail.com",
-    "Team Name": "codesmashers",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Yash Joshi",
-    "Email": "joshiyash05@gmail.com",
-    "Team Name": "Jai Mata di",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Ankit Mishra",
-    "Email": "ankitm8421@gmail.com",
-    "Team Name": "Jai Mata di",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Amritanshu Suyal",
-    "Email": "amritanshu.suyall2@gmail.com",
-    "Team Name": "CaptainCode",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sreehari K",
-    "Email": "sreehari4official@gmail.com",
-    "Team Name": "CaptainCode",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Pushpendra Vishwakarma",
-    "Email": "pushpendra.hpx2001@gmail.com",
-    "Team Name": "CaptainCode",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Yash Hegde",
-    "Email": "yash4success@gmail.com",
-    "Team Name": "Project 22",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Akankhya Giri",
-    "Email": "giriakankhya@gmail.com",
-    "Team Name": "Project 22",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Aniruddha Bagchi",
-    "Email": "aniruddha3.14159@gmail.com",
-    "Team Name": "Project 22",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Shubhangini Singh",
-    "Email": "shubhangini2203@gmail.com",
-    "Team Name": "Project 22",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Shreya Khetan",
-    "Email": "shreyakhetan12@gmail.com",
-    "Team Name": "Red Cap Coders",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sayantan Chatterjee",
-    "Email": "sayantan1298@Gmail.com",
-    "Team Name": "Red Cap Coders",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sanjeet Patro",
-    "Email": "sanjeet4102000@gmail.com",
-    "Team Name": "Red Cap Coders",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Kumar Shantanu",
-    "Email": "shantanuk280@gmail.com",
-    "Team Name": "Red Cap Coders",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Ansh Bhalala",
-    "Email": "caz@monke.team",
-    "Team Name": "Indian Tech Support",
-    "Tag": "Appreciation",
-    "Prize": "Community Track"
-  },
-  {
-    "Name": "Aaditya Rathore",
-    "Email": "aadityarathore10@gmail.com",
-    "Team Name": "Indian Tech Support",
-    "Tag": "Appreciation",
-    "Prize": "Community Track"
-  },
-  {
-    "Name": "Raghav Agrawal",
-    "Email": "araghav2003@gmail.com",
-    "Team Name": "Indian Tech Support",
-    "Tag": "Appreciation",
-    "Prize": "Community Track"
-  },
-  {
-    "Name": "Sarthak Aggarwal",
-    "Email": "getsarthakaggarwal@gmail.com",
-    "Team Name": "Indian Tech Support",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Vashishth Patel",
-    "Email": "vashishthchaudhary48@gmail.com",
-    "Team Name": "HackMan",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Ayush Gowda",
-    "Email": "agowda2019@fau.edu",
-    "Team Name": "Os and Ones",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Shivansh Yadav",
-    "Email": "yadavshivansh@gmail.com",
-    "Team Name": "Os and Ones",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Shwaas A",
-    "Email": "adlakhashwaas@gmail.com",
-    "Team Name": "Os and Ones",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Ritesh Patil",
-    "Email": "dsc.nitr@gmail.com",
-    "Team Name": "demo team",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Anurag Singh",
-    "Email": "anurag.singh2020@vitbhopal.ac.in",
-    "Team Name": "Algorithm Aces",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Suryakant Patwardhan",
-    "Email": "suryakant.patwardhan2020@vitbhopal.ac.in",
-    "Team Name": "Algorithm Aces",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Priyaranjan Mishra",
-    "Email": "priyaranjanmishra000@gmail.com",
-    "Team Name": "Algorithm Aces",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Keshav Rao",
-    "Email": "kr7559@srmist.edu.in",
-    "Team Name": "PORT 8055",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Nanda M.P",
-    "Email": "np6771@srmist.edu.in",
-    "Team Name": "PORT 8055",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Kaushik Kumaran",
-    "Email": "kums2kaushik@gmail.com",
-    "Team Name": "PORT 8055",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sourav Pal",
-    "Email": "souravpal.4916@gmail.com",
-    "Team Name": "abraca-data",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Samarth Singhal",
-    "Email": "samarth.a12d@gmail.com",
-    "Team Name": "abraca-data",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Varang Rai",
-    "Email": "varangrai_2k19ec205@dtu.ac.in",
-    "Team Name": "abraca-data",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Tejashree Tambe",
-    "Email": "tambetejashree02@gmail.com",
-    "Team Name": "Syndicate",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Aryan Aher",
-    "Email": "aryanaher42@gmail.com",
-    "Team Name": "Syndicate",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Het Mehta",
-    "Email": "hetmehta01@gmail.com",
-    "Team Name": "Syndicate",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Ananya Das",
-    "Email": "b520007@iiit-bh.ac.in",
-    "Team Name": "Techno-Tuners",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Adarsh Kumar",
-    "Email": "b520003@iiit-bh.ac.in",
-    "Team Name": "Techno-Tuners",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Pemmu Devipriya",
-    "Email": "b520036@iiit-bh.ac.in",
-    "Team Name": "Techno-Tuners",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Tanuj Kalonia",
-    "Email": "b520062@iiit-bh.ac.in",
-    "Team Name": "Techno-Tuners",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Aditya Mittal",
-    "Email": "aditmttl@gmail.com",
-    "Team Name": "Hack Elite",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Kanak Mittal",
-    "Email": "kanakmittal6@gmail.com",
-    "Team Name": "Hack Elite",
-    "Tag": "Appreciation",
-    "Prize": "Open Innovation Track"
-  },
-  {
-    "Name": "Harshal Raikwar",
-    "Email": "hr5359@srmist.edu.in",
-    "Team Name": "Hack Elite",
-    "Tag": "Appreciation",
-    "Prize": "Open Innovation Track"
-  },
-  {
-    "Name": "Harsh Verma",
-    "Email": "muskanvij26@gmail.com",
-    "Team Name": "immortal",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sanskar Soven",
-    "Email": "sanskarsoven.2002@gmail.com",
-    "Team Name": "Medline Pro",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Siddharth Kumar Panda",
-    "Email": "siddharthkp33@gmail.com",
-    "Team Name": "Medline Pro",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Geethasree Koncha",
-    "Email": "geethasreekoncha@gmail.com",
-    "Team Name": "Medline Pro",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Madhan M",
-    "Email": "madhanmandy3374@gmail.com",
-    "Team Name": "App Pandits",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Dhairya Shah",
-    "Email": "dhairyashah3000@gmail.com",
-    "Team Name": "MinGW-86",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Suraj Chavan",
-    "Email": "surajchavan19@gmail.com",
-    "Team Name": "MinGW-86",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Sachin Jangid",
-    "Email": "jangirsac621@gmail.com",
-    "Team Name": "MinGW-86",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Harshavardhan Bajoria",
-    "Email": "HVBAJORIA@hotmail.com",
-    "Team Name": "Innovation Redefined",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Rahul Kumar Vh",
-    "Email": "vhrahulkumar@gmail.com",
-    "Team Name": "Alt",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Arbind Lochan Mishra",
-    "Email": "almbbsr143@gmail.com",
-    "Team Name": "Alt",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Mohit Kamat",
-    "Email": "mgkamat511@gmail.com",
-    "Team Name": "Limacwin",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Kshitij Patil",
-    "Email": "kshitij.patil19@vit.edu",
-    "Team Name": "Code Dominators",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Kirtish Surangalikar",
-    "Email": "kirtish.surangalikar19@vit.edu",
-    "Team Name": "Code Dominators",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Shreyas Talwekar",
-    "Email": "shreyas.talwekar19@vit.edu",
-    "Team Name": "Code Dominators",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Aayush Surawar",
-    "Email": "aayush.surawar19@vit.edu",
-    "Team Name": "Code Dominators",
-    "Tag": "Appreciation",
-    "Prize": "Raahee"
-  },
-  {
-    "Name": "Prakhar Rastogi",
-    "Email": "rprakhar14@gmail.com",
-    "Team Name": "ERROR 404",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Srinivas Manda",
-    "Email": "srinivas911032@gmail.com",
-    "Team Name": "ERROR 404",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Saket Gurjar",
-    "Email": "saketgurjar2402@gmail.com",
-    "Team Name": "ERROR 404",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Shubhanshu Agrawal",
-    "Email": "shubhanshu1902@gmail.com",
-    "Team Name": "ERROR 404",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Anubhav Kulshrestha",
-    "Email": "anubhav.1923ec1089@kiet.edu",
-    "Team Name": "Four-Score",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Gritica Pandey",
-    "Email": "gritica.2024en1089@kiet.edu",
-    "Team Name": "Four-Score",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Anshuman Shukla",
-    "Email": "ansh212039@gmail.com",
-    "Team Name": "Four-Score",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Akashdeep Gupta",
-    "Email": "akashdeepg06@gmail.com",
-    "Team Name": "Four-Score",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Medam Greeshma",
-    "Email": "greeshma.medam@gmail.com",
-    "Team Name": "Source'rers",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Elisha Himani",
-    "Email": "himanielisha@gmail.com",
-    "Team Name": "Source'rers",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Harshita Sharma",
-    "Email": "jaipurharshita1@gmail.com",
-    "Team Name": "Source'rers",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Aditya Tiwari",
-    "Email": "adityatiwari2391@gmail.com",
-    "Team Name": "Societal Technocrats",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Mayani Agnihotri",
-    "Email": "arti.agni01@gmail.com",
-    "Team Name": "Societal Technocrats",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Tanmay Singhania",
-    "Email": "tanmaysm1711@gmail.com",
-    "Team Name": "Societal Technocrats",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Harish Ramesh Babu",
-    "Email": "arishh2@gmail.com",
-    "Team Name": "Liberation",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Amithesh Gupta",
-    "Email": "shadow09690@gmail.com",
-    "Team Name": "The Boring Squad",
-    "Tag": "Participation"
-  },
-  {
-    "Name": "Yash Gupta",
-    "Email": "yashgupta0241@gmail.com",
-    "Team Name": "The Boring Squad",
+    "Name": "Suraj Pal",
+    "Email": "1503surajpal@gmail.com",
+    "Team Name": "Brogrammer",
     "Tag": "Participation"
   },
   {
     "Name": "Chirag Bhagat",
     "Email": "bhagatchirag2@gmail.com",
-    "Team Name": "The Boring Squad",
+    "Team Name": "Brogrammer",
     "Tag": "Participation"
   },
   {
-    "Name": "Aakash Gupta",
-    "Email": "s1032190135@gmail.com",
-    "Team Name": "The Boring Squad",
+    "Name": "Sneha Sinha",
+    "Email": "sneha2004sinha@gmail.com",
+    "Team Name": "FIBONAKI",
     "Tag": "Participation"
   },
   {
-    "Name": "Vansh Bulani",
-    "Email": "vanshbulani6@gmail.com",
-    "Team Name": "DevBots",
+    "Name": "Sofia Akhtar",
+    "Email": "sofiaakhtar468@gmail.com",
+    "Team Name": "FIBONAKI",
     "Tag": "Participation"
   },
   {
-    "Name": "Sneharsh Belsare",
-    "Email": "snehbelsare@gmail.com",
-    "Team Name": "Hypertext Assassins",
-    "Tag": "Appreciation",
-    "Prize": "Raahee"
-  },
-  {
-    "Name": "Vishvesh Trivedi",
-    "Email": "vishvesh106@gmail.com",
-    "Team Name": "Hypertext Assassins",
-    "Tag": "Appreciation",
-    "Prize": "Raahee"
-  },
-  {
-    "Name": "Ayush Daga",
-    "Email": "ayushdagaeinstein@gmail.com",
-    "Team Name": "Hypertext Assassins",
+    "Name": "SUGAM SHAW",
+    "Email": "sugamshaw2002@gmail.com",
+    "Team Name": "FIBONAKI",
     "Tag": "Participation"
   },
   {
-    "Name": "Sundeep Chand",
-    "Email": "sundeep.chand2001@gmail.com",
-    "Team Name": "WApretest2",
+    "Name": "Aryansh Deep",
+    "Email": "fghf7945@gmail.com",
+    "Team Name": "Baito_Bunseki",
     "Tag": "Participation"
   },
   {
-    "Name": "Shivam Sharma",
-    "Email": "vatsshivam2102@gmail.com",
-    "Team Name": "WApretest2",
+    "Name": "Yash Agrawal",
+    "Email": "yashagr.805@gmail.com",
+    "Team Name": "Baito_Bunseki",
     "Tag": "Participation"
   },
   {
-    "Name": "Mayank Jha",
-    "Email": "mayankjha272000@gmail.com",
-    "Team Name": "WApretest2",
+    "Name": "Deep Sarkar",
+    "Email": "deepsarkar200310@gmail.com",
+    "Team Name": "Baito_Bunseki",
     "Tag": "Participation"
   },
   {
-    "Name": "Shwetanshu Singh",
-    "Email": "ssbharti.22@gmail.com",
-    "Team Name": "WApretest2",
+    "Name": "Akanksha Tripathi",
+    "Email": "akankshatripathi.1854@gmail.com",
+    "Team Name": "Techlance",
     "Tag": "Participation"
   },
   {
-    "Name": "Swayam Smruti Dash",
-    "Email": "ssmrutidash@gmail.com",
-    "Team Name": "Amigos",
+    "Name": "Riya Roy",
+    "Email": "riyaroy2086@gmail.com",
+    "Team Name": "Techlance",
     "Tag": "Participation"
   },
   {
-    "Name": "Nikhil Narayan",
-    "Email": "nikhilnarayan73@gmail.com",
-    "Team Name": "Amigos",
+    "Name": "Ayushi Pani",
+    "Email": "ayushi1122pani@gmail.com",
+    "Team Name": "Weird Brains",
     "Tag": "Participation"
   },
   {
-    "Name": "Sachin Kumar Mohanty",
+    "Name": "Adnan Shahid",
+    "Email": "adnansh2804@gmail.com",
+    "Team Name": "Weird Brains",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Raj Aryan",
+    "Email": "rajisonline2306@gmail.com",
+    "Team Name": "Weird Brains",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aparesh Kumar",
+    "Email": "kraparesh@gmail.com",
+    "Team Name": "Weird Brains",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Palak Bhogra",
+    "Email": "palakbhogra2@gmail.com",
+    "Team Name": "Thunders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "KUNAL UPADHYAY",
+    "Email": "2021pcecskunal089@poornima.org",
+    "Team Name": "Thunders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Laveena Chetwani",
+    "Email": "laveenachetwani8@gmail.com",
+    "Team Name": "Thunders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Khushi Khandelwal",
+    "Email": "khandelwalkhushi6826@gmail.com",
+    "Team Name": "Thunders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aryan Thakor",
+    "Email": "ap1982o3@gmail.com",
+    "Team Name": "The Techies",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Krutagna Patel",
+    "Email": "kbpatel0811@gmail.com",
+    "Team Name": "The Techies",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Srujal Shah",
+    "Email": "itechking007@gmail.com",
+    "Team Name": "The Techies",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shivang Parmar",
+    "Email": "shivangparmar537@gmail.com",
+    "Team Name": "The Techies",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Arth Gupta",
+    "Email": "guptaarth87@gmail.com",
+    "Team Name": "codegeeks",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Priyanshu Mandlik",
+    "Email": "priyanshumandlik@gmail.com",
+    "Team Name": "codegeeks",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Raghav Prajapat",
+    "Email": "raghavprajapat777@gmail.com",
+    "Team Name": "codegeeks",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Itish Jain",
+    "Email": "www.itishjain123@gmail.com",
+    "Team Name": "codegeeks",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tusar Manna",
+    "Email": "tusarmanna2003@gmail.com",
+    "Team Name": "BRO CODE'S",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Saalim Aqueel",
+    "Email": "aqueel192@gmail.com",
+    "Team Name": "BRO CODE'S",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Divyanshu Chittora",
+    "Email": "chittoradivyanshu23@gmail.com",
+    "Team Name": "Tech it out",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anushka Khandelwal",
+    "Email": "khandelwalanushka819@gmail.com",
+    "Team Name": "Tech it out",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ishika Agarwal",
+    "Email": "ishikaagarwal1911mpspn@gmail.com",
+    "Team Name": "Tech it out",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ashutosh Sethi",
+    "Email": "ashutoshsipu01@gmail.com",
+    "Team Name": "Noname",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rajnandan Mishra",
+    "Email": "rajnandanmishra2002@gmail.com",
+    "Team Name": "Noname",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Swagat Raj",
+    "Email": "shanu.r9971@gmail.com",
+    "Team Name": "Noname",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Amreet Khuntia",
+    "Email": "120ee0473@nitrkl.ac.in",
+    "Team Name": "Noname",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shristhi Sah",
+    "Email": "shristhisah@gmail.com",
+    "Team Name": "Quark's",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kumar Harshit",
+    "Email": "kumar022harshit@gmail.com",
+    "Team Name": "Quark's",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Akshat Kumar",
+    "Email": "akshatk871@gmail.com",
+    "Team Name": "Quark's",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Saket Aryan",
+    "Email": "saketaryan2002@gmail.com",
+    "Team Name": "Quark's",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kartik Tyagi",
+    "Email": "abheytyagi010@gmail.com",
+    "Team Name": "teamkg",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Gagan Tayal",
+    "Email": "gagantayal2003@gmail.com",
+    "Team Name": "teamkg",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Soumyajit Kolay",
+    "Email": "skolay@vivaldi.net",
+    "Team Name": "Bru73F0rc3",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Saurav Kumar",
+    "Email": "ksauravhash@gmail.com",
+    "Team Name": "Bru73F0rc3",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Dhanraj Patil",
+    "Email": "dhanraj68349@gmail.com",
+    "Team Name": "Noob",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kouliki Mahato",
+    "Email": "koulikimahato10@gmail.com",
+    "Team Name": "cracknexploiters",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Someone 1928",
+    "Email": "animeshacharya507@gmail.com",
+    "Team Name": "cracknexploiters",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sandip Ash",
+    "Email": "sandipash2020@gmail.com",
+    "Team Name": "cracknexploiters",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anukul Pandey",
+    "Email": "anukul.030601@gmail.com",
+    "Team Name": "Debuggers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sarika Purohit",
+    "Email": "sarikapurohit790@gmail.com",
+    "Team Name": "Debuggers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ginni Jain",
+    "Email": "jainginni23@gmail.com",
+    "Team Name": "Debuggers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Peeyush Das",
+    "Email": "peeyushdas3.7@gmail.com",
+    "Team Name": "lit🔥CODE",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Suyog Kokaje",
+    "Email": "suyogkokaje6@gmail.com",
+    "Team Name": "Solobeast",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tejaswi Bishnoi",
+    "Email": "tejaswibishnoi@outlook.com",
+    "Team Name": "ManchurianHotdog",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Gourav Bidhuri",
+    "Email": "2020ucs0101@iitjammu.ac.in",
+    "Team Name": "ManchurianHotdog",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "aditya singh",
+    "Email": "2020UCS0090@iitjammu.ac.in",
+    "Team Name": "ManchurianHotdog",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kaushal S",
+    "Email": "kaushal1619s@gmail.com",
+    "Team Name": "CodeBlockers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pramod Krishnaa",
+    "Email": "2031032mss@cit.edu.in",
+    "Team Name": "CodeBlockers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Prabhu P",
+    "Email": "prabhupugal01@gmail.com",
+    "Team Name": "CodeBlockers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Suraj Pratap",
+    "Email": "surajpratap20002003@gmail.com",
+    "Team Name": "NOVA",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ishika Gupta",
+    "Email": "ishika2110184@akgec.ac.in",
+    "Team Name": "SPECTRE",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pranav Bisaria",
+    "Email": "pranavbisariya29@gmail.com",
+    "Team Name": "SPECTRE",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "ANSHUMAN NANDAN",
+    "Email": "anshumannandan2003@gmail.com",
+    "Team Name": "SPECTRE",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sanika Goyal",
+    "Email": "sanikagoyal9@gmail.com",
+    "Team Name": "SPECTRE",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Manas Teertha Nayak",
+    "Email": "mteerthanayak@gmail.com",
+    "Team Name": "Incognito Mode",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Digdarshan Swain",
+    "Email": "digdarshanswain@gmail.com",
+    "Team Name": "Incognito Mode",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Dammala Uday Kiran",
+    "Email": "udaykir3911@gmail.com",
+    "Team Name": "Incognito Mode",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ritik Agrawal",
+    "Email": "ritikagrawal3268@gmail.com",
+    "Team Name": "Incognito Mode",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Akankshya Das",
+    "Email": "dasakoct5@gmail.com",
+    "Team Name": "Innova",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Puja Kuanr",
+    "Email": "pujapratyasha29@gmail.com",
+    "Team Name": "Innova",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sarada Prasanna Dash",
+    "Email": "dashsaradaprasanna54@gmail.com",
+    "Team Name": "Innova",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "PAYAL PADMALAYA PRUSTY",
+    "Email": "payalpadmalaya24@gmail.com",
+    "Team Name": "Innova",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Soyeb Sarkar",
+    "Email": "soyebsarkar563@gmail.com",
+    "Team Name": "Mugiwara",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mihir Singh",
+    "Email": "mihirs167@gmail.com",
+    "Team Name": "IntroGeeks",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tarush Singh",
+    "Email": "tarush680@gmail.com",
+    "Team Name": "IntroGeeks",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Amol Singh",
+    "Email": "singhamol876@gmail.com",
+    "Team Name": "IntroGeeks",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Chandramita Santra",
+    "Email": "chandramitasantra@gmail.com",
+    "Team Name": "Ashmates",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sudesha T R",
+    "Email": "angelsdemon25@gmail.com",
+    "Team Name": "Ashmates",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "ASHISH ANUBHAV MAHARANA",
+    "Email": "zatharox@gmail.com",
+    "Team Name": "Ashmates",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Nayanika Singha Chowdhury",
+    "Email": "nayanikasc2002@gmail.com",
+    "Team Name": "Ashmates",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Yuvraj Chhetri",
+    "Email": "devimyuvi@gmail.com",
+    "Team Name": "Team Blue",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "SIRAJ ALAM",
+    "Email": "crajmusics@gmail.com",
+    "Team Name": "Team Blue",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Avinash Prasad",
+    "Email": "avionmission@gmail.com",
+    "Team Name": "Team Blue",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Subhajit Chowdhury",
+    "Email": "subhochowdhury209@gmail.com",
+    "Team Name": "Team Blue",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Lakshana S",
+    "Email": "lakshanarajalakshmi22@gmail.com",
+    "Team Name": "LeCoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Abinaya Shankar",
+    "Email": "abinayashankr@gmail.com",
+    "Team Name": "LeCoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rohith S",
+    "Email": "rohithsaravanan17@gmail.com",
+    "Team Name": "LeCoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Asrith S K",
+    "Email": "skasrith@gmail.com",
+    "Team Name": "LeCoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "MUHAMMED SHIYAS T P",
+    "Email": "shiyas.rpi@gmail.com",
+    "Team Name": "Bro Code",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aum Singhal",
+    "Email": "pycoder77@gmail.com",
+    "Team Name": "Steeler",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shambhavi Verma",
+    "Email": "shambhavi.student@gmail.com",
+    "Team Name": "Steeler",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rakesh .",
+    "Email": "rakeshkaushik004@gmail.com",
+    "Team Name": "Steeler",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aditya Varshney",
+    "Email": "adityavarshney1606@gmail.com",
+    "Team Name": "Core-4",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Keshav Gupta",
+    "Email": "guptakeshav0710@gmail.com",
+    "Team Name": "Core-4",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Karuna Chaudhary",
+    "Email": "karunachaudhary20@gmail.com",
+    "Team Name": "Core-4",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mahi Tyagi",
+    "Email": "mahityagi2003@gmail.com",
+    "Team Name": "Core-4",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "AKASH KUNDU",
+    "Email": "anuaku2001@gmail.com",
+    "Team Name": "CodeLOL",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "BAISHAKHI MODAK",
+    "Email": "baishakhimodak18@gmail.com",
+    "Team Name": "CodeLOL",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "ABHIJIT NANDI",
+    "Email": "abhijitnandi021@gmail.com",
+    "Team Name": "CodeLOL",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vishal Behera",
+    "Email": "beheravishal19@gmail.com",
+    "Team Name": "STRAWHATS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Animesh Panda",
+    "Email": "animeshpanda58@gmail.com",
+    "Team Name": "STRAWHATS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Abhishek Naik",
+    "Email": "abhisheknaik2456@gmail.com",
+    "Team Name": "ALPHAQ",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tanmesh Chandra Sahu",
+    "Email": "tanmeshsahu2002@gmail.com",
+    "Team Name": "ALPHAQ",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "HIMANSHU KUMAR SINGH",
+    "Email": "28himanshukumar@gmail.com",
+    "Team Name": "ALPHAQ",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tanisha Verma",
+    "Email": "tanishaverma471@gmail.com",
+    "Team Name": "ALPHAQ",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tarun Lalwani",
+    "Email": "tarunlalwani2002@gmail.com",
+    "Team Name": "Hack Elites",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sajal Rastogi",
+    "Email": "Sajalrastogii89@gmail.com",
+    "Team Name": "Hack Elites",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shorya .",
+    "Email": "shorya8990@gmail.com",
+    "Team Name": "Hack Elites",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Nandini Sharma",
+    "Email": "nandiniiii27@gmail.com",
+    "Team Name": "Hack Elites",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shruti Mohanty",
+    "Email": "juhimohanty123@gmail.com",
+    "Team Name": "Pragati",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Simun Sarangi",
+    "Email": "simunsarangi0912@gmail.com",
+    "Team Name": "Ode to Code",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aashirbad Sabat",
+    "Email": "aum.aashirbad@gmail.com",
+    "Team Name": "Ode to Code",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anubhab Patra",
+    "Email": "anubhabpatra02@gmail.com",
+    "Team Name": "Ode to Code",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anushrey Jain",
+    "Email": "rxy@duck.com",
+    "Team Name": "Ode to Code",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pratibha Dureja",
+    "Email": "pratibhadureja@gmail.com",
+    "Team Name": "BeanBagCoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Yash Singh",
+    "Email": "yashsingh0666@gmail.com",
+    "Team Name": "BeanBagCoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vasvi Garg",
+    "Email": "gargvasvi2004@gmail.com",
+    "Team Name": "BeanBagCoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rachit Khurana",
+    "Email": "rachitkhurana40@gmail.com",
+    "Team Name": "BeanBagCoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sudheer Dagar",
+    "Email": "sandstormarriving101@gmail.com",
+    "Team Name": "console.err",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Utkarsh Raj",
+    "Email": "rajutkarsh2505@gmail.com",
+    "Team Name": "console.err",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "shubh mehta",
+    "Email": "shubhmehta837@gmail.com",
+    "Team Name": "console.err",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shivkant Chauhan",
+    "Email": "shivkantchauhan2002@gmail.com",
+    "Team Name": "console.err",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anjan Talatam",
+    "Email": "tspa2117@gmail.com",
+    "Team Name": "Hacker Newbie",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mihir Panchal",
+    "Email": "mihirpanchal5400@gmail.com",
+    "Team Name": "Kratos",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "RAVITEJ KAKHANDAKI",
+    "Email": "ravitejkakhandaki17@gmail.com",
+    "Team Name": "AK_Dash",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vaishali Bhosle",
+    "Email": "vaishalibhosleksit@gmail.com",
+    "Team Name": "AK_Dash",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "R Aishwarya",
+    "Email": "aishwaryaksit@gmail.com",
+    "Team Name": "AK_Dash",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "V M Tejus",
+    "Email": "vmtejusksit@gmail.com",
+    "Team Name": "AK_Dash",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Saurav Lal",
+    "Email": "sauravkrx52@gmail.com",
+    "Team Name": "TeamLazy",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Janvi Bajoria",
+    "Email": "janvibajo1@gmail.com",
+    "Team Name": "TeamLazy",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Akhil Binoy",
+    "Email": "akhil888binoy@gmail.com",
+    "Team Name": "solohacker",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ashish Dode",
+    "Email": "ashish.05dode@gmail.com",
+    "Team Name": "gekkohack",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Akshat Sharma",
+    "Email": "akshatsha9630@gmail.com",
+    "Team Name": "gekkohack",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Amarnath Ghosh",
+    "Email": "amarnath2001ghosh@gmail.com",
+    "Team Name": "Advanced Beginners",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pravat Kumar Panda",
+    "Email": "pravatpanda986@gmail.com",
+    "Team Name": "Advanced Beginners",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Satya Swarup Sahu",
+    "Email": "satyafordev@gmail.com",
+    "Team Name": "Advanced Beginners",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Suryakanta Mangaraj",
+    "Email": "suryakant.mangaraj@gmail.com",
+    "Team Name": "Advanced Beginners",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "praveen Bhandari",
+    "Email": "crce.9083.ce+2@gmail.com",
+    "Team Name": "ByteCode Warriors",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rissa Chettiar",
+    "Email": "rissachettiar01+1@gmail.com",
+    "Team Name": "ByteCode Warriors",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rachel Sequeira",
+    "Email": "rachelsequeira005+1@gmail.com",
+    "Team Name": "ByteCode Warriors",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ishaan Loomba",
+    "Email": "loombaishaan+1@gmail.com",
+    "Team Name": "ByteCode Warriors",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Harshita Gupta",
+    "Email": "harshi3925@gmail.com",
+    "Team Name": "Starters:)",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sudipa Jena",
+    "Email": "2101020721@cgu-odisha.ac.in",
+    "Team Name": "Binary Brains",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Dibya Ranjan Sarangi",
+    "Email": "2101020719@cgu-odisha.ac.in",
+    "Team Name": "Binary Brains",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shivani Rajput",
+    "Email": "shivanirajpoot998@gmail.com",
+    "Team Name": "FutureX",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "ADITYA TYAGI",
+    "Email": "adityatyagiav1@gmail.com",
+    "Team Name": "FutureX",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pramod Goyal",
+    "Email": "goyalpramod1729@gmail.com",
+    "Team Name": "CODEV",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aparna Dash",
+    "Email": "aparna24092003@gmail.com",
+    "Team Name": "Pings With Things",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sushree Sangita Panda",
+    "Email": "sushreesangitap2001@gmail.com",
+    "Team Name": "Pings With Things",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Subham Prasad",
+    "Email": "subhampd19@gmail.com",
+    "Team Name": "Pings With Things",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Raj Amrit",
+    "Email": "rajamrit02072000@gmail.com",
+    "Team Name": "Pings With Things",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Biswajit Rana",
+    "Email": "biswajitranachagulu13524612@gmail.com",
+    "Team Name": "Quad squad",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Bhaswoti Sahoo",
+    "Email": "bhaswotisahoo@gmail.com",
+    "Team Name": "Quad squad",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Lalit Kumar Sahu",
+    "Email": "sahulalit435@gmail.com",
+    "Team Name": "Quad squad",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Arun Agasti",
+    "Email": "arunagasti003@gmail.com",
+    "Team Name": "Quad squad",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "sakshi Jaiswal",
+    "Email": "ayushmanj138@gmail.com",
+    "Team Name": "ERROR 404",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rakshit Singh",
+    "Email": "rakshitsingh421@gmail.com",
+    "Team Name": "ERROR 404",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tannu Priya",
+    "Email": "tannupriyasharma13@gmail.com",
+    "Team Name": "Team Atlas",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Stuti Jha",
+    "Email": "stuti0105@gmail.com",
+    "Team Name": "Team Atlas",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kirat Gambhir",
+    "Email": "kiratkgambhir7@gmail.com",
+    "Team Name": "Team Atlas",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Hritik Raj",
+    "Email": "2201020164@cgu-odisha.ac.in",
+    "Team Name": "Team Atlas",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pranayak Uniyal",
+    "Email": "upranayak@gmail.com",
+    "Team Name": "Tensor Pros",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rehan Khan",
+    "Email": "rehan.irfan2002@gmail.com",
+    "Team Name": "Tensor Pros",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Yahya Abbakar",
+    "Email": "yahyaabbakar@gmail.com",
+    "Team Name": "Tanush",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aayushi .",
+    "Email": "aayuship822@gmail.com",
+    "Team Name": "Tanush",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tanushri Goel",
+    "Email": "tanushri56@outlook.com",
+    "Team Name": "Tanush",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Debankar Dutta Chowdhury",
+    "Email": "dcdebankar@gmail.com",
+    "Team Name": "Tanush",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ashwin Jagarwal",
+    "Email": "ashwin_11914062@nitkkr.ac.in",
+    "Team Name": "Team Diamonds",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ranjeet Saw",
+    "Email": "sawranjeet550@gmail.com",
+    "Team Name": "Team Diamonds",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Fatwa Arya",
+    "Email": "fatwaaryasatyaakbar@gmail.com",
+    "Team Name": "Team Diamonds",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Manav Mohata",
+    "Email": "manavmohata5@gmail.com",
+    "Team Name": "Team Diamonds",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Monish Parameswaran",
+    "Email": "monishparameswaran@gmail.com",
+    "Team Name": "Three coders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Jagan B",
+    "Email": "balujgn@gmail.com",
+    "Team Name": "Three coders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Giridharan Pasupathi",
+    "Email": "giridharanias7@gmail.com",
+    "Team Name": "Three coders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sreelakshmy R Menon",
+    "Email": "sree23rajmenon@gmail.com",
+    "Team Name": "Meraki",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Saraswathy T K",
+    "Email": "saraswathytk777@gmail.com",
+    "Team Name": "Meraki",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Marwa N H",
+    "Email": "marwanhussain332@gmail.com",
+    "Team Name": "Meraki",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anjana Sunilkumar",
+    "Email": "anjana.s.kumar151@gmail.com",
+    "Team Name": "Meraki",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mayur Asodara",
+    "Email": "mayurasodara@gmail.com",
+    "Team Name": "Unkils",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Akanksha Sarkar",
+    "Email": "akankshasarkar@gmail.com",
+    "Team Name": "Corn",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Harim Hahn",
+    "Email": "hmh79@cornell.edu",
+    "Team Name": "Corn",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Isabella Wells",
+    "Email": "isabellawells2003@gmail.com",
+    "Team Name": "Corn",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Lin Jing Liu",
+    "Email": "ll676@cornell.edu",
+    "Team Name": "Corn",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Prayant Mohanty",
+    "Email": "prayant.m@gmail.com",
+    "Team Name": "Strange Men",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Jala Arunkumar",
+    "Email": "jalaarunkumar7742@gmail.com",
+    "Team Name": "The Rise",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sai Prathap Kalakuntla",
+    "Email": "ksaiprathap59@gmail.com",
+    "Team Name": "The Rise",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mahesh Sai",
+    "Email": "msai4100@gmail.com",
+    "Team Name": "The Rise",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Jyothi Venkata Tejeswar reddy",
+    "Email": "venkatatejeswarreddy145@gmail.com",
+    "Team Name": "The Rise",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shreyya Saraf",
+    "Email": "shreyyasaraf@gmail.com",
+    "Team Name": "Ethos",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Abhinav Garg",
+    "Email": "agarg2_be21@thapar.edu",
+    "Team Name": "Ethos",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Uday Beswal",
+    "Email": "ubeswal_be21@thapar.edu",
+    "Team Name": "Ethos",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Siya Sindhani",
+    "Email": "sindhanisiya@gmail.com",
+    "Team Name": "Ethos",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aishee Bhattacharya",
+    "Email": "mail2aishee@gmail.com",
+    "Team Name": "cynogen",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aayushi Mishra",
+    "Email": "mishraaayushi421@gmail.com",
+    "Team Name": "cynogen",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Subhanjan Dutta",
+    "Email": "subhamdutta96740@gmail.com",
+    "Team Name": "cynogen",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Soumya Ranjan Maharana",
+    "Email": "soumyamaharana8888@gmail.com",
+    "Team Name": "Secrete",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Benjamin Mendez",
+    "Email": "benmendez001@gmail.com",
+    "Team Name": "Bmen",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Dhruv Goyal",
+    "Email": "dungeoninja@gmail.com",
+    "Team Name": "SDC-SI",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ayush Raghuwanshi",
+    "Email": "ayush2113045@akgec.ac.in",
+    "Team Name": "SDC-SI",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vaidic Dodwani",
+    "Email": "vaidicdodwani@gmail.com",
+    "Team Name": "SDC-SI",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Suhail Ahmad",
+    "Email": "suhaillahmadd0@gmail.com",
+    "Team Name": "SDC-SI",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Daniel Tan",
+    "Email": "dtan89609@gmail.com",
+    "Team Name": "DBT Bagels",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Jaiden Ing",
+    "Email": "jaidening340@gmail.com",
+    "Team Name": "DBT Bagels",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Neelan Thurairajah",
+    "Email": "neelan2317@gmail.com",
+    "Team Name": "DBT Bagels",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Suvam Pravu Dash",
+    "Email": "amsuv05@gmail.com",
+    "Team Name": "You Have Me🥲",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Priyanshu Pandey",
+    "Email": "priyanshu.p2025@gmail.com",
+    "Team Name": "BrokenHeart",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sudhanshu Shekhar",
+    "Email": "shekharsudhanshu018@gmail.com",
+    "Team Name": "BrokenHeart",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tejo Kaushal",
+    "Email": "u21cs119@coed.svnit.ac.in",
+    "Team Name": "BrokenHeart",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Akshaya Pujitha",
+    "Email": "akshayapujithakolli@gmail.com",
+    "Team Name": "BrokenHeart",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anukalp jain",
+    "Email": "aanujain1@gmail.com",
+    "Team Name": "Error 404 Not Found",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sarthak Khandelwal",
+    "Email": "khandelwalsarthak0605@gmail.com",
+    "Team Name": "Error 404 Not Found",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rithik Raj Pandey",
+    "Email": "rrpandey8055@gmail.com",
+    "Team Name": "Error 404 Not Found",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Puja Singh",
+    "Email": "pujasingh2357@gmail.com",
+    "Team Name": "Tsukuyomi",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Adarsh Kumar",
+    "Email": "adarshkrsharma1999@gmail.com",
+    "Team Name": "Tsukuyomi",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Harsh Vardhan",
+    "Email": "devharsh2k4@gmail.com",
+    "Team Name": "Tsukuyomi",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Siddharth Raj",
+    "Email": "siddharthraj852201@gmail.com",
+    "Team Name": "Tsukuyomi",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pravendra Anuragi",
+    "Email": "pravendraanuragi17@gmail.com",
+    "Team Name": "Code-Posters",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Prapti Prachita Pradhan",
+    "Email": "praptiprachita2004@gmail.com",
+    "Team Name": "Code-Posters",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sachin Mishra",
+    "Email": "sachin.mxra@gmail.com",
+    "Team Name": "Code-Posters",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Varun Arora",
+    "Email": "varunar3004@gmail.com",
+    "Team Name": "Code-Posters",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mahaprasad Prusty",
+    "Email": "prustymahaprasad@gmail.com",
+    "Team Name": "Team Devcoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Arpita Mandoi",
+    "Email": "arpitamandoi2003@gmail.com",
+    "Team Name": "Team Devcoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anubhav Shaurya",
+    "Email": "anubhavshaurya3@gmail.com",
+    "Team Name": "Team Devcoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Iswar Kumar Sahu",
+    "Email": "sahuiswar007@outlook.com",
+    "Team Name": "Team Devcoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Nishit Khamesra",
+    "Email": "nkhamesra2002@gmail.com",
+    "Team Name": "Rebooters",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Gaurav Saraiwala",
+    "Email": "gauravsaraiwala20@gmail.com",
+    "Team Name": "Rebooters",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Priyam .",
+    "Email": "priyam.pr1208@gmail.com",
+    "Team Name": "Rebooters",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Satyam Kumar",
+    "Email": "samming2508@gmail.com",
+    "Team Name": "Rebooters",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sambath S",
+    "Email": "samradnus2001@gmail.com",
+    "Team Name": "Dumb_hacker",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Krishna Sai Chaitany TATA",
+    "Email": "chaitanya.tata215@gmail.com",
+    "Team Name": "Dumb_hacker",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shivam Dubey",
+    "Email": "shivamdubey486@gmail.com",
+    "Team Name": "Dumb_hacker",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Manav MALHOTRA",
+    "Email": "manavmalhotra120@gmail.com",
+    "Team Name": "Dumb_hacker",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Archit Jain",
+    "Email": "divyanshuathwani798@gmail.com",
+    "Team Name": "App rockerzz",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kashish Jain",
+    "Email": "jainkashish2003@gmail.com",
+    "Team Name": "App rockerzz",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Divyanshu Athwani",
+    "Email": "divyanshuathwani81@gmail.com",
+    "Team Name": "App rockerzz",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shivangi Singh",
+    "Email": "singh9717.shivangi@gmail.com",
+    "Team Name": "Curators",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Harshit Jain",
+    "Email": "yourlifeyourchoice01@gmail.com",
+    "Team Name": "Curators",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tanish Chugh",
+    "Email": "tanishchugh06@gmail.com",
+    "Team Name": "Curators",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Dhruv Thota",
+    "Email": "dthota8@gmail.com",
+    "Team Name": "PGCHGang",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Katharine Angelopoulos",
+    "Email": "katharine.angelopoulos@gmail.com",
+    "Team Name": "PGCHGang",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Emily Chu",
+    "Email": "lin.emily.chu@gmail.com",
+    "Team Name": "PGCHGang",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anna Larouche",
+    "Email": "alarouche@gmail.com",
+    "Team Name": "PGCHGang",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pratham P S",
+    "Email": "pspratham16@gmail.com",
+    "Team Name": "#",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vaibhav Nayak",
+    "Email": "vbv.nyk.2003@gmail.com",
+    "Team Name": "#",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kishan Gurumurthy",
+    "Email": "kishangurumurthy2003@gmail.com",
+    "Team Name": "ACHIVERS-CORNER",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ram Samarth B B",
+    "Email": "achiverram28@gmail.com",
+    "Team Name": "ACHIVERS-CORNER",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Nourallah Khaled",
+    "Email": "nourallahkhaled99@gmail.com",
+    "Team Name": "Beyond Light",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Noor El-Deen Magdy",
+    "Email": "nooreldeenmagdy@gmail.com",
+    "Team Name": "Beyond Light",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sayan Snigdha Pal",
+    "Email": "sayanpalb@gmail.com",
+    "Team Name": "Dogesh",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Satyaki Dawn",
+    "Email": "satyakidawn@gmail.com",
+    "Team Name": "Dogesh",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rajdeep De",
+    "Email": "surjode2003@gmail.com",
+    "Team Name": "Dogesh",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ayushi Roy",
+    "Email": "ayushiroy550@gmail.com",
+    "Team Name": "Dogesh",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anushka Purwar",
+    "Email": "anushka.war21@gmail.com",
+    "Team Name": "Creedorian",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shruti Goel",
+    "Email": "shruti060701@gmail.com",
+    "Team Name": "Creedorian",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ishita Singh",
+    "Email": "www.ishu1808@gmail.com",
+    "Team Name": "Creedorian",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vansh Sachdeva",
+    "Email": "vksvs25@gmail.com",
+    "Team Name": "Creedorian",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Harsh Raj",
+    "Email": "harshitraj6591@gmail.com",
+    "Team Name": "Coding Samurais",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Arjun Gupta",
+    "Email": "arjunguptds@gmail.com",
+    "Team Name": "Gradle Builders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ankit Singh",
+    "Email": "singhankit10455@gmail.com",
+    "Team Name": "Gradle Builders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Harsh Patel",
+    "Email": "patelharsh0603@gmail.com",
+    "Team Name": "Gradle Builders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Srijan Shovit",
+    "Email": "srijanshovit@gmail.com",
+    "Team Name": "ETHGeeks",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ritwik Singh",
+    "Email": "itsritwik26@gmail.com",
+    "Team Name": "ETHGeeks",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shivam Jha",
+    "Email": "shivam.jha.2712@gmail.com",
+    "Team Name": "Shivam",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shirsho Das Roy",
+    "Email": "shirsho2402@gmail.com",
+    "Team Name": "TheCode",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sumant Tirkey",
+    "Email": "st72365@gmail.com",
+    "Team Name": "TheCode",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Raj Aryan",
+    "Email": "rajxryn@gmail.com",
+    "Team Name": "TheCode",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vivek jha",
+    "Email": "vivekjha3080@gmail.com",
+    "Team Name": "TheCode",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Joe Sachin J",
+    "Email": "joesachin11@gmail.com",
+    "Team Name": "helloworld",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sunil N",
+    "Email": "linuz@duck.com",
+    "Team Name": "helloworld",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Miruthyan Jayan S",
+    "Email": "miruthyanjayan0982002@gmail.com",
+    "Team Name": "helloworld",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vishnuraj Saravanan",
+    "Email": "vishnubuddie02@gmail.com",
+    "Team Name": "helloworld",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "VEERA BABU SREESAILAM",
+    "Email": "vinuvera1234@gmail.com",
+    "Team Name": "SNIXS_DESIGNS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "DIVYA GOWRI PENTAKOTA",
+    "Email": "20nu1a0586p.divyagowri@gmail.com",
+    "Team Name": "SNIXS_DESIGNS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pappala Thanmai",
+    "Email": "thanmaipappala@gmail.com",
+    "Team Name": "SNIXS_DESIGNS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Chalice Prajwal SIRIPURAPU",
+    "Email": "chaliceprajwal2@gmail.com",
+    "Team Name": "SNIXS_DESIGNS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pranav Dronavalli",
+    "Email": "dronavallipranav@gmail.com",
+    "Team Name": "Meditations",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Harsit Agarwalla",
+    "Email": "harsitagarwalla187@gmail.com",
+    "Team Name": "TechByte",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Nikhil Jha",
+    "Email": "nikhiljhanov15@gmail.com",
+    "Team Name": "TechByte",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vidip Ghosh",
+    "Email": "ghoshvidip26@gmail.com",
+    "Team Name": "TechByte",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shweta Kale",
+    "Email": "shwetakale144@gmail.com",
+    "Team Name": "Glitter",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Muskan Nain",
+    "Email": "nainmuskan1972@gmail.com",
+    "Team Name": "Codeberg",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Jyoti Prakash Sethy",
+    "Email": "jyotiprakashsethy2002@gmail.com",
+    "Team Name": "Codeberg",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ishika Poddar",
+    "Email": "ishikapoddar30@gmail.com",
+    "Team Name": "Codeberg",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Manmohan Mandhan",
+    "Email": "mandhanmanmohan63@gmail.com",
+    "Team Name": "Codeberg",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Jayesh Nayak",
+    "Email": "jayeshnayak2107@gmail.com",
+    "Team Name": "Team Jayesh",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Jaspreet Singh",
+    "Email": "js9029@srmist.edu.in",
+    "Team Name": "404-NOT FOUND",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ayush Saxena",
+    "Email": "ayushsaxena390@gmail.com",
+    "Team Name": "404-NOT FOUND",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vama Pachori",
+    "Email": "vp6144@srmist.edu.in",
+    "Team Name": "404-NOT FOUND",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tiyasa Kundu",
+    "Email": "tiyasakundu20@gmail.com",
+    "Team Name": "404-NOT FOUND",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ankit Kumar Swain",
+    "Email": "aksankit162@gmail.com",
+    "Team Name": "Amoeba",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Asim Prasad Behera",
+    "Email": "asimpr120@gmail.com",
+    "Team Name": "Amoeba",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mrinal Hota",
+    "Email": "mriswayam@gmail.com",
+    "Team Name": "Amoeba",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Biswajeet Behera",
+    "Email": "biswajeet092003@gmail.com",
+    "Team Name": "Amoeba",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tanisha Pati",
+    "Email": "tanishapati2003@gmail.com",
+    "Team Name": "Noobhackers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aniket Nayak",
+    "Email": "aniketnayak2u@gmail.com",
+    "Team Name": "Noobhackers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Siddhant Mohile",
+    "Email": "meetsiddhant@gmail.com",
+    "Team Name": "SidmoGoesBrrr",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Karan Kulshrestha",
+    "Email": "karankul2003@gmail.com",
+    "Team Name": "Chronicles",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Harshit Rai",
+    "Email": "harshitrai11106@gmail.com",
+    "Team Name": "Chronicles",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aruj Bansal",
+    "Email": "bansalaruj77@gmail.com",
+    "Team Name": "Chronicles",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ashutosh Kumar Kushwaha",
+    "Email": "akkushwaha0104@gmail.com",
+    "Team Name": "Love Peace Code",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ratnesh Mishra",
+    "Email": "ratneshmishrarulz@gmail.com",
+    "Team Name": "Love Peace Code",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Alan Ansari",
+    "Email": "ansarialan31@gmail.com",
+    "Team Name": "Love Peace Code",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Archas Srivastava",
+    "Email": "cheeku67@gmail.com",
+    "Team Name": "Love Peace Code",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shivam Agarwal",
+    "Email": "agarwalshivam116@gmail.com",
+    "Team Name": "SharpCoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shubham Sahoo",
+    "Email": "shubhamsahoo831@gmail.com",
+    "Team Name": "White Hats",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Swastik Kumar Sahu",
+    "Email": "swastikkumarsahu1234@gmail.com",
+    "Team Name": "White Hats",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Abhishek Bala",
+    "Email": "abhishekbala089@gmail.com",
+    "Team Name": "White Hats",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anjali Abhilapsa",
+    "Email": "anjaliywf3024@gmail.com",
+    "Team Name": "hugs for bugs",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vashit Agrawal",
+    "Email": "vashitagrawal08@gmail.com",
+    "Team Name": "hugs for bugs",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "rajan thakulla",
+    "Email": "rajan102805@gmail.com",
+    "Team Name": "hugs for bugs",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "shobhit sheta",
+    "Email": "shobhitsheta@gmail.com",
+    "Team Name": "SWAT ASTRA",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shalin Tilva",
+    "Email": "shalin.tilva@gmail.com",
+    "Team Name": "SWAT ASTRA",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vandit Bera",
+    "Email": "vanditbera@gmail.com",
+    "Team Name": "SWAT ASTRA",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Brijesh Vadaliya",
+    "Email": "brijeshvadaliya1@gmail.com",
+    "Team Name": "SWAT ASTRA",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anshuman Acharya",
+    "Email": "rojuacharya1428@gmail.com",
+    "Team Name": "Poseidon",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "K Subham",
+    "Email": "subhamkola@gmail.com",
+    "Team Name": "Poseidon",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Krishna S",
+    "Email": "krishnasathyan25@gmail.com",
+    "Team Name": "Powell poli ata",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "POWELL FRANCIS",
+    "Email": "powellfrancis18@gmail.com",
+    "Team Name": "Powell poli ata",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "SREERAG RAYIRATH",
+    "Email": "sreeragr_ct2024@mtithrissur.ac.in",
+    "Team Name": "Powell poli ata",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Niyati Kaneriya",
+    "Email": "niyatikaneriya@gmail.com",
+    "Team Name": "Coding Girls",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Alifiya Kapasi",
+    "Email": "13alifiya01kapasi02@gmail.com",
+    "Team Name": "Coding Girls",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "saba langa",
+    "Email": "sabalanga062@gmail.com",
+    "Team Name": "Coding Girls",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Siddhartha Bajpai",
+    "Email": "itfw20005@glbitm.ac.in",
+    "Team Name": "killDbug",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Himadri Nath",
+    "Email": "himadrinath.4455@gmail.com",
+    "Team Name": "killDbug",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mehul Darshni",
+    "Email": "mehuldarshni42@gmail.com",
+    "Team Name": "Pixus",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rajeev Krishna",
+    "Email": "radzhivkrishna@gmail.com",
+    "Team Name": "Pixus",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "UTKARSH SINGH",
+    "Email": "usjadon19@gmail.com",
+    "Team Name": "Wrecking Ball",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Lisha Singh",
+    "Email": "lisha2110124@akgec.ac.in",
+    "Team Name": "Wrecking Ball",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kshitiz Agarwal",
+    "Email": "kshitizagarwal9292@gmail.com",
+    "Team Name": "Wrecking Ball",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Hammad Khan",
+    "Email": "hammad2000khan6528@gmail.com",
+    "Team Name": "Wrecking Ball",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "SHANTANU BANKAR",
+    "Email": "bankarshantanu12@gmail.com",
+    "Team Name": "MHHASK",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kiran Khairnar",
+    "Email": "kirankhairnar2003@gmail.com",
+    "Team Name": "MHHASK",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Harsh Kuralkar",
+    "Email": "harshkuralkar61@gmail.com",
+    "Team Name": "MHHASK",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aditya Chauhan",
+    "Email": "adityachauhan1022@gmail.com",
+    "Team Name": "MHHASK",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aarushi Khatri",
+    "Email": "aarushi231001@gmail.com",
+    "Team Name": "RAYTown",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rosita Sikarwar",
+    "Email": "roshitasikarwar@gmail.com",
+    "Team Name": "RAYTown",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tanya Singh",
+    "Email": "tanyasingh1227@gmail.com",
+    "Team Name": "RAYTown",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ayush Rathore",
+    "Email": "20cs3018@rgipt.ac.in",
+    "Team Name": "AR_Beast",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aniruddha Soni",
+    "Email": "anirudh.soni007@gmail.com",
+    "Team Name": "worldwar2",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Pushkar Yadav",
+    "Email": "official.pushkaryadav@gmail.com",
+    "Team Name": "worldwar2",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ratikanta Rout",
+    "Email": "ratikantrout171@gmail.com",
+    "Team Name": "Lakshya_1245",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sidhartha Mandal",
+    "Email": "sidharthamandalclassico@gmail.com",
+    "Team Name": "Blue_bugs",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Arijit Bhaumik",
+    "Email": "abhaumik24@gmail.com",
+    "Team Name": "Blue_bugs",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Deepak Sahu",
+    "Email": "dk957856@gmail.com",
+    "Team Name": "Blue_bugs",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mayank Sood",
+    "Email": "mayanksoodcse@gmail.com",
+    "Team Name": "Blue_bugs",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shishir Jyoti Sarma",
+    "Email": "shishirjyotisarma123@gmail.com",
+    "Team Name": "β-coders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rustom Phukan",
+    "Email": "rustomphukan9923coolboy@gmail.com",
+    "Team Name": "β-coders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Amritangsha Dey",
+    "Email": "amritangsha.dey9@gmail.com",
+    "Team Name": "β-coders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Dhruba jyoti Dutta",
+    "Email": "sddhruba.857@gmail.com",
+    "Team Name": "β-coders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Jason Dsouza",
+    "Email": "jason.dsouza.here@gmail.com",
+    "Team Name": "Zero",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Priyanka Kashyap",
+    "Email": "thepriyankakashyap@gmail.com",
+    "Team Name": "HLNP Robotics",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Nilutpol K",
+    "Email": "nkelectronicshlnp@gmail.com",
+    "Team Name": "HLNP Robotics",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vaibhav Sharma",
+    "Email": "Vaibhav200345@gmail.com",
+    "Team Name": "Dopamine",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Prasoon mishra",
+    "Email": "prasoonmishra131025@gmail.com",
+    "Team Name": "Dopamine",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Adarsh Anand",
+    "Email": "adarsh.anand.20031@iitgoa.ac.in",
+    "Team Name": "FullStackkers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sayak Sengupta",
+    "Email": "sayaksengupta74@gmail.com",
+    "Team Name": "Optimisers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tamal Das",
+    "Email": "gyansujan69@gmail.com",
+    "Team Name": "Optimisers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Megha Paul",
+    "Email": "megha25072001@gmail.com",
+    "Team Name": "Optimisers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Harsh Soni",
+    "Email": "learningsonitemp@gmail.com",
+    "Team Name": "Shyenn",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shivang Mishra",
+    "Email": "shivangmishra0824@gmail.com",
+    "Team Name": "Shyenn",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Meghana Maheshwari",
+    "Email": "meghanamaheshwari1@gmail.com",
+    "Team Name": "Shyenn",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Tanishq Chaturvedi",
+    "Email": "21bcs164@ietdavv.edu.in",
+    "Team Name": "Shyenn",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "VIJENDRA SAINI",
+    "Email": "virajsaini0@gmail.com",
+    "Team Name": "phoenix_vg",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Gunjan Shinde",
+    "Email": "u20cs097@coed.svnit.ac.in",
+    "Team Name": "phoenix_vg",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Midatana Sai Praneetha",
+    "Email": "praneetha2829@gmail.com",
+    "Team Name": "NetBotNet",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sachin Mohanty",
     "Email": "sachinmohanty269@gmail.com",
-    "Team Name": "Amigos",
+    "Team Name": "NetBotNet",
     "Tag": "Participation"
   },
   {
-    "Name": "Shridhar Kamat",
-    "Email": "shridharkamat10@gmail.com",
-    "Team Name": "ZapDapp",
+    "Name": "Gourav Mohanty",
+    "Email": "gouravmohanty2001@gmail.com",
+    "Team Name": "NetBotNet",
     "Tag": "Participation"
   },
   {
-    "Name": "Nabeel Ali",
-    "Email": "nabeelali11101999@gmail.com",
-    "Team Name": "codeforfun",
+    "Name": "Sai sambhab Chaini",
+    "Email": "saisambhavchaini@gmail.com",
+    "Team Name": "NetBotNet",
     "Tag": "Participation"
   },
   {
-    "Name": "Harsh Patil",
-    "Email": "harshpatil223@gmail.com",
-    "Team Name": "codeforfun",
+    "Name": "Roshni Lulla",
+    "Email": "lullaroshni732@gmail.com",
+    "Team Name": "CODERS",
     "Tag": "Participation"
   },
   {
-    "Name": "Ishita Ojha",
-    "Email": "ishita0jha29@gmail.com",
-    "Team Name": "codeforfun",
+    "Name": "Varun Kotwani",
+    "Email": "varun.k@ahduni.edu.in",
+    "Team Name": "CODERS",
     "Tag": "Participation"
   },
   {
-    "Name": "Komal Komal",
-    "Email": "komaldeegwal2@gmail.com",
-    "Team Name": "Rocket",
+    "Name": "Raj Kushwaha",
+    "Email": "rajkushwaha62607@gmail.com",
+    "Team Name": "codescammers",
     "Tag": "Participation"
   },
   {
-    "Name": "Radha Krishna Murthy T",
-    "Email": "rkmurthy286@gmail.com",
-    "Team Name": "Rocket",
+    "Name": "Niharika Gupta",
+    "Email": "niharik.agupta1094@gmail.com",
+    "Team Name": "codescammers",
     "Tag": "Participation"
   },
   {
-    "Name": "Shresth Gupta",
-    "Email": "gis.5686@gaursinternationalschool.com",
-    "Team Name": "TeenageMutant",
+    "Name": "Shivam Patidar",
+    "Email": "shivupatel7889@gmail.com",
+    "Team Name": "codescammers",
     "Tag": "Participation"
   },
   {
-    "Name": "Jahnavi Chauhan",
-    "Email": "chauhankhushi.16775@gmail.com",
-    "Team Name": "TMC T-13",
+    "Name": "Parag Agrawal",
+    "Email": "paragagrawal477@gmail.com",
+    "Team Name": "codescammers",
     "Tag": "Participation"
   },
   {
-    "Name": "Isha Kondurkar",
-    "Email": "ishakondurkar12@gmail.com",
-    "Team Name": "TMC T-13",
+    "Name": "ritwik dalmia",
+    "Email": "dalmiaritwik@gmail.com",
+    "Team Name": "Team Tech Wizard",
     "Tag": "Participation"
   },
   {
-    "Name": "Suhani Singhal",
-    "Email": "singhalsuhani7479@gmail.com",
-    "Team Name": "TMC T-13",
+    "Name": "Sahil Dangayach",
+    "Email": "dangayachsahil1234@gmail.com",
+    "Team Name": "Tech scrapper",
     "Tag": "Participation"
   },
   {
-    "Name": "Nandini Jain",
-    "Email": "nandinijain3013@gmail.com",
-    "Team Name": "TMC T-13",
+    "Name": "Atul Sharma",
+    "Email": "atulsharma6378@gmail.com",
+    "Team Name": "Tech scrapper",
     "Tag": "Participation"
   },
   {
-    "Name": "Sohil Khanduja",
-    "Email": "khandujasohil@gmail.com",
-    "Team Name": "ALPHOENIX",
+    "Name": "Madhusudan Dadhich",
+    "Email": "2022pcecsmadhusudan083@poornima.org",
+    "Team Name": "Tech scrapper",
     "Tag": "Participation"
   },
   {
-    "Name": "Yashneet Kalra",
-    "Email": "yashneet.yashu@gmail.com",
-    "Team Name": "ALPHOENIX",
+    "Name": "Anuj Singh",
+    "Email": "aniproductmail@gmail.com",
+    "Team Name": "Ani",
     "Tag": "Participation"
   },
   {
-    "Name": "Yash Raj Singh",
-    "Email": "galahad45202@gmail.com",
-    "Team Name": "ALPHOENIX",
+    "Name": "Jatin Agrawal",
+    "Email": "jatinagarwal0225@gmail.com",
+    "Team Name": "Ani",
     "Tag": "Participation"
   },
   {
-    "Name": "Vishal M",
-    "Email": "vishalkarkala@gmail.com",
-    "Team Name": "Qubit",
+    "Name": "RITEK ROUNAK",
+    "Email": "ritekrounak1@gmail.com",
+    "Team Name": "Dev Squad",
     "Tag": "Participation"
   },
   {
-    "Name": "Shreyash Gupta",
-    "Email": "shreyashgupta.cs18@rvce.edu.in",
-    "Team Name": "Qubit",
+    "Name": "Joshua Porporino",
+    "Email": "porporinoj2@montclair.edu",
+    "Team Name": "Dev Squad",
     "Tag": "Participation"
   },
   {
-    "Name": "M C Sohan",
-    "Email": "mcsohan.cs18@rvce.edu.in",
-    "Team Name": "Qubit",
+    "Name": "Chandra Bose P",
+    "Email": "chandrabosep3112@gmail.com",
+    "Team Name": "Dev Squad",
     "Tag": "Participation"
   },
   {
-    "Name": "Prajwal P",
-    "Email": "prajwalp.cs20@rvce.edu.in",
-    "Team Name": "Qubit",
+    "Name": "Pratham Singhal",
+    "Email": "prathamsinghal2003@gmail.com",
+    "Team Name": "Dev Squad",
     "Tag": "Participation"
   },
   {
-    "Name": "Stuti Jain",
-    "Email": "jainstuti592@gmail.com",
-    "Team Name": "UPSKILLER",
+    "Name": "Om Solapurkar",
+    "Email": "omsolapurkar9707@gmail.com",
+    "Team Name": "XCoders",
     "Tag": "Participation"
   },
   {
-    "Name": "Khushi Sharma",
-    "Email": "khushimtj12345@gmail.com",
-    "Team Name": "UPSKILLER",
+    "Name": "bapi shelke",
+    "Email": "bapishelke2428@gmail.com",
+    "Team Name": "XCoders",
     "Tag": "Participation"
   },
   {
-    "Name": "Sejal Jain",
-    "Email": "sejal08082000@gmail.com",
-    "Team Name": "UPSKILLER",
+    "Name": "Sudhanshu Sinha",
+    "Email": "sudhanshusrii183@gmail.com",
+    "Team Name": "TRPC",
     "Tag": "Participation"
   },
   {
-    "Name": "Sanchita Saxena",
-    "Email": "saxenasanchita0810@gmail.com",
-    "Team Name": "UPSKILLER",
+    "Name": "Zoheb Khan",
+    "Email": "understandingzak@gmail.com",
+    "Team Name": "TRPC",
     "Tag": "Participation"
   },
   {
-    "Name": "Ankur Kaushik",
-    "Email": "ankurkaushik2007@gmail.com",
-    "Team Name": "Black Panthers",
+    "Name": "Anurag Sharma",
+    "Email": "anuragsharma011011@gmail.com",
+    "Team Name": "TRPC",
     "Tag": "Participation"
   },
   {
-    "Name": "Naimeesh Purohit",
-    "Email": "naimeeshklb@gmail.com",
-    "Team Name": "Black Panthers",
+    "Name": "Jasharaj Mallick",
+    "Email": "jasharajmallick38624@gmail.com",
+    "Team Name": "HACK_TEAM",
     "Tag": "Participation"
   },
   {
-    "Name": "Soumitro Datta",
-    "Email": "soumitro.datta0705@gmail.com",
-    "Team Name": "Nuvs",
-    "Tag": "Appreciation",
-    "Prize": "Most Creative Use of Twilio"
+    "Name": "M Samuel Prasanna Kumar",
+    "Email": "chocosyam@gmail.com",
+    "Team Name": "Binarybrains",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mohammd Waqiur Rahman Ansari",
+    "Email": "wakiurrahmanansari@gmail.com",
+    "Team Name": "Binarybrains",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vanraj Pardeshi",
+    "Email": "truecapturers@gmail.com",
+    "Team Name": "Binarybrains",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Chandrika Amalakanti",
+    "Email": "chandrika.amalakanti2003@gmail.com",
+    "Team Name": "Binarybrains",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mohit Parmar",
+    "Email": "contact.mohit06@gmail.com",
+    "Team Name": "THE BOYS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kirtiraj Thakor",
+    "Email": "kirtirajpatanwadia064@gmail.com",
+    "Team Name": "THE BOYS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Yogesh Narayan",
+    "Email": "yogesh2021cs114@abesit.edu.in",
+    "Team Name": "Cyber_Entity",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "YUVRAJ SINGH",
+    "Email": "yuvsinh0777@gmail.com",
+    "Team Name": "Cyber_Entity",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Yogendra Kumar Yadav",
+    "Email": "yogendrayaduvanshiiii@gmail.com",
+    "Team Name": "Cyber_Entity",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sk Ferajuddin",
+    "Email": "officialferaj@gmail.com",
+    "Team Name": "TEAM VISION",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Priyanshu Patra",
+    "Email": "patra.priyanshu02@gmail.com",
+    "Team Name": "TEAM VISION",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Maharaj Madan Mohan Behera",
+    "Email": "maharajmadanmohanofficial@gmail.com",
+    "Team Name": "TEAM VISION",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Saksham Gupta",
+    "Email": "guptasaksham.257@gmail.com",
+    "Team Name": "HexHunters",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aradhya Tiwari",
+    "Email": "aradhya.prad@gmail.com",
+    "Team Name": "HexHunters",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vanshita Mathur",
+    "Email": "vanshitamathur2307@gmail.com",
+    "Team Name": "HexHunters",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mohit Namdev",
+    "Email": "namdevmohit0@gmail.com",
+    "Team Name": "HexHunters",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sarbajeet Mohanty",
+    "Email": "sarbajeetmohanty110@gmail.com",
+    "Team Name": "Lunatic byte",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "ANUP KUMAR NAYAK",
+    "Email": "rajanup0054@gmail.com",
+    "Team Name": "Lunatic byte",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Swastika Pradhan",
+    "Email": "swastikap090@gmail.com",
+    "Team Name": "Lunatic byte",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Saswat Mohanty",
+    "Email": "saswatmohanty2004@gmail.com",
+    "Team Name": "Lunatic byte",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Bhumi Agrawal",
+    "Email": "bhumi6051@gmail.com",
+    "Team Name": "Web Wizards",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kratik Jain",
+    "Email": "kratikjain1520@gmail.com",
+    "Team Name": "Web Wizards",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vedant Surti",
+    "Email": "vedantsurti@gmail.com",
+    "Team Name": "Web Wizards",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Param Shah",
+    "Email": "shahparam1903@gmail.com",
+    "Team Name": "Web Wizards",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vinayak Vispute",
+    "Email": "vinayakvispute4@gmail.com",
+    "Team Name": "CRACKCROOKS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Yash Suthar",
+    "Email": "ysuthar8055@gmail.com",
+    "Team Name": "CRACKCROOKS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Nishit Bariya",
+    "Email": "Nishitbaria@gmail.com",
+    "Team Name": "CRACKCROOKS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "JAYESH YADAV",
+    "Email": "jayeshyadav528@gmail.com",
+    "Team Name": "CRACKCROOKS",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Subhranil Bauri",
+    "Email": "baurisubhranil@gmail.com",
+    "Team Name": "JUNIOR_CODER",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Avishek Mukherjee",
+    "Email": "avishekmukherje007@gmail.com",
+    "Team Name": "JUNIOR_CODER",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Soumyaditya Bauri",
+    "Email": "soumyaditya.dgp@gmail.com",
+    "Team Name": "JUNIOR_CODER",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shikhar Saxena",
+    "Email": "shikhar06jan@gmail.com",
+    "Team Name": "Colosseum",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aadrika Jaiswal",
+    "Email": "socialaadrika@gmail.com",
+    "Team Name": "Hustlers!",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vaibhav Yadav",
+    "Email": "vaibhavyadav160404@gmail.com",
+    "Team Name": "Hustlers!",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "harsha satya vardhan vasamsetti",
+    "Email": "harsha_satya@srmap.edu.in",
+    "Team Name": "square",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Mahesh V",
+    "Email": "mahesh2001.sis@gmail.com",
+    "Team Name": "square",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aashutosh Soni",
+    "Email": "soniaashu083@gmail.com",
+    "Team Name": "Winners",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Prajeet Shah",
+    "Email": "prajeetshah93@gmail.com",
+    "Team Name": "creator",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Prity Kumari",
+    "Email": "prity12148@gmail.com",
+    "Team Name": "NIRVIC",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rittick Sinha",
+    "Email": "sinharittick5@gmail.com",
+    "Team Name": "NIRVIC",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vaibhav Mimrot",
+    "Email": "vaibhavmimrot1701@gmail.com",
+    "Team Name": "NIRVIC",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Om Kumar",
+    "Email": "om.k28302@gmail.com",
+    "Team Name": "NIRVIC",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aman Singh",
+    "Email": "2101020403@cgu-odisha.ac.in",
+    "Team Name": "Coding Ninjas",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "AASHUTOSH RAJ",
+    "Email": "2101020405@cgu-odisha.ac.in",
+    "Team Name": "Coding Ninjas",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aman Kumar singh",
+    "Email": "aman22200203@gmail.com",
+    "Team Name": "Coding Ninjas",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Abhishek kumar",
+    "Email": "2101020211@cgu-odisha.ac.in",
+    "Team Name": "Coding Ninjas",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Jagannath Muduli",
+    "Email": "jagannath2014rta@gmail.com",
+    "Team Name": "NEWBIES",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sanjana Gupta",
+    "Email": "sanjanagupta0408@gmail.com",
+    "Team Name": "NEWBIES",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kartik Kumar Boxi",
+    "Email": "rtakartik@gmail.com",
+    "Team Name": "NEWBIES",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Atreyee Saha",
+    "Email": "thecoding.river@gmail.com",
+    "Team Name": "NEWBIES",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "yagyavalkya thakur",
+    "Email": "yagyavalkyat@gmail.com",
+    "Team Name": "TECHIES",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ajinkya Namra",
+    "Email": "anamra1029@gmail.com",
+    "Team Name": "TECHIES",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Yatharth Seth",
+    "Email": "yatharthseth123@gmail.com",
+    "Team Name": "TECHIES",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "ANUSHKA CHOUBEY",
+    "Email": "15.anushka.choubey@gmail.com",
+    "Team Name": "TECHIES",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Rashmeet Chugga",
+    "Email": "rashmeetchugga@gmail.com",
+    "Team Name": "WebGeeks",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Anushka Mittal",
+    "Email": "anushkamittal2115@gmail.com",
+    "Team Name": "WebGeeks",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Archi Jain",
+    "Email": "khushiarchi123@gmail.com",
+    "Team Name": "WebGeeks",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ishita Porwal",
+    "Email": "ishitaporwal47@gmail.com",
+    "Team Name": "WebGeeks",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Dawson Li",
+    "Email": "armyslave1@gmail.com",
+    "Team Name": "SuwenerYang",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shivansh Dhondiyal",
+    "Email": "shivanshdhondiyal7723@gmail.com",
+    "Team Name": "COD1",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "SWATI GUPTA",
+    "Email": "s.guptajamshedpur@gmail.com",
+    "Team Name": "COD1",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "abhinav 1",
+    "Email": "abhinav.aa18@gmail.com",
+    "Team Name": "COD1",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vaibhav .",
+    "Email": "2002vaibhavlakhera3@gmail.com",
+    "Team Name": "3D Terror",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Suniti Panwar",
+    "Email": "suniti0020@gmail.com",
+    "Team Name": "3D Terror",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Jyoti .",
+    "Email": "pjyotianwar@gmail.com",
+    "Team Name": "3D Terror",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sarita .",
+    "Email": "stargang148241@gmail.com",
+    "Team Name": "3D Terror",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shikhar Natani",
+    "Email": "shikharnatani@gmail.com",
+    "Team Name": "Cool Developer",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Prabhat Shukla",
+    "Email": "prabhatshukla605@gmail.com",
+    "Team Name": "Ram_Bharose",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Kirtimaan Mishra",
+    "Email": "kirtimaan2000@gmail.com",
+    "Team Name": "Ram_Bharose",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Abhishek Nayal",
+    "Email": "abhisheknayal0112@gmail.com",
+    "Team Name": "Ram_Bharose",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "ROHAN KUMAR",
+    "Email": "starrohan999@gmail.com",
+    "Team Name": "Ram_Bharose",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Vimal Mounish",
+    "Email": "jvm12@iitbbs.ac.in",
+    "Team Name": "Vision",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Koushik Kumar",
+    "Email": "kkk14@iitbbs.ac.in",
+    "Team Name": "Vision",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sai Giri Nandini Udathu",
+    "Email": "ugn12@iitbbs.ac.in",
+    "Team Name": "Vision",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sai Krishna Jupally",
+    "Email": "jsk12@iitbbs.ac.in",
+    "Team Name": "Vision",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Ankita Panda",
+    "Email": "ankitapn187@gmail.com",
+    "Team Name": "HashCoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Priyadarshini Bal",
+    "Email": "priyadarshinibal1173@gmail.com",
+    "Team Name": "HashCoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Shradha suman",
+    "Email": "shradhasuman876@gmail.com",
+    "Team Name": "HashCoders",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Raj Ratan Murmu",
+    "Email": "rajratan9001@gmail.com",
+    "Team Name": "Null",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aneek Guha",
+    "Email": "aneek.guha9051@gmail.com",
+    "Team Name": "Null",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Deb Kalyan Mohanty",
+    "Email": "debkalyanmohanty.id@gmail.com",
+    "Team Name": "Null",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Khilesh Tembhare",
+    "Email": "khileshbalaghati11@gmail.com",
+    "Team Name": "herewego",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Yuvraj Singh",
+    "Email": "yuvraj1654@gmail.com",
+    "Team Name": "herewego",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Aditi Dubey",
+    "Email": "aditidubey9669@gmail.com",
+    "Team Name": "herewego",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Avinash Chourasia",
+    "Email": "chourasiaavinash80@gmail.com",
+    "Team Name": "CodeWithAvi",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Sagnik Roy",
+    "Email": "sroy20442@gmail.com",
+    "Team Name": "Synchronizers",
+    "Tag": "Participation"
   },
   {
-    "Name": "Kunal Singh",
-    "Email": "kunalsingh.naruka2019@vitstudent.ac.in",
-    "Team Name": "Nuvs",
+    "Name": "Aakash Singh",
+    "Email": "rktaakash@gmail.com",
+    "Team Name": "CodeToWin",
     "Tag": "Participation"
   },
   {
-    "Name": "Diya Dhabade",
-    "Email": "diyaddhabade@gmail.com",
-    "Team Name": "Hackerren",
-    "Tag": "Appreciation",
-    "Prize": "Overall First"
+    "Name": "Pratik Sagar Chhualsingh",
+    "Email": "pratikchhualsingh@gmail.com",
+    "Team Name": "Avengers",
+    "Tag": "Participation"
+  },
+  {
+    "Name": "Prateek Behera",
+    "Email": "thexs10@gmail.com",
+    "Team Name": "Avengers",
+    "Tag": "Participation"
   },
   {
-    "Name": "Aiswarya Anand",
-    "Email": "anandaiswarya2109@gmail.com",
-    "Team Name": "Hackerren",
-    "Tag": "Appreciation",
-    "Prize": "Overall First"
+    "Name": "Sidharth Shankar Bharadwaj",
+    "Email": "sidharthreigns134@gmail.com",
+    "Team Name": "Avengers",
+    "Tag": "Participation"
   },
   {
-    "Name": "Jyothsna Ashok",
-    "Email": "jyothsna1809@gmail.com",
-    "Team Name": "Hackerren",
-    "Tag": "Appreciation",
-    "Prize": "Overall First"
+    "Name": "Debasis Sahoo",
+    "Email": "sisabed927@gmail.com",
+    "Team Name": "Avengers",
+    "Tag": "Participation"
   },
   {
-    "Name": "Arushi Gandhi",
-    "Email": "arushi.gandhi@gmail.com",
-    "Team Name": "Hackerren",
-    "Tag": "Appreciation",
-    "Prize": "Overall First"
+    "Name": "Kapil Kumar Singh",
+    "Email": "kapilkumarsingh2003@gmail.com",
+    "Team Name": "Elixir",
+    "Tag": "Participation"
   },
   {
-    "Name": "Alok Prasad",
-    "Email": "u19cs119@coed.svnit.ac.in",
-    "Team Name": "Goal Diggers",
+    "Name": "Mrigya Sahai",
+    "Email": "sahaimrigya@gmail.com",
+    "Team Name": "Elixir",
     "Tag": "Participation"
   },
   {
-    "Name": "Keshav Gautam",
-    "Email": "keshavg1209@gmail.com",
-    "Team Name": "Goal Diggers",
+    "Name": "Parag Gupta",
+    "Email": "paragbobo@gmail.com",
+    "Team Name": "Elixir",
     "Tag": "Participation"
   },
   {
-    "Name": "Dhruva Shaw",
-    "Email": "dhruvashaw@gmail.com",
-    "Team Name": "Hokage",
+    "Name": "Ajitesh Dubey",
+    "Email": "dubeyajitesh07@gmail.com",
+    "Team Name": "SyntaxError",
     "Tag": "Participation"
   },
   {
-    "Name": "Dhanraj Chavan",
-    "Email": "dc6707914@gmail.com",
-    "Team Name": "Cipher",
+    "Name": "K Spatika Prusty",
+    "Email": "spatikaprusty79053@gmail.com",
+    "Team Name": "Typo",
     "Tag": "Participation"
   },
   {
-    "Name": "Buddharatna Hingole",
-    "Email": "ratnanitrkl@gmail.com",
-    "Team Name": "Myself",
+    "Name": "sonika juttuka",
+    "Email": "sonikajuttuka@gmail.com",
+    "Team Name": "Typo",
     "Tag": "Participation"
   },
   {
-    "Name": "Tushar Amdoskar",
-    "Email": "tusharvamanamdoskar@gmail.com",
-    "Team Name": "HalfLife3",
+    "Name": "Amartya Chakraborty",
+    "Email": "amartya.3654@gmail.com",
+    "Team Name": "CrazyDev",
     "Tag": "Participation"
   },
   {
-    "Name": "Harshvardhan Aditya",
-    "Email": "harshva27@gmail.com",
-    "Team Name": "Runtime Terror",
+    "Name": "Debarghya Maitra",
+    "Email": "debarghya4444@gmail.com",
+    "Team Name": "CrazyDev",
     "Tag": "Participation"
   },
   {
-    "Name": "Saksham Johari",
-    "Email": "joharisaksham@gmail.com",
-    "Team Name": "Runtime Terror",
+    "Name": "Snehanjan Roy",
+    "Email": "snehanjanroy2k1@gmail.com",
+    "Team Name": "CrazyDev",
     "Tag": "Participation"
   },
   {
-    "Name": "Abhinav Chaudhary",
-    "Email": "annuabhi1912@gmail.com",
-    "Team Name": "Runtime Terror",
+    "Name": "Tanmoy Sarkar",
+    "Email": "ts741127@gmail.com",
+    "Team Name": "CrazyDev",
     "Tag": "Participation"
   },
   {
-    "Name": "Samriddh Srivastava",
-    "Email": "samsri29007@gmail.com",
-    "Team Name": "Runtime Terror",
+    "Name": "shaik javed",
+    "Email": "javed1709@gmail.com",
+    "Team Name": "sQuad",
     "Tag": "Participation"
   },
   {
-    "Name": "Shruti Saxena",
-    "Email": "shrutisaxena2107@gmail.com",
-    "Team Name": "GrowerLabs",
+    "Name": "Shashank Bhake",
+    "Email": "shashankbhake123@gmail.com",
+    "Team Name": "sQuad",
     "Tag": "Participation"
   },
   {
-    "Name": "Apara Biswas",
-    "Email": "aparabiswas28@gmail.com",
-    "Team Name": "GrowerLabs",
+    "Name": "Bhanu teja reddy Teegala",
+    "Email": "bhanuteja.teegala@gmail.com",
+    "Team Name": "sQuad",
     "Tag": "Participation"
   },
   {
-    "Name": "Shivam Singh",
-    "Email": "shivamsingh20_ug@ece.nits.ac.in",
-    "Team Name": "GrowerLabs",
+    "Name": "Vishnu Srivatsava",
+    "Email": "vishnusrivatsava@gmail.com",
+    "Team Name": "sQuad",
     "Tag": "Participation"
   },
   {
-    "Name": "Shayan Debroy",
-    "Email": "debroyshayan@gmail.com",
-    "Team Name": "GrowerLabs",
+    "Name": "Mohammad Faisal",
+    "Email": "mohfaiz0504@gmail.com",
+    "Team Name": "Yaaazh Tech",
     "Tag": "Participation"
   },
   {
-    "Name": "Dirgh Patel",
-    "Email": "pateldirgh@gmail.com",
-    "Team Name": "Betaversion",
+    "Name": "Utkarsh Suneela",
+    "Email": "utkarshlearning2002@gmail.com",
+    "Team Name": "BENDAKALURINA CODERS",
     "Tag": "Participation"
   },
   {
-    "Name": "Jayesh Nara",
-    "Email": "jayeshnara90@gmail.com",
-    "Team Name": "Team Phoenix",
+    "Name": "Rohit kumar singh",
+    "Email": "rohit99900.rk@gmail.com",
+    "Team Name": "BENDAKALURINA CODERS",
     "Tag": "Participation"
   },
   {
-    "Name": "Abhinav Kabra",
-    "Email": "akbundi2@gmail.com",
-    "Team Name": "Team Phoenix",
+    "Name": "Joel Machado",
+    "Email": "joelmachado649@gmail.com",
+    "Team Name": "BENDAKALURINA CODERS",
     "Tag": "Participation"
   },
   {
-    "Name": "Venkatavaradan Raghuraman",
-    "Email": "venkat.r300@gmail.com",
-    "Team Name": "vim > emacs",
+    "Name": "Ria Picardo",
+    "Email": "picardoria01@gmail.com",
+    "Team Name": "BENDAKALURINA CODERS",
     "Tag": "Participation"
   },
   {
-    "Name": "Sanskriti Pattanayak",
-    "Email": "sanskriti.pattanayak@gmail.com",
-    "Team Name": "vim > emacs",
+    "Name": "Ayush Jindal",
+    "Email": "ayush21153019@akgec.ac.in",
+    "Team Name": "Wabra",
     "Tag": "Participation"
   },
   {
-    "Name": "Srujan Deshpande",
-    "Email": "srujan.deshpande@gmail.com",
-    "Team Name": "vim > emacs",
+    "Name": "Aruj Bansal",
+    "Email": "aruj2112146@akgec.ac.in",
+    "Team Name": "Wabra",
     "Tag": "Participation"
   },
   {
-    "Name": "Avinash V K",
-    "Email": "avinash2000vk@gmail.com",
-    "Team Name": "vim > emacs",
+    "Name": "Sparsh Singhal",
+    "Email": "singhalsparshu9876@gmail.com",
+    "Team Name": "Wabra",
     "Tag": "Participation"
   },
   {
-    "Name": "Rudransh Arora",
-    "Email": "rarora1_be20@thapar.edu",
-    "Team Name": "4 Horsemen",
+    "Name": "Yash Choudhary",
+    "Email": "yashc4321@gmail.com",
+    "Team Name": "Saste Designer",
     "Tag": "Participation"
   },
   {
-    "Name": "Kunal Demla",
-    "Email": "kdemla_be20@thapar.edu",
-    "Team Name": "4 Horsemen",
+    "Name": "Atul Kumar Rajak",
+    "Email": "atulkumarrajak.2020@gmail.com",
+    "Team Name": "Saste Designer",
     "Tag": "Participation"
   },
   {
-    "Name": "Yamini Bansal",
-    "Email": "yaminibansal236@gmail.com",
-    "Team Name": "4 Horsemen",
+    "Name": "Saswat Samal",
+    "Email": "saswat1091@outlook.com",
+    "Team Name": "PseudoTechies",
     "Tag": "Participation"
   },
   {
-    "Name": "Shreya Chopra",
-    "Email": "shreyachopracoe@gmail.com",
-    "Team Name": "4 Horsemen",
+    "Name": "Bibhu Prasad Sahoo",
+    "Email": "thebloodhound003@gmail.com",
+    "Team Name": "PseudoTechies",
     "Tag": "Participation"
   },
   {
-    "Name": "Ritika Malik",
-    "Email": "ritikamalik100102@gmail.com",
-    "Team Name": "Code_Geeks",
+    "Name": "aman singh",
+    "Email": "aman912658@gmail.com",
+    "Team Name": "PseudoTechies",
     "Tag": "Participation"
   },
   {
-    "Name": "Ankita Lamba",
-    "Email": "lambaankita24@gmail.com",
-    "Team Name": "Code_Geeks",
+    "Name": "Prayag Sahoo",
+    "Email": "prayagsahoo01@gmail.com",
+    "Team Name": "PseudoTechies",
     "Tag": "Participation"
   },
   {
-    "Name": "Deepali Singal",
-    "Email": "deepalisingal2002@gmail.com",
-    "Team Name": "Code_Geeks",
+    "Name": "prateek Arora",
+    "Email": "prateeka922@gmail.com",
+    "Team Name": "Hackies",
     "Tag": "Participation"
   },
   {
-    "Name": "Jaanhvi Singh",
-    "Email": "jaanhvisingh64@gmail.com",
-    "Team Name": "thisDot",
+    "Name": "Prashant Kumar Singh",
+    "Email": "prashantrkt2002@gmail.com",
+    "Team Name": "Hackies",
     "Tag": "Participation"
   },
   {
-    "Name": "Keshav Roy",
-    "Email": "roykeshav4@gmail.com",
-    "Team Name": "thisDot",
+    "Name": "Anushka Bansal",
+    "Email": "anushkabansal101@gmail.com",
+    "Team Name": "Hackies",
     "Tag": "Participation"
   },
   {
-    "Name": "Madhav Jha",
-    "Email": "jhamadhav28@gmail.com",
-    "Team Name": "thisDot",
+    "Name": "priya kumari",
+    "Email": "kumaripriya7004956360@gmail.com",
+    "Team Name": "soul_coder 2",
     "Tag": "Participation"
   },
   {
-    "Name": "Nidhi Worah",
-    "Email": "nidhiworah02@gmail.com",
-    "Team Name": "thisDot",
+    "Name": "kaushika sharma",
+    "Email": "kaushikasharma.78@gmail.com",
+    "Team Name": "soul_coder 2",
     "Tag": "Participation"
   },
   {
-    "Name": "Sneha .",
-    "Email": "sneha2906singhz@gmail.com",
-    "Team Name": "MindTwister",
+    "Name": "Rohan Kumar Muduli",
+    "Email": "rohan2muduli@gmail.com",
+    "Team Name": "virtual_hackers",
     "Tag": "Participation"
   },
   {
-    "Name": "Vikas Narwariya",
-    "Email": "vikasnarwariya15@gmail.com",
-    "Team Name": "MindTwister",
+    "Name": "Iqbal _",
+    "Email": "mohd.abd.6602@gmail.com",
+    "Team Name": "virtual_hackers",
     "Tag": "Participation"
   },
   {
-    "Name": "Nathan Gueissaz-Teufel",
-    "Email": "nathan.gt.protic@gmail.com",
-    "Team Name": "Trackr",
+    "Name": "Anurag Roy",
+    "Email": "royanurag2002@gmail.com",
+    "Team Name": "virtual_hackers",
     "Tag": "Participation"
   },
   {
-    "Name": "William Fecteau",
-    "Email": "william-fecteau@hotmail.com",
-    "Team Name": "Trackr",
+    "Name": "Dipan Kumar",
+    "Email": "dipanmallick7085@gmail.com",
+    "Team Name": "virtual_hackers",
     "Tag": "Participation"
   },
   {
-    "Name": "Jordan Gagnon",
-    "Email": "ultimatekaijunml@gmail.com",
-    "Team Name": "Trackr",
+    "Name": "Suraj yadav",
+    "Email": "harrypotter1108@gmail.com",
+    "Team Name": "Applehead",
     "Tag": "Participation"
   },
   {
-    "Name": "Yash Sharma",
-    "Email": "yashs662@gmail.com",
-    "Team Name": "We Rock",
+    "Name": "Arunava Debnath",
+    "Email": "arunavadebnath23@gmail.com",
+    "Team Name": "Awesome Arunava",
     "Tag": "Participation"
   },
   {
-    "Name": "Nikhil Pal",
-    "Email": "nikhilpal2017@gmail.com",
-    "Team Name": "We Rock",
+    "Name": "Akash Anand",
+    "Email": "akashdsingh006@gmail.com",
+    "Team Name": "PhoenixVille",
     "Tag": "Participation"
   },
   {
-    "Name": "Shruti Mishra",
-    "Email": "mishrashru2002@gmail.com",
-    "Team Name": "We Rock",
+    "Name": "Sujal Soni",
+    "Email": "sujal123soni@gmail.com",
+    "Team Name": "Web Hack",
     "Tag": "Participation"
   },
   {
-    "Name": "Shweta Bhat",
-    "Email": "bhatshweta41@gmail.com",
-    "Team Name": "We Rock",
+    "Name": "Aditya Aryan",
+    "Email": "adityaaryan11k@gmail.com",
+    "Team Name": "MoreThanWeb2",
     "Tag": "Participation"
   },
   {
-    "Name": "Hamilton Leguizamon",
-    "Email": "hamleg2@gmail.com",
-    "Team Name": "Patrulla Ciudadana",
+    "Name": "Mehul Poddar",
+    "Email": "mehulpoddar1310@gmail.com",
+    "Team Name": "MoreThanWeb2",
     "Tag": "Participation"
   },
   {
-    "Name": "David Muñoz",
-    "Email": "davides2556@gmail.com",
-    "Team Name": "Patrulla Ciudadana",
+    "Name": "Shivanshu Dev",
+    "Email": "shivanshu.dev63@gmail.com",
+    "Team Name": "MoreThanWeb2",
     "Tag": "Participation"
   },
   {
-    "Name": "Víctor Gómez Iñesta",
-    "Email": "victorgomezinesta@gmail.com",
-    "Team Name": "Patrulla Ciudadana",
+    "Name": "Mohd Sameer",
+    "Email": "sameermohd2k1@gmail.com",
+    "Team Name": "MoreThanWeb2",
     "Tag": "Participation"
   },
   {
-    "Name": "Yashvi Garg",
-    "Email": "yashvigarg330@gmail.com",
-    "Team Name": "ERROR- NAME NOT FOUND",
+    "Name": "Ananya Kumari",
+    "Email": "ananya.singh3199@gmail.com",
+    "Team Name": "Lets hack this",
     "Tag": "Participation"
   },
   {
-    "Name": "Rohit Kharsan",
-    "Email": "rkharsan64@gmail.com",
-    "Team Name": "ERROR- NAME NOT FOUND",
+    "Name": "Rajat Chaudhary",
+    "Email": "rajatchoudhary9667@gmail.com",
+    "Team Name": "Lets hack this",
     "Tag": "Participation"
   },
   {
-    "Name": "B Prithiraj",
-    "Email": "prithirajb120@gmail.com",
-    "Team Name": "Tweek",
+    "Name": "Yash Varshney",
+    "Email": "yashvarshney7011@gmail.com",
+    "Team Name": "Caps_lock",
     "Tag": "Participation"
   },
   {
-    "Name": "Aryan Sinha",
-    "Email": "aryansinhagya07@gmail.com",
-    "Team Name": "Tweek",
+    "Name": "Prashant Rai",
+    "Email": "prashantrai7451@gmail.com",
+    "Team Name": "Caps_lock",
     "Tag": "Participation"
   },
   {
-    "Name": "Suman Sourav Biswal",
-    "Email": "brghsouravsbp@gmail.com",
-    "Team Name": "Tweek",
+    "Name": "Anurag Kashyap",
+    "Email": "anuragkashyap026@gmail.com",
+    "Team Name": "Caps_lock",
     "Tag": "Participation"
   },
   {
-    "Name": "Nirmit Gupta",
-    "Email": "nirmitgupta941515@gmail.com",
-    "Team Name": "Tweek",
+    "Name": "Shubhi Pandey",
+    "Email": "shubhijbm@gmail.com",
+    "Team Name": "Caps_lock",
     "Tag": "Participation"
   },
   {
-    "Name": "Aniruddha Das",
-    "Email": "aniruddha.das.852@gmail.com",
-    "Team Name": "Blank Coders",
-    "Tag": "Appreciation",
-    "Prize": "Best Domain Name"
+    "Name": "Aira Jena",
+    "Email": "airajena.hack@gmail.com",
+    "Team Name": "Your Worst Nightmare",
+    "Tag": "Participation"
   },
   {
-    "Name": "Falguni Sarkar",
-    "Email": "falgunisarkar526@gmail.com",
-    "Team Name": "Blank Coders",
-    "Tag": "Appreciation",
-    "Prize": "Best Domain Name"
+    "Name": "Aryan Gupta",
+    "Email": "aryanargupta@gmail.com",
+    "Team Name": "CodeStars",
+    "Tag": "Participation"
   },
   {
-    "Name": "Samadrit Sarkar",
-    "Email": "samadrit.sarkar2@gmail.com",
-    "Team Name": "Hex Clan",
+    "Name": "kanhaiya bhatt",
+    "Email": "kanhaiyabhatt41952@gmail.com",
+    "Team Name": "CodeStars",
     "Tag": "Participation"
   },
   {
-    "Name": "Aditya Harsh",
-    "Email": "pankajclg22@gmail.com",
-    "Team Name": "Hex Clan",
+    "Name": "Satyam Bajpai",
+    "Email": "bajpai1973satyam@gmail.com",
+    "Team Name": "CodeStars",
     "Tag": "Participation"
   },
   {
-    "Name": "Shubham Thorat",
-    "Email": "thoratshubham429@gmail.com",
-    "Team Name": "Hex Clan",
+    "Name": "Ishika Ishani",
+    "Email": "ishikaishani97@gmail.com",
+    "Team Name": "CodeStars",
     "Tag": "Participation"
   },
   {
-    "Name": "Anubhab Ray",
-    "Email": "rayanubhab@gmail.com",
-    "Team Name": "Hex Clan",
+    "Name": "Louis Melendez",
+    "Email": "lmelendez@wesleyan.edu",
+    "Team Name": "the waffles",
     "Tag": "Participation"
   },
   {
-    "Name": "Khushi Gandhi",
-    "Email": "khushigandhi4040@gmail.com",
-    "Team Name": "Bug Busters",
+    "Name": "DEVENDER PAL",
+    "Email": "iamdev0x15@gmail.com",
+    "Team Name": "Crypto Ferrets",
     "Tag": "Participation"
   },
   {
-    "Name": "Aastha Patel",
-    "Email": "aasthapatel1510@gmail.com",
-    "Team Name": "Bug Busters",
+    "Name": "Mike Odnis",
+    "Email": "mikeodnis3242004@gmail.com",
+    "Team Name": "Crypto Ferrets",
     "Tag": "Participation"
   },
   {
-    "Name": "Irish Ajaybharti",
-    "Email": "ajaybhartiirish@gmail.com",
-    "Team Name": "Bug Busters",
+    "Name": "Ankit Kumar",
+    "Email": "ankitkr62042@gmail.com",
+    "Team Name": "Crypto Ferrets",
     "Tag": "Participation"
   },
   {
-    "Name": "Abhay Vishwakarma",
-    "Email": "vishwakarmabhay@gmail.com",
-    "Team Name": "Begineers",
+    "Name": "Caleb Hairston",
+    "Email": "calebcch3000@gmail.com",
+    "Team Name": "Crypto Ferrets",
     "Tag": "Participation"
   },
   {
-    "Name": "Maitri Vaghasiya",
-    "Email": "maitrivaghasiya99@gmail.com",
-    "Team Name": "Begineers",
+    "Name": "Vignaraj D",
+    "Email": "vignaraj03@gmail.com",
+    "Team Name": "Code Masters",
     "Tag": "Participation"
   },
   {
-    "Name": "Vedika Mandre",
-    "Email": "vedikamandre28@gmail.com",
-    "Team Name": "Begineers",
+    "Name": "Shriram R",
+    "Email": "rshriramrsr1232003@gmail.com",
+    "Team Name": "Code Masters",
     "Tag": "Participation"
   },
   {
-    "Name": "Yashvi Vaghasiya",
-    "Email": "vaghasiyayashvi@gmail.com",
-    "Team Name": "Begineers",
+    "Name": "Shakthivel Krishnakumar",
+    "Email": "71762131046@cit.edu.in",
+    "Team Name": "Code Masters",
     "Tag": "Participation"
   },
   {
-    "Name": "Faiz Imam",
-    "Email": "faizkalwara173@gmail.com",
-    "Team Name": "decoders",
+    "Name": "Tharun Kailash K",
+    "Email": "2031051mss@cit.edu.in",
+    "Team Name": "Code Masters",
     "Tag": "Participation"
   },
   {
-    "Name": "Borige Abhiram",
-    "Email": "borige.abhiram2019@vitstudent.ac.in",
-    "Team Name": "decoders",
+    "Name": "Tithi Singh",
+    "Email": "tithisingh11@gmail.com",
+    "Team Name": "Lakshya",
     "Tag": "Participation"
   },
   {
-    "Name": "Satendra Pal",
-    "Email": "palsatyendra9984@gmail.com",
-    "Team Name": "decoders",
+    "Name": "TRIPTI SINGH",
+    "Email": "triptisingh22a@gmail.com",
+    "Team Name": "Lakshya",
     "Tag": "Participation"
   },
   {
-    "Name": "Aditi Jha",
-    "Email": "aditijha201200@gmail.com",
-    "Team Name": "decoders",
+    "Name": "Vedant Raut",
+    "Email": "vedant185raut@gmail.com",
+    "Team Name": "D-Coders",
     "Tag": "Participation"
   },
   {
-    "Name": "Ritika Ranjan",
-    "Email": "ritikar710@gmail.com",
-    "Team Name": "Iry - Coders",
+    "Name": "Raj Bhoyar",
+    "Email": "rbhoyar729@gmail.com",
+    "Team Name": "D-Coders",
     "Tag": "Participation"
   },
   {
-    "Name": "Yashi Srivastava",
-    "Email": "yashi.srivastava131999@gmail.com",
-    "Team Name": "Iry - Coders",
+    "Name": "Tejas Thete",
+    "Email": "tejasthete22@gmail.com",
+    "Team Name": "D-Coders",
     "Tag": "Participation"
   },
   {
-    "Name": "Indrashis Mitra",
-    "Email": "indrashismitra2000@gmail.com",
-    "Team Name": "Iry - Coders",
+    "Name": "Shubham Singh",
+    "Email": "shubham.singh.200205@gmail.com",
+    "Team Name": "D-Coders",
     "Tag": "Participation"
   }
 ]

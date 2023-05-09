@@ -1,20 +1,18 @@
 import React from 'react';
 
-// Libraries
-import { makeStyles } from '@material-ui/core';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import { useHistory } from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 
-// Components
-import {
-	ViewCertificateHeader,
-	CustomTextInput,
-	CustomButton
-} from '../components';
+// Libraries
+import {makeStyles} from '@material-ui/core';
 
 // Assets
 import json from '../assets/csvjson.json';
-
+// Components
+import {
+  CustomButton,
+  CustomTextInput,
+  ViewCertificateHeader,
+} from '../components';
 
 const ViewCertificate: React.FC = () => {
 	const classes = useStyles();
@@ -46,7 +44,7 @@ const ViewCertificate: React.FC = () => {
 					email,
 					teamName,
 					tag,
-					certificateId: `HACKNITR3-P${index + 1}`
+					certificateId: `HACKNITR4-P${index + 1}`
 				}
 
 				if (match[0]?.Prize) {
@@ -78,7 +76,7 @@ const ViewCertificate: React.FC = () => {
 				<ViewCertificateHeader />
 
 				<h3 className={classes.title}>Enter your details</h3>
-				<p className={classes.content}>Make sure to enter the email address with which you registerd for HackNITR 3.0</p>
+				<p className={classes.content}>Make sure to enter the email address with which you registered for HackNITR 4.0</p>
 
 				<CustomTextInput
 					value={input}
