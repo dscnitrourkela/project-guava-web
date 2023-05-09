@@ -5,10 +5,7 @@ import {useHistory} from 'react-router-dom';
 
 import {faDownload} from '@fortawesome/free-solid-svg-icons';
 // Libraries
-import {
-  makeStyles,
-  Toolbar,
-} from '@material-ui/core';
+import {makeStyles, Toolbar} from '@material-ui/core';
 
 // Components
 import {
@@ -48,13 +45,14 @@ const ViewCertificate: React.FC = () => {
         width: 550,
         height: 550,
       },
-      src: history.location.state.tag === "Appreciation"
-        ? 'https://res.cloudinary.com/ashishpadhy/image/upload/v1681215343/avupszlcs4j936xg0zaw.png'
-        : 'https://res.cloudinary.com/ashishpadhy/image/upload/v1681215343/avupszlcs4j936xg0zaw.png'
+      src:
+        history.location.state.tag === 'Appreciation'
+          ? 'https://res.cloudinary.com/ashishpadhy/image/upload/v1683570187/hfu5bc4n7j7eooxpgbf0.png'
+          : 'https://res.cloudinary.com/ashishpadhy/image/upload/v1683570176/fxf7xgvwv7tzlsogofuc.png',
     },
     recipientName: {
-      scale: { x: 1, y: 1 },
-      dimensions: { width: 400, height: 50 },
+      scale: {x: 1, y: 1},
+      dimensions: {width: 400, height: 50},
       name: history?.location?.state?.name,
       id: 'recipient-name-id',
       position: {
@@ -63,23 +61,23 @@ const ViewCertificate: React.FC = () => {
       },
     },
     validationDetails: {
-      scale: { x: 1, y: 1 },
-      dimensions: { width: 800, height: 50 },
+      scale: {x: 1, y: 1},
+      dimensions: {width: 800, height: 50},
       name: history?.location?.state?.teamName,
       id: 'recipient-team-name-id',
       position: {
-        x: history.location.state.tag === "Appreciation" ? 430 : 350,
-        y: history.location.state.tag === "Appreciation" ? 350 : 275,
-      }
+        x: 350,
+        y: 275,
+      },
     },
     authorizerDetails: [],
-    recipientDetails: { columns: [], rows: [] },
+    recipientDetails: {columns: [], rows: []},
   });
 
   const [details] = React.useState(() => {
     if (history.location.state) {
       // @ts-ignore
-      const { certificateId } = history.location.state;
+      const {certificateId} = history.location.state;
       return [
         {
           key: 'CertificateId',
@@ -91,7 +89,7 @@ const ViewCertificate: React.FC = () => {
         },
         {
           key: 'Distribution Date',
-          value: '11th April 2023',
+          value: '10th May 2023',
         },
         {
           key: 'Signee(s)',
@@ -101,10 +99,10 @@ const ViewCertificate: React.FC = () => {
           key: ' ',
           value: 'Hemant Bajaj',
         },
-      ]
+      ];
     }
     return null;
-  })
+  });
 
   const handleDownload = () => {
     if (canvasRef.current) {
@@ -122,16 +120,20 @@ const ViewCertificate: React.FC = () => {
           canvasRef={canvasRef}
           className={classes.canvas}
           state={certificate}
-          extraValue={history?.location?.state?.prize ? {
-            scale: { x: 1, y: 1 },
-            dimensions: { width: 400, height: 50 },
-            name: history?.location?.state?.prize,
-            id: 'recipient-name-id',
-            position: {
-              x: 325,
-              y: 315,
-            },
-          } : undefined}
+          extraValue={
+            history?.location?.state?.prize
+              ? {
+                  scale: {x: 1, y: 1},
+                  dimensions: {width: 400, height: 50},
+                  name: history?.location?.state?.prize,
+                  id: 'recipient-name-id',
+                  position: {
+                    x: 325,
+                    y: 315,
+                  },
+                }
+              : undefined
+          }
           isPreview
         />
       </div>
@@ -141,7 +143,7 @@ const ViewCertificate: React.FC = () => {
         <ViewCertificateDetails details={details} />
 
         <CustomButton
-          iconOptions={{ icon: faDownload, size: 'lg' }}
+          iconOptions={{icon: faDownload, size: 'lg'}}
           onClick={handleDownload}
         >
           Download

@@ -1,9 +1,214 @@
 [
   {
+    "Name": "Ayush Rathore",
+    "Email": "20cs3018@rgipt.ac.in",
+    "Team Name": "AR_Beast",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Priyasu Guin",
+    "Email": "priyasuguin.stu@gmail.com",
+    "Team Name": "Coding Reboot",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Shubhayu Majumdar",
+    "Email": "shubhayumajumdar64@gmail.com",
+    "Team Name": "Coding Reboot",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Amartya Chakraborty",
+    "Email": "amartya.3654@gmail.com",
+    "Team Name": "CrazyDev",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Debarghya Maitra",
+    "Email": "debarghya4444@gmail.com",
+    "Team Name": "CrazyDev",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Snehanjan Roy",
+    "Email": "snehanjanroy2k1@gmail.com",
+    "Team Name": "CrazyDev",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Tanmoy Sarkar",
+    "Email": "ts741127@gmail.com",
+    "Team Name": "CrazyDev",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Aishee Bhattacharya",
+    "Email": "mail2aishee@gmail.com",
+    "Team Name": "cynogen",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Subhanjan Dutta",
+    "Email": "subhamdutta96740@gmail.com",
+    "Team Name": "cynogen",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "RITEK ROUNAK",
+    "Email": "ritekrounak1@gmail.com",
+    "Team Name": "Dev Squad",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Pratham Singhal",
+    "Email": "prathamsinghal2003@gmail.com",
+    "Team Name": "Dev Squad",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Sneha Sinha",
+    "Email": "sneha2004sinha@gmail.com",
+    "Team Name": "FIBONAKI",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Sofia Akhtar",
+    "Email": "sofiaakhtar468@gmail.com",
+    "Team Name": "FIBONAKI",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "SUGAM SHAW",
+    "Email": "sugamshaw2002@gmail.com",
+    "Team Name": "FIBONAKI",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Safia aktar",
+    "Email": "akthersafiya7978@gmail.com",
+    "Team Name": "Inferno",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Shreyash Kumar",
+    "Email": "shreyashkumar971@gmail.com",
+    "Team Name": "Inferno",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Radhika Rani Panda",
+    "Email": "raniradhika295@gmail.com",
+    "Team Name": "Inferno",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "DIPANSHU KUMAR",
+    "Email": "medipansh@gmail.com",
+    "Team Name": "Pair Programmers",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "TUSHAR SAINI",
+    "Email": "s2sharpit@gmail.com",
+    "Team Name": "Pair Programmers",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Anshika Anand",
+    "Email": "anshikaanand02@gmail.com",
+    "Team Name": "Pair Programmers",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Gopish Mahajan",
+    "Email": "gopishmahajan12@gmail.com",
+    "Team Name": "Phantoms",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Ravish Satwani",
+    "Email": "ravishsatwani123@gmail.com",
+    "Team Name": "Phantoms",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Priyanshi Agrawal",
+    "Email": "priyanshiagrawal1282@gmail.com",
+    "Team Name": "Phantoms",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Pratigya Agrawal",
+    "Email": "agrawalpratigya11@gmail.com",
+    "Team Name": "Phantoms",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Anil Antony",
+    "Email": "anilantony3134@gmail.com",
+    "Team Name": "SettlBros",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Kushal Choudhary",
+    "Email": "kushal.ch107@gmail.com",
+    "Team Name": "Team blinks",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Akash Verma",
+    "Email": "bsoni9122505056@gmail.com",
+    "Team Name": "Team blinks",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Harsh vardhan",
+    "Email": "harsh.vardhan@iiitg.ac.in",
+    "Team Name": "Tragic Bytes",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Harshit Singh",
+    "Email": "harshit.singh@iiitg.ac.in",
+    "Team Name": "Tragic Bytes",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Nisheet Karan",
+    "Email": "nisheet.karan@iiitg.ac.in",
+    "Team Name": "Tragic Bytes",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Aman Budhrani",
+    "Email": "aman.budhrani@iiitg.ac.in",
+    "Team Name": "Tragic Bytes",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Sudhanshu Sinha",
+    "Email": "sudhanshusrii183@gmail.com",
+    "Team Name": "TRPC",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Zoheb Khan",
+    "Email": "understandingzak@gmail.com",
+    "Team Name": "TRPC",
+    "Tag": "Appreciation"
+  },
+  {
+    "Name": "Anurag Sharma",
+    "Email": "anuragsharma011011@gmail.com",
+    "Team Name": "TRPC",
+    "Tag": "Appreciation"
+  },
+
+  {
     "Name": "Sample Sample Sample Sample Sample",
     "Email": "sample@gmail.com",
     "Team Name": "sample",
-    "Tag": "sample",
+    "Tag": "Appreciation",
     "Prize": "sample"
   },
   {
