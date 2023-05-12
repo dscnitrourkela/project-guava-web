@@ -107,7 +107,7 @@ const ViewCertificate: React.FC = () => {
   const handleDownload = () => {
     if (canvasRef.current) {
       const uri = canvasRef.current.toDataURL();
-      downloadURI(uri, 'hacknitr4_certificate.pdf');
+      downloadURI(uri, 'hacknitr4_certificate.png');
     }
   };
 
